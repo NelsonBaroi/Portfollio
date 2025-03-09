@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embedded PDF Viewer</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url("bi.jpg")
+        }
+
+        header {
+            background-color: rgb(124,238,206);
+            padding: 20px;
+            text-align: center;
+            font-size: 25px;
+        }
+
+        iframe {
+            width: 100%;
+            height: calc(100vh - 40px);
+            border: none;
+            
+            
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" ><h1 class="gradient-text">Return to Home</h1></a>  
+    </header>
+
+    <iframe src="cv.pdf" title="Embedded PDF"></iframe>
+
+</body>
+</html>

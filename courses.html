@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PDF Slideshow</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #222;
+      color: white;
+      text-align: center;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(to right, #31313152, #aeb1b361);
+      padding: 20px;
+    }
+
+    .button-container {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .cta-button {
+      background: white;
+      color: #1453a1;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 16px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .cta-button:hover {
+      background: #1453a1;
+      color: white;
+    }
+
+    /* PDF Slideshow */
+    #pdfContainer {
+      width: 80%;
+      height: 100vh;
+      margin: 20px auto;
+      position: relative;
+      overflow: hidden;
+      background: white;
+      border-radius: 10px;
+    }
+
+    #pdfPages {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .pdfPage {
+      flex: 0 0 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* Navigation Buttons */
+    .nav-button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      cursor: pointer;
+      font-size: 20px;
+      z-index: 100;
+    }
+
+    #prev { left: 10px; }
+    #next { right: 10px; }
+
+    /* Footer */
+    .footer {
+      background: #333;
+      padding: 20px;
+      margin-top: 20px;
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-bottom: 10px;
+    }
+
+    .social-icons a {
+      color: white;
+      font-size: 24px;
+      transition: 0.3s;
+    }
+
+    .social-icons a:hover {
+      color: #4a90e2;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="button-container">
+        <a href="index.html" class="cta-button">Back to Portfolio</a>
+        <a href="cv.html" class="cta-button">View Full CV</a>
+
+        <a href="courses.html" class="cta-button">Professional Courses</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PDF Slideshow -->
+  <button id="prev" class="nav-button">&#9664;</button>
+  <div id="pdfContainer">
+    <div id="pdfPages"></div>
+  </div>
+  <button id="next" class="nav-button">&#9654;</button>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/nbaroi" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.facebook.com/noel.baroi" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/noel0007000" target="_blank"><i class="fab fa-instagram"></i></a>
+      </div>
+      <p>&copy; 2025 Nelson Baroi. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    const pdfFiles = ['coursera/1.pdf', 'coursera/2.pdf', 'coursera/3.pdf','coursera/4.pdf','coursera/5.pdf','coursera/6.pdf'];//
+    let currentPage = 0;
+    let totalPages = 0;
+    const pagePromises = [];
+
+    async function loadPDFs() {
+      for (const file of pdfFiles) {
+        try {
+          const pdf = await pdfjsLib.getDocument(file).promise;
+          for (let i = 1; i <= pdf.numPages; i++) {
+            pagePromises.push(pdf.getPage(i));
+          }
+        } catch (error) {
+          console.error(`Error loading ${file}:`, error);
+        }
+      }
+
+      totalPages = pagePromises.length;
+      processPages();
+    }
+
+    async function processPages() {
+      const container = document.getElementById('pdfPages');
+      
+      for (const pagePromise of pagePromises) {
+        const page = await pagePromise;
+        const viewport = page.getViewport({ scale: 1.5 });
+        const canvas = document.createElement('canvas');
+        const context = canvas.getContext('2d');
+
+        canvas.width = viewport.width;
+        canvas.height = viewport.height;
+
+        await page.render({ canvasContext: context, viewport }).promise;
+
+        const pageDiv = document.createElement('div');
+        pageDiv.className = 'pdfPage';
+        pageDiv.appendChild(canvas);
+        container.appendChild(pageDiv);
+      }
+
+      showPage(0);
+    }
+
+    function showPage(index) {
+      if (index >= 0 && index < totalPages) {
+        currentPage = index;
+        document.getElementById('pdfPages').style.transform = 
+          `translateX(-${index * 100}%)`;
+      }
+    }
+
+    function nextSlide() {
+      if (currentPage < totalPages - 1) {
+        showPage(currentPage + 1);
+      } else {
+        showPage(0); // Loop back to first slide
+      }
+    }
+
+    function prevSlide() {
+      if (currentPage > 0) {
+        showPage(currentPage - 1);
+      } else {
+        showPage(totalPages - 1); // Loop to last slide
+      }
+    }
+
+    document.getElementById('next').addEventListener('click', nextSlide);
+    document.getElementById('prev').addEventListener('click', prevSlide);
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowRight') nextSlide();
+      if (e.key === 'ArrowLeft') prevSlide();
+    });
+
+    // Auto-slide every 5 seconds
+    setInterval(nextSlide, 5000);
+
+    loadPDFs();
+  </script>
+
+</body>
+</html>

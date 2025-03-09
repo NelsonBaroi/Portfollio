@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Upload</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}">
+</head>
+<body>
+    <header class="header">
+        <h1 class="gradient-text">File Upload</h1>
+    </header>
+
+    <div id="drop-area">
+        <p>Drag & Drop files here or click to select</p>
+    </div>
+    
+    <input type="file" id="fileInput" style="display: none;" multiple>
+    <button id="uploadBtn">Upload</button>
+    
+    <ul id="fileList"></ul>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

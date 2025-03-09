@@ -1,16 +1,32 @@
 // Preloader Animation
 window.addEventListener('load', () => {
-    const preloader = document.querySelector('.preloader');
+  const preloader = document.querySelector('.preloader');
+  if (preloader) {
+    // Fade out the preloader
+    preloader.style.opacity = '0';
+    setTimeout(() => {
+      // Hide the preloader completely
+      preloader.style.display = 'none';
+    }, 500); // Matches the CSS transition duration
+  }
+});
+
+// Fallback in case the 'load' event doesn't fire
+setTimeout(() => {
+  const preloader = document.querySelector('.preloader');
+  if (preloader) {
     preloader.style.opacity = '0';
     setTimeout(() => {
       preloader.style.display = 'none';
     }, 500);
-  });
-  
-  // GSAP Scroll Animations
-  gsap.registerPlugin(ScrollTrigger);
-  
-  // Fade-in effect for sections
+  }
+}, 3000); // Fallback after 3 seconds
+
+// GSAP Scroll Animations
+gsap.registerPlugin(ScrollTrigger);
+
+// Fade-in effect for sections
+document.addEventListener('DOMContentLoaded', () => {
   gsap.utils.toArray('.section').forEach(section => {
     gsap.from(section, {
       opacity: 0,
@@ -24,70 +40,30 @@ window.addEventListener('load', () => {
       }
     });
   });
+});
+
+//password protection
+
+document.getElementById('passwordForm').addEventListener('submit', function(e) {
+  e.preventDefault();
   
-  // 3D WebGL Canvas (Basic Example)
-  const canvas = document.getElementById('webgl-canvas');
-  const gl = canvas.getContext('webgl');
+  const password = document.getElementById('password').value;
+  const correctPassword = 'secret123'; // CHANGE THIS PASSWORD
   
-  if (gl) {
-    // Vertex Shader
-    const vertexShaderSource = `
-      attribute vec4 a_position;
-      void main() {
-        gl_Position = a_position;
-      }
-    `;
-  
-    // Fragment Shader
-    const fragmentShaderSource = `
-      precision mediump float;
-      void main() {
-        gl_FragColor = vec4(0.5, 0.8, 1.0, 1.0); // Light Blue Color
-      }
-    `;
-  
-    // Compile Shaders
-    function compileShader(gl, source, type) {
-      const shader = gl.createShader(type);
-      gl.shaderSource(shader, source);
-      gl.compileShader(shader);
-      if (!gl.getShaderParameter(shader, gl.COMPILE_STATUS)) {
-        console.error(gl.getShaderInfoLog(shader));
-        gl.deleteShader(shader);
-        return null;
-      }
-      return shader;
-    }
-  
-    const vertexShader = compileShader(gl, vertexShaderSource, gl.VERTEX_SHADER);
-    const fragmentShader = compileShader(gl, fragmentShaderSource, gl.FRAGMENT_SHADER);
-  
-    // Link Program
-    const program = gl.createProgram();
-    gl.attachShader(program, vertexShader);
-    gl.attachShader(program, fragmentShader);
-    gl.linkProgram(program);
-  
-    if (!gl.getProgramParameter(program, gl.LINK_STATUS)) {
-      console.error(gl.getProgramInfoLog(program));
-    }
-  
-    // Define Geometry
-    const positions = new Float32Array([
-      -0.5, -0.5,
-       0.5, -0.5,
-       0.0,  0.5
-    ]);
-  
-    const positionBuffer = gl.createBuffer();
-    gl.bindBuffer(gl.ARRAY_BUFFER, positionBuffer);
-    gl.bufferData(gl.ARRAY_BUFFER, positions, gl.STATIC_DRAW);
-  
-    const positionAttributeLocation = gl.getAttribLocation(program, 'a_position');
-    gl.enableVertexAttribArray(positionAttributeLocation);
-    gl.vertexAttribPointer(positionAttributeLocation, 2, gl.FLOAT, false, 0, 0);
-  
-    // Draw
-    gl.useProgram(program);
-    gl.drawArrays(gl.TRIANGLES, 0, 3);
+  if(password === correctPassword) {
+      document.getElementById('login').style.display = 'none';
+      document.getElementById('content').style.display = 'block';
+      document.getElementById('error').style.display = 'none';
+  } else {
+      document.getElementById('error').style.display = 'block';
   }
+});
+
+// Handle file clicks (you can add additional functionality here)
+const files = document.querySelectorAll('.file');
+
+files.forEach(file => {
+    file.addEventListener('click', function() {
+        alert(`You clicked on: ${this.querySelector('.file-name').innerText}`);
+    });
+});
