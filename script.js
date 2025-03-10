@@ -59,11 +59,30 @@ document.getElementById('passwordForm').addEventListener('submit', function(e) {
   }
 });
 
-// Handle file clicks (you can add additional functionality here)
-const files = document.querySelectorAll('.file');
+// This effect will make the profile image pulse and change colors when hovered over, creating an interactive experience:
+const profileImage = document.getElementById('profile-image');
 
-files.forEach(file => {
-    file.addEventListener('click', function() {
-        alert(`You clicked on: ${this.querySelector('.file-name').innerText}`);
-    });
+document.addEventListener('mousemove', (e) => {
+  const { clientX: mouseX, clientY: mouseY } = e;
+  const imageRect = profileImage.getBoundingClientRect();
+  
+  const centerX = imageRect.left + imageRect.width / 2;
+  const centerY = imageRect.top + imageRect.height / 2;
+  
+  const deltaX = (mouseX - centerX) * 0.1; // Smooth movement
+  const deltaY = (mouseY - centerY) * 0.1;
+  
+  profileImage.style.transform = `translate(${deltaX}px, ${deltaY}px)`;
 });
+
+profileImage.addEventListener('mouseenter', () => {
+  profileImage.style.transition = 'transform 0.1s ease, box-shadow 0.3s ease';
+  profileImage.style.boxShadow = '0px 10px 25px rgba(0, 255, 255, 0.6)';
+});
+
+profileImage.addEventListener('mouseleave', () => {
+  profileImage.style.transition = 'transform 0.5s ease, box-shadow 0.5s ease';
+  profileImage.style.transform = 'translate(0, 0)';
+  profileImage.style.boxShadow = '0px 5px 15px rgba(0, 0, 0, 0.2)';
+});
+
