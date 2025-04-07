@@ -160,7 +160,17 @@ body {
   font-weight: 600;
   color: #333;
 }
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
 
+.project-card img {
+  max-width: 100%;
+  border-radius: 8px;
+}
 /* Hero Section */
 .hero {
   position: relative;
