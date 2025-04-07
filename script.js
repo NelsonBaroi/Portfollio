@@ -48,7 +48,7 @@ document.getElementById('passwordForm').addEventListener('submit', function(e) {
   e.preventDefault();
   
   const password = document.getElementById('password').value;
-  const correctPassword = 'secret123'; // CHANGE THIS PASSWORD
+  const correctPassword = 'nbaroi'; // CHANGE THIS PASSWORD
   
   if(password === correctPassword) {
       document.getElementById('login').style.display = 'none';
