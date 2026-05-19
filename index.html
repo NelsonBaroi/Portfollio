@@ -3,241 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nelson Baroi — Director of Operations | AMT Engineering JSC</title>
-    <meta name="description" content="Nelson Baroi is Director of Branch Operations at AMT Engineering JSC, leading operations for the Rooppur Nuclear Power Plant — Bangladesh's first nuclear energy project.">
-    <meta name="keywords" content="Nelson Baroi, Director of Operations, AMT Engineering, Rooppur Nuclear Power Plant, Bangladesh, Business Informatics, Strategic Planning, Leadership">
+    <title>Nelson Baroi — Director of Operations | Rooppur Nuclear Power Plant</title>
+    <meta name="description" content="Nelson Baroi is Director of Branch Operations at AMT Engineering JSC, contributing to the construction of the Rooppur Nuclear Power Plant — Bangladesh's first nuclear energy project, a 2,400 MW facility built in partnership with Russia's Rosatom.">
+    <meta name="keywords" content="Nelson Baroi, AMT Engineering, Rooppur Nuclear Power Plant, Bangladesh, Director of Operations, VVER-1200, Rosatom, Nuclear Energy, Strategic Planning">
     <meta name="author" content="Nelson Baroi">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://nbaroi.com/">
-
-    <!-- Open Graph -->
-    <meta property="og:title" content="Nelson Baroi — Director of Operations | AMT Engineering JSC">
-    <meta property="og:description" content="Director of Branch Operations leading Bangladesh's first nuclear power plant project. Strategic planning, cross-cultural leadership, operational excellence.">
+    <meta property="og:title" content="Nelson Baroi — Director of Operations | Rooppur Nuclear Power Plant">
+    <meta property="og:description" content="Leading branch operations on Bangladesh's first nuclear power plant — a $12.65 billion, 2,400 MW national infrastructure project.">
     <meta property="og:url" content="https://nbaroi.com/">
     <meta property="og:type" content="profile">
     <meta property="og:image" content="https://nbaroi.com/images/profile.jpg">
-    <meta property="og:site_name" content="Nelson Baroi">
-
-    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Nelson Baroi — Director of Operations">
-    <meta name="twitter:description" content="Leading operations for Bangladesh's first nuclear power plant. Strategy, data, people.">
-    <meta name="twitter:image" content="https://nbaroi.com/images/profile.jpg">
-
-    <!-- Favicon -->
+    <meta name="twitter:description" content="Leading operations on Bangladesh's first nuclear power plant.">
     <link rel="icon" type="image/x-icon" href="images/profile.jpg">
-
-    <!-- Fonts & Icons -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-    <!-- Styles -->
     <link rel="stylesheet" href="styles.css">
-
-    <!-- Structured Data -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Nelson Baroi",
-      "jobTitle": "Director of Branch Operations",
-      "worksFor": {
-        "@type": "Organization",
-        "name": "AMT Engineering JSC"
-      },
-      "url": "https://nbaroi.com",
-      "email": "nelson6114007@gmail.com",
-      "telephone": "+8801786068822",
-      "address": {
-        "@type": "PostalAddress",
-        "addressCountry": "BD"
-      },
-      "alumniOf": [
-        {
-          "@type": "EducationalOrganization",
-          "name": "Kalmyk State University"
-        },
-        {
-          "@type": "EducationalOrganization",
-          "name": "Notre Dame College, Dhaka"
-        }
-      ],
-      "knowsLanguage": ["Bengali", "English", "Russian"],
-      "sameAs": [
-        "https://www.linkedin.com/in/nbaroi",
-        "https://www.facebook.com/noel.baroi",
-        "https://www.instagram.com/noel0007000"
-      ]
-    }
+    {"@context":"https://schema.org","@type":"Person","name":"Nelson Baroi","jobTitle":"Director of Branch Operations","worksFor":{"@type":"Organization","name":"AMT Engineering JSC"},"url":"https://nbaroi.com","email":"nelson6114007@gmail.com","alumniOf":[{"@type":"EducationalOrganization","name":"Kalmyk State University"},{"@type":"EducationalOrganization","name":"Notre Dame College, Dhaka"}],"knowsLanguage":["Bengali","English","Russian"],"sameAs":["https://www.linkedin.com/in/nbaroi","https://www.facebook.com/noel.baroi"]}
     </script>
 </head>
 <body>
-    <!-- Header -->
-    <header class="site-header">
-        <div class="header-inner">
-            <div class="header-profile">
-                <img src="images/profile.jpg" alt="Nelson Baroi — Director of Operations" width="120" height="120" loading="eager">
-            </div>
-            <div class="header-text">
-                <h1>Nelson Baroi</h1>
-                <p class="role">Director of Branch Operations</p>
-                <p class="org"><a href="https://atom-alliance.com/en/project/constuction/npp-rooppur/" target="_blank" rel="noopener">AMT Engineering JSC</a> — Rooppur Nuclear Power Plant</p>
-            </div>
-        </div>
-    </header>
+  <!-- Header -->
+  <div class="profile-container">
+    <img src="images/profile.jpg" alt="Nelson Baroi" class="profile-image" id="profile-image">
+  </div>
+  <header class="header">
+    <h1 class="gradient-text">Nelson Baroi</h1>
+  </header>
 
-    <!-- Main Content -->
-    <main>
-        <!-- About -->
-        <section class="section" id="about">
-            <h2>About</h2>
-            <p>I lead the Bangladesh branch of AMT Engineering JSC, a Russian engineering company operating on the <a href="https://en.wikipedia.org/wiki/Rooppur_Nuclear_Power_Plant" target="_blank" rel="noopener">Rooppur Nuclear Power Plant</a> — the first nuclear energy project in Bangladesh's history.</p>
-            <p>My work sits at the intersection of strategic planning, cross-cultural coordination, and operational execution. I manage budgets, contracts, resource allocation, and performance evaluation across teams that span two countries, two languages, and fundamentally different operational cultures.</p>
-            <p>Before this role, I spent five years in progressively senior administrative and procurement positions on the same project. I know the operation from the ground up — from procurement logistics to director-level strategy.</p>
-        </section>
+  <!-- About Me -->
+  <section id="about-me" class="section">
+    <h2>About Me</h2>
+    <p>
+      I'm Nelson Baroi, currently serving as the <strong>Director of the Bangladesh Branch</strong> at <a href="https://atom-alliance.com/en/project/constuction/npp-rooppur/" target="_blank">AMT Engineering JSC</a>. My work is part of something larger than any single role — the construction of the <a href="https://en.wikipedia.org/wiki/Rooppur_Nuclear_Power_Plant" target="_blank">Rooppur Nuclear Power Plant</a>, Bangladesh's first nuclear energy project and one of the most significant infrastructure investments in the country's history.
+    </p>
+    <p>
+      The plant is located at Rooppur in Ishwardi, about 160 kilometres northwest of Dhaka, on the bank of the river Padma. It houses two Russian-designed VVER-1200 reactors — Generation III+ pressurised water reactors with a combined capacity of 2,400 megawatts. The project, valued at $12.65 billion, was built in partnership with Russia's Rosatom and positions Bangladesh as the world's 33rd nuclear power-producing nation.
+    </p>
+    <p>
+      My journey here wasn't a straight line. It involved moving to Russia at 19, studying in a language I didn't speak, returning to Bangladesh, and gradually building a career in an environment where decisions carry real weight. Every step taught me something about resilience, about working across cultures, and about the kind of leadership that earns trust rather than demands it.
+    </p>
+  </section>
 
-        <!-- Career -->
-        <section class="section" id="career">
-            <h2>Career</h2>
-            <div class="timeline">
-                <article class="timeline-item">
-                    <span class="timeline-date">Feb 2024 — Present</span>
-                    <h3>Director of Branch Operations</h3>
-                    <p class="timeline-org">AMT Engineering JSC — Rooppur Nuclear Power Plant, Bangladesh</p>
-                    <p class="timeline-detail">Strategic planning and operational leadership for the Bangladesh branch. Budget oversight, contract management, performance evaluation, employee welfare, safety compliance. Coordination between Russian management and local teams.</p>
-                </article>
-                <article class="timeline-item">
-                    <span class="timeline-date">Jan 2019 — Feb 2024</span>
-                    <h3>Senior Administrator</h3>
-                    <p class="timeline-org">AMT Engineering JSC — Rooppur Nuclear Power Plant, Bangladesh</p>
-                    <p class="timeline-detail">Procurement, logistics, financial reporting, payroll management, compliance with safety and operational standards. Built foundational systems that the branch still runs on.</p>
-                </article>
-                <article class="timeline-item">
-                    <span class="timeline-date">Concurrent</span>
-                    <h3>Procurement Manager & Administrative Staff</h3>
-                    <p class="timeline-org">FREYSSINET — Rooppur Nuclear Power Plant</p>
-                    <p class="timeline-detail">Material sourcing, administrative coordination, cross-team collaboration on one of the project's key subcontractor operations.</p>
-                </article>
-            </div>
-        </section>
+  <!-- The Project -->
+  <section id="the-project" class="section">
+    <h2>The Project</h2>
+    <p>
+      The Rooppur Nuclear Power Plant is not just an engineering achievement — it's a national turning point. Construction of Unit 1 began in November 2017 and Unit 2 in July 2018. In May 2026, nuclear fuel loading for Unit 1 was successfully completed ahead of schedule, marking Bangladesh's official entry into the nuclear era.
+    </p>
+    <p>
+      Thousands of engineers — Russian and Bangladeshi — have worked together on this site for years. The coordination between two fundamentally different work cultures, languages, and operational philosophies is one of the project's great unspoken challenges. That's where I operate: at the intersection of strategy, logistics, and people.
+    </p>
+    <p>
+      As Director of the Bangladesh Branch at AMT Engineering JSC, I oversee budgets, contracts, resource allocation, employee welfare, and safety compliance. But the truth is, the job is really about making sure the right people have the right information at the right time — so that decisions get made properly, even under pressure.
+    </p>
+  </section>
 
-        <!-- Education -->
-        <section class="section" id="education">
-            <h2>Education</h2>
-            <div class="timeline">
-                <article class="timeline-item">
-                    <span class="timeline-date">2014 — 2018</span>
-                    <h3>Bachelor of Business Informatics</h3>
-                    <p class="timeline-org">Kalmyk State University, Russian Federation — Government Scholarship</p>
-                    <p class="timeline-detail">Thesis: <em>"The Use of Computer Technology for Intensification of Business Processes in the Field of Forecasting."</em> Coursework in econometrics, operations research, database systems, and information security.</p>
-                </article>
-                <article class="timeline-item">
-                    <span class="timeline-date">2013 — 2014</span>
-                    <h3>Russian Language Preparatory Programme</h3>
-                    <p class="timeline-org">Kalmyk State University, Russian Federation</p>
-                </article>
-                <article class="timeline-item">
-                    <span class="timeline-date">2011</span>
-                    <h3>Higher Secondary Certificate (HSC)</h3>
-                    <p class="timeline-org">Notre Dame College, Dhaka, Bangladesh</p>
-                </article>
-                <article class="timeline-item">
-                    <span class="timeline-date">2009</span>
-                    <h3>Secondary School Certificate (SSC)</h3>
-                    <p class="timeline-org">Chandraghona, Rangamati, Bangladesh</p>
-                </article>
-            </div>
-        </section>
+  <!-- My Background -->
+  <section id="background" class="section">
+    <h2>My Background</h2>
+    <p>
+      I grew up in Chandraghona, a small town in the Chittagong Hill Tracts of Bangladesh. My academic path took me to <strong>Notre Dame College, Dhaka</strong> — one of the country's most respected institutions — and then, on a Russian Government Scholarship, to <strong>Kalmyk State University</strong> in the Russian Federation, where I studied Business Informatics.
+    </p>
+    <p>
+      Living and studying in Russia for five years — as the only foreign student in my class — taught me more than any coursework could. I learned to communicate across barriers, to adapt quickly, and to find common ground with people whose lives looked nothing like mine. My thesis explored how computer technology could improve business forecasting — a question I'm still working on, just at a larger scale now.
+    </p>
+    <p>
+      I speak Bengali, English, and Russian. That combination isn't accidental — it's what allows me to bridge the gap between Russian management and Bangladeshi operations on a daily basis.
+    </p>
+  </section>
 
-        <!-- Competencies -->
-        <section class="section" id="competencies">
-            <h2>Competencies</h2>
-            <div class="competency-grid">
-                <div class="competency-card">
-                    <h3><i class="fas fa-chess"></i> Strategy & Operations</h3>
-                    <ul>
-                        <li>Strategic planning & execution</li>
-                        <li>Resource allocation</li>
-                        <li>Budget management & oversight</li>
-                        <li>Contract & compliance management</li>
-                        <li>Performance evaluation</li>
-                    </ul>
-                </div>
-                <div class="competency-card">
-                    <h3><i class="fas fa-users"></i> Leadership</h3>
-                    <ul>
-                        <li>Cross-cultural team management</li>
-                        <li>Conflict resolution</li>
-                        <li>Stakeholder communication</li>
-                        <li>Employee welfare & safety</li>
-                        <li>Mentoring & development</li>
-                    </ul>
-                </div>
-                <div class="competency-card">
-                    <h3><i class="fas fa-database"></i> Technical</h3>
-                    <ul>
-                        <li>SQL (PostgreSQL)</li>
-                        <li>Python (pandas, NumPy)</li>
-                        <li>Data visualisation</li>
-                        <li>HTML, CSS, PHP</li>
-                        <li>Microsoft Office Suite</li>
-                    </ul>
-                </div>
-                <div class="competency-card">
-                    <h3><i class="fas fa-globe"></i> Languages</h3>
-                    <ul>
-                        <li>Bengali — Native</li>
-                        <li>English — Professional (IELTS 6.5)</li>
-                        <li>Russian — Conversational</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
+  <!-- Beyond Work -->
+  <section id="beyond-work" class="section">
+    <h2>Beyond Work</h2>
+    <p>
+      I believe in giving back. During my university years, volunteering and student organisations taught me the value of service. Today, I continue to support initiatives that uplift others — whether it's mentoring younger professionals on the project, advocating for workplace safety standards, or supporting education initiatives in my home community.
+    </p>
+    <p>
+      I'm also investing in my own growth. I'm currently deepening my skills in SQL, Python, and data analysis — not because I plan to change careers, but because I've seen firsthand that the leaders who make the best decisions are those who can work with data, not just intuition.
+    </p>
+  </section>
 
-        <!-- What Drives Me -->
-        <section class="section" id="philosophy">
-            <h2>What Drives Me</h2>
-            <p>I believe operations work is only as good as the decisions behind it. For six years I've managed increasingly complex responsibilities on a project of national significance — and at every level, the challenge has been the same: making the right call with incomplete information, under real constraints, where mistakes cost real money.</p>
-            <p>That's why I'm investing in analytical capability. Not to change careers — but to sharpen the instrument I already use every day. The best leaders I've worked with aren't the loudest. They're the ones who can see the data behind the noise and act on it with confidence.</p>
-            <p>I'm currently deepening my skills in SQL, data analysis, and business intelligence tools — building toward a formal qualification in Business Analytics that will complement my operational experience.</p>
-        </section>
+  <!-- Navigation -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="button-container">
+        <a href="philosophy.html" class="cta-button">Philosophy</a>
+        <a href="cv.html" class="cta-button">CV</a>
+        <a href="courses.html" class="cta-button">Courses</a>
+        <a href="personal.html" class="cta-button">Personal</a>
+      </div>
+    </div>
+  </section>
 
-        <!-- Navigation -->
-        <section class="section section-nav" id="explore">
-            <h2>Explore</h2>
-            <div class="nav-grid">
-                <a href="philosophy.html" class="nav-card">
-                    <i class="fas fa-lightbulb"></i>
-                    <span>Philosophy</span>
-                </a>
-                <a href="cv.html" class="nav-card">
-                    <i class="fas fa-file-alt"></i>
-                    <span>Curriculum Vitae</span>
-                </a>
-                <a href="courses.html" class="nav-card">
-                    <i class="fas fa-graduation-cap"></i>
-                    <span>Courses</span>
-                </a>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/nbaroi" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.facebook.com/noel.baroi" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/noel0007000" target="_blank"><i class="fab fa-instagram"></i></a>
+      </div>
+      <p>&copy; 2025 Nelson Baroi. All rights reserved.</p>
+    </div>
+  </footer>
 
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="site-footer">
-        <div class="footer-inner">
-            <nav class="footer-social" aria-label="Social media links">
-                <a href="https://www.linkedin.com/in/nbaroi" target="_blank" rel="noopener" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                <a href="https://www.facebook.com/noel.baroi" target="_blank" rel="noopener" title="Facebook"><i class="fab fa-facebook"></i></a>
-                <a href="https://www.instagram.com/noel0007000" target="_blank" rel="noopener" title="Instagram"><i class="fab fa-instagram"></i></a>
-                <a href="mailto:nelson6114007@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
-            </nav>
-            <p>&copy; 2025 Nelson Baroi. Chandraghona, Rangamati, Bangladesh.</p>
-        </div>
-    </footer>
-
-    <script src="script.js" defer></script>
+  <script src="script.js" defer></script>
 </body>
 </html>

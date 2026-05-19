@@ -1,106 +1,38 @@
-// ============================================
-// Nelson Baroi Portfolio — Script
-// ============================================
+// Nelson Baroi — Portfolio Script
 
-// Chat Widget
+// GSAP Scroll Animations
+if (typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined') {
+  gsap.registerPlugin(ScrollTrigger);
+  document.addEventListener('DOMContentLoaded', () => {
+    gsap.utils.toArray('.section').forEach(section => {
+      gsap.from(section, {
+        opacity: 0, y: 40, duration: 0.8, ease: 'power2.out',
+        scrollTrigger: { trigger: section, start: 'top 85%', toggleActions: 'play none none none' }
+      });
+    });
+  });
+}
+
+// Profile Image Interaction
 document.addEventListener('DOMContentLoaded', () => {
-  const chatToggle = document.getElementById('chat-toggle');
-  const chatPopup = document.getElementById('chat-popup');
-  const chatClose = document.getElementById('chat-close');
-  const widgetInput = document.getElementById('widget-input');
-  const widgetSend = document.getElementById('widget-send');
-  const widgetMessages = document.getElementById('widget-messages');
+  const img = document.getElementById('profile-image');
+  if (!img) return;
 
-  if (!chatToggle || !chatPopup) return;
-
-  let widgetHistory = [];
-  let isOpen = false;
-
-  chatToggle.addEventListener('click', () => {
-    isOpen = !isOpen;
-    chatPopup.style.display = isOpen ? 'flex' : 'none';
-    chatToggle.innerHTML = isOpen ? '<i class="fas fa-times"></i>' : '<i class="fas fa-comment-dots"></i>';
-    if (isOpen && widgetInput) widgetInput.focus();
+  document.addEventListener('mousemove', (e) => {
+    const rect = img.getBoundingClientRect();
+    const dx = (e.clientX - (rect.left + rect.width / 2)) * 0.05;
+    const dy = (e.clientY - (rect.top + rect.height / 2)) * 0.05;
+    img.style.transform = `translate(${dx}px, ${dy}px)`;
   });
 
-  if (chatClose) {
-    chatClose.addEventListener('click', () => {
-      isOpen = false;
-      chatPopup.style.display = 'none';
-      chatToggle.innerHTML = '<i class="fas fa-comment-dots"></i>';
-    });
-  }
+  img.addEventListener('mouseenter', () => {
+    img.style.boxShadow = '0px 10px 25px rgba(0, 190, 190, 0.5)';
+  });
 
-  function escapeHtml(text) {
-    const div = document.createElement('div');
-    div.textContent = text;
-    return div.innerHTML;
-  }
-
-  function formatResponse(text) {
-    let f = escapeHtml(text);
-    f = f.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
-    f = f.replace(/\*(.*?)\*/g, '<em>$1</em>');
-    f = f.replace(/`(.*?)`/g, '<code>$1</code>');
-    f = f.replace(/\n/g, '<br>');
-    return f;
-  }
-
-  function addWidgetMessage(content, type) {
-    const msg = document.createElement('div');
-    msg.className = `widget-msg ${type}`;
-    msg.innerHTML = type === 'bot' ? formatResponse(content) : escapeHtml(content);
-    widgetMessages.appendChild(msg);
-    widgetMessages.scrollTop = widgetMessages.scrollHeight;
-  }
-
-  async function sendWidgetMessage(message) {
-    if (!message.trim()) return;
-
-    addWidgetMessage(message, 'user');
-    widgetHistory.push({ role: 'user', content: message });
-    widgetInput.value = '';
-
-    const typing = document.createElement('div');
-    typing.className = 'widget-msg bot typing';
-    typing.textContent = 'thinking...';
-    widgetMessages.appendChild(typing);
-    widgetMessages.scrollTop = widgetMessages.scrollHeight;
-
-    try {
-      const response = await fetch('/api/chat', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ message, history: widgetHistory.slice(-8) })
-      });
-
-      typing.remove();
-
-      if (response.ok) {
-        const data = await response.json();
-        addWidgetMessage(data.response, 'bot');
-        widgetHistory.push({ role: 'assistant', content: data.response });
-      } else {
-        addWidgetMessage("Connection issue — try again in a moment.", 'bot');
-      }
-    } catch (error) {
-      typing.remove();
-      addWidgetMessage("Can't reach the server. Try the full chat page for better reliability.", 'bot');
-    }
-  }
-
-  if (widgetSend) {
-    widgetSend.addEventListener('click', () => sendWidgetMessage(widgetInput.value));
-  }
-
-  if (widgetInput) {
-    widgetInput.addEventListener('keydown', (e) => {
-      if (e.key === 'Enter') {
-        e.preventDefault();
-        sendWidgetMessage(widgetInput.value);
-      }
-    });
-  }
+  img.addEventListener('mouseleave', () => {
+    img.style.transform = 'translate(0, 0)';
+    img.style.boxShadow = '0px 5px 15px rgba(0, 0, 0, 0.2)';
+  });
 });
 
 // Password protection (personal.html)
@@ -109,8 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (form) {
     form.addEventListener('submit', function(e) {
       e.preventDefault();
-      const pw = document.getElementById('password').value;
-      if (pw === 'nbaroi') {
+      if (document.getElementById('password').value === 'nbaroi') {
         document.getElementById('login').style.display = 'none';
         document.getElementById('content').style.display = 'block';
       } else {
