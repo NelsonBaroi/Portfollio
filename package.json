@@ -1,7 +1,8 @@
 {
   "name": "nelson-baroi-portfolio",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "vercel dev"
   }
