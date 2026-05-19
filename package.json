@@ -1,11 +1,8 @@
 {
   "name": "nelson-baroi-portfolio",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "private": true,
   "scripts": {
     "dev": "vercel dev"
-  },
-  "dependencies": {
-    "openai": "^4.20.0"
   }
 }
