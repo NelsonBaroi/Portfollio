@@ -14,30 +14,30 @@ body {
   font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   line-height: 1.7;
   color: #333;
-  background: linear-gradient(180deg, #f0f4f8, #ffffff, #f8f0f4, #ffffff, #f0f8f4);
+  background: linear-gradient(180deg, #e0f7f7, #ffffff, #fff0e8, #ffffff, #e0f7f7);
   min-height: 100vh;
   overflow-x: hidden;
 }
 
 a {
-  color: #4567B7;
+  color: #00898a;
   text-decoration: none;
   transition: color 0.2s;
 }
 
 a:hover {
-  color: #e94560;
+  color: #FF7F50;
 }
 
 .section {
   margin: 2rem auto;
   padding: 2.5rem;
   max-width: 900px;
-  background: rgba(255, 255, 255, 0.92);
-  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.88);
+  border-radius: 20px;
   backdrop-filter: blur(10px);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.06);
-  border: 1px solid rgba(0,0,0,0.04);
+  box-shadow: 8px 8px 24px rgba(0, 0, 0, 0.06), -4px -4px 12px rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(0, 190, 190, 0.1);
 }
 
 .section h2 {
@@ -55,7 +55,7 @@ a:hover {
   left: 0;
   width: 50px;
   height: 3px;
-  background: #e94560;
+  background: linear-gradient(90deg, #FF7F50, #00bebe);
   border-radius: 2px;
 }
 
@@ -87,8 +87,8 @@ a:hover {
 .loader {
   width: 40px;
   height: 40px;
-  border: 3px solid #e94560;
-  border-top: 3px solid transparent;
+  border: 3px solid #00bebe;
+  border-top: 3px solid #FF7F50;
   border-radius: 50%;
   animation: spin 0.8s linear infinite;
 }
@@ -105,7 +105,7 @@ a:hover {
 
 /* Header Styling */
 .header {
-  background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+  background: linear-gradient(135deg, #00bebe, #2e5a6e, #FF7F50);
   color: #ffffff;
   padding: 4rem 2rem 3rem;
   display: flex;
@@ -128,7 +128,11 @@ a:hover {
   font-size: 2.5rem;
   font-weight: 700;
   color: #ffffff;
-  text-shadow: 0 2px 10px rgba(233, 69, 96, 0.3);
+  text-shadow:
+    -1px -1px 0 rgba(0,0,0,0.2),
+    1px -1px 0 #FF7F50,
+    -1px 1px 0 rgba(255,255,255,0.3),
+    1px 1px 0 #00bebe;
 }
 
 .header-subtitle {
@@ -152,7 +156,7 @@ a:hover {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  box-shadow: 0 4px 20px rgba(233, 69, 96, 0.3);
+  box-shadow: 0 4px 20px rgba(0, 190, 190, 0.4);
   border: 3px solid rgba(255,255,255,0.8);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   animation: float 3s ease-in-out infinite;
@@ -161,7 +165,7 @@ a:hover {
 
 .profile-container img:hover {
   transform: scale(1.05);
-  box-shadow: 0 8px 30px rgba(233, 69, 96, 0.5);
+  box-shadow: 0 8px 30px rgba(255, 127, 80, 0.5);
 }
 
 /* Timeline */
@@ -185,14 +189,14 @@ a:hover {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background: #e94560;
+  background: linear-gradient(135deg, #FF7F50, #00bebe);
   border: 2px solid #fff;
-  box-shadow: 0 2px 8px rgba(233, 69, 96, 0.3);
+  box-shadow: 0 2px 8px rgba(0, 190, 190, 0.3);
 }
 
 .timeline-date {
   font-size: 0.78rem;
-  color: #e94560;
+  color: #00898a;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.5px;
@@ -241,7 +245,7 @@ a:hover {
 }
 
 .skill-category h3 i {
-  color: #e94560;
+  color: #FF7F50;
   font-size: 1rem;
 }
 
@@ -283,11 +287,11 @@ a:hover {
 
 .cta-button {
   padding: 0.8rem 1.5rem;
-  background: #1a1a2e;
+  background: linear-gradient(135deg, #2e5a6e, #1a4050);
   color: #ffffff;
   font-weight: 500;
   text-decoration: none;
-  border-radius: 8px;
+  border-radius: 25px;
   transition: all 0.3s ease;
   font-size: 0.9rem;
   display: inline-flex;
@@ -296,29 +300,29 @@ a:hover {
 }
 
 .cta-button:hover {
-  background: #e94560;
+  background: linear-gradient(135deg, #FF7F50, #e06a40);
   color: #fff;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 15px rgba(233, 69, 96, 0.3);
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 4px 15px rgba(255, 127, 80, 0.4);
 }
 
 .cta-button.cta-chat {
-  background: #e94560;
+  background: linear-gradient(135deg, #FF7F50, #00bebe);
   animation: pulse 2s infinite;
 }
 
 .cta-button.cta-chat:hover {
-  background: #d63851;
+  background: linear-gradient(135deg, #e06a40, #009999);
 }
 
 @keyframes pulse {
-  0%, 100% { box-shadow: 0 0 0 0 rgba(233, 69, 96, 0.4); }
-  50% { box-shadow: 0 0 0 8px rgba(233, 69, 96, 0); }
+  0%, 100% { box-shadow: 0 0 0 0 rgba(0, 190, 190, 0.4); }
+  50% { box-shadow: 0 0 0 8px rgba(0, 190, 190, 0); }
 }
 
 /* Footer */
 .footer {
-  background: linear-gradient(135deg, #1a1a2e, #16213e);
+  background: linear-gradient(135deg, #00bebe, #2e5a6e, #FF7F50);
   color: #ffffff;
   text-align: center;
   padding: 2rem 1rem;
@@ -339,7 +343,7 @@ a:hover {
 }
 
 .social-icons a:hover {
-  color: #e94560;
+  color: #FF7F50;
   transform: translateY(-2px);
 }
 
@@ -364,19 +368,19 @@ a:hover {
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  background: #e94560;
+  background: linear-gradient(135deg, #FF7F50, #00bebe);
   border: none;
   color: #fff;
   font-size: 1.4rem;
   cursor: pointer;
-  box-shadow: 0 4px 20px rgba(233, 69, 96, 0.4);
+  box-shadow: 0 4px 20px rgba(0, 190, 190, 0.4);
   transition: all 0.3s;
   animation: pulse 2s infinite;
 }
 
 .chat-toggle:hover {
   transform: scale(1.1);
-  box-shadow: 0 6px 30px rgba(233, 69, 96, 0.6);
+  box-shadow: 0 6px 30px rgba(255, 127, 80, 0.6);
 }
 
 .chat-popup {
@@ -410,7 +414,7 @@ a:hover {
   height: 36px;
   border-radius: 50%;
   object-fit: cover;
-  border: 2px solid #e94560;
+  border: 2px solid #00bebe;
 }
 
 .chat-popup-header div {
@@ -438,7 +442,7 @@ a:hover {
   transition: color 0.2s;
 }
 
-.chat-close:hover { color: #e94560; }
+.chat-close:hover { color: #FF7F50; }
 
 .chat-popup-messages {
   flex: 1;
@@ -499,12 +503,12 @@ a:hover {
   outline: none;
 }
 
-.chat-popup-input input:focus { border-color: #e94560; }
+.chat-popup-input input:focus { border-color: #00bebe; }
 .chat-popup-input input::placeholder { color: #555570; }
 
 .chat-popup-input button {
   padding: 10px 14px;
-  background: #e94560;
+  background: linear-gradient(135deg, #FF7F50, #00bebe);
   color: #fff;
   border: none;
   border-radius: 8px;
@@ -512,7 +516,7 @@ a:hover {
   transition: background 0.2s;
 }
 
-.chat-popup-input button:hover { background: #d63851; }
+.chat-popup-input button:hover { background: #FF7F50; }
 
 .chat-fullscreen-link {
   display: block;
@@ -526,7 +530,7 @@ a:hover {
   transition: color 0.2s;
 }
 
-.chat-fullscreen-link:hover { color: #e94560; }
+.chat-fullscreen-link:hover { color: #00bebe; }
 
 /* ============================================
    RESPONSIVE
