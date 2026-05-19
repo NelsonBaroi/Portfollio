@@ -2,87 +2,7 @@
 // Nelson Baroi Portfolio — Script
 // ============================================
 
-// Preloader Animation
-window.addEventListener('load', () => {
-  const preloader = document.querySelector('.preloader');
-  if (preloader) {
-    preloader.style.opacity = '0';
-    setTimeout(() => { preloader.style.display = 'none'; }, 500);
-  }
-});
-
-// Fallback preloader removal
-setTimeout(() => {
-  const preloader = document.querySelector('.preloader');
-  if (preloader) {
-    preloader.style.opacity = '0';
-    setTimeout(() => { preloader.style.display = 'none'; }, 500);
-  }
-}, 3000);
-
-// GSAP Scroll Animations
-if (typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined') {
-  gsap.registerPlugin(ScrollTrigger);
-
-  document.addEventListener('DOMContentLoaded', () => {
-    gsap.utils.toArray('.section').forEach(section => {
-      gsap.from(section, {
-        opacity: 0,
-        y: 40,
-        duration: 0.8,
-        ease: 'power2.out',
-        scrollTrigger: {
-          trigger: section,
-          start: 'top 85%',
-          toggleActions: 'play none none none'
-        }
-      });
-    });
-  });
-}
-
-// Profile Image Interaction
-document.addEventListener('DOMContentLoaded', () => {
-  const profileImage = document.getElementById('profile-image');
-  if (profileImage) {
-    profileImage.addEventListener('mouseenter', () => {
-      profileImage.style.transition = 'transform 0.3s ease, box-shadow 0.3s ease';
-      profileImage.style.boxShadow = '0px 8px 30px rgba(233, 69, 96, 0.5)';
-    });
-
-    profileImage.addEventListener('mouseleave', () => {
-      profileImage.style.transition = 'transform 0.5s ease, box-shadow 0.5s ease';
-      profileImage.style.transform = 'translate(0, 0)';
-      profileImage.style.boxShadow = '0px 4px 20px rgba(233, 69, 96, 0.3)';
-    });
-  }
-
-  // Password protection (for personal.html)
-  const passwordForm = document.getElementById('passwordForm');
-  if (passwordForm) {
-    passwordForm.addEventListener('submit', function(e) {
-      e.preventDefault();
-      const password = document.getElementById('password').value;
-      if (password === 'nbaroi') {
-        document.getElementById('login').style.display = 'none';
-        document.getElementById('content').style.display = 'block';
-        if (document.getElementById('error')) {
-          document.getElementById('error').style.display = 'none';
-        }
-      } else {
-        if (document.getElementById('error')) {
-          document.getElementById('error').style.display = 'block';
-        }
-      }
-    });
-  }
-});
-
-
-// ============================================
-// CHAT WIDGET
-// ============================================
-
+// Chat Widget
 document.addEventListener('DOMContentLoaded', () => {
   const chatToggle = document.getElementById('chat-toggle');
   const chatPopup = document.getElementById('chat-popup');
@@ -96,7 +16,6 @@ document.addEventListener('DOMContentLoaded', () => {
   let widgetHistory = [];
   let isOpen = false;
 
-  // Toggle chat popup
   chatToggle.addEventListener('click', () => {
     isOpen = !isOpen;
     chatPopup.style.display = isOpen ? 'flex' : 'none';
@@ -104,7 +23,6 @@ document.addEventListener('DOMContentLoaded', () => {
     if (isOpen && widgetInput) widgetInput.focus();
   });
 
-  // Close button
   if (chatClose) {
     chatClose.addEventListener('click', () => {
       isOpen = false;
@@ -120,12 +38,12 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function formatResponse(text) {
-    let formatted = escapeHtml(text);
-    formatted = formatted.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
-    formatted = formatted.replace(/\*(.*?)\*/g, '<em>$1</em>');
-    formatted = formatted.replace(/`(.*?)`/g, '<code>$1</code>');
-    formatted = formatted.replace(/\n/g, '<br>');
-    return formatted;
+    let f = escapeHtml(text);
+    f = f.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+    f = f.replace(/\*(.*?)\*/g, '<em>$1</em>');
+    f = f.replace(/`(.*?)`/g, '<code>$1</code>');
+    f = f.replace(/\n/g, '<br>');
+    return f;
   }
 
   function addWidgetMessage(content, type) {
@@ -134,7 +52,6 @@ document.addEventListener('DOMContentLoaded', () => {
     msg.innerHTML = type === 'bot' ? formatResponse(content) : escapeHtml(content);
     widgetMessages.appendChild(msg);
     widgetMessages.scrollTop = widgetMessages.scrollHeight;
-    return msg;
   }
 
   async function sendWidgetMessage(message) {
@@ -144,7 +61,6 @@ document.addEventListener('DOMContentLoaded', () => {
     widgetHistory.push({ role: 'user', content: message });
     widgetInput.value = '';
 
-    // Typing indicator
     const typing = document.createElement('div');
     typing.className = 'widget-msg bot typing';
     typing.textContent = 'thinking...';
@@ -155,10 +71,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const response = await fetch('/api/chat', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          message: message,
-          history: widgetHistory.slice(-8)
-        })
+        body: JSON.stringify({ message, history: widgetHistory.slice(-8) })
       });
 
       typing.remove();
@@ -172,21 +85,37 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     } catch (error) {
       typing.remove();
-      addWidgetMessage("Can't reach the server right now. Open the full chat page for the best experience.", 'bot');
+      addWidgetMessage("Can't reach the server. Try the full chat page for better reliability.", 'bot');
     }
   }
 
-  // Send button
   if (widgetSend) {
     widgetSend.addEventListener('click', () => sendWidgetMessage(widgetInput.value));
   }
 
-  // Enter key
   if (widgetInput) {
     widgetInput.addEventListener('keydown', (e) => {
       if (e.key === 'Enter') {
         e.preventDefault();
         sendWidgetMessage(widgetInput.value);
+      }
+    });
+  }
+});
+
+// Password protection (personal.html)
+document.addEventListener('DOMContentLoaded', () => {
+  const form = document.getElementById('passwordForm');
+  if (form) {
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const pw = document.getElementById('password').value;
+      if (pw === 'nbaroi') {
+        document.getElementById('login').style.display = 'none';
+        document.getElementById('content').style.display = 'block';
+      } else {
+        const err = document.getElementById('error');
+        if (err) err.style.display = 'block';
       }
     });
   }
