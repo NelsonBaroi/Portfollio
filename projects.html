@@ -1,144 +1,483 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nelson Baroi - Projects</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <script src="script.js" defer></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-</head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Nelson Baroi — software projects in voice synthesis, visual AI, statistical simulation, and local tooling.">
+  <title>Projects — Nelson Baroi</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    .projects-intro {
+      margin-bottom: 2.5rem;
+      max-width: 680px;
+    }
 
+    .project {
+      border-top: 1px solid rgba(0,0,0,0.08);
+      padding: 2.5rem 0 1.5rem;
+    }
+
+    .project:first-of-type {
+      border-top: none;
+      padding-top: 0;
+    }
+
+    .project h2 {
+      margin-bottom: 0.25rem;
+    }
+
+    .project-tagline {
+      opacity: 0.6;
+      font-size: 0.95rem;
+      margin-top: 0;
+      margin-bottom: 1.25rem;
+      font-style: italic;
+    }
+
+    .project-body {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem 3rem;
+      margin-bottom: 1.25rem;
+    }
+
+    @media (max-width: 640px) {
+      .project-body {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+      }
+    }
+
+    .project-body h4 {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      opacity: 0.5;
+      margin: 0 0 0.5rem;
+    }
+
+    .project-body ul {
+      margin: 0;
+      padding-left: 1.1rem;
+    }
+
+    .project-body ul li {
+      font-size: 0.92rem;
+      margin-bottom: 0.25rem;
+      opacity: 0.85;
+    }
+
+    .project-learned {
+      font-size: 0.93rem;
+      line-height: 1.65;
+      opacity: 0.85;
+      max-width: 660px;
+      margin-bottom: 1rem;
+    }
+
+    .project-learned strong {
+      display: block;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      opacity: 0.5;
+      margin-bottom: 0.4rem;
+    }
+
+    .stack-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin-top: 0.75rem;
+    }
+
+    .stack-tag {
+      font-size: 0.78rem;
+      padding: 0.2rem 0.6rem;
+      border-radius: 3px;
+      border: 1px solid rgba(0,0,0,0.15);
+      opacity: 0.7;
+      font-family: monospace;
+    }
+
+    .project-link {
+      font-size: 0.82rem;
+      opacity: 0.45;
+      text-decoration: none;
+      border-bottom: 1px solid currentColor;
+    }
+
+    .project-link:hover {
+      opacity: 0.75;
+    }
+  </style>
+</head>
 <body>
-    <!-- Preloader -->
-    <div class="preloader">
-        <div class="loader"></div>
+
+  <!-- Preloader -->
+  <div class="preloader">
+    <div class="loader"></div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <h1 class="gradient-text">Projects</h1>
+  </header>
+
+  <!-- Navigation -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="button-container">
+        <a href="index.html" class="cta-button"><i class="fas fa-home"></i> Home</a>
+        <a href="philosophy.html" class="cta-button"><i class="fas fa-lightbulb"></i> Philosophy</a>
+        <a href="cv.html" class="cta-button"><i class="fas fa-file-alt"></i> CV</a>
+        <a href="courses.html" class="cta-button"><i class="fas fa-graduation-cap"></i> Courses</a>
+        <a href="chat.html" class="cta-button cta-chat"><i class="fas fa-comment-dots"></i> Chat</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Content -->
+  <section class="section">
+    <p class="projects-intro">
+      A selection of tools I've built while exploring AI, audio, and simulation.
+      Each one started with a specific question — not a technology to showcase.
+      The approaches vary, but the goal was always the same: understand how something
+      actually works by building it.
+    </p>
+
+    <!-- 1. AI Memory -->
+    <div class="project">
+      <h2>AI Memory</h2>
+      <p class="project-tagline">Local knowledge base with file indexing and interactive Q&A</p>
+
+      <div class="project-body">
+        <div>
+          <h4>What I worked on</h4>
+          <ul>
+            <li>Real-time file watcher that indexes new and modified files automatically</li>
+            <li>Embedding-based semantic search across the indexed knowledge base</li>
+            <li>LLM-powered Q&A that answers questions from retrieved context</li>
+            <li>Threshold tuning for when retrieval should trigger vs. general knowledge</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Stack</h4>
+          <div class="stack-tags">
+            <span class="stack-tag">Python</span>
+            <span class="stack-tag">Embeddings</span>
+            <span class="stack-tag">Watchdog</span>
+            <span class="stack-tag">LLM Q&A</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-learned">
+        <strong>What I learned</strong>
+        The more interesting problem wasn't indexing — it was deciding when a search result
+        is relevant enough to use. Retrieval-augmented generation is only as good as the
+        relevance filter in front of it; without that, the model confidently answers from
+        the wrong document.
+      </div>
+
+      <a class="project-link" href="https://github.com/NelsonBaroi/AI-Memory" target="_blank" rel="noopener">github.com/NelsonBaroi/AI-Memory</a>
     </div>
 
-    <!-- Header Section -->
-    <header class="header">
-        <h1 class="gradient-text">Projects</h1>
-        
-    </header>
+    <!-- 2. Qwen Voice Cloner -->
+    <div class="project">
+      <h2>Qwen Voice Cloner</h2>
+      <p class="project-tagline">Multi-language voice cloning using Qwen3-TTS</p>
 
-
-    <style>
-        /* General styling for the section */
-        #project {
-            padding: 20px;
-            background-color: #f9f9f9;
-        }
-
-        /* Styling for the project grid container */
-        .project-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
-            gap: 20px; /* Space between grid items */
-        }
-
-        /* Individual project box styling */
-        .project-box {
-            background-color: #ffffff;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            text-align: center;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        /* Hover effect for project boxes */
-        .project-box:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-        }
-
-        /* Project image styling */
-        .project-box img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-
-        /* Project title/link styling */
-        .project-box h3 {
-            margin: 10px 0;
-            font-size: 1.2rem;
-            color: #333;
-        }
-
-        .project-box a {
-            display: inline-block;
-            margin-bottom: 15px;
-            color: #007BFF;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .project-box a:hover {
-            text-decoration: underline;
-        }
-    </style>
-    
-<section id="project" class="section">
-   
-    <!-- Project Grid -->
-    <div class="project-grid">
-        <!-- Project 1 -->
-        <div class="project-box">
-            <img src="images/dnd.png" alt="Project 1">
-            <h3>Portfolio Creator</h3>
-            <a href="https://nelsonbaroi.github.io/Drag-and-Drop-Portfolio-Builder/" target="_blank">View Project</a>
+      <div class="project-body">
+        <div>
+          <h4>What I worked on</h4>
+          <ul>
+            <li>Voice cloning pipeline: upload a reference sample, generate matching speech</li>
+            <li>Voice design from text descriptions ("warm, calm, slightly accented")</li>
+            <li>Built-in speaker library and voice sample management</li>
+            <li>CUDA / bfloat16 optimization for GPU inference; CPU fallback</li>
+            <li>10-language support: English, Russian, Chinese, Japanese, Korean, and more</li>
+          </ul>
         </div>
-
-        <!-- Project 2 -->
-        <div class="project-box">
-            <img src="images/otaf.jpg" alt="OTAF">
-            <h3>OTAF</h3>
-            <a href="https://doi.org/10.5281/zenodo.17451832"target="_blank">View Research</a>
+        <div>
+          <h4>Stack</h4>
+          <div class="stack-tags">
+            <span class="stack-tag">Python</span>
+            <span class="stack-tag">PyTorch</span>
+            <span class="stack-tag">Qwen3-TTS</span>
+            <span class="stack-tag">Gradio</span>
+            <span class="stack-tag">SoundFile</span>
+            <span class="stack-tag">Librosa</span>
+          </div>
         </div>
+      </div>
 
-        <!-- Project 3 -->
-        <div class="project-box">
-            <img src="https://via.placeholder.com/250" alt="Project 3">
-            <h3>Skyrocket</h3>
-            <a href="#">View Project</a>
+      <div class="project-learned">
+        <strong>What I learned</strong>
+        Small errors in transcript alignment — a word cut off, a pause misread — compound
+        into noticeable artifacts in the output. The preprocessing pipeline matters as much
+        as the model. I also found that voice design from text descriptions is harder to
+        control than cloning from a real sample; the model's interpretation of "warm" varies.
+      </div>
+
+      <a class="project-link" href="https://github.com/NelsonBaroi/Qwen-Voice-Cloner" target="_blank" rel="noopener">github.com/NelsonBaroi/Qwen-Voice-Cloner</a>
+    </div>
+
+    <!-- 3. Hairstyle Try-On -->
+    <div class="project">
+      <h2>Hairstyle Try-On</h2>
+      <p class="project-tagline">AI-powered hairstyle editing with FLUX and Qwen cloud models</p>
+
+      <div class="project-body">
+        <div>
+          <h4>What I worked on</h4>
+          <ul>
+            <li>Image intake, face detection, and preprocessing pipeline</li>
+            <li>Dual-engine architecture: FLUX as primary, Qwen as automatic fallback</li>
+            <li>15+ hair colors with a custom hex picker</li>
+            <li>Gender-specific style catalogs; generation history for comparison</li>
+            <li>Multi-language UI (English and Russian)</li>
+          </ul>
         </div>
-
-        <!-- Project 4 -->
-        <div class="project-box">
-            <img src="https://via.placeholder.com/250" alt="Project 4">
-            <h3>Skyrocket</h3>
-            <a href="#">View Project</a>
+        <div>
+          <h4>Stack</h4>
+          <div class="stack-tags">
+            <span class="stack-tag">Python</span>
+            <span class="stack-tag">Streamlit</span>
+            <span class="stack-tag">Pillow</span>
+            <span class="stack-tag">OpenCV</span>
+            <span class="stack-tag">FLUX API</span>
+            <span class="stack-tag">Qwen API</span>
+          </div>
         </div>
-     
-   
-    </section>
+      </div>
 
+      <div class="project-learned">
+        <strong>What I learned</strong>
+        Designing for model unreliability was the main engineering challenge. Cloud APIs
+        fail intermittently, and if the app doesn't handle that gracefully, the user sees
+        an error rather than a result. Building the fallback path at the UI layer — so
+        the switch from FLUX to Qwen is invisible — made the experience feel stable
+        even when individual calls weren't.
+      </div>
 
+      <a class="project-link" href="https://github.com/NelsonBaroi/Hairstyle-Try-On" target="_blank" rel="noopener">github.com/NelsonBaroi/Hairstyle-Try-On</a>
+    </div>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <div class="button-container">
-                <a href="index.html" class="cta-button">Back to Portfolio</a>
-                <a href="personal.html" class="cta-button">Personal</a>
-            </div>
+    <!-- 4. Parallel Universe Me -->
+    <div class="project">
+      <h2>Parallel Universe Me</h2>
+      <p class="project-tagline">Life simulation using Monte Carlo methods and real statistical datasets</p>
+
+      <div class="project-body">
+        <div>
+          <h4>What I worked on</h4>
+          <ul>
+            <li>Monte Carlo simulation engine for probabilistic life-path modeling</li>
+            <li>Causal DAGs mapping decision trees with statistical outcome weights</li>
+            <li>Data compilation from BLS, OECD, World Bank, and Kauffman research</li>
+            <li>LLM narrator that interprets simulation output — without generating numbers</li>
+            <li>Gradio frontend with Plotly visualizations; Vercel serverless deployment</li>
+          </ul>
         </div>
-    </section>
+        <div>
+          <h4>Stack</h4>
+          <div class="stack-tags">
+            <span class="stack-tag">Python</span>
+            <span class="stack-tag">Gradio</span>
+            <span class="stack-tag">Plotly</span>
+            <span class="stack-tag">Pandas</span>
+            <span class="stack-tag">Monte Carlo</span>
+            <span class="stack-tag">Vercel</span>
+          </div>
+        </div>
+      </div>
 
-     <!-- Contact Information -->
+      <div class="project-learned">
+        <strong>What I learned</strong>
+        Keeping the LLM out of the data generation was a deliberate constraint — and the
+        right one. Once a model starts producing statistics, users can't distinguish them
+        from real ones, which undermines the whole point. The LLM's role here is narrative:
+        it explains what the Monte Carlo output means. The numbers come from real datasets.
+        That separation is harder to maintain architecturally than it sounds.
+      </div>
+
+      <a class="project-link" href="https://github.com/NelsonBaroi/parallel-universe-me" target="_blank" rel="noopener">github.com/NelsonBaroi/parallel-universe-me</a>
+    </div>
+
+    <!-- 5. SFX Generator -->
+    <div class="project">
+      <h2>SFX Generator</h2>
+      <p class="project-tagline">Procedural sound effects from signal processing — no samples required</p>
+
+      <div class="project-body">
+        <div>
+          <h4>What I worked on</h4>
+          <ul>
+            <li>18+ SFX types: impacts, sweeps, drones, glitches, ambient textures, alarms</li>
+            <li>Butterworth filters, amplitude envelopes, LFO modulation from scratch</li>
+            <li>Adjustable duration, frequency, intensity, and stereo pan per effect</li>
+            <li>Batch generation mode; WAV export at 44.1 kHz, 16-bit stereo</li>
+            <li>Tkinter desktop GUI for interactive use</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Stack</h4>
+          <div class="stack-tags">
+            <span class="stack-tag">Python</span>
+            <span class="stack-tag">NumPy</span>
+            <span class="stack-tag">SciPy</span>
+            <span class="stack-tag">SoundFile</span>
+            <span class="stack-tag">Tkinter</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-learned">
+        <strong>What I learned</strong>
+        This project uses no AI models — everything is signal processing. That turned out
+        to be a useful exercise: designing sounds from frequency curves and filter shapes
+        requires understanding what you actually want the audio to do, rather than
+        describing it in natural language and hoping a model interprets it correctly.
+        Procedural generation gives you complete control, at the cost of needing to know
+        what you're controlling.
+      </div>
+
+      <a class="project-link" href="https://github.com/NelsonBaroi/SFX-Generator" target="_blank" rel="noopener">github.com/NelsonBaroi/SFX-Generator</a>
+    </div>
+
+    <!-- 6. Kira -->
+    <div class="project">
+      <h2>Kira</h2>
+      <p class="project-tagline">Structured personal knowledge base designed for LLM context injection</p>
+
+      <div class="project-body">
+        <div>
+          <h4>What I worked on</h4>
+          <ul>
+            <li>Organized 19-chapter biography, career materials, and relocation planning</li>
+            <li>Visa queue analytics: Python scripts, weekly CSV datasets, 13 statistical charts</li>
+            <li>Machine-readable manifest.json indexing all files by category and format</li>
+            <li>Exported and structured 6 months of AI conversation history</li>
+            <li>Designed for reuse: any file can be fed as context to any LLM tool</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Stack</h4>
+          <div class="stack-tags">
+            <span class="stack-tag">Python</span>
+            <span class="stack-tag">Markdown</span>
+            <span class="stack-tag">JSON</span>
+            <span class="stack-tag">HTML</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-learned">
+        <strong>What I learned</strong>
+        A knowledge base is only useful if you can retrieve the right piece at the right
+        time. The manifest.json — a structured index of every file with metadata — was
+        the detail that made everything else work. Without it, the repository is just
+        a folder of documents. With it, any tool can navigate the contents without
+        reading everything. The real challenge was deciding what belongs in a knowledge
+        base versus what belongs in a conversation.
+      </div>
+
+      <a class="project-link" href="https://github.com/NelsonBaroi/Kira" target="_blank" rel="noopener">github.com/NelsonBaroi/Kira</a>
+    </div>
+
+    <!-- 7. Web Apps Collection monorepo note -->
+    <div class="project">
+      <h2>Web Apps Collection</h2>
+      <p class="project-tagline">Monorepo of 12 projects: polling apps, chatbots, portfolio builder, OCR pipeline, AI renamer, and more</p>
+
+      <div class="project-body">
+        <div>
+          <h4>Included projects</h4>
+          <ul>
+            <li><strong>simplechat</strong> — AI intent-based chatbot (Flask)</li>
+            <li><strong>Drag-and-Drop-Portfolio-Builder</strong> — visual portfolio creator</li>
+            <li><strong>ai-assistant-portfolio</strong> — FastAPI + React AI assistant</li>
+            <li><strong>polling-app</strong> & <strong>polling-app-enhanced</strong> — full-stack polling with Docker</li>
+            <li><strong>Register</strong> — OCR expense extraction pipeline</li>
+            <li><strong>AI-Renamer</strong> — Gemini-powered file renamer</li>
+            <li><strong>chatbot</strong> — Nelson's AI Twin with RAG</li>
+            <li><strong>nextjs-ai-chatbot</strong> — Vercel AI SDK chatbot</li>
+            <li><strong>Correspondence</strong> — document management</li>
+            <li><strong>github-final-project</strong> — micro-finance startup</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Stack</h4>
+          <div class="stack-tags">
+            <span class="stack-tag">Python</span>
+            <span class="stack-tag">Flask</span>
+            <span class="stack-tag">FastAPI</span>
+            <span class="stack-tag">React</span>
+            <span class="stack-tag">Next.js</span>
+            <span class="stack-tag">Express.js</span>
+            <span class="stack-tag">Docker</span>
+            <span class="stack-tag">SQLite</span>
+            <span class="stack-tag">PostgreSQL</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-learned">
+        <strong>What I learned</strong>
+        Consolidating 12 separate repositories into one monorepo taught me that consistent
+        tooling across projects matters more than any individual feature. Standardizing
+        .gitignore patterns, README conventions, and dependency management across Python
+        and JavaScript projects requires a lightweight structure that doesn't get in the
+        way of each project's autonomy.
+      </div>
+
+      <a class="project-link" href="https://github.com/NelsonBaroi/web-apps-collection" target="_blank" rel="noopener">github.com/NelsonBaroi/web-apps-collection</a>
+    </div>
+
+  </section>
+
+  <!-- Footer -->
   <footer class="footer">
     <div class="container">
       <div class="social-icons">
-        <a href="https://www.linkedin.com/in/nbaroi" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="https://www.facebook.com/noel.baroi" target="_blank"><i class="fab fa-facebook"></i></a>
-        <a href="https://www.instagram.com/noel0007000" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/nbaroi" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.facebook.com/noel.baroi" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/noel0007000" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="mailto:nelson6114007@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
       </div>
-      <p>&copy; 2025 Nelson Baroi. All rights reserved.</p>
+      <p>&copy; 2026 Nelson Baroi. All rights reserved.</p>
     </div>
   </footer>
+
+  <!-- Chatbot Widget (floating) -->
+  <div id="chat-widget" class="chat-widget">
+    <button id="chat-toggle" class="chat-toggle" title="Chat with Nelson's AI Twin">
+      <i class="fas fa-comment-dots"></i>
+    </button>
+    <div id="chat-popup" class="chat-popup" style="display:none;">
+      <div class="chat-popup-header">
+        <img src="images/profile.jpg" alt="Nelson">
+        <div>
+          <strong>Nelson Baroi</strong>
+          <span>AI Twin — Ask me anything</span>
+        </div>
+        <button id="chat-close" class="chat-close"><i class="fas fa-times"></i></button>
+      </div>
+      <div class="chat-popup-messages" id="widget-messages">
+        <div class="widget-msg bot">Hey! I'm Nelson's AI twin. Ask me about my projects, career, skills, education, or Ireland plans. I'll give it to you straight.</div>
+      </div>
+      <div class="chat-popup-input">
+        <input type="text" id="widget-input" placeholder="Ask Nelson..." autocomplete="off">
+        <button id="widget-send"><i class="fas fa-paper-plane"></i></button>
+      </div>
+      <a href="chat.html" class="chat-fullscreen-link">Open full chat <i class="fas fa-expand"></i></a>
+    </div>
+  </div>
+
+  <script src="script.js" defer></script>
 </body>
 </html>
