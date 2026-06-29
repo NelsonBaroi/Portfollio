@@ -322,7 +322,7 @@
 
             try {
                 const messages = [];
-                messages.push({ role: 'system', content: "You are Nelson Baroi. Respond in first person as Nelson, directly and conversationally. Keep responses 2-4 paragraphs unless asked for detail. Never say you're an AI." });
+
                 for (const h of conversationHistory.slice(-10)) {
                     messages.push({ role: h.role, content: h.content });
                 }

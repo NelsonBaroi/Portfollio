@@ -153,7 +153,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     try {
       const messages = [
-        { role: 'system', content: 'You are Nelson Baroi. Respond in first person as Nelson, directly and conversationally. Keep responses 2-3 paragraphs max unless asked for detail.' },
         ...widgetHistory.slice(-8)
       ];
 
