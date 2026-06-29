@@ -104,17 +104,22 @@ I'm an AI twin that learns autonomously — scrapes web data, learns from conver
   // Try to get AI response
   let botResponse = null;
 
-  // Provider 1: OpenAI (if key exists)
+  // Provider 1: Local Ollama fine-tuned model (api.nbaroi.com)
+  if (!botResponse) {
+    botResponse = await tryOllama(messages);
+  }
+
+  // Provider 2: OpenAI (if key exists)
   if (!botResponse) {
     botResponse = await tryOpenAI(messages);
   }
 
-  // Provider 2: Free alternatives
+  // Provider 3: Free alternatives
   if (!botResponse) {
     botResponse = await tryFreeProviders(messages);
   }
 
-  // Provider 3: ALWAYS-WORKING smart fallback (no external API needed)
+  // Provider 4: ALWAYS-WORKING smart fallback (no external API needed)
   if (!botResponse) {
     botResponse = getSmartFallback(message);
   }
@@ -155,6 +160,26 @@ I'm an AI twin that learns autonomously — scrapes web data, learns from conver
 // ============================================
 // AI PROVIDERS
 // ============================================
+
+async function tryOllama(messages) {
+  try {
+    const response = await fetch('https://api.nbaroi.com/api/chat', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        model: 'nelson-bot',
+        messages,
+        stream: false
+      })
+    });
+
+    if (response.ok) {
+      const data = await response.json();
+      return data.message?.content || null;
+    }
+  } catch (e) { /* fall through */ }
+  return null;
+}
 
 async function tryOpenAI(messages) {
   const apiKey = process.env.OPENAI_API_KEY;
