@@ -152,12 +152,18 @@ document.addEventListener('DOMContentLoaded', () => {
     widgetMessages.scrollTop = widgetMessages.scrollHeight;
 
     try {
-      const response = await fetch('/api/chat', {
+      const messages = [
+        { role: 'system', content: 'You are Nelson Baroi. Respond in first person as Nelson, directly and conversationally. Keep responses 2-3 paragraphs max unless asked for detail.' },
+        ...widgetHistory.slice(-8)
+      ];
+
+      const response = await fetch('https://api.nbaroi.com/api/chat', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          message: message,
-          history: widgetHistory.slice(-8)
+          model: 'nelson-bot',
+          messages,
+          stream: false
         })
       });
 
@@ -165,8 +171,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
       if (response.ok) {
         const data = await response.json();
-        addWidgetMessage(data.response, 'bot');
-        widgetHistory.push({ role: 'assistant', content: data.response });
+        const reply = data.message?.content || "I'm not sure how to answer that.";
+        addWidgetMessage(reply, 'bot');
+        widgetHistory.push({ role: 'assistant', content: reply });
       } else {
         addWidgetMessage("Connection issue — try again in a moment.", 'bot');
       }
