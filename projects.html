@@ -3,12 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Nelson Baroi — software projects in voice synthesis, visual AI, statistical simulation, and local tooling.">
-  <title>Projects — Nelson Baroi</title>
+    <meta name="description" content="Nelson Baroi — software projects in voice synthesis, visual AI, statistical simulation, and local tooling." data-i18n-meta="projects.meta_desc">
+    <title data-i18n="projects.title">Projects — Nelson Baroi</title>
   <link rel="stylesheet" href="styles.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    .lang-switcher {
+      position: fixed; top: 16px; right: 16px; z-index: 10001;
+      display: flex; gap: 4px;
+      background: rgba(255,255,255,0.15); backdrop-filter: blur(8px);
+      padding: 4px; border-radius: 8px;
+      border: 1px solid rgba(255,255,255,0.2);
+    }
+    .lang-btn {
+      background: transparent; border: none; color: rgba(255,255,255,0.6);
+      padding: 4px 10px; border-radius: 6px; cursor: pointer;
+      font-size: 0.78rem; font-weight: 600; font-family: 'Segoe UI', sans-serif;
+      transition: all 0.2s;
+    }
+    .lang-btn:hover { color: #fff; background: rgba(255,255,255,0.15); }
+    .lang-btn.active { color: #fff; background: rgba(255,127,80,0.7); }
+    .lang-btn.active:hover { background: rgba(255,127,80,0.9); }
+  </style>
   <style>
     .projects-intro {
       margin-bottom: 2.5rem;
@@ -122,27 +140,34 @@
     <div class="loader"></div>
   </div>
 
+  <!-- Language Switcher -->
+  <div class="lang-switcher">
+    <button class="lang-btn active" data-lang="en" onclick="switchLanguage('en')">EN</button>
+    <button class="lang-btn" data-lang="ru" onclick="switchLanguage('ru')">RU</button>
+    <button class="lang-btn" data-lang="bn" onclick="switchLanguage('bn')">BN</button>
+  </div>
+
   <!-- Header -->
   <header class="header">
-    <h1 class="gradient-text">Projects</h1>
+    <h1 class="gradient-text" data-i18n="projects.header">Projects</h1>
   </header>
 
   <!-- Navigation -->
   <section class="hero">
     <div class="hero-content">
       <div class="button-container">
-        <a href="index.html" class="cta-button"><i class="fas fa-home"></i> Home</a>
-        <a href="philosophy.html" class="cta-button"><i class="fas fa-lightbulb"></i> Philosophy</a>
-        <a href="cv.html" class="cta-button"><i class="fas fa-file-alt"></i> CV</a>
-        <a href="courses.html" class="cta-button"><i class="fas fa-graduation-cap"></i> Courses</a>
-        <a href="chat.html" class="cta-button cta-chat"><i class="fas fa-comment-dots"></i> Chat</a>
+        <a href="index.html" class="cta-button"><i class="fas fa-home"></i> <span data-i18n="projects.nav_home">Home</span></a>
+        <a href="philosophy.html" class="cta-button"><i class="fas fa-lightbulb"></i> <span data-i18n="projects.nav_philosophy">Philosophy</span></a>
+        <a href="cv.html" class="cta-button"><i class="fas fa-file-alt"></i> <span data-i18n="projects.nav_cv">CV</span></a>
+        <a href="courses.html" class="cta-button"><i class="fas fa-graduation-cap"></i> <span data-i18n="projects.nav_courses">Courses</span></a>
+        <a href="chat.html" class="cta-button cta-chat"><i class="fas fa-comment-dots"></i> <span data-i18n="projects.nav_chat">Chat</span></a>
       </div>
     </div>
   </section>
 
   <!-- Projects Content -->
   <section class="section">
-    <p class="projects-intro">
+    <p class="projects-intro" data-i18n="projects.intro">
       A selection of tools I've built while exploring AI, audio, and simulation.
       Each one started with a specific question — not a technology to showcase.
       The approaches vary, but the goal was always the same: understand how something
@@ -151,17 +176,17 @@
 
     <!-- 1. AI Memory -->
     <div class="project">
-      <h2>AI Memory</h2>
-      <p class="project-tagline">Local knowledge base with file indexing and interactive Q&A</p>
+      <h2 data-i18n="projects.p1_title">AI Memory</h2>
+      <p class="project-tagline" data-i18n="projects.p1_tagline">Local knowledge base with file indexing and interactive Q&A</p>
 
       <div class="project-body">
         <div>
-          <h4>What I worked on</h4>
+          <h4 data-i18n="projects.p1_section1_title">What I worked on</h4>
           <ul>
-            <li>Real-time file watcher that indexes new and modified files automatically</li>
-            <li>Embedding-based semantic search across the indexed knowledge base</li>
-            <li>LLM-powered Q&A that answers questions from retrieved context</li>
-            <li>Threshold tuning for when retrieval should trigger vs. general knowledge</li>
+            <li data-i18n="projects.p1_section1_item1">Real-time file watcher that indexes new and modified files automatically</li>
+            <li data-i18n="projects.p1_section1_item2">Embedding-based semantic search across the indexed knowledge base</li>
+            <li data-i18n="projects.p1_section1_item3">LLM-powered Q&A that answers questions from retrieved context</li>
+            <li data-i18n="projects.p1_section1_item4">Threshold tuning for when retrieval should trigger vs. general knowledge</li>
           </ul>
         </div>
         <div>
@@ -176,11 +201,11 @@
       </div>
 
       <div class="project-learned">
-        <strong>What I learned</strong>
-        The more interesting problem wasn't indexing — it was deciding when a search result
+        <strong data-i18n="projects.p1_section2_title">What I learned</strong>
+        <span data-i18n="projects.p1_section2_text">The more interesting problem wasn't indexing — it was deciding when a search result
         is relevant enough to use. Retrieval-augmented generation is only as good as the
         relevance filter in front of it; without that, the model confidently answers from
-        the wrong document.
+        the wrong document.</span>
       </div>
 
       <a class="project-link" href="https://github.com/NelsonBaroi/AI-Memory" target="_blank" rel="noopener">github.com/NelsonBaroi/AI-Memory</a>
@@ -188,18 +213,18 @@
 
     <!-- 2. Qwen Voice Cloner -->
     <div class="project">
-      <h2>Qwen Voice Cloner</h2>
-      <p class="project-tagline">Multi-language voice cloning using Qwen3-TTS</p>
+      <h2 data-i18n="projects.p2_title">Qwen Voice Cloner</h2>
+      <p class="project-tagline" data-i18n="projects.p2_tagline">Multi-language voice cloning using Qwen3-TTS</p>
 
       <div class="project-body">
         <div>
-          <h4>What I worked on</h4>
+          <h4 data-i18n="projects.p1_section1_title">What I worked on</h4>
           <ul>
-            <li>Voice cloning pipeline: upload a reference sample, generate matching speech</li>
-            <li>Voice design from text descriptions ("warm, calm, slightly accented")</li>
-            <li>Built-in speaker library and voice sample management</li>
-            <li>CUDA / bfloat16 optimization for GPU inference; CPU fallback</li>
-            <li>10-language support: English, Russian, Chinese, Japanese, Korean, and more</li>
+            <li data-i18n="projects.p2_item1">Voice cloning pipeline: upload a reference sample, generate matching speech</li>
+            <li data-i18n="projects.p2_item2">Voice design from text descriptions ("warm, calm, slightly accented")</li>
+            <li data-i18n="projects.p2_item3">Built-in speaker library and voice sample management</li>
+            <li data-i18n="projects.p2_item4">CUDA / bfloat16 optimization for GPU inference; CPU fallback</li>
+            <li data-i18n="projects.p2_item5">10-language support: English, Russian, Chinese, Japanese, Korean, and more</li>
           </ul>
         </div>
         <div>
@@ -216,11 +241,11 @@
       </div>
 
       <div class="project-learned">
-        <strong>What I learned</strong>
-        Small errors in transcript alignment — a word cut off, a pause misread — compound
+        <strong data-i18n="projects.p1_section2_title">What I learned</strong>
+        <span data-i18n="projects.p2_learned">Small errors in transcript alignment — a word cut off, a pause misread — compound
         into noticeable artifacts in the output. The preprocessing pipeline matters as much
         as the model. I also found that voice design from text descriptions is harder to
-        control than cloning from a real sample; the model's interpretation of "warm" varies.
+        control than cloning from a real sample; the model's interpretation of "warm" varies.</span>
       </div>
 
 <a class="project-link" href="https://huggingface.co/spaces/creativestudio1122/qwen-voice-cloner" target="_blank" rel="noopener">Live Demo</a> · <a class="project-link" href="https://github.com/NelsonBaroi/Qwen-Voice-Cloner" target="_blank" rel="noopener">GitHub</a>
@@ -228,18 +253,18 @@
 
     <!-- 3. Hairstyle Try-On -->
     <div class="project">
-      <h2>Hairstyle Try-On</h2>
-      <p class="project-tagline">AI-powered hairstyle editing with FLUX and Qwen cloud models</p>
+      <h2 data-i18n="projects.p3_title">Hairstyle Try-On</h2>
+      <p class="project-tagline" data-i18n="projects.p3_tagline">AI-powered hairstyle editing with FLUX and Qwen cloud models</p>
 
       <div class="project-body">
         <div>
-          <h4>What I worked on</h4>
+          <h4 data-i18n="projects.p1_section1_title">What I worked on</h4>
           <ul>
-            <li>Image intake, face detection, and preprocessing pipeline</li>
-            <li>Dual-engine architecture: FLUX as primary, Qwen as automatic fallback</li>
-            <li>15+ hair colors with a custom hex picker</li>
-            <li>Gender-specific style catalogs; generation history for comparison</li>
-            <li>Multi-language UI (English and Russian)</li>
+            <li data-i18n="projects.p3_item1">Image intake, face detection, and preprocessing pipeline</li>
+            <li data-i18n="projects.p3_item2">Dual-engine architecture: FLUX as primary, Qwen as automatic fallback</li>
+            <li data-i18n="projects.p3_item3">15+ hair colors with a custom hex picker</li>
+            <li data-i18n="projects.p3_item4">Gender-specific style catalogs; generation history for comparison</li>
+            <li data-i18n="projects.p3_item5">Multi-language UI (English and Russian)</li>
           </ul>
         </div>
         <div>
@@ -256,12 +281,12 @@
       </div>
 
       <div class="project-learned">
-        <strong>What I learned</strong>
-        Designing for model unreliability was the main engineering challenge. Cloud APIs
+        <strong data-i18n="projects.p1_section2_title">What I learned</strong>
+        <span data-i18n="projects.p3_learned">Designing for model unreliability was the main engineering challenge. Cloud APIs
         fail intermittently, and if the app doesn't handle that gracefully, the user sees
         an error rather than a result. Building the fallback path at the UI layer — so
         the switch from FLUX to Qwen is invisible — made the experience feel stable
-        even when individual calls weren't.
+        even when individual calls weren't.</span>
       </div>
 
 <a class="project-link" href="https://huggingface.co/spaces/creativestudio1122/hairstyle-try-on" target="_blank" rel="noopener">Live Demo</a> · <a class="project-link" href="https://github.com/NelsonBaroi/Hairstyle-Try-On" target="_blank" rel="noopener">GitHub</a>
@@ -269,18 +294,18 @@
 
     <!-- 4. Parallel Universe Me -->
     <div class="project">
-      <h2>Parallel Universe Me</h2>
-      <p class="project-tagline">Life simulation using Monte Carlo methods and real statistical datasets</p>
+      <h2 data-i18n="projects.p4_title">Parallel Universe Me</h2>
+      <p class="project-tagline" data-i18n="projects.p4_tagline">Life simulation using Monte Carlo methods and real statistical datasets</p>
 
       <div class="project-body">
         <div>
-          <h4>What I worked on</h4>
+          <h4 data-i18n="projects.p1_section1_title">What I worked on</h4>
           <ul>
-            <li>Monte Carlo simulation engine for probabilistic life-path modeling</li>
-            <li>Causal DAGs mapping decision trees with statistical outcome weights</li>
-            <li>Data compilation from BLS, OECD, World Bank, and Kauffman research</li>
-            <li>LLM narrator that interprets simulation output — without generating numbers</li>
-            <li>Gradio frontend with Plotly visualizations; Vercel serverless deployment</li>
+            <li data-i18n="projects.p4_item1">Monte Carlo simulation engine for probabilistic life-path modeling</li>
+            <li data-i18n="projects.p4_item2">Causal DAGs mapping decision trees with statistical outcome weights</li>
+            <li data-i18n="projects.p4_item3">Data compilation from BLS, OECD, World Bank, and Kauffman research</li>
+            <li data-i18n="projects.p4_item4">LLM narrator that interprets simulation output — without generating numbers</li>
+            <li data-i18n="projects.p4_item5">Gradio frontend with Plotly visualizations; Vercel serverless deployment</li>
           </ul>
         </div>
         <div>
@@ -297,12 +322,12 @@
       </div>
 
       <div class="project-learned">
-        <strong>What I learned</strong>
-        Keeping the LLM out of the data generation was a deliberate constraint — and the
+        <strong data-i18n="projects.p1_section2_title">What I learned</strong>
+        <span data-i18n="projects.p4_learned">Keeping the LLM out of the data generation was a deliberate constraint — and the
         right one. Once a model starts producing statistics, users can't distinguish them
         from real ones, which undermines the whole point. The LLM's role here is narrative:
         it explains what the Monte Carlo output means. The numbers come from real datasets.
-        That separation is harder to maintain architecturally than it sounds.
+        That separation is harder to maintain architecturally than it sounds.</span>
       </div>
 
 <a class="project-link" href="https://parallel-universe-me.vercel.app/" target="_blank" rel="noopener">Live Demo</a> · <a class="project-link" href="https://github.com/NelsonBaroi/parallel-universe-me" target="_blank" rel="noopener">GitHub</a>
@@ -310,18 +335,18 @@
 
     <!-- 5. SFX Generator -->
     <div class="project">
-      <h2>SFX Generator</h2>
-      <p class="project-tagline">Procedural sound effects from signal processing — no samples required</p>
+      <h2 data-i18n="projects.p5_title">SFX Generator</h2>
+      <p class="project-tagline" data-i18n="projects.p5_tagline">Procedural sound effects from signal processing — no samples required</p>
 
       <div class="project-body">
         <div>
-          <h4>What I worked on</h4>
+          <h4 data-i18n="projects.p1_section1_title">What I worked on</h4>
           <ul>
-            <li>18+ SFX types: impacts, sweeps, drones, glitches, ambient textures, alarms</li>
-            <li>Butterworth filters, amplitude envelopes, LFO modulation from scratch</li>
-            <li>Adjustable duration, frequency, intensity, and stereo pan per effect</li>
-            <li>Batch generation mode; WAV export at 44.1 kHz, 16-bit stereo</li>
-            <li>Tkinter desktop GUI for interactive use</li>
+            <li data-i18n="projects.p5_item1">18+ SFX types: impacts, sweeps, drones, glitches, ambient textures, alarms</li>
+            <li data-i18n="projects.p5_item2">Butterworth filters, amplitude envelopes, LFO modulation from scratch</li>
+            <li data-i18n="projects.p5_item3">Adjustable duration, frequency, intensity, and stereo pan per effect</li>
+            <li data-i18n="projects.p5_item4">Batch generation mode; WAV export at 44.1 kHz, 16-bit stereo</li>
+            <li data-i18n="projects.p5_item5">Tkinter desktop GUI for interactive use</li>
           </ul>
         </div>
         <div>
@@ -337,13 +362,13 @@
       </div>
 
       <div class="project-learned">
-        <strong>What I learned</strong>
-        This project uses no AI models — everything is signal processing. That turned out
+        <strong data-i18n="projects.p1_section2_title">What I learned</strong>
+        <span data-i18n="projects.p5_learned">This project uses no AI models — everything is signal processing. That turned out
         to be a useful exercise: designing sounds from frequency curves and filter shapes
         requires understanding what you actually want the audio to do, rather than
         describing it in natural language and hoping a model interprets it correctly.
         Procedural generation gives you complete control, at the cost of needing to know
-        what you're controlling.
+        what you're controlling.</span>
       </div>
 
       <a class="project-link" href="https://github.com/NelsonBaroi/SFX-Generator" target="_blank" rel="noopener">github.com/NelsonBaroi/SFX-Generator</a>
@@ -351,18 +376,18 @@
 
     <!-- 6. Kira -->
     <div class="project">
-      <h2>Kira</h2>
-      <p class="project-tagline">Structured personal knowledge base designed for LLM context injection</p>
+      <h2 data-i18n="projects.p6_title">Kira</h2>
+      <p class="project-tagline" data-i18n="projects.p6_tagline">Structured personal knowledge base designed for LLM context injection</p>
 
       <div class="project-body">
         <div>
-          <h4>What I worked on</h4>
+          <h4 data-i18n="projects.p1_section1_title">What I worked on</h4>
           <ul>
-            <li>Organized 19-chapter biography, career materials, and relocation planning</li>
-            <li>Visa queue analytics: Python scripts, weekly CSV datasets, 13 statistical charts</li>
-            <li>Machine-readable manifest.json indexing all files by category and format</li>
-            <li>Exported and structured 6 months of AI conversation history</li>
-            <li>Designed for reuse: any file can be fed as context to any LLM tool</li>
+            <li data-i18n="projects.p6_item1">Organized 19-chapter biography, career materials, and relocation planning</li>
+            <li data-i18n="projects.p6_item2">Visa queue analytics: Python scripts, weekly CSV datasets, 13 statistical charts</li>
+            <li data-i18n="projects.p6_item3">Machine-readable manifest.json indexing all files by category and format</li>
+            <li data-i18n="projects.p6_item4">Exported and structured 6 months of AI conversation history</li>
+            <li data-i18n="projects.p6_item5">Designed for reuse: any file can be fed as context to any LLM tool</li>
           </ul>
         </div>
         <div>
@@ -377,13 +402,13 @@
       </div>
 
       <div class="project-learned">
-        <strong>What I learned</strong>
-        A knowledge base is only useful if you can retrieve the right piece at the right
+        <strong data-i18n="projects.p1_section2_title">What I learned</strong>
+        <span data-i18n="projects.p6_learned">A knowledge base is only useful if you can retrieve the right piece at the right
         time. The manifest.json — a structured index of every file with metadata — was
         the detail that made everything else work. Without it, the repository is just
         a folder of documents. With it, any tool can navigate the contents without
         reading everything. The real challenge was deciding what belongs in a knowledge
-        base versus what belongs in a conversation.
+        base versus what belongs in a conversation.</span>
       </div>
 
       <a class="project-link" href="https://github.com/NelsonBaroi/Kira" target="_blank" rel="noopener">github.com/NelsonBaroi/Kira</a>
@@ -391,23 +416,23 @@
 
     <!-- 7. Web Apps Collection monorepo note -->
     <div class="project">
-      <h2>Web Apps Collection</h2>
-      <p class="project-tagline">Monorepo of 12 projects: polling apps, chatbots, portfolio builder, OCR pipeline, AI renamer, and more</p>
+      <h2 data-i18n="projects.p7_title">Web Apps Collection</h2>
+      <p class="project-tagline" data-i18n="projects.p7_tagline">Monorepo of 12 projects: polling apps, chatbots, portfolio builder, OCR pipeline, AI renamer, and more</p>
 
       <div class="project-body">
         <div>
-          <h4>Included projects</h4>
+          <h4 data-i18n="projects.p7_section1_title">Included projects</h4>
           <ul>
-            <li><strong>simplechat</strong> — AI intent-based chatbot (Flask)</li>
-            <li><strong>Drag-and-Drop-Portfolio-Builder</strong> — visual portfolio creator</li>
-            <li><strong>ai-assistant-portfolio</strong> — FastAPI + React AI assistant</li>
-            <li><strong>polling-app</strong> & <strong>polling-app-enhanced</strong> — full-stack polling with Docker</li>
-            <li><strong>Register</strong> — OCR expense extraction pipeline</li>
-            <li><strong>AI-Renamer</strong> — Gemini-powered file renamer</li>
-            <li><strong>chatbot</strong> — Nelson's AI Twin with RAG</li>
-            <li><strong>nextjs-ai-chatbot</strong> — Vercel AI SDK chatbot</li>
-            <li><strong>Correspondence</strong> — document management</li>
-            <li><strong>github-final-project</strong> — micro-finance startup</li>
+            <li data-i18n="projects.p7_item1"><strong>simplechat</strong> — AI intent-based chatbot (Flask)</li>
+            <li data-i18n="projects.p7_item2"><strong>Drag-and-Drop-Portfolio-Builder</strong> — visual portfolio creator</li>
+            <li data-i18n="projects.p7_item3"><strong>ai-assistant-portfolio</strong> — FastAPI + React AI assistant</li>
+            <li data-i18n="projects.p7_item4"><strong>polling-app</strong> & <strong>polling-app-enhanced</strong> — full-stack polling with Docker</li>
+            <li data-i18n="projects.p7_item5"><strong>Register</strong> — OCR expense extraction pipeline</li>
+            <li data-i18n="projects.p7_item6"><strong>AI-Renamer</strong> — Gemini-powered file renamer</li>
+            <li data-i18n="projects.p7_item7"><strong>chatbot</strong> — Nelson's AI Twin with RAG</li>
+            <li data-i18n="projects.p7_item8"><strong>nextjs-ai-chatbot</strong> — Vercel AI SDK chatbot</li>
+            <li data-i18n="projects.p7_item9"><strong>Correspondence</strong> — document management</li>
+            <li data-i18n="projects.p7_item10"><strong>github-final-project</strong> — micro-finance startup</li>
           </ul>
         </div>
         <div>
@@ -427,12 +452,12 @@
       </div>
 
       <div class="project-learned">
-        <strong>What I learned</strong>
-        Consolidating 12 separate repositories into one monorepo taught me that consistent
+        <strong data-i18n="projects.p1_section2_title">What I learned</strong>
+        <span data-i18n="projects.p7_learned">Consolidating 12 separate repositories into one monorepo taught me that consistent
         tooling across projects matters more than any individual feature. Standardizing
         .gitignore patterns, README conventions, and dependency management across Python
         and JavaScript projects requires a lightweight structure that doesn't get in the
-        way of each project's autonomy.
+        way of each project's autonomy.</span>
       </div>
 
       <a class="project-link" href="https://github.com/NelsonBaroi/web-apps-collection" target="_blank" rel="noopener">github.com/NelsonBaroi/web-apps-collection</a>
@@ -449,7 +474,7 @@
         <a href="https://www.instagram.com/noel0007000" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
         <a href="mailto:nelson6114007@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
       </div>
-      <p>&copy; 2026 Nelson Baroi. All rights reserved.</p>
+      <p data-i18n="projects.footer_rights">&copy; 2026 Nelson Baroi. All rights reserved.</p>
     </div>
   </footer>
 
@@ -462,22 +487,23 @@
       <div class="chat-popup-header">
         <img src="images/profile.jpg" alt="Nelson">
         <div>
-          <strong>Nelson Baroi</strong>
-          <span>AI Twin — Ask me anything</span>
+          <strong data-i18n="index.chat_widget_title">Nelson Baroi</strong>
+          <span data-i18n="index.chat_widget_subtitle">AI Twin — Ask me anything</span>
         </div>
         <button id="chat-close" class="chat-close"><i class="fas fa-times"></i></button>
       </div>
       <div class="chat-popup-messages" id="widget-messages">
-        <div class="widget-msg bot">Hey! I'm Nelson's AI twin. Ask me about my projects, career, skills, education, or Ireland plans. I'll give it to you straight.</div>
+        <div class="widget-msg bot" data-i18n="projects.widget_greeting">Hey! I'm Nelson's AI twin. Ask me about my projects, career, skills, education, or Ireland plans. I'll give it to you straight.</div>
       </div>
       <div class="chat-popup-input">
-        <input type="text" id="widget-input" placeholder="Ask Nelson..." autocomplete="off">
+        <input type="text" id="widget-input" data-i18n="projects.widget_placeholder" placeholder="Ask Nelson..." autocomplete="off">
         <button id="widget-send"><i class="fas fa-paper-plane"></i></button>
       </div>
-      <a href="chat.html" class="chat-fullscreen-link">Open full chat <i class="fas fa-expand"></i></a>
+      <a href="chat.html" class="chat-fullscreen-link" data-i18n="index.chat_widget_open">Open full chat <i class="fas fa-expand"></i></a>
     </div>
   </div>
 
+  <script src="i18n.js" defer></script>
   <script src="script.js" defer></script>
 </body>
 </html>

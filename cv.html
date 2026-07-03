@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Embedded PDF Viewer</title>
+    <title data-i18n="cv.title">Curriculum Vitae — Nelson Baroi</title>
     <link rel="stylesheet" href="styles.css">
     <style>
         body {
@@ -23,17 +23,38 @@
             width: 100%;
             height: calc(100vh - 40px);
             border: none;
-            
-            
         }
+
+        .lang-switcher {
+            position: fixed; top: 16px; right: 16px; z-index: 10001;
+            display: flex; gap: 4px;
+            background: rgba(255,255,255,0.2); backdrop-filter: blur(8px);
+            padding: 4px; border-radius: 8px;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+        .lang-btn {
+            background: transparent; border: none; color: rgba(0,0,0,0.6);
+            padding: 4px 10px; border-radius: 6px; cursor: pointer;
+            font-size: 0.78rem; font-weight: 600; font-family: 'Segoe UI', sans-serif;
+            transition: all 0.2s;
+        }
+        .lang-btn:hover { color: #000; background: rgba(0,0,0,0.1); }
+        .lang-btn.active { color: #fff; background: rgba(255,127,80,0.7); }
     </style>
 </head>
 <body>
 
+    <div class="lang-switcher">
+        <button class="lang-btn active" data-lang="en" onclick="switchLanguage('en')">EN</button>
+        <button class="lang-btn" data-lang="ru" onclick="switchLanguage('ru')">RU</button>
+        <button class="lang-btn" data-lang="bn" onclick="switchLanguage('bn')">BN</button>
+    </div>
+
     <header>
-        <a href="index.html" ><h1 class="gradient-text">Return to Home</h1></a>  
+        <a href="index.html" ><h1 class="gradient-text" data-i18n="cv.return">Return to Home</h1></a>  
     </header>
 
+    <script src="i18n.js" defer></script>
     <iframe src="cv.pdf" title="Embedded PDF"></iframe>
 
 </body>

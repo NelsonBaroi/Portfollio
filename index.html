@@ -3,17 +3,62 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nelson Baroi — Business Analytics Professional | Director of Operations</title>
-    <meta name="description" content="Nelson Baroi - Director of Branch Operations at AMT Engineering JSC, Rooppur Nuclear Power Plant. MSc Business Analytics student at ATU Galway, Ireland.">
+    <title data-i18n="index.title">Nelson Baroi — Business Analytics Professional | Director of Operations</title>
+    <meta name="description" content="Nelson Baroi - Director of Branch Operations at AMT Engineering JSC, Rooppur Nuclear Power Plant. MSc Business Analytics student at ATU Galway, Ireland." data-i18n-meta="index.meta_desc">
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+      .lang-switcher {
+        position: fixed;
+        top: 16px;
+        right: 16px;
+        z-index: 10001;
+        display: flex;
+        gap: 4px;
+        background: rgba(255,255,255,0.15);
+        backdrop-filter: blur(8px);
+        padding: 4px;
+        border-radius: 8px;
+        border: 1px solid rgba(255,255,255,0.2);
+      }
+      .lang-btn {
+        background: transparent;
+        border: none;
+        color: rgba(255,255,255,0.6);
+        padding: 4px 10px;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 0.78rem;
+        font-weight: 600;
+        font-family: 'Segoe UI', sans-serif;
+        transition: all 0.2s;
+      }
+      .lang-btn:hover {
+        color: #fff;
+        background: rgba(255,255,255,0.15);
+      }
+      .lang-btn.active {
+        color: #fff;
+        background: rgba(255,127,80,0.7);
+      }
+      .lang-btn.active:hover {
+        background: rgba(255,127,80,0.9);
+      }
+    </style>
   </head>
 <body>
   <!-- Preloader -->
   <div class="preloader">
     <div class="loader"></div>
+  </div>
+
+  <!-- Language Switcher -->
+  <div class="lang-switcher">
+    <button class="lang-btn active" data-lang="en" onclick="switchLanguage('en')">EN</button>
+    <button class="lang-btn" data-lang="ru" onclick="switchLanguage('ru')">RU</button>
+    <button class="lang-btn" data-lang="bn" onclick="switchLanguage('bn')">BN</button>
   </div>
 
   <!-- Header Section -->
@@ -23,110 +68,110 @@
   <header class="header">
     <div class="header-content">
       <h1 class="gradient-text">Nelson Baroi</h1>
-      <p class="header-subtitle">Business Analytics Professional | Director of Operations</p>
+      <p class="header-subtitle" data-i18n="index.header_subtitle">Business Analytics Professional | Director of Operations</p>
     </div>
   </header>
 
   <!-- About Me Section -->
   <section id="about-me" class="section">
-    <h2>About Me</h2>
-    <p>
+    <h2 data-i18n="index.about_title">About Me</h2>
+    <p data-i18n="index.about_p1" data-i18n-html="1">
       I'm Nelson Baroi — a professional driven by strategy, data, and operational excellence. I currently serve as the <strong>Director of the Bangladesh Branch</strong> at <a href="https://atom-alliance.com/en/project/constuction/npp-rooppur/" target="_blank">AMT Engineering JSC</a>, overseeing operations for the <a href="https://en.wikipedia.org/wiki/Rooppur_Nuclear_Power_Plant" target="_blank">Rooppur Nuclear Power Plant</a> — Bangladesh's first nuclear power plant.
     </p>
-    <p>
+    <p data-i18n="index.about_p2" data-i18n-html="1">
       In September 2026, I'm pursuing an <strong>MSc in Business Analytics</strong> at <a href="https://www.atu.ie" target="_blank">Atlantic Technological University</a>, Galway, Ireland — closing the gap between operational intuition and data-driven decision-making.
     </p>
   </section>
 
   <!-- Professional Journey -->
   <section id="professional-journey" class="section">
-    <h2>Professional Journey</h2>
+    <h2 data-i18n="index.journey_title">Professional Journey</h2>
     <div class="timeline">
       <div class="timeline-item">
-        <span class="timeline-date">Feb 2024 — Present</span>
-        <h3>Director of Branch Operations</h3>
-        <p>AMT Engineering JSC — Rooppur Nuclear Power Plant Project</p>
-        <p class="detail">Strategic planning, resource allocation, performance evaluation, budget oversight, cross-departmental coordination across Russian-Bangladeshi teams.</p>
+        <span class="timeline-date" data-i18n="index.journey_item1_date">Feb 2024 — Present</span>
+        <h3 data-i18n="index.journey_item1_title">Director of Branch Operations</h3>
+        <p data-i18n="index.journey_item1_company">AMT Engineering JSC — Rooppur Nuclear Power Plant Project</p>
+        <p class="detail" data-i18n="index.journey_item1_detail">Strategic planning, resource allocation, performance evaluation, budget oversight, cross-departmental coordination across Russian-Bangladeshi teams.</p>
       </div>
       <div class="timeline-item">
-        <span class="timeline-date">Jan 2019 — Feb 2024</span>
-        <h3>Senior Administrator</h3>
-        <p>AMT Engineering JSC — Rooppur Nuclear Power Plant Project</p>
-        <p class="detail">Operations management, procurement, logistics, financial reporting, payroll, safety compliance.</p>
+        <span class="timeline-date" data-i18n="index.journey_item2_date">Jan 2019 — Feb 2024</span>
+        <h3 data-i18n="index.journey_item2_title">Senior Administrator</h3>
+        <p data-i18n="index.journey_item2_company">AMT Engineering JSC — Rooppur Nuclear Power Plant Project</p>
+        <p class="detail" data-i18n="index.journey_item2_detail">Operations management, procurement, logistics, financial reporting, payroll, safety compliance.</p>
       </div>
       <div class="timeline-item">
-        <span class="timeline-date">Concurrent</span>
-        <h3>Procurement Manager & Administrative Staff</h3>
-        <p>FREYSSINET — Rooppur Nuclear Power Plant</p>
-        <p class="detail">Sourcing materials, managing administrative tasks, fostering collaboration among international teams.</p>
+        <span class="timeline-date" data-i18n="index.journey_item3_date">Concurrent</span>
+        <h3 data-i18n="index.journey_item3_title">Procurement Manager & Administrative Staff</h3>
+        <p data-i18n="index.journey_item3_company">FREYSSINET — Rooppur Nuclear Power Plant</p>
+        <p class="detail" data-i18n="index.journey_item3_detail">Sourcing materials, managing administrative tasks, fostering collaboration among international teams.</p>
       </div>
     </div>
   </section>
 
   <!-- Education -->
   <section id="education" class="section">
-    <h2>Education</h2>
+    <h2 data-i18n="index.education_title">Education</h2>
     <div class="timeline">
       <div class="timeline-item">
-        <span class="timeline-date">Sept 2026</span>
-        <h3>MSc Business Analytics</h3>
-        <p>Atlantic Technological University, Galway, Ireland</p>
-        <p class="detail">Statistical modelling, business intelligence, data analytics, decision science.</p>
+        <span class="timeline-date" data-i18n="index.education_item1_date">Sept 2026</span>
+        <h3 data-i18n="index.education_item1_title">MSc Business Analytics</h3>
+        <p data-i18n="index.education_item1_company">Atlantic Technological University, Galway, Ireland</p>
+        <p class="detail" data-i18n="index.education_item1_detail">Statistical modelling, business intelligence, data analytics, decision science.</p>
       </div>
       <div class="timeline-item">
-        <span class="timeline-date">2014 — 2018</span>
-        <h3>Bachelor's in Business Informatics</h3>
-        <p>Kalmyk State University, Russia (Government Scholarship)</p>
-        <p class="detail">Thesis: "The Use of Computer Technology for Intensification of Business Processes in the Field of Forecasting"</p>
+        <span class="timeline-date" data-i18n="index.education_item2_date">2014 — 2018</span>
+        <h3 data-i18n="index.education_item2_title">Bachelor's in Business Informatics</h3>
+        <p data-i18n="index.education_item2_company">Kalmyk State University, Russia (Government Scholarship)</p>
+        <p class="detail" data-i18n="index.education_item2_detail">Thesis: "The Use of Computer Technology for Intensification of Business Processes in the Field of Forecasting"</p>
       </div>
       <div class="timeline-item">
-        <span class="timeline-date">2011</span>
-        <h3>Higher Secondary Certificate (HSC)</h3>
-        <p>Notre Dame College, Dhaka, Bangladesh</p>
+        <span class="timeline-date" data-i18n="index.education_item3_date">2011</span>
+        <h3 data-i18n="index.education_item3_title">Higher Secondary Certificate (HSC)</h3>
+        <p data-i18n="index.education_item3_company">Notre Dame College, Dhaka, Bangladesh</p>
       </div>
     </div>
   </section>
 
   <!-- Skills -->
   <section id="skills" class="section">
-    <h2>Skills & Competencies</h2>
+    <h2 data-i18n="index.skills_title">Skills & Competencies</h2>
     <div class="skills-grid">
       <div class="skill-category">
-        <h3><i class="fas fa-chart-line"></i> Analytics & Data</h3>
+        <h3><i class="fas fa-chart-line"></i> <span data-i18n="index.skills_cat1_title">Analytics & Data</span></h3>
         <ul>
-          <li>SQL (PostgreSQL)</li>
-          <li>Python (pandas, NumPy)</li>
-          <li>Power BI / Tableau</li>
-          <li>Data Visualization</li>
-          <li>Statistical Modelling</li>
+          <li data-i18n="index.skills_cat1_item1">SQL (PostgreSQL)</li>
+          <li data-i18n="index.skills_cat1_item2">Python (pandas, NumPy)</li>
+          <li data-i18n="index.skills_cat1_item3">Power BI / Tableau</li>
+          <li data-i18n="index.skills_cat1_item4">Data Visualization</li>
+          <li data-i18n="index.skills_cat1_item5">Statistical Modelling</li>
         </ul>
       </div>
       <div class="skill-category">
-        <h3><i class="fas fa-briefcase"></i> Business & Operations</h3>
+        <h3><i class="fas fa-briefcase"></i> <span data-i18n="index.skills_cat2_title">Business & Operations</span></h3>
         <ul>
-          <li>Strategic Planning</li>
-          <li>Resource Allocation</li>
-          <li>Budget Management</li>
-          <li>Cross-Cultural Leadership</li>
-          <li>Procurement & Logistics</li>
+          <li data-i18n="index.skills_cat2_item1">Strategic Planning</li>
+          <li data-i18n="index.skills_cat2_item2">Resource Allocation</li>
+          <li data-i18n="index.skills_cat2_item3">Budget Management</li>
+          <li data-i18n="index.skills_cat2_item4">Cross-Cultural Leadership</li>
+          <li data-i18n="index.skills_cat2_item5">Procurement & Logistics</li>
         </ul>
       </div>
       <div class="skill-category">
-        <h3><i class="fas fa-globe"></i> Languages</h3>
+        <h3><i class="fas fa-globe"></i> <span data-i18n="index.skills_cat3_title">Languages</span></h3>
         <ul>
-          <li>Bengali (Native)</li>
-          <li>English (Professional)</li>
-          <li>Russian (Fluent)</li>
+          <li data-i18n="index.skills_cat3_item1">Bengali (Native)</li>
+          <li data-i18n="index.skills_cat3_item2">English (Professional)</li>
+          <li data-i18n="index.skills_cat3_item3">Russian (Fluent)</li>
         </ul>
       </div>
       <div class="skill-category">
-        <h3><i class="fas fa-laptop-code"></i> Technical</h3>
+        <h3><i class="fas fa-laptop-code"></i> <span data-i18n="index.skills_cat4_title">Technical</span></h3>
         <ul>
-          <li>HTML, CSS, PHP</li>
-          <li>Database Management</li>
-          <li>Microsoft Office Suite</li>
-          <li>Adobe Photoshop</li>
-          <li>MongoDB (learning)</li>
+          <li data-i18n="index.skills_cat4_item1">HTML, CSS, PHP</li>
+          <li data-i18n="index.skills_cat4_item2">Database Management</li>
+          <li data-i18n="index.skills_cat4_item3">Microsoft Office Suite</li>
+          <li data-i18n="index.skills_cat4_item4">Adobe Photoshop</li>
+          <li data-i18n="index.skills_cat4_item5">MongoDB (learning)</li>
         </ul>
       </div>
     </div>
@@ -136,12 +181,12 @@
   <section class="hero">
     <div class="hero-content">
       <div class="button-container">
-        <a href="projects.html" class="cta-button"><i class="fas fa-code"></i> Projects</a>
-        <a href="philosophy.html" class="cta-button"><i class="fas fa-lightbulb"></i> Philosophy</a>
-        <a href="cv.html" class="cta-button"><i class="fas fa-file-alt"></i> CV</a>
-        <a href="courses.html" class="cta-button"><i class="fas fa-graduation-cap"></i> Courses</a>
-        <a href="chat.html" class="cta-button cta-chat"><i class="fas fa-comment-dots"></i> Chat with Me</a>
-        <a href="personal.html" class="cta-button"><i class="fas fa-lock"></i> Personal</a>
+        <a href="projects.html" class="cta-button"><i class="fas fa-code"></i> <span data-i18n="index.nav_projects">Projects</span></a>
+        <a href="philosophy.html" class="cta-button"><i class="fas fa-lightbulb"></i> <span data-i18n="index.nav_philosophy">Philosophy</span></a>
+        <a href="cv.html" class="cta-button"><i class="fas fa-file-alt"></i> <span data-i18n="index.nav_cv">CV</span></a>
+        <a href="courses.html" class="cta-button"><i class="fas fa-graduation-cap"></i> <span data-i18n="index.nav_courses">Courses</span></a>
+        <a href="chat.html" class="cta-button cta-chat"><i class="fas fa-comment-dots"></i> <span data-i18n="index.nav_chat">Chat with Me</span></a>
+        <a href="personal.html" class="cta-button"><i class="fas fa-lock"></i> <span data-i18n="index.nav_personal">Personal</span></a>
       </div>
     </div>
   </section>
@@ -155,7 +200,7 @@
         <a href="https://www.instagram.com/noel0007000" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
         <a href="mailto:nelson6114007@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
       </div>
-      <p>&copy; 2025 Nelson Baroi. All rights reserved.</p>
+      <p data-i18n="index.footer_rights">&copy; 2025 Nelson Baroi. All rights reserved.</p>
     </div>
   </footer>
 
@@ -168,22 +213,23 @@
       <div class="chat-popup-header">
         <img src="images/profile.jpg" alt="Nelson">
         <div>
-          <strong>Nelson Baroi</strong>
-          <span>AI Twin — Ask me anything</span>
+          <strong data-i18n="index.chat_widget_title">Nelson Baroi</strong>
+          <span data-i18n="index.chat_widget_subtitle">AI Twin — Ask me anything</span>
         </div>
         <button id="chat-close" class="chat-close"><i class="fas fa-times"></i></button>
       </div>
       <div class="chat-popup-messages" id="widget-messages">
-        <div class="widget-msg bot">Hey! I'm Nelson's AI twin. Ask me about my career, skills, education, or Ireland plans. I'll give it to you straight.</div>
+        <div class="widget-msg bot" data-i18n="index.chat_widget_greeting">Hey! I'm Nelson's AI twin. Ask me about my career, skills, education, or Ireland plans. I'll give it to you straight.</div>
       </div>
       <div class="chat-popup-input">
-        <input type="text" id="widget-input" placeholder="Ask Nelson..." autocomplete="off">
+        <input type="text" id="widget-input" data-i18n="index.chat_widget_placeholder" placeholder="Ask Nelson..." autocomplete="off">
         <button id="widget-send"><i class="fas fa-paper-plane"></i></button>
       </div>
-      <a href="chat.html" class="chat-fullscreen-link">Open full chat <i class="fas fa-expand"></i></a>
+      <a href="chat.html" class="chat-fullscreen-link" data-i18n="index.chat_widget_open">Open full chat <i class="fas fa-expand"></i></a>
     </div>
   </div>
 
+  <script src="i18n.js" defer></script>
   <script src="script.js" defer></script>
 </body>
 </html>

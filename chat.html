@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chat with Nelson Baroi — AI Twin</title>
+    <title data-i18n="chat.title">Chat with Nelson Baroi — AI Twin</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -220,45 +220,71 @@
             .message { max-width: 90%; }
         }
     </style>
+    <style>
+      .lang-switcher {
+        position: fixed; top: 16px; right: 16px; z-index: 10001;
+        display: flex; gap: 4px;
+        background: rgba(255,255,255,0.15); backdrop-filter: blur(8px);
+        padding: 4px; border-radius: 8px;
+        border: 1px solid rgba(255,255,255,0.2);
+      }
+      .lang-btn {
+        background: transparent; border: none; color: rgba(255,255,255,0.6);
+        padding: 4px 10px; border-radius: 6px; cursor: pointer;
+        font-size: 0.78rem; font-weight: 600; font-family: 'Segoe UI', sans-serif;
+        transition: all 0.2s;
+      }
+      .lang-btn:hover { color: #fff; background: rgba(255,255,255,0.15); }
+      .lang-btn.active { color: #fff; background: rgba(255,127,80,0.7); }
+      .lang-btn.active:hover { background: rgba(255,127,80,0.9); }
+    </style>
 </head>
 <body>
+    <!-- Language Switcher -->
+    <div class="lang-switcher">
+        <button class="lang-btn active" data-lang="en" onclick="switchLanguage('en')">EN</button>
+        <button class="lang-btn" data-lang="ru" onclick="switchLanguage('ru')">RU</button>
+        <button class="lang-btn" data-lang="bn" onclick="switchLanguage('bn')">BN</button>
+    </div>
+
     <div class="chat-header">
         <img src="images/profile.jpg" alt="Nelson Baroi">
         <div class="header-info">
             <h1>Nelson Baroi</h1>
-            <p>Business Analytics Professional | Director of Operations | MSc Student (ATU Ireland)</p>
+            <p data-i18n="chat.header_subtitle">Business Analytics Professional | Director of Operations | MSc Student (ATU Ireland)</p>
         </div>
         <div class="header-actions">
-            <a href="index.html"><i class="fas fa-home"></i> Portfolio</a>
-            <button id="reset-btn"><i class="fas fa-redo"></i> Reset</button>
+            <a href="index.html"><i class="fas fa-home"></i> <span data-i18n="chat.nav_portfolio">Portfolio</span></a>
+            <button id="reset-btn"><i class="fas fa-redo"></i> <span data-i18n="chat.reset">Reset</span></button>
         </div>
     </div>
 
     <div class="chat-messages" id="chat-messages">
-        <div class="message bot">
+        <div class="message bot" id="chat-greeting">
             <span class="sender">Nelson</span>
-            Hey! I'm Nelson — or rather, my AI twin built from my real conversations and personality. I'm a Director of Branch Operations working on Bangladesh's first nuclear power plant, heading to Ireland in September 2026 for an MSc in Business Analytics at ATU Galway. Ask me anything — career, analytics, technical skills, Ireland plans. I'll give it to you straight.
+            <span data-i18n="chat.bot_greeting">Hey! I'm Nelson — or rather, my AI twin built from my real conversations and personality. I'm a Director of Branch Operations working on Bangladesh's first nuclear power plant, heading to Ireland in September 2026 for an MSc in Business Analytics at ATU Galway. Ask me anything — career, analytics, technical skills, Ireland plans. I'll give it to you straight.</span>
         </div>
     </div>
 
     <div class="suggestions" id="suggestions">
-        <span class="suggestion-chip" data-msg="What do you do for work?">What do you do?</span>
-        <span class="suggestion-chip" data-msg="Tell me about your technical skills">Technical skills</span>
-        <span class="suggestion-chip" data-msg="Why are you going to Ireland?">Why Ireland?</span>
-        <span class="suggestion-chip" data-msg="What's your professional background?">Background</span>
-        <span class="suggestion-chip" data-msg="What languages do you speak?">Languages</span>
-        <span class="suggestion-chip" data-msg="How can I contact you?">Contact</span>
+        <span class="suggestion-chip" data-msg="What do you do for work?"><span data-i18n="chat.suggestion_work">What do you do?</span></span>
+        <span class="suggestion-chip" data-msg="Tell me about your technical skills"><span data-i18n="chat.suggestion_skills">Technical skills</span></span>
+        <span class="suggestion-chip" data-msg="Why are you going to Ireland?"><span data-i18n="chat.suggestion_ireland">Why Ireland?</span></span>
+        <span class="suggestion-chip" data-msg="What's your professional background?"><span data-i18n="chat.suggestion_background">Background</span></span>
+        <span class="suggestion-chip" data-msg="What languages do you speak?"><span data-i18n="chat.suggestion_languages">Languages</span></span>
+        <span class="suggestion-chip" data-msg="How can I contact you?"><span data-i18n="chat.suggestion_contact">Contact</span></span>
     </div>
 
     <div class="chat-input-area">
-        <input type="text" id="user-input" placeholder="Ask Nelson anything..." autocomplete="off">
+        <input type="text" id="user-input" data-i18n="chat.input_placeholder" placeholder="Ask Nelson anything..." autocomplete="off">
         <button id="send-btn"><i class="fas fa-paper-plane"></i></button>
     </div>
 
     <div class="status-bar">
-        Nelson Baroi AI Twin — fine-tuned Qwen2.5-3B running locally | <a href="https://linkedin.com/in/nbaroi" style="color:#555570;">LinkedIn</a>
+        <span data-i18n="chat.status_bar">Nelson Baroi AI Twin — fine-tuned Qwen2.5-3B running locally</span> | <a href="https://linkedin.com/in/nbaroi" style="color:#555570;">LinkedIn</a>
     </div>
 
+    <script src="i18n.js"></script>
     <script>
         const chatMessages = document.getElementById('chat-messages');
         const userInput = document.getElementById('user-input');
@@ -267,6 +293,19 @@
         const suggestions = document.getElementById('suggestions');
 
         let conversationHistory = [];
+
+        const TRANSLATED_STRINGS = {
+            reset_message: { en: "Fresh start. What do you want to talk about?", ru: "Новый разговор. О чём хотите поговорить?", bn: "নতুন শুরু। আপনি কী নিয়ে কথা বলতে চান?" },
+            error_response: { en: "I'm not sure how to answer that.", ru: "Не уверен, как на это ответить.", bn: "আমি নিশ্চিত নই কীভাবে উত্তর দেব।" },
+            error_loading: { en: "The AI model is loading — give it a moment and try again.", ru: "Модель загружается — подождите немного и попробуйте снова.", bn: "এআই মডেল লোড হচ্ছে — একটু অপেক্ষা করে আবার চেষ্টা করুন।" },
+            error_connection: { en: "Looks like there's a connection issue. The model server might be starting up — try again in 10 seconds.", ru: "Похоже, проблема с подключением. Сервер модели, возможно, запускается — попробуйте снова через 10 секунд.", bn: "সংযোগের সমস্যা হচ্ছে মনে হচ্ছে। মডেল সার্ভারটি চালু হতে পারে — ১০ সেকেন্ড পরে আবার চেষ্টা করুন।" },
+            thinking: { en: "thinking...", ru: "думаю...", bn: "চিন্তা করছি..." }
+        };
+
+        function getT(str) {
+            const lang = typeof window.currentLang === 'function' ? window.currentLang() : 'en';
+            try { return TRANSLATED_STRINGS[str] ? (TRANSLATED_STRINGS[str][lang] || TRANSLATED_STRINGS[str].en) : str; } catch(e) { return str; }
+        }
 
         function escapeHtml(text) {
             const div = document.createElement('div');
@@ -298,7 +337,7 @@
             const msg = document.createElement('div');
             msg.className = 'message bot typing';
             msg.id = 'typing-indicator';
-            msg.innerHTML = '<span class="sender">Nelson</span><em>thinking...</em>';
+            msg.innerHTML = '<span class="sender">Nelson</span><em>' + getT('thinking') + '</em>';
             chatMessages.appendChild(msg);
             chatMessages.scrollTop = chatMessages.scrollHeight;
             return msg;
@@ -341,15 +380,15 @@
 
                 if (response.ok) {
                     const data = await response.json();
-                    const content = data.message?.content || "I'm not sure how to answer that.";
+                    const content = data.message?.content || getT('error_response');
                     addMessage(content, 'bot');
                     conversationHistory.push({ role: 'assistant', content });
                 } else {
-                    addMessage("The AI model is loading — give it a moment and try again.", 'bot');
+                    addMessage(getT('error_loading'), 'bot');
                 }
             } catch (error) {
                 removeTypingIndicator();
-                addMessage("Looks like there's a connection issue. The model server might be starting up — try again in 10 seconds.", 'bot');
+                addMessage(getT('error_connection'), 'bot');
             }
 
             sendBtn.disabled = false;
@@ -369,7 +408,7 @@
         resetBtn.addEventListener('click', () => {
             conversationHistory = [];
             chatMessages.innerHTML = '';
-            addMessage("Fresh start. What do you want to talk about?", 'bot');
+            addMessage(getT('reset_message'), 'bot');
             suggestions.style.display = 'flex';
         });
 

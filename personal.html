@@ -3,13 +3,29 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Protected Page - Nelson Baroi</title>
+    <title data-i18n="personal.title">Protected Page - Nelson Baroi</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="i18n.js" defer></script>
     <script src="script.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <style>
+      .lang-switcher {
+        position: fixed; top: 16px; right: 16px; z-index: 10001;
+        display: flex; gap: 4px;
+        background: rgba(255,255,255,0.2); backdrop-filter: blur(8px);
+        padding: 4px; border-radius: 8px;
+        border: 1px solid rgba(255,255,255,0.2);
+      }
+      .lang-btn {
+        background: transparent; border: none; color: rgba(255,255,255,0.6);
+        padding: 4px 10px; border-radius: 6px; cursor: pointer;
+        font-size: 0.78rem; font-weight: 600; font-family: 'Segoe UI', sans-serif;
+        transition: all 0.2s;
+      }
+      .lang-btn:hover { color: #fff; background: rgba(255,255,255,0.15); }
+      .lang-btn.active { color: #fff; background: rgba(255,127,80,0.7); }
       body { font-family: Arial, sans-serif; max-width: 600px; margin: 50px auto; text-align: center; }
       #content { display: none; }
       #error { color: red; display: none; }
@@ -19,12 +35,19 @@
     </style>
   </head>
   <body>
+    <!-- Language Switcher -->
+    <div class="lang-switcher">
+      <button class="lang-btn active" data-lang="en" onclick="switchLanguage('en')">EN</button>
+      <button class="lang-btn" data-lang="ru" onclick="switchLanguage('ru')">RU</button>
+      <button class="lang-btn" data-lang="bn" onclick="switchLanguage('bn')">BN</button>
+    </div>
+
     <div id="login">
-      <h2>Login</h2>
+      <h2 data-i18n="personal.login_title">Login</h2>
       <form id="passwordForm">
-        <input type="password" id="password" placeholder="Password" required>
-        <button type="submit">Enter</button>
-        <p id="error">Incorrect password</p>
+        <input type="password" id="password" data-i18n="personal.password_placeholder" placeholder="Password" required>
+        <button type="submit"><span data-i18n="personal.enter">Enter</span></button>
+        <p id="error" data-i18n="personal.error">Incorrect password</p>
       </form>
     </div>
 
@@ -35,17 +58,17 @@
 
       <div class="hero-content">
         <div class="button-container">
-          <a href="index.html" target="_blank" class="cta-button">About Me</a>
-          <a href="philosophy.html" target="_blank" class="cta-button">Philosophy</a>
-          <a href="courses.html" target="_blank" class="cta-button">Courses</a>
-          <a href="cv.html" target="_blank" class="cta-button">My CV</a>
+          <a href="index.html" target="_blank" class="cta-button"><span data-i18n="personal.nav_about">About Me</span></a>
+          <a href="philosophy.html" target="_blank" class="cta-button"><span data-i18n="personal.nav_philosophy">Philosophy</span></a>
+          <a href="courses.html" target="_blank" class="cta-button"><span data-i18n="personal.nav_courses">Courses</span></a>
+          <a href="cv.html" target="_blank" class="cta-button"><span data-i18n="personal.nav_cv">My CV</span></a>
         </div>
         
         <div class="button-container">
-          <a href="philosophy.html" target="_blank" class="cta-button">Philosophy</a>
-          <a href="courses.html" target="_blank" class="cta-button">Courses</a>
-          <a href="cv.html" target="_blank" class="cta-button">My CV</a>
-          <a href="https://nbaroi.pythonanywhere.com/" target="_blank" class="cta-button">My file system</a>
+          <a href="philosophy.html" target="_blank" class="cta-button"><span data-i18n="personal.nav_philosophy">Philosophy</span></a>
+          <a href="courses.html" target="_blank" class="cta-button"><span data-i18n="personal.nav_courses">Courses</span></a>
+          <a href="cv.html" target="_blank" class="cta-button"><span data-i18n="personal.nav_cv">My CV</span></a>
+          <a href="https://nbaroi.pythonanywhere.com/" target="_blank" class="cta-button"><span data-i18n="personal.nav_files">My file system</span></a>
         </div>
 
         <div></div> <div></div> <div></div> <div></div> <div></div> <div></div> <div></div> <div></div>
@@ -55,7 +78,7 @@
         <a href="https://www.facebook.com/noel.baroi" target="_blank"><i class="fab fa-facebook"></i></a>
         <a href="https://www.instagram.com/noel0007000" target="_blank"><i class="fab fa-instagram"></i></a>
       </div>
-      <p>&copy; 2025 Nelson Baroi. All rights reserved.</p>
+      <p data-i18n="personal.footer_rights">&copy; 2025 Nelson Baroi. All rights reserved.</p>
     </div>
 </footer> 
       </div>

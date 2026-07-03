@@ -1,0 +1,1250 @@
+{
+  "lang": {
+    "en": "English",
+    "ru": "Русский",
+    "bn": "বাংলা"
+  },
+
+  "index.title": {
+    "en": "Nelson Baroi — Business Analytics Professional | Director of Operations",
+    "ru": "Нельсон Барои — Специалист по бизнес-аналитике | Директор филиала",
+    "bn": "নেলসন বারোই — বিজনেস অ্যানালিটিক্স পেশাদার | অপারেশনস ডিরেক্টর"
+  },
+  "index.meta_desc": {
+    "en": "Nelson Baroi - Director of Branch Operations at AMT Engineering JSC, Rooppur Nuclear Power Plant. MSc Business Analytics student at ATU Galway, Ireland.",
+    "ru": "Нельсон Барои — Директор филиала AMT Engineering JSC на АЭС Руппур. Студент магистратуры по бизнес-аналитике в ATU Голуэй, Ирландия.",
+    "bn": "নেলসন বারোই — এএমটি ইঞ্জিনিয়ারিং জেএসসি-রূপপুর পারমাণবিক বিদ্যুৎ কেন্দ্রের শাখা পরিচালক। আয়ারল্যান্ডের এটিইউ গালওয়েতে এমএসসি বিজনেস অ্যানালিটিক্সের শিক্ষার্থী।"
+  },
+  "index.header_subtitle": {
+    "en": "Business Analytics Professional | Director of Operations",
+    "ru": "Специалист по бизнес-аналитике | Директор филиала",
+    "bn": "বিজনেস অ্যানালিটিক্স পেশাদার | অপারেশনস ডিরেক্টর"
+  },
+  "index.about_title": {
+    "en": "About Me",
+    "ru": "Обо мне",
+    "bn": "আমার সম্পর্কে"
+  },
+  "index.about_p1": {
+    "en": "I'm Nelson Baroi — a professional driven by strategy, data, and operational excellence. I currently serve as the <strong>Director of the Bangladesh Branch</strong> at <a href='https://atom-alliance.com/en/project/constuction/npp-rooppur/' target='_blank'>AMT Engineering JSC</a>, overseeing operations for the <a href='https://en.wikipedia.org/wiki/Rooppur_Nuclear_Power_Plant' target='_blank'>Rooppur Nuclear Power Plant</a> — Bangladesh's first nuclear power plant.",
+    "ru": "Я Нельсон Барои — профессионал, движимый стратегией, данными и операционным совершенством. В настоящее время работаю <strong>директором бангладешского филиала</strong> в <a href='https://atom-alliance.com/en/project/constuction/npp-rooppur/' target='_blank'>AMT Engineering JSC</a>, руководя операциями на <a href='https://en.wikipedia.org/wiki/Rooppur_Nuclear_Power_Plant' target='_blank'>АЭС Руппур</a> — первой атомной электростанции Бангладеш.",
+    "bn": "আমি নেলসন বারোই — একজন পেশাদার যিনি কৌশল, ডেটা এবং অপারেশনাল উৎকর্ষ দ্বারা চালিত। আমি বর্তমানে <a href='https://atom-alliance.com/en/project/constuction/npp-rooppur/' target='_blank'>এএমটি ইঞ্জিনিয়ারিং জেএসসি</a>-তে <strong>বাংলাদেশ শাখার পরিচালক</strong> হিসেবে দায়িত্ব পালন করছি, <a href='https://en.wikipedia.org/wiki/Rooppur_Nuclear_Power_Plant' target='_blank'>রূপপুর পারমাণবিক বিদ্যুৎ কেন্দ্র</a> — বাংলাদেশের প্রথম পারমাণবিক বিদ্যুৎ কেন্দ্রের অপারেশন তত্ত্বাবধান করছি।"
+  },
+  "index.about_p2": {
+    "en": "In September 2026, I'm pursuing an <strong>MSc in Business Analytics</strong> at <a href='https://www.atu.ie' target='_blank'>Atlantic Technological University</a>, Galway, Ireland — closing the gap between operational intuition and data-driven decision-making.",
+    "ru": "В сентябре 2026 года я начинаю обучение по программе <strong>магистратуры по бизнес-аналитике</strong> в <a href='https://www.atu.ie' target='_blank'>Атлантическом технологическом университете</a>, Голуэй, Ирландия — чтобы сократить разрыв между операционной интуицией и решениями, основанными на данных.",
+    "bn": "২০২৬ সালের সেপ্টেম্বরে আমি আয়ারল্যান্ডের গালওয়ের <a href='https://www.atu.ie' target='_blank'>আটলান্টিক টেকনোলজিকাল ইউনিভার্সিটি</a>-তে <strong>এমএসসি ইন বিজনেস অ্যানালিটিক্স</strong> শুরু করছি — অপারেশনাল অন্তর্দৃষ্টি এবং ডেটা-চালিত সিদ্ধান্ত গ্রহণের মধ্যে ব্যবধান পূরণ করতে।"
+  },
+  "index.journey_title": {
+    "en": "Professional Journey",
+    "ru": "Профессиональный путь",
+    "bn": "পেশাগত যাত্রা"
+  },
+  "index.journey_item1_date": {
+    "en": "Feb 2024 — Present",
+    "ru": "Февраль 2024 — Настоящее время",
+    "bn": "ফেব্রুয়ারি ২০২৪ — বর্তমান"
+  },
+  "index.journey_item1_title": {
+    "en": "Director of Branch Operations",
+    "ru": "Директор филиала",
+    "bn": "শাখা পরিচালক (অপারেশনস)"
+  },
+  "index.journey_item1_company": {
+    "en": "AMT Engineering JSC — Rooppur Nuclear Power Plant Project",
+    "ru": "AMT Engineering JSC — Проект АЭС Руппур",
+    "bn": "এএমটি ইঞ্জিনিয়ারিং জেএসসি — রূপপুর পারমাণবিক বিদ্যুৎ কেন্দ্র প্রকল্প"
+  },
+  "index.journey_item1_detail": {
+    "en": "Strategic planning, resource allocation, performance evaluation, budget oversight, cross-departmental coordination across Russian-Bangladeshi teams.",
+    "ru": "Стратегическое планирование, распределение ресурсов, оценка эффективности, контроль бюджета, межведомственная координация российско-бангладешских команд.",
+    "bn": "কৌশলগত পরিকল্পনা, সম্পদ বরাদ্দ, কর্মক্ষমতা মূল্যায়ন, বাজেট তত্ত্বাবধান, রাশিয়ান-বাংলাদেশী দলগুলোর মধ্যে আন্তঃবিভাগীয় সমন্বয়।"
+  },
+  "index.journey_item2_date": {
+    "en": "Jan 2019 — Feb 2024",
+    "ru": "Январь 2019 — Февраль 2024",
+    "bn": "জানুয়ারি ২০১৯ — ফেব্রুয়ারি ২০২৪"
+  },
+  "index.journey_item2_title": {
+    "en": "Senior Administrator",
+    "ru": "Старший администратор",
+    "bn": "সিনিয়র অ্যাডমিনিস্ট্রেটর"
+  },
+  "index.journey_item2_company": {
+    "en": "AMT Engineering JSC — Rooppur Nuclear Power Plant Project",
+    "ru": "AMT Engineering JSC — Проект АЭС Руппур",
+    "bn": "এএমটি ইঞ্জিনিয়ারিং জেএসসি — রূপপুর পারমাণবিক বিদ্যুৎ কেন্দ্র প্রকল্প"
+  },
+  "index.journey_item2_detail": {
+    "en": "Operations management, procurement, logistics, financial reporting, payroll, safety compliance.",
+    "ru": "Управление операциями, закупки, логистика, финансовая отчетность, расчет заработной платы, соблюдение требований безопасности.",
+    "bn": "অপারেশন ব্যবস্থাপনা, সংগ্রহ, লজিস্টিকস, আর্থিক প্রতিবেদন, বেতন, নিরাপত্তা সম্মতি।"
+  },
+  "index.journey_item3_date": {
+    "en": "Concurrent",
+    "ru": "Параллельно",
+    "bn": "সমান্তরালভাবে"
+  },
+  "index.journey_item3_title": {
+    "en": "Procurement Manager & Administrative Staff",
+    "ru": "Менеджер по закупкам и административный персонал",
+    "bn": "প্রকিউরমেন্ট ম্যানেজার ও প্রশাসনিক কর্মী"
+  },
+  "index.journey_item3_company": {
+    "en": "FREYSSINET — Rooppur Nuclear Power Plant",
+    "ru": "FREYSSINET — АЭС Руппур",
+    "bn": "ফ্রেসিনে — রূপপুর পারমাণবিক বিদ্যুৎ কেন্দ্র"
+  },
+  "index.journey_item3_detail": {
+    "en": "Sourcing materials, managing administrative tasks, fostering collaboration among international teams.",
+    "ru": "Поиск материалов, выполнение административных задач, содействие сотрудничеству международных команд.",
+    "bn": "উপকরণ সংগ্রহ, প্রশাসনিক কাজ পরিচালনা, আন্তর্জাতিক দলগুলোর মধ্যে সহযোগিতা বৃদ্ধি।"
+  },
+  "index.education_title": {
+    "en": "Education",
+    "ru": "Образование",
+    "bn": "শিক্ষা"
+  },
+  "index.education_item1_date": {
+    "en": "Sept 2026",
+    "ru": "Сентябрь 2026",
+    "bn": "সেপ্টেম্বর ২০২৬"
+  },
+  "index.education_item1_title": {
+    "en": "MSc Business Analytics",
+    "ru": "Магистр бизнес-аналитики",
+    "bn": "এমএসসি বিজনেস অ্যানালিটিক্স"
+  },
+  "index.education_item1_company": {
+    "en": "Atlantic Technological University, Galway, Ireland",
+    "ru": "Атлантический технологический университет, Голуэй, Ирландия",
+    "bn": "আটলান্টিক টেকনোলজিকাল ইউনিভার্সিটি, গালওয়ে, আয়ারল্যান্ড"
+  },
+  "index.education_item1_detail": {
+    "en": "Statistical modelling, business intelligence, data analytics, decision science.",
+    "ru": "Статистическое моделирование, бизнес-аналитика, анализ данных, наука о принятии решений.",
+    "bn": "স্ট্যাটিস্টিক্যাল মডেলিং, বিজনেস ইন্টেলিজেন্স, ডেটা অ্যানালিটিক্স, ডিসিশন সায়েন্স।"
+  },
+  "index.education_item2_date": {
+    "en": "2014 — 2018",
+    "ru": "2014 — 2018",
+    "bn": "২০১৪ — ২০১৮"
+  },
+  "index.education_item2_title": {
+    "en": "Bachelor's in Business Informatics",
+    "ru": "Бакалавр бизнес-информатики",
+    "bn": "বিজনেস ইনফরমেটিক্সে ব্যাচেলর"
+  },
+  "index.education_item2_company": {
+    "en": "Kalmyk State University, Russia (Government Scholarship)",
+    "ru": "Калмыцкий государственный университет, Россия (государственная стипендия)",
+    "bn": "কাল্মিক স্টেট ইউনিভার্সিটি, রাশিয়া (সরকারি বৃত্তি)"
+  },
+  "index.education_item2_detail": {
+    "en": "Thesis: 'The Use of Computer Technology for Intensification of Business Processes in the Field of Forecasting'",
+    "ru": "Дипломная работа: «Использование компьютерных технологий для интенсификации бизнес-процессов в сфере прогнозирования»",
+    "bn": "থিসিস: 'পূর্বাভাসের ক্ষেত্রে ব্যবসায়িক প্রক্রিয়ার তীব্রকরণের জন্য কম্পিউটার প্রযুক্তির ব্যবহার'"
+  },
+  "index.education_item3_date": {
+    "en": "2011",
+    "ru": "2011",
+    "bn": "২০১১"
+  },
+  "index.education_item3_title": {
+    "en": "Higher Secondary Certificate (HSC)",
+    "ru": "Аттестат о среднем образовании (HSC)",
+    "bn": "উচ্চ মাধ্যমিক সার্টিফিকেট (এইচএসসি)"
+  },
+  "index.education_item3_company": {
+    "en": "Notre Dame College, Dhaka, Bangladesh",
+    "ru": "Колледж Нотр-Дам, Дакка, Бангладеш",
+    "bn": "নটর ডেম কলেজ, ঢাকা, বাংলাদেশ"
+  },
+  "index.skills_title": {
+    "en": "Skills & Competencies",
+    "ru": "Навыки и компетенции",
+    "bn": "দক্ষতা ও যোগ্যতা"
+  },
+  "index.skills_cat1_title": {
+    "en": "Analytics & Data",
+    "ru": "Аналитика и данные",
+    "bn": "অ্যানালিটিক্স ও ডেটা"
+  },
+  "index.skills_cat1_item1": {
+    "en": "SQL (PostgreSQL)",
+    "ru": "SQL (PostgreSQL)",
+    "bn": "এসকিউএল (পোস্টগ্রেএসকিউএল)"
+  },
+  "index.skills_cat1_item2": {
+    "en": "Python (pandas, NumPy)",
+    "ru": "Python (pandas, NumPy)",
+    "bn": "পাইথন (পান্ডাস, নমপাই)"
+  },
+  "index.skills_cat1_item3": {
+    "en": "Power BI / Tableau",
+    "ru": "Power BI / Tableau",
+    "bn": "পাওয়ার বিআই / ট্যাবলু"
+  },
+  "index.skills_cat1_item4": {
+    "en": "Data Visualization",
+    "ru": "Визуализация данных",
+    "bn": "ডেটা ভিজুয়ালাইজেশন"
+  },
+  "index.skills_cat1_item5": {
+    "en": "Statistical Modelling",
+    "ru": "Статистическое моделирование",
+    "bn": "স্ট্যাটিস্টিক্যাল মডেলিং"
+  },
+  "index.skills_cat2_title": {
+    "en": "Business & Operations",
+    "ru": "Бизнес и операции",
+    "bn": "ব্যবসা ও অপারেশনস"
+  },
+  "index.skills_cat2_item1": {
+    "en": "Strategic Planning",
+    "ru": "Стратегическое планирование",
+    "bn": "কৌশলগত পরিকল্পনা"
+  },
+  "index.skills_cat2_item2": {
+    "en": "Resource Allocation",
+    "ru": "Распределение ресурсов",
+    "bn": "সম্পদ বরাদ্দ"
+  },
+  "index.skills_cat2_item3": {
+    "en": "Budget Management",
+    "ru": "Управление бюджетом",
+    "bn": "বাজেট ব্যবস্থাপনা"
+  },
+  "index.skills_cat2_item4": {
+    "en": "Cross-Cultural Leadership",
+    "ru": "Межкультурное лидерство",
+    "bn": "ক্রস-কালচারাল লিডারশিপ"
+  },
+  "index.skills_cat2_item5": {
+    "en": "Procurement & Logistics",
+    "ru": "Закупки и логистика",
+    "bn": "সংগ্রহ ও লজিস্টিকস"
+  },
+  "index.skills_cat3_title": {
+    "en": "Languages",
+    "ru": "Языки",
+    "bn": "ভাষা"
+  },
+  "index.skills_cat3_item1": {
+    "en": "Bengali (Native)",
+    "ru": "Бенгальский (родной)",
+    "bn": "বাংলা (মাতৃভাষা)"
+  },
+  "index.skills_cat3_item2": {
+    "en": "English (Professional)",
+    "ru": "Английский (профессиональный)",
+    "bn": "ইংরেজি (পেশাগত)"
+  },
+  "index.skills_cat3_item3": {
+    "en": "Russian (Fluent)",
+    "ru": "Русский (свободно)",
+    "bn": "রুশ (সাবলীল)"
+  },
+  "index.skills_cat4_title": {
+    "en": "Technical",
+    "ru": "Технические",
+    "bn": "প্রযুক্তিগত"
+  },
+  "index.skills_cat4_item1": {
+    "en": "HTML, CSS, PHP",
+    "ru": "HTML, CSS, PHP",
+    "bn": "এইচটিএমএল, সিএসএস, পিএইচপি"
+  },
+  "index.skills_cat4_item2": {
+    "en": "Database Management",
+    "ru": "Управление базами данных",
+    "bn": "ডেটাবেস ব্যবস্থাপনা"
+  },
+  "index.skills_cat4_item3": {
+    "en": "Microsoft Office Suite",
+    "ru": "Microsoft Office Suite",
+    "bn": "মাইক্রোসফট অফিস স্যুট"
+  },
+  "index.skills_cat4_item4": {
+    "en": "Adobe Photoshop",
+    "ru": "Adobe Photoshop",
+    "bn": "অ্যাডোবি ফটোশপ"
+  },
+  "index.skills_cat4_item5": {
+    "en": "MongoDB (learning)",
+    "ru": "MongoDB (изучаю)",
+    "bn": "মঙ্গোডিবি (শিখছি)"
+  },
+  "index.nav_projects": {
+    "en": "Projects",
+    "ru": "Проекты",
+    "bn": "প্রকল্প"
+  },
+  "index.nav_philosophy": {
+    "en": "Philosophy",
+    "ru": "Философия",
+    "bn": "দর্শন"
+  },
+  "index.nav_cv": {
+    "en": "CV",
+    "ru": "Резюме",
+    "bn": "সিভি"
+  },
+  "index.nav_courses": {
+    "en": "Courses",
+    "ru": "Курсы",
+    "bn": "কোর্স"
+  },
+  "index.nav_chat": {
+    "en": "Chat with Me",
+    "ru": "Чат со мной",
+    "bn": "আমার সাথে চ্যাট করুন"
+  },
+  "index.nav_personal": {
+    "en": "Personal",
+    "ru": "Личное",
+    "bn": "ব্যক্তিগত"
+  },
+  "index.footer_rights": {
+    "en": "© 2025 Nelson Baroi. All rights reserved.",
+    "ru": "© 2025 Нельсон Барои. Все права защищены.",
+    "bn": "© ২০২৫ নেলসন বারোই। সর্বস্বত্ব সংরক্ষিত।"
+  },
+  "index.chat_widget_title": {
+    "en": "Nelson Baroi",
+    "ru": "Нельсон Барои",
+    "bn": "নেলসন বারোই"
+  },
+  "index.chat_widget_subtitle": {
+    "en": "AI Twin — Ask me anything",
+    "ru": "AI-двойник — Спрашивайте о чём угодно",
+    "bn": "এআই টুইন — যেকোনো কিছু জিজ্ঞাসা করুন"
+  },
+  "index.chat_widget_greeting": {
+    "en": "Hey! I'm Nelson's AI twin. Ask me about my career, skills, education, or Ireland plans. I'll give it to you straight.",
+    "ru": "Привет! Я AI-двойник Нельсона. Спрашивайте о моей карьере, навыках, образовании или планах насчёт Ирландии. Всё расскажу прямо.",
+    "bn": "হাই! আমি নেলসনের এআই টুইন। আমার ক্যারিয়ার, দক্ষতা, শিক্ষা বা আয়ারল্যান্ড পরিকল্পনা সম্পর্কে জিজ্ঞাসা করুন। সোজা উত্তর দেব।"
+  },
+  "index.chat_widget_placeholder": {
+    "en": "Ask Nelson...",
+    "ru": "Спросить Нельсона...",
+    "bn": "নেলসনকে জিজ্ঞাসা করুন..."
+  },
+  "index.chat_widget_open": {
+    "en": "Open full chat",
+    "ru": "Открыть полный чат",
+    "bn": "সম্পূর্ণ চ্যাট খুলুন"
+  },
+
+  "chat.title": {
+    "en": "Chat with Nelson Baroi — AI Twin",
+    "ru": "Чат с Нельсоном Барои — AI-двойник",
+    "bn": "নেলসন বারোইয়ের সাথে চ্যাট — এআই টুইন"
+  },
+  "chat.header_subtitle": {
+    "en": "Business Analytics Professional | Director of Operations | MSc Student (ATU Ireland)",
+    "ru": "Специалист по бизнес-аналитике | Директор филиала | Студент магистратуры (ATU Ирландия)",
+    "bn": "বিজনেস অ্যানালিটিক্স পেশাদার | অপারেশনস ডিরেক্টর | এমএসসি শিক্ষার্থী (এটিইউ আয়ারল্যান্ড)"
+  },
+  "chat.nav_portfolio": {
+    "en": "Portfolio",
+    "ru": "Портфолио",
+    "bn": "পোর্টফোলিও"
+  },
+  "chat.reset": {
+    "en": "Reset",
+    "ru": "Сброс",
+    "bn": "রিসেট"
+  },
+  "chat.bot_greeting": {
+    "en": "Hey! I'm Nelson — or rather, my AI twin built from my real conversations and personality. I'm a Director of Branch Operations working on Bangladesh's first nuclear power plant, heading to Ireland in September 2026 for an MSc in Business Analytics at ATU Galway. Ask me anything — career, analytics, technical skills, Ireland plans. I'll give it to you straight.",
+    "ru": "Привет! Я Нельсон — точнее, мой AI-двойник, созданный на основе моих реальных разговоров и личности. Я директор филиала, работаю на первой атомной электростанции Бангладеш и собираюсь в Ирландию в сентябре 2026 года на магистратуру по бизнес-аналитике в ATU Голуэй. Спрашивайте о чём угодно — карьера, аналитика, технические навыки, планы по Ирландии. Отвечу честно.",
+    "bn": "হাই! আমি নেলসন — বরং বলতে পারেন আমার এআই টুইন, যা আমার প্রকৃত কথোপকথন ও ব্যক্তিত্ব থেকে তৈরি। আমি একজন শাখা পরিচালক, বাংলাদেশের প্রথম পারমাণবিক বিদ্যুৎ কেন্দ্রে কাজ করছি, ২০২৬ সালের সেপ্টেম্বরে আয়ারল্যান্ডের এটিইউ গালওয়েতে এমএসসি ইন বিজনেস অ্যানালিটিক্সের জন্য যাচ্ছি। যেকোনো কিছু জিজ্ঞাসা করুন — ক্যারিয়ার, অ্যানালিটিক্স, প্রযুক্তিগত দক্ষতা, আয়ারল্যান্ড পরিকল্পনা। সোজা উত্তর দেব।"
+  },
+  "chat.suggestion_work": {
+    "en": "What do you do?",
+    "ru": "Чем вы занимаетесь?",
+    "bn": "আপনি কী করেন?"
+  },
+  "chat.suggestion_skills": {
+    "en": "Technical skills",
+    "ru": "Технические навыки",
+    "bn": "প্রযুক্তিগত দক্ষতা"
+  },
+  "chat.suggestion_ireland": {
+    "en": "Why Ireland?",
+    "ru": "Почему Ирландия?",
+    "bn": "কেন আয়ারল্যান্ড?"
+  },
+  "chat.suggestion_background": {
+    "en": "Background",
+    "ru": "Образование и опыт",
+    "bn": "পটভূমি"
+  },
+  "chat.suggestion_languages": {
+    "en": "Languages",
+    "ru": "Языки",
+    "bn": "ভাষা"
+  },
+  "chat.suggestion_contact": {
+    "en": "Contact",
+    "ru": "Контакты",
+    "bn": "যোগাযোগ"
+  },
+  "chat.input_placeholder": {
+    "en": "Ask Nelson anything...",
+    "ru": "Спросить Нельсона о чём угодно...",
+    "bn": "নেলসনকে যেকোনো কিছু জিজ্ঞাসা করুন..."
+  },
+  "chat.status_bar": {
+    "en": "Nelson Baroi AI Twin — fine-tuned Qwen2.5-3B running locally",
+    "ru": "AI-двойник Нельсона Барои — доработанный Qwen2.5-3B, работает локально",
+    "bn": "নেলসন বারোই এআই টুইন — ফাইন-টিউনড Qwen2.5-3B লোকালি চলছে"
+  },
+  "chat.reset_message": {
+    "en": "Fresh start. What do you want to talk about?",
+    "ru": "Новый разговор. О чём хотите поговорить?",
+    "bn": "নতুন শুরু। আপনি কী নিয়ে কথা বলতে চান?"
+  },
+  "chat.error_response": {
+    "en": "I'm not sure how to answer that.",
+    "ru": "Не уверен, как на это ответить.",
+    "bn": "আমি নিশ্চিত নই কীভাবে উত্তর দেব।"
+  },
+  "chat.error_loading": {
+    "en": "The AI model is loading — give it a moment and try again.",
+    "ru": "Модель загружается — подождите немного и попробуйте снова.",
+    "bn": "এআই মডেল লোড হচ্ছে — একটু অপেক্ষা করে আবার চেষ্টা করুন।"
+  },
+  "chat.error_connection": {
+    "en": "Looks like there's a connection issue. The model server might be starting up — try again in 10 seconds.",
+    "ru": "Похоже, проблема с подключением. Сервер модели, возможно, запускается — попробуйте снова через 10 секунд.",
+    "bn": "সংযোগের সমস্যা হচ্ছে মনে হচ্ছে। মডেল সার্ভারটি চালু হতে পারে — ১০ সেকেন্ড পরে আবার চেষ্টা করুন।"
+  },
+  "chat.thinking": {
+    "en": "thinking...",
+    "ru": "думаю...",
+    "bn": "চিন্তা করছি..."
+  },
+
+  "projects.title": {
+    "en": "Projects — Nelson Baroi",
+    "ru": "Проекты — Нельсон Барои",
+    "bn": "প্রকল্প — নেলসন বারোই"
+  },
+  "projects.meta_desc": {
+    "en": "Nelson Baroi — software projects in voice synthesis, visual AI, statistical simulation, and local tooling.",
+    "ru": "Нельсон Барои — программные проекты в области синтеза речи, визуального ИИ, статистического моделирования и локальных инструментов.",
+    "bn": "নেলসন বারোই — ভয়েস সিন্থেসিস, ভিজুয়াল এআই, স্ট্যাটিস্টিক্যাল সিমুলেশন এবং লোকাল টুলিংয়ের সফটওয়্যার প্রকল্প।"
+  },
+  "projects.header": {
+    "en": "Projects",
+    "ru": "Проекты",
+    "bn": "প্রকল্প"
+  },
+  "projects.nav_home": {
+    "en": "Home",
+    "ru": "Главная",
+    "bn": "হোম"
+  },
+  "projects.nav_philosophy": {
+    "en": "Philosophy",
+    "ru": "Философия",
+    "bn": "দর্শন"
+  },
+  "projects.nav_cv": {
+    "en": "CV",
+    "ru": "Резюме",
+    "bn": "সিভি"
+  },
+  "projects.nav_courses": {
+    "en": "Courses",
+    "ru": "Курсы",
+    "bn": "কোর্স"
+  },
+  "projects.nav_chat": {
+    "en": "Chat",
+    "ru": "Чат",
+    "bn": "চ্যাট"
+  },
+  "projects.intro": {
+    "en": "A selection of tools I've built while exploring AI, audio, and simulation. Each one started with a specific question — not a technology to showcase. The approaches vary, but the goal was always the same: understand how something actually works by building it.",
+    "ru": "Подборка инструментов, которые я создал, исследуя ИИ, аудио и симуляцию. Каждый проект начинался с конкретного вопроса — а не с желания продемонстрировать технологию. Подходы разные, но цель всегда была одна: понять, как что-то работает на самом деле, создав это.",
+    "bn": "এআই, অডিও এবং সিমুলেশন অন্বেষণ করার সময় আমি যে টুলগুলি তৈরি করেছি তার একটি নির্বাচন। প্রতিটি প্রকল্প একটি নির্দিষ্ট প্রশ্ন দিয়ে শুরু হয়েছিল — কোনো প্রযুক্তি প্রদর্শনের জন্য নয়। পদ্ধতিগুলি ভিন্ন, কিন্তু লক্ষ্য সবসময় একই ছিল: কিছু তৈরি করে বুঝতে পারা এটি আসলে কীভাবে কাজ করে।"
+  },
+  "projects.p1_title": {
+    "en": "AI Memory",
+    "ru": "AI Memory",
+    "bn": "এআই মেমোরি"
+  },
+  "projects.p1_tagline": {
+    "en": "Local knowledge base with file indexing and interactive Q&A",
+    "ru": "Локальная база знаний с индексацией файлов и интерактивным Q&A",
+    "bn": "ফাইল ইনডেক্সিং এবং ইন্টারঅ্যাকটিভ প্রশ্নোত্তর সহ স্থানীয় জ্ঞানভাণ্ডার"
+  },
+  "projects.p1_section1_title": {
+    "en": "What I worked on",
+    "ru": "Над чем работал",
+    "bn": "যা নিয়ে কাজ করেছি"
+  },
+  "projects.p1_section1_item1": {
+    "en": "Real-time file watcher that indexes new and modified files automatically",
+    "ru": "Мониторинг файлов в реальном времени с автоматической индексацией новых и изменённых файлов",
+    "bn": "রিয়েল-টাইম ফাইল ওয়াচার যা স্বয়ংক্রিয়ভাবে নতুন এবং পরিবর্তিত ফাইল ইনডেক্স করে"
+  },
+  "projects.p1_section1_item2": {
+    "en": "Embedding-based semantic search across the indexed knowledge base",
+    "ru": "Семантический поиск на основе эмбеддингов по индексированной базе знаний",
+    "bn": "ইনডেক্স করা জ্ঞানভাণ্ডার জুড়ে এম্বেডিং-ভিত্তিক শব্দার্থিক অনুসন্ধান"
+  },
+  "projects.p1_section1_item3": {
+    "en": "LLM-powered Q&A that answers questions from retrieved context",
+    "ru": "Q&A на основе LLM, отвечающее на вопросы из найденного контекста",
+    "bn": "এলএলএম-চালিত প্রশ্নোত্তর যা পুনরুদ্ধার করা প্রসঙ্গ থেকে উত্তর দেয়"
+  },
+  "projects.p1_section1_item4": {
+    "en": "Threshold tuning for when retrieval should trigger vs. general knowledge",
+    "ru": "Настройка порога для определения момента запуска поиска вместо использования общих знаний",
+    "bn": "থ্রেশহোল্ড টিউনিং — কখন পুনরুদ্ধার ট্রিগার হবে বনাম সাধারণ জ্ঞান ব্যবহার করবে"
+  },
+  "projects.p1_section2_title": {
+    "en": "What I learned",
+    "ru": "Что я узнал",
+    "bn": "যা শিখেছি"
+  },
+  "projects.p1_section2_text": {
+    "en": "The more interesting problem wasn't indexing — it was deciding when a search result is relevant enough to use. Retrieval-augmented generation is only as good as the relevance filter in front of it; without that, the model confidently answers from the wrong document.",
+    "ru": "Более интересная проблема заключалась не в индексации, а в определении того, когда результат поиска достаточно релевантен для использования. Генерация с дополнением поиска настолько же хороша, насколько хорош фильтр релевантности перед ней; без него модель уверенно отвечает из неверного документа.",
+    "bn": "আসল চ্যালেঞ্জ ছিল ইনডেক্সিং না — বরং সিদ্ধান্ত নেওয়া কখন একটি অনুসন্ধান ফলাফল ব্যবহারের জন্য যথেষ্ট প্রাসঙ্গিক। রিট্রিভাল-অগমেন্টেড জেনারেশন তার সামনের রেলেভ্যান্স ফিল্টারের মতোই ভালো; তা ছাড়া মডেল আত্মবিশ্বাসের সাথে ভুল ডকুমেন্ট থেকে উত্তর দেয়।"
+  },
+  "projects.p2_title": {
+    "en": "Qwen Voice Cloner",
+    "ru": "Qwen Voice Cloner",
+    "bn": "কুয়েন ভয়েস ক্লোনার"
+  },
+  "projects.p2_tagline": {
+    "en": "Multi-language voice cloning using Qwen3-TTS",
+    "ru": "Многоязычное клонирование голоса с использованием Qwen3-TTS",
+    "bn": "Qwen3-TTS ব্যবহার করে বহুভাষিক ভয়েস ক্লোনিং"
+  },
+  "projects.p2_item1": {
+    "en": "Voice cloning pipeline: upload a reference sample, generate matching speech",
+    "ru": "Конвейер клонирования голоса: загрузите образец, получите синтезированную речь",
+    "bn": "ভয়েস ক্লোনিং পাইপলাইন: একটি রেফারেন্স নমুনা আপলোড করুন, মিলিয়ে স্পিচ জেনারেট করুন"
+  },
+  "projects.p2_item2": {
+    "en": "Voice design from text descriptions ('warm, calm, slightly accented')",
+    "ru": "Дизайн голоса по текстовым описаниям («тёплый, спокойный, с лёгким акцентом»)",
+    "bn": "টেক্সট বর্ণনা থেকে ভয়েস ডিজাইন ('উষ্ণ, শান্ত, সামান্য উচ্চারণসহ')"
+  },
+  "projects.p2_item3": {
+    "en": "Built-in speaker library and voice sample management",
+    "ru": "Встроенная библиотека дикторов и управление образцами голоса",
+    "bn": "বিল্ট-ইন স্পিকার লাইব্রেরি এবং ভয়েস নমুনা ব্যবস্থাপনা"
+  },
+  "projects.p2_item4": {
+    "en": "CUDA / bfloat16 optimization for GPU inference; CPU fallback",
+    "ru": "Оптимизация CUDA / bfloat16 для GPU-инференса; запасной вариант на CPU",
+    "bn": "GPU ইনফারেন্সের জন্য CUDA / bfloat16 অপটিমাইজেশন; CPU ফলব্যাক"
+  },
+  "projects.p2_item5": {
+    "en": "10-language support: English, Russian, Chinese, Japanese, Korean, and more",
+    "ru": "Поддержка 10 языков: английский, русский, китайский, японский, корейский и другие",
+    "bn": "১০টি ভাষার সমর্থন: ইংরেজি, রুশ, চীনা, জাপানি, কোরিয়ান এবং আরও"
+  },
+  "projects.p2_learned": {
+    "en": "Small errors in transcript alignment — a word cut off, a pause misread — compound into noticeable artifacts in the output. The preprocessing pipeline matters as much as the model. I also found that voice design from text descriptions is harder to control than cloning from a real sample; the model's interpretation of 'warm' varies.",
+    "ru": "Мелкие ошибки в выравнивании транскриптов — обрезанное слово, неверно интерпретированная пауза — превращаются в заметные артефакты на выходе. Конвейер предобработки важен не меньше самой модели. Я также обнаружил, что дизайн голоса по текстовым описаниям контролировать сложнее, чем клонирование с реального образца; интерпретация моделью слова «тёплый» варьируется.",
+    "bn": "ট্রান্সক্রিপ্ট অ্যালাইনমেন্টের ছোট ত্রুটি — একটি শব্দ কেটে যাওয়া, একটি বিরতি ভুল পড়া — আউটপুটে লক্ষণীয় আর্টিফ্যাক্টে পরিণত হয়। প্রিপ্রসেসিং পাইপলাইন মডেলের মতোই গুরুত্বপূর্ণ। আমি আরও দেখেছি যে টেক্সট বর্ণনা থেকে ভয়েস ডিজাইন করা বাস্তব নমুনা থেকে ক্লোন করার চেয়ে নিয়ন্ত্রণ করা কঠিন; মডেলের 'উষ্ণ' শব্দের ব্যাখ্যা পরিবর্তিত হয়।"
+  },
+  "projects.p3_title": {
+    "en": "Hairstyle Try-On",
+    "ru": "Hairstyle Try-On",
+    "bn": "হেয়ারস্টাইল ট্রাই-অন"
+  },
+  "projects.p3_tagline": {
+    "en": "AI-powered hairstyle editing with FLUX and Qwen cloud models",
+    "ru": "Редактирование причёсок на базе ИИ с использованием FLUX и Qwen облачных моделей",
+    "bn": "FLUX এবং Qwen ক্লাউড মডেল দিয়ে এআই-চালিত হেয়ারস্টাইল এডিটিং"
+  },
+  "projects.p3_item1": {
+    "en": "Image intake, face detection, and preprocessing pipeline",
+    "ru": "Загрузка изображений, обнаружение лиц и конвейер предобработки",
+    "bn": "ইমেজ গ্রহণ, মুখ শনাক্তকরণ এবং প্রিপ্রসেসিং পাইপলাইন"
+  },
+  "projects.p3_item2": {
+    "en": "Dual-engine architecture: FLUX as primary, Qwen as automatic fallback",
+    "ru": "Двухдвигательная архитектура: FLUX как основной, Qwen как автоматический запасной",
+    "bn": "ডুয়াল-ইঞ্জিন আর্কিটেকচার: FLUX প্রাথমিক, Qwen স্বয়ংক্রিয় ফলব্যাক"
+  },
+  "projects.p3_item3": {
+    "en": "15+ hair colors with a custom hex picker",
+    "ru": "Более 15 цветов волос с собственным hex-пикером",
+    "bn": "১৫টিরও বেশি চুলের রঙ কাস্টম হেক্স পিকার সহ"
+  },
+  "projects.p3_item4": {
+    "en": "Gender-specific style catalogs; generation history for comparison",
+    "ru": "Каталоги стилей по полу; история генераций для сравнения",
+    "bn": "লিঙ্গ-নির্দিষ্ট স্টাইল ক্যাটালগ; তুলনার জন্য জেনারেশন হিস্টোরি"
+  },
+  "projects.p3_item5": {
+    "en": "Multi-language UI (English and Russian)",
+    "ru": "Многоязычный интерфейс (английский и русский)",
+    "bn": "বহুভাষিক ইউআই (ইংরেজি এবং রুশ)"
+  },
+  "projects.p3_learned": {
+    "en": "Designing for model unreliability was the main engineering challenge. Cloud APIs fail intermittently, and if the app doesn't handle that gracefully, the user sees an error rather than a result. Building the fallback path at the UI layer — so the switch from FLUX to Qwen is invisible — made the experience feel stable even when individual calls weren't.",
+    "ru": "Проектирование с учётом ненадёжности модели было главной инженерной задачей. Облачные API периодически дают сбой, и если приложение не обрабатывает это корректно, пользователь видит ошибку вместо результата. Создание запасного пути на уровне UI — так, чтобы переключение с FLUX на Qwen было незаметным — сделало интерфейс стабильным, даже когда отдельные вызовы таковыми не были.",
+    "bn": "মডেলের অনির্ভরযোগ্যতার জন্য ডিজাইন করা ছিল প্রধান ইঞ্জিনিয়ারিং চ্যালেঞ্জ। ক্লাউড এপিআই মাঝে মাঝে ব্যর্থ হয়, এবং যদি অ্যাপটি সুন্দরভাবে তা না সামলায়, ব্যবহারকারী ফলাফলের পরিবর্তে একটি ত্রুটি দেখেন। ইউআই স্তরে ফলব্যack পাথ তৈরি করা — যাতে FLUX থেকে Qwen-এ সুইচিং অদৃশ্য হয় — অভিজ্ঞতাকে স্থিতিশীল করেছে এমনকি যখন পৃথক কলগুলি স্থিতিশীল ছিল না।"
+  },
+  "projects.p4_title": {
+    "en": "Parallel Universe Me",
+    "ru": "Parallel Universe Me",
+    "bn": "প্যারালাল ইউনিভার্স মি"
+  },
+  "projects.p4_tagline": {
+    "en": "Life simulation using Monte Carlo methods and real statistical datasets",
+    "ru": "Симуляция жизни с использованием методов Монте-Карло и реальных статистических данных",
+    "bn": "মন্টে কার্লো পদ্ধতি এবং বাস্তব পরিসংখ্যানগত ডেটাসেট ব্যবহার করে জীবন সিমুলেশন"
+  },
+  "projects.p4_item1": {
+    "en": "Monte Carlo simulation engine for probabilistic life-path modeling",
+    "ru": "Движок симуляции Монте-Карло для вероятностного моделирования жизненных путей",
+    "bn": "সম্ভাব্য জীবন-পথ মডেলিংয়ের জন্য মন্টে কার্লো সিমুলেশন ইঞ্জিন"
+  },
+  "projects.p4_item2": {
+    "en": "Causal DAGs mapping decision trees with statistical outcome weights",
+    "ru": "Причинные DAG-диаграммы, отображающие деревья решений с весами статистических исходов",
+    "bn": "স্ট্যাটিস্টিক্যাল আউটকাম ওয়েট সহ ডিসিশন ট্রি ম্যাপিং কার্যকারণ DAG"
+  },
+  "projects.p4_item3": {
+    "en": "Data compilation from BLS, OECD, World Bank, and Kauffman research",
+    "ru": "Сбор данных из BLS, OECD, Всемирного банка и исследований Кауффмана",
+    "bn": "BLS, OECD, বিশ্বব্যাংক এবং কফম্যান রিসার্চ থেকে ডেটা কম্পাইলেশন"
+  },
+  "projects.p4_item4": {
+    "en": "LLM narrator that interprets simulation output — without generating numbers",
+    "ru": "LLM-рассказчик, интерпретирующий результаты симуляции — без генерации чисел",
+    "bn": "এলএলএম বর্ণনাকারী যা সিমুলেশন আউটপুট ব্যাখ্যা করে — সংখ্যা তৈরি না করে"
+  },
+  "projects.p4_item5": {
+    "en": "Gradio frontend with Plotly visualizations; Vercel serverless deployment",
+    "ru": "Фронтенд на Gradio с визуализациями Plotly; бессерверное развёртывание на Vercel",
+    "bn": "প্লটলি ভিজুয়ালাইজেশন সহ গ্র্যাডিও ফ্রন্টএন্ড; ভার্সেল সার্ভারলেস ডিপ্লয়মেন্ট"
+  },
+  "projects.p4_learned": {
+    "en": "Keeping the LLM out of the data generation was a deliberate constraint — and the right one. Once a model starts producing statistics, users can't distinguish them from real ones, which undermines the whole point. The LLM's role here is narrative: it explains what the Monte Carlo output means. The numbers come from real datasets. That separation is harder to maintain architecturally than it sounds.",
+    "ru": "Исключение LLM из генерации данных было осознанным ограничением — и правильным. Как только модель начинает генерировать статистику, пользователи не могут отличить её от реальной, что подрывает всю суть. Роль LLM здесь — нарративная: она объясняет, что означает результат Монте-Карло. Числа берутся из реальных наборов данных. Архитектурно поддерживать такое разделение сложнее, чем кажется.",
+    "bn": "ডেটা জেনারেশন থেকে এলএলএমকে বাদ রাখা একটি ইচ্ছাকৃত সীমাবদ্ধতা ছিল — এবং সঠিক সিদ্ধান্ত। একবার মডেল পরিসংখ্যান তৈরি করা শুরু করলে ব্যবহারকারীরা সেগুলোকে বাস্তব থেকে আলাদা করতে পারেন না, যা পুরো উদ্দেশ্যকে নষ্ট করে দেয়। এখানে এলএলএম-এর ভূমিকা বর্ণনামূলক: এটি ব্যাখ্যা করে মন্টে কার্লো আউটপুট কী অর্থ বহন করে। সংখ্যাগুলো বাস্তব ডেটাসেট থেকে আসে। এই বিচ্ছেদ আর্কিটেকচারালি বজায় রাখা শোনার চেয়ে কঠিন।"
+  },
+  "projects.p5_title": {
+    "en": "SFX Generator",
+    "ru": "SFX Generator",
+    "bn": "এসএফএক্স জেনারেটর"
+  },
+  "projects.p5_tagline": {
+    "en": "Procedural sound effects from signal processing — no samples required",
+    "ru": "Процедурные звуковые эффекты из обработки сигналов — без использования сэмплов",
+    "bn": "সিগন্যাল প্রসেসিং থেকে প্রসিডিউরাল সাউন্ড ইফেক্ট — কোনো নমুনার প্রয়োজন নেই"
+  },
+  "projects.p5_item1": {
+    "en": "18+ SFX types: impacts, sweeps, drones, glitches, ambient textures, alarms",
+    "ru": "Более 18 типов звуковых эффектов: удары, свипы, дроны, глитчи, эмбиент-текстуры, сигналы",
+    "bn": "১৮টির বেশি এসএফএক্স টাইপ: ইমপ্যাক্ট, সুইপ, ড্রোন, গ্লিচ, অ্যাম্বিয়েন্ট টেক্সচার, অ্যালার্ম"
+  },
+  "projects.p5_item2": {
+    "en": "Butterworth filters, amplitude envelopes, LFO modulation from scratch",
+    "ru": "Фильтры Баттерворта, амплитудные огибающие, LFO-модуляция с нуля",
+    "bn": "বাটারওয়ার্থ ফিল্টার, অ্যামপ্লিটিউড এনভেলপ, এলএফও মডুলেশন স্ক্র্যাচ থেকে"
+  },
+  "projects.p5_item3": {
+    "en": "Adjustable duration, frequency, intensity, and stereo pan per effect",
+    "ru": "Регулируемая длительность, частота, интенсивность и стереопанорамирование для каждого эффекта",
+    "bn": "প্রতি ইফেক্টের জন্য সামঞ্জস্যযোগ্য সময়কাল, ফ্রিকোয়েন্সি, তীব্রতা এবং স্টিরিও প্যান"
+  },
+  "projects.p5_item4": {
+    "en": "Batch generation mode; WAV export at 44.1 kHz, 16-bit stereo",
+    "ru": "Пакетный режим генерации; экспорт WAV с частотой 44,1 кГц, 16-битное стерео",
+    "bn": "ব্যাচ জেনারেশন মোড; ৪৪.১ kHz, ১৬-বিট স্টিরিওতে WAV এক্সপোর্ট"
+  },
+  "projects.p5_item5": {
+    "en": "Tkinter desktop GUI for interactive use",
+    "ru": "Десктопный GUI на Tkinter для интерактивной работы",
+    "bn": "ইন্টারঅ্যাকটিভ ব্যবহারের জন্য টিকিন্টার ডেস্কটপ জিইউআই"
+  },
+  "projects.p5_learned": {
+    "en": "This project uses no AI models — everything is signal processing. That turned out to be a useful exercise: designing sounds from frequency curves and filter shapes requires understanding what you actually want the audio to do, rather than describing it in natural language and hoping a model interprets it correctly. Procedural generation gives you complete control, at the cost of needing to know what you're controlling.",
+    "ru": "Этот проект не использует модели ИИ — всё основано на обработке сигналов. Это оказалось полезным упражнением: проектирование звуков из частотных кривых и форм фильтров требует понимания того, что вы хотите получить от аудио, вместо описания на естественном языке с надеждой, что модель интерпретирует это правильно. Процедурная генерация даёт полный контроль ценой необходимости знать, что именно вы контролируете.",
+    "bn": "এই প্রকল্পটি কোনো এআই মডেল ব্যবহার করে না — সবকিছুই সিগন্যাল প্রসেসিং। এটি একটি কার্যকর অনুশীলন হিসেবে প্রমাণিত হয়েছে: ফ্রিকোয়েন্সি কার্ভ এবং ফিল্টার শেপ থেকে সাউন্ড ডিজাইন করার জন্য অডিও থেকে আপনি আসলে কী চান তা বোঝার প্রয়োজন, প্রাকৃতিক ভাষায় বর্ণনা করে মডেল সঠিকভাবে ব্যাখ্যা করবে আশা করার পরিবর্তে। প্রসিডিউরাল জেনারেশন আপনাকে সম্পূর্ণ নিয়ন্ত্রণ দেয়, তবে যা নিয়ন্ত্রণ করছেন তা জানার মূল্যে।"
+  },
+  "projects.p6_title": {
+    "en": "Kira",
+    "ru": "Kira",
+    "bn": "কিরা"
+  },
+  "projects.p6_tagline": {
+    "en": "Structured personal knowledge base designed for LLM context injection",
+    "ru": "Структурированная личная база знаний для инъекции контекста LLM",
+    "bn": "এলএলএম কনটেক্সট ইনজেকশনের জন্য ডিজাইন করা কাঠামোবদ্ধ ব্যক্তিগত জ্ঞানভাণ্ডার"
+  },
+  "projects.p6_item1": {
+    "en": "Organized 19-chapter biography, career materials, and relocation planning",
+    "ru": "Организовал 19-главную биографию, материалы по карьере и планированию переезда",
+    "bn": "১৯ অধ্যায়ের জীবনী, ক্যারিয়ার উপকরণ এবং স্থানান্তর পরিকল্পনা সংগঠিত"
+  },
+  "projects.p6_item2": {
+    "en": "Visa queue analytics: Python scripts, weekly CSV datasets, 13 statistical charts",
+    "ru": "Аналитика визовых очередей: Python-скрипты, еженедельные CSV-наборы данных, 13 статистических графиков",
+    "bn": "ভিসা কিউ অ্যানালিটিক্স: পাইথন স্ক্রিপ্ট, সাপ্তাহিক CSV ডেটাসেট, ১৩টি স্ট্যাটিস্টিক্যাল চার্ট"
+  },
+  "projects.p6_item3": {
+    "en": "Machine-readable manifest.json indexing all files by category and format",
+    "ru": "Машиночитаемый manifest.json, индексирующий все файлы по категориям и форматам",
+    "bn": "মেশিন-রিডেবল manifest.json যা সব ফাইলকে ক্যাটাগরি এবং ফরমেট অনুসারে ইনডেক্স করে"
+  },
+  "projects.p6_item4": {
+    "en": "Exported and structured 6 months of AI conversation history",
+    "ru": "Экспортировал и структурировал историю ИИ-диалогов за 6 месяцев",
+    "bn": "৬ মাসের এআই কথোপকথনের ইতিহাস এক্সপোর্ট এবং কাঠামোবদ্ধ"
+  },
+  "projects.p6_item5": {
+    "en": "Designed for reuse: any file can be fed as context to any LLM tool",
+    "ru": "Предусмотрено повторное использование: любой файл можно подать как контекст любому LLM-инструменту",
+    "bn": "পুনর্ব্যবহারের জন্য ডিজাইন করা: যেকোনো ফাইল যেকোনো এলএলএম টুলে কনটেক্সট হিসেবে দেওয়া যাবে"
+  },
+  "projects.p6_learned": {
+    "en": "A knowledge base is only useful if you can retrieve the right piece at the right time. The manifest.json — a structured index of every file with metadata — was the detail that made everything else work. Without it, the repository is just a folder of documents. With it, any tool can navigate the contents without reading everything. The real challenge was deciding what belongs in a knowledge base versus what belongs in a conversation.",
+    "ru": "База знаний полезна только тогда, когда вы можете найти нужную информацию в нужное время. Manifest.json — структурированный индекс каждого файла с метаданными — стал деталью, которая заставила всё работать. Без него репозиторий — просто папка документов. С ним любой инструмент может ориентироваться в содержимом, не читая всё подряд. Настоящая задача заключалась в определении того, что должно быть в базе знаний, а что — в разговоре.",
+    "bn": "একটি জ্ঞানভাণ্ডার তখনই কার্যকর যখন আপনি সঠিক সময়ে সঠিক অংশটি খুঁজে পেতে পারেন। manifest.json — মেটাডেটাসহ প্রতিটি ফাইলের কাঠামোবদ্ধ সূচক — বিস্তারিতটি যা সবকিছুকে কাজ করতে সক্ষম করেছে। এটি ছাড়া রিপোজিটরি শুধু ডকুমেন্টের একটি ফোল্ডার। এটি থাকলে যেকোনো টুল সম্পূর্ণ পড়া ছাড়াই বিষয়বস্তু নেভিগেট করতে পারে। আসল চ্যালেঞ্জ ছিল সিদ্ধান্ত নেওয়া জ্ঞানভাণ্ডারে কী থাকা উচিত বনাম কথোপকথনে কী থাকা উচিত।"
+  },
+  "projects.p7_title": {
+    "en": "Web Apps Collection",
+    "ru": "Web Apps Collection",
+    "bn": "ওয়েব অ্যাপস কালেকশন"
+  },
+  "projects.p7_tagline": {
+    "en": "Monorepo of 12 projects: polling apps, chatbots, portfolio builder, OCR pipeline, AI renamer, and more",
+    "ru": "Монорепозиторий из 12 проектов: приложения для голосования, чат-боты, конструктор портфолио, OCR-конвейер, AI-переименовщик и другое",
+    "bn": "১২টি প্রকল্পের মনোরিপো: পোলিং অ্যাপ, চ্যাটবট, পোর্টফোলিও বিল্ডার, ওসিআর পাইপলাইন, এআই রিনেমার এবং আরও"
+  },
+  "projects.p7_section1_title": {
+    "en": "Included projects",
+    "ru": "Включённые проекты",
+    "bn": "অন্তর্ভুক্ত প্রকল্প"
+  },
+  "projects.p7_item1": {
+    "en": "simplechat — AI intent-based chatbot (Flask)",
+    "ru": "simplechat — чат-бот на основе намерений ИИ (Flask)",
+    "bn": "simplechat — এআই ইনটেন্ট-ভিত্তিক চ্যাটবট (Flask)"
+  },
+  "projects.p7_item2": {
+    "en": "Drag-and-Drop-Portfolio-Builder — visual portfolio creator",
+    "ru": "Drag-and-Drop-Portfolio-Builder — визуальный конструктор портфолио",
+    "bn": "Drag-and-Drop-Portfolio-Builder — ভিজুয়াল পোর্টফোলিও ক্রিয়েটর"
+  },
+  "projects.p7_item3": {
+    "en": "ai-assistant-portfolio — FastAPI + React AI assistant",
+    "ru": "ai-assistant-portfolio — AI-ассистент на FastAPI + React",
+    "bn": "ai-assistant-portfolio — FastAPI + React এআই অ্যাসিস্ট্যান্ট"
+  },
+  "projects.p7_item4": {
+    "en": "polling-app & polling-app-enhanced — full-stack polling with Docker",
+    "ru": "polling-app и polling-app-enhanced — полнофункциональное голосование с Docker",
+    "bn": "polling-app ও polling-app-enhanced — ডকার সহ ফুল-স্ট্যাক পোলিং"
+  },
+  "projects.p7_item5": {
+    "en": "Register — OCR expense extraction pipeline",
+    "ru": "Register — OCR-конвейер для извлечения расходов",
+    "bn": "Register — ওসিআর ব্যয় নিষ্কাশন পাইপলাইন"
+  },
+  "projects.p7_item6": {
+    "en": "AI-Renamer — Gemini-powered file renamer",
+    "ru": "AI-Renamer — переименовщик файлов на базе Gemini",
+    "bn": "AI-Renamer — জেমিনি-চালিত ফাইল রিনেমার"
+  },
+  "projects.p7_item7": {
+    "en": "chatbot — Nelson's AI Twin with RAG",
+    "ru": "chatbot — AI-двойник Нельсона с RAG",
+    "bn": "chatbot — আরএজি সহ নেলসনের এআই টুইন"
+  },
+  "projects.p7_item8": {
+    "en": "nextjs-ai-chatbot — Vercel AI SDK chatbot",
+    "ru": "nextjs-ai-chatbot — чат-бот на Vercel AI SDK",
+    "bn": "nextjs-ai-chatbot — ভার্সেল এআই এসডিকে চ্যাটবট"
+  },
+  "projects.p7_item9": {
+    "en": "Correspondence — document management",
+    "ru": "Correspondence — управление документами",
+    "bn": "Correspondence — ডকুমেন্ট ব্যবস্থাপনা"
+  },
+  "projects.p7_item10": {
+    "en": "github-final-project — micro-finance startup",
+    "ru": "github-final-project — стартап микрофинансирования",
+    "bn": "github-final-project — মাইক্রো-ফাইন্যান্স স্টার্টআপ"
+  },
+  "projects.p7_learned": {
+    "en": "Consolidating 12 separate repositories into one monorepo taught me that consistent tooling across projects matters more than any individual feature. Standardizing .gitignore patterns, README conventions, and dependency management across Python and JavaScript projects requires a lightweight structure that doesn't get in the way of each project's autonomy.",
+    "ru": "Объединение 12 отдельных репозиториев в один монорепозиторий научило меня тому, что единообразие инструментов в проектах важнее любой отдельной функции. Стандартизация шаблонов .gitignore, соглашений README и управления зависимостями в проектах Python и JavaScript требует лёгкой структуры, не мешающей автономии каждого проекта.",
+    "bn": "১২টি পৃথক রিপোজিটরিকে একটি মনোরিপোজিটরিতে একীভূত করা আমাকে শিখিয়েছে যে প্রকল্প জুড়ে সামঞ্জস্যপূর্ণ টুলিং যেকোনো পৃথক বৈশিষ্ট্যের চেয়ে বেশি গুরুত্বপূর্ণ। পাইথন এবং জাভাস্ক্রিপ্ট প্রকল্প জুড়ে .gitignore প্যাটার্ন, README কনভেনশন এবং ডিপেন্ডেন্সি ম্যানেজমেন্ট মানসম্মত করার জন্য একটি হালকা কাঠামো প্রয়োজন যা প্রতিটি প্রকল্পের স্বায়ত্তশাসনে বাধা দেয় না।"
+  },
+  "projects.footer_rights": {
+    "en": "© 2026 Nelson Baroi. All rights reserved.",
+    "ru": "© 2026 Нельсон Барои. Все права защищены.",
+    "bn": "© ২০২৬ নেলসন বারোই। সর্বস্বত্ব সংরক্ষিত।"
+  },
+  "projects.widget_greeting": {
+    "en": "Hey! I'm Nelson's AI twin. Ask me about my projects, career, skills, education, or Ireland plans. I'll give it to you straight.",
+    "ru": "Привет! Я AI-двойник Нельсона. Спрашивайте о моих проектах, карьере, навыках, образовании или планах в Ирландии. Расскажу всё прямо.",
+    "bn": "হাই! আমি নেলসনের এআই টুইন। আমার প্রকল্প, ক্যারিয়ার, দক্ষতা, শিক্ষা বা আয়ারল্যান্ড পরিকল্পনা সম্পর্কে জিজ্ঞাসা করুন। সোজা উত্তর দেব।"
+  },
+  "projects.widget_placeholder": {
+    "en": "Ask Nelson...",
+    "ru": "Спросить Нельсона...",
+    "bn": "নেলসনকে জিজ্ঞাসা করুন..."
+  },
+
+  "courses.title": {
+    "en": "Professional Courses — Nelson Baroi",
+    "ru": "Профессиональные курсы — Нельсон Барои",
+    "bn": "পেশাগত কোর্স — নেলসন বারোই"
+  },
+  "courses.nav_back": {
+    "en": "Back to Portfolio",
+    "ru": "Назад в портфолио",
+    "bn": "পোর্টফোলিওতে ফিরুন"
+  },
+  "courses.nav_cv": {
+    "en": "View Full CV",
+    "ru": "Посмотреть полное резюме",
+    "bn": "সম্পূর্ণ সিভি দেখুন"
+  },
+  "courses.nav_courses": {
+    "en": "Professional Courses",
+    "ru": "Профессиональные курсы",
+    "bn": "পেশাগত কোর্স"
+  },
+  "courses.footer_rights": {
+    "en": "© 2025 Nelson Baroi. All rights reserved.",
+    "ru": "© 2025 Нельсон Барои. Все права защищены.",
+    "bn": "© ২০২৫ নেলসন বারোই। সর্বস্বত্ব সংরক্ষিত।"
+  },
+
+  "philosophy.title": {
+    "en": "Nelson Baroi - Philosophy",
+    "ru": "Нельсон Барои — Философия",
+    "bn": "নেলসন বারোই — দর্শন"
+  },
+  "philosophy.header": {
+    "en": "Philosophy",
+    "ru": "Философия",
+    "bn": "দর্শন"
+  },
+  "philosophy.section1_title": {
+    "en": "Empowering Innovation Through Collaboration",
+    "ru": "Стимулирование инноваций через сотрудничество",
+    "bn": "সহযোগিতার মাধ্যমে উদ্ভাবনের ক্ষমতায়ন"
+  },
+  "philosophy.section1_text": {
+    "en": "At the heart of everything I do lies a deep belief in the power of collaboration. I firmly believe that innovation thrives when diverse minds come together to share ideas, challenge assumptions, and solve problems collectively. Whether it's leading a team, contributing to a project, or engaging with my community, I strive to foster an environment where everyone feels valued, heard, and empowered to contribute their best.",
+    "ru": "В основе всего, что я делаю, лежит глубокая вера в силу сотрудничества. Я твердо убежден, что инновации процветают, когда разные умы собираются вместе, чтобы делиться идеями, оспаривать предположения и коллективно решать проблемы. Будь то руководство командой, участие в проекте или взаимодействие с сообществом, я стремлюсь создать среду, где каждый чувствует себя ценным, услышанным и способным внести свой лучший вклад.",
+    "bn": "আমি যা কিছু করি তার কেন্দ্রে রয়েছে সহযোগিতার শক্তিতে গভীর বিশ্বাস। আমি দৃঢ়ভাবে বিশ্বাস করি যে উদ্ভাবন তখনই বিকশিত হয় যখন ভিন্ন ভিন্ন মন একত্রিত হয়ে ধারণা ভাগ করে নেয়, অনুমানকে চ্যালেঞ্জ করে এবং যৌথভাবে সমস্যা সমাধান করে। একটি দলকে নেতৃত্ব দেওয়া, একটি প্রকল্পে অবদান রাখা বা আমার সম্প্রদায়ের সাথে যুক্ত হওয়া — আমি এমন একটি পরিবেশ গড়ে তোলার চেষ্টা করি যেখানে প্রত্যেকে মূল্যবান, শোনা এবং তাদের সেরাটি দেওয়ার ক্ষমতাপ্রাপ্ত বোধ করে।"
+  },
+  "philosophy.section2_title": {
+    "en": "Commitment to Lifelong Learning",
+    "ru": "Приверженность непрерывному обучению",
+    "bn": "আজীবন শেখার প্রতিশ্রুতি"
+  },
+  "philosophy.section2_text": {
+    "en": "I view life as a continuous journey of growth and discovery. Every experience — whether it's overcoming challenges, learning from mentors, or adapting to new environments — has shaped me into who I am today. I embrace curiosity and remain open to exploring new technologies, methodologies, and perspectives. This commitment to lifelong learning not only fuels my personal development but also enables me to drive meaningful change in my professional endeavors.",
+    "ru": "Я рассматриваю жизнь как непрерывный путь роста и открытий. Каждый опыт — будь то преодоление трудностей, обучение у наставников или адаптация к новым условиям — сформировал меня таким, какой я есть сегодня. Я принимаю любопытство и остаюсь открытым к изучению новых технологий, методологий и перспектив. Эта приверженность непрерывному обучению не только питает мое личное развитие, но и позволяет мне осуществлять значимые изменения в профессиональной деятельности.",
+    "bn": "আমি জীবনকে বৃদ্ধি এবং আবিষ্কারের একটি অবিচ্ছিন্ন যাত্রা হিসেবে দেখি। প্রতিটি অভিজ্ঞতা — চ্যালেঞ্জ অতিক্রম করা, mentorsদের কাছ থেকে শেখা বা নতুন পরিবেশে খাপ খাওয়ানো — আমাকে আজকে আমি যেমন হতে পেরেছি তা গঠন করেছে। আমি কৌতূহলকে আলিঙ্গন করি এবং নতুন প্রযুক্তি, পদ্ধতি এবং দৃষ্টিভঙ্গি অন্বেষণ করতে উন্মুক্ত থাকি। আজীবন শেখার এই প্রতিশ্রুতি শুধু আমার ব্যক্তিগত বিকাশকে জ্বালানি দেয় না, বরং আমাকে আমার পেশাগত প্রচেষ্টায় অর্থপূর্ণ পরিবর্তন আনতে সক্ষম করে।"
+  },
+  "philosophy.section3_title": {
+    "en": "Integrity and Accountability",
+    "ru": "Честность и ответственность",
+    "bn": "সততা এবং জবাবদিহিতা"
+  },
+  "philosophy.section3_text": {
+    "en": "Integrity is the cornerstone of my philosophy. I believe that trust is earned through consistent actions, transparency, and accountability. In every role I undertake, I prioritize ethical decision-making and ensure that my actions align with my values. By maintaining integrity, I aim to inspire those around me to uphold the same standards of excellence and honesty.",
+    "ru": "Честность — краеугольный камень моей философии. Я верю, что доверие заслуживается последовательными действиями, прозрачностью и ответственностью. В каждой выполняемой мной роли я ставлю во главу угла этическое принятие решений и слежу за тем, чтобы мои действия соответствовали моим ценностям. Сохраняя честность, я стремлюсь вдохновлять окружающих придерживаться тех же стандартов совершенства и честности.",
+    "bn": "সততা আমার দর্শনের ভিত্তি। আমি বিশ্বাস করি যে ধারাবাহিক কর্ম, স্বচ্ছতা এবং জবাবদিহিতার মাধ্যমে আস্থা অর্জিত হয়। আমি যে কোনো ভূমিকায় কাজ করি না কেন, আমি নৈতিক সিদ্ধান্ত গ্রহণকে অগ্রাধিকার দিই এবং নিশ্চিত করি যে আমার কাজ আমার মূল্যবোধের সাথে সামঞ্জস্যপূর্ণ। সততা বজায় রেখে, আমি আমার আশেপাশের মানুষকে উৎকর্ষ এবং সততার একই মান বজায় রাখতে অনুপ্রাণিত করতে চাই।"
+  },
+  "philosophy.section4_title": {
+    "en": "Driving Positive Societal Impact",
+    "ru": "Положительное влияние на общество",
+    "bn": "ইতিবাচক সামাজিক প্রভাব সৃষ্টি"
+  },
+  "philosophy.section4_text": {
+    "en": "Beyond personal and professional success, I am driven by a desire to make a lasting impact on society. I believe that true fulfillment comes from using one's skills and resources to uplift others and contribute to the greater good. Whether it's mentoring young professionals, supporting community initiatives, or advocating for workplace safety, I am committed to creating opportunities that empower individuals and communities to thrive.",
+    "ru": "Помимо личного и профессионального успеха, мной движет желание оказать долгосрочное влияние на общество. Я верю, что истинное удовлетворение приходит от использования своих навыков и ресурсов для поддержки других и вклада в общее благо. Будь то наставничество молодых специалистов, поддержка общественных инициатив или пропаганда безопасности на рабочем месте, я стремлюсь создавать возможности, которые позволяют отдельным людям и сообществам процветать.",
+    "bn": "ব্যক্তিগত এবং পেশাগত সাফল্যের বাইরেও, আমি সমাজে স্থায়ী প্রভাব ফেলার ইচ্ছা দ্বারা চালিত। আমি বিশ্বাস করি যে প্রকৃত তৃপ্তি আসে নিজের দক্ষতা এবং সম্পদ ব্যবহার করে অন্যদের উন্নীত করা এবং বৃহত্তর কল্যাণে অবদান রাখার মাধ্যমে। তরুণ পেশাদারদের মেন্টরিং, কমিউনিটি উদ্যোগকে সমর্থন করা বা কর্মক্ষেত্রের নিরাপত্তার পক্ষে কথা বলা — আমি এমন সুযোগ তৈরি করতে প্রতিশ্রুতিবদ্ধ যা ব্যক্তি এবং সম্প্রদায়কে সমৃদ্ধ হওয়ার ক্ষমতা দেয়।"
+  },
+  "philosophy.section5_title": {
+    "en": "Resilience and Adaptability",
+    "ru": "Устойчивость и адаптивность",
+    "bn": "স্থিতিস্থাপকতা এবং অভিযোজনক্ষমতা"
+  },
+  "philosophy.section5_text": {
+    "en": "Life is unpredictable, and challenges are inevitable. However, I see challenges as opportunities for growth and transformation. My experiences studying abroad, navigating unfamiliar environments, and leading complex projects have taught me resilience and adaptability. These qualities enable me to remain steadfast in the face of adversity and find innovative solutions to even the most daunting problems.",
+    "ru": "Жизнь непредсказуема, и проблемы неизбежны. Однако я рассматриваю трудности как возможности для роста и трансформации. Мой опыт учёбы за границей, адаптации в незнакомой среде и руководства сложными проектами научил меня устойчивости и адаптивности. Эти качества позволяют мне оставаться стойким перед лицом невзгод и находить инновационные решения даже самых сложных проблем.",
+    "bn": "জীবন অপ্রত্যাশিত, এবং চ্যালেঞ্জ অনিবার্য। তবে, আমি চ্যালেঞ্জকে বৃদ্ধি এবং রূপান্তরের সুযোগ হিসেবে দেখি। বিদেশে পড়াশোনা, অপরিচিত পরিবেশে নেভিগেট করা এবং জটিল প্রকল্প নেতৃত্ব দেওয়ার আমার অভিজ্ঞতা আমাকে স্থিতিস্থাপকতা এবং অভিযোজনক্ষমতা শিখিয়েছে। এই গুণগুলি আমাকে প্রতিকূলতার মুখে অটল থাকতে এবং সবচেয়ে ভয়ঙ্কর সমস্যারও উদ্ভাবনী সমাধান খুঁজে পেতে সক্ষম করে।"
+  },
+  "philosophy.section6_title": {
+    "en": "The Power of Communication",
+    "ru": "Сила общения",
+    "bn": "যোগাযোগের শক্তি"
+  },
+  "philosophy.section6_text": {
+    "en": "Effective communication is essential for building strong relationships and fostering collaboration. Fluent in Bengali, English, and Russian, I leverage my multilingual abilities to connect with people from diverse backgrounds and bridge cultural gaps. By listening actively, expressing ideas clearly, and encouraging open dialogue, I create spaces where mutual understanding and teamwork flourish.",
+    "ru": "Эффективное общение необходимо для построения крепких отношений и развития сотрудничества. Свободно владея бенгальским, английским и русским языками, я использую свои многоязычные способности для общения с людьми из разных культур и преодоления культурных барьеров. Активно слушая, чётко выражая идеи и поощряя открытый диалог, я создаю пространство, где процветают взаимопонимание и командная работа.",
+    "bn": "শক্তিশালী সম্পর্ক গঠন এবং সহযোগিতা বৃদ্ধির জন্য কার্যকর যোগাযোগ অপরিহার্য। বাংলা, ইংরেজি এবং রুশ ভাষায় সাবলীল, আমি আমার বহুভাষিক দক্ষতা ব্যবহার করে বিভিন্ন পটভূমির মানুষের সাথে সংযোগ স্থাপন করি এবং সাংস্কৃতিক ব্যবধান দূর করি। সক্রিয়ভাবে শুনে, স্পষ্টভাবে ধারণা প্রকাশ করে এবং উন্মুক্ত সংলাপকে উৎসাহিত করে, আমি এমন স্থান তৈরি করি যেখানে পারস্পরিক বোঝাপড়া এবং দলগত কাজ বিকশিত হয়।"
+  },
+  "philosophy.section7_title": {
+    "en": "A Focus on Operational Excellence",
+    "ru": "Фокус на операционном совершенстве",
+    "bn": "অপারেশনাল উৎকর্ষের উপর ফোকাস"
+  },
+  "philosophy.section7_text": {
+    "en": "In all my roles, I emphasize operational excellence — ensuring that processes are efficient, resources are optimized, and goals are achieved with precision. From managing procurement and logistics to overseeing budgets and compliance, I approach every task with dedication and attention to detail. This focus on excellence ensures that I deliver value not only to my organization but also to the broader community.",
+    "ru": "Во всех своих ролях я делаю упор на операционное совершенство — обеспечивая эффективность процессов, оптимизацию ресурсов и точное достижение целей. От управления закупками и логистикой до контроля бюджетов и соблюдения требований — я подхожу к каждой задаче с самоотдачей и вниманием к деталям. Этот фокус на совершенстве гарантирует, что я приношу пользу не только своей организации, но и обществу в целом.",
+    "bn": "আমার সব ভূমিকায়, আমি অপারেশনাল উৎকর্ষের উপর জোর দিই — নিশ্চিত করি যে প্রক্রিয়াগুলি দক্ষ, সম্পদ অপটিমাইজড এবং লক্ষ্যগুলি নির্ভুলভাবে অর্জিত হয়। সংগ্রহ এবং লজিস্টিকস ব্যবস্থাপনা থেকে বাজেট এবং সম্মতি তত্ত্বাবধান পর্যন্ত, আমি প্রতিটি কাজে নিষ্ঠা এবং বিস্তারিত মনোযোগ নিয়ে এগিয়ে যাই। উৎকর্ষের এই ফোকাস নিশ্চিত করে যে আমি শুধু আমার প্রতিষ্ঠানের জন্যই নয়, বরং বৃহত্তর সম্প্রদায়ের জন্যও মূল্য প্রদান করি।"
+  },
+  "philosophy.section8_title": {
+    "en": "Gratitude and Humility",
+    "ru": "Благодарность и скромность",
+    "bn": "কৃতজ্ঞতা এবং নম্রতা"
+  },
+  "philosophy.section8_text": {
+    "en": "Finally, I approach life with gratitude and humility. I recognize that my achievements would not have been possible without the support of my family, mentors, colleagues, and friends. Their encouragement has been a constant source of inspiration, and I am deeply grateful for their belief in me. In turn, I am committed to paying it forward by mentoring others and creating opportunities for growth.",
+    "ru": "Наконец, я подхожу к жизни с благодарностью и скромностью. Я признаю, что мои достижения были бы невозможны без поддержки моей семьи, наставников, коллег и друзей. Их поддержка была постоянным источником вдохновения, и я глубоко благодарен за их веру в меня. В свою очередь, я стремлюсь передавать это дальше, наставляя других и создавая возможности для роста.",
+    "bn": "পরিশেষে, আমি কৃতজ্ঞতা এবং নম্রতার সাথে জীবনকে দেখি। আমি স্বীকার করি যে আমার সাফল্য আমার পরিবার, mentors, সহকর্মী এবং বন্ধুদের সমর্থন ছাড়া সম্ভব হতো না। তাদের উৎসাহ ছিল অনুপ্রেরণার একটি ধ্রুবক উৎস, এবং আমার প্রতি তাদের বিশ্বাসের জন্য আমি গভীরভাবে কৃতজ্ঞ। পাল্টা, আমি অন্যদের মেন্টরিং এবং বৃদ্ধির সুযোগ তৈরি করে এই ঋণ শোধ করতে প্রতিশ্রুতিবদ্ধ।"
+  },
+  "philosophy.nav_back": {
+    "en": "Back to Portfolio",
+    "ru": "Назад в портфолио",
+    "bn": "পোর্টফোলিওতে ফিরুন"
+  },
+  "philosophy.nav_personal": {
+    "en": "Personal",
+    "ru": "Личное",
+    "bn": "ব্যক্তিগত"
+  },
+  "philosophy.footer_rights": {
+    "en": "© 2025 Nelson Baroi. All rights reserved.",
+    "ru": "© 2025 Нельсон Барои. Все права защищены.",
+    "bn": "© ২০২৫ নেলসন বারোই। সর্বস্বত্ব সংরক্ষিত।"
+  },
+
+  "personal.title": {
+    "en": "Protected Page - Nelson Baroi",
+    "ru": "Защищённая страница — Нельсон Барои",
+    "bn": "সুরক্ষিত পৃষ্ঠা — নেলসন বারোই"
+  },
+  "personal.login_title": {
+    "en": "Login",
+    "ru": "Вход",
+    "bn": "লগইন"
+  },
+  "personal.password_placeholder": {
+    "en": "Password",
+    "ru": "Пароль",
+    "bn": "পাসওয়ার্ড"
+  },
+  "personal.enter": {
+    "en": "Enter",
+    "ru": "Войти",
+    "bn": "প্রবেশ করুন"
+  },
+  "personal.error": {
+    "en": "Incorrect password",
+    "ru": "Неверный пароль",
+    "bn": "ভুল পাসওয়ার্ড"
+  },
+  "personal.nav_about": {
+    "en": "About Me",
+    "ru": "Обо мне",
+    "bn": "আমার সম্পর্কে"
+  },
+  "personal.nav_philosophy": {
+    "en": "Philosophy",
+    "ru": "Философия",
+    "bn": "দর্শন"
+  },
+  "personal.nav_courses": {
+    "en": "Courses",
+    "ru": "Курсы",
+    "bn": "কোর্স"
+  },
+  "personal.nav_cv": {
+    "en": "My CV",
+    "ru": "Моё резюме",
+    "bn": "আমার সিভি"
+  },
+  "personal.nav_files": {
+    "en": "My file system",
+    "ru": "Моя файловая система",
+    "bn": "আমার ফাইল সিস্টেম"
+  },
+  "personal.footer_rights": {
+    "en": "© 2025 Nelson Baroi. All rights reserved.",
+    "ru": "© 2025 Нельсон Барои. Все права защищены.",
+    "bn": "© ২০২৫ নেলসন বারোই। সর্বস্বত্ব সংরক্ষিত।"
+  },
+
+  "courseplan.title": {
+    "en": "1-Year Data Analytics Course Plan",
+    "ru": "Годовой план курса по анализу данных",
+    "bn": "১ বছরের ডেটা অ্যানালিটিক্স কোর্স পরিকল্পনা"
+  },
+  "courseplan.header": {
+    "en": "1-Year Data Analytics Course Plan",
+    "ru": "Годовой план курса по анализу данных",
+    "bn": "১ বছরের ডেটা অ্যানালিটিক্স কোর্স পরিকল্পনা"
+  },
+  "courseplan.header_sub": {
+    "en": "(1 Hour/Day, 5 Days/Week)",
+    "ru": "(1 час в день, 5 дней в неделю)",
+    "bn": "(দিনে ১ ঘন্টা, সপ্তাহে ৫ দিন)"
+  },
+  "courseplan.section1_title": {
+    "en": "Month 1-3: Core Data Analytics Skills (Foundation)",
+    "ru": "Месяцы 1-3: Базовые навыки анализа данных (Основа)",
+    "bn": "১-৩ মাস: মৌলিক ডেটা অ্যানালিটিক্স দক্ষতা (ভিত্তি)"
+  },
+  "courseplan.section1_focus": {
+    "en": "Focus: Python, SQL, Excel, Power BI/Tableau",
+    "ru": "Фокус: Python, SQL, Excel, Power BI/Tableau",
+    "bn": "ফোকাস: পাইথন, এসকিউএল, এক্সেল, পাওয়ার বিআই/ট্যাবলু"
+  },
+  "courseplan.w1_title": {
+    "en": "Week 1-2: Python Basics",
+    "ru": "Недели 1-2: Основы Python",
+    "bn": "১-২ সপ্তাহ: পাইথন বেসিক"
+  },
+  "courseplan.w1_topics": {
+    "en": "Topics: Variables, data types, loops, functions, conditional statements",
+    "ru": "Темы: Переменные, типы данных, циклы, функции, условные операторы",
+    "bn": "বিষয়: ভেরিয়েবল, ডেটা টাইপ, লুপ, ফাংশন, শর্তাধীন বিবৃতি"
+  },
+  "courseplan.w3_title": {
+    "en": "Week 3-4: Pandas & NumPy for Data Analysis",
+    "ru": "Недели 3-4: Pandas и NumPy для анализа данных",
+    "bn": "৩-৪ সপ্তাহ: ডেটা বিশ্লেষণের জন্য পাণ্ডাস ও নমপাই"
+  },
+  "courseplan.w3_topics": {
+    "en": "Topics: DataFrames, series, indexing, filtering, grouping, NumPy arrays",
+    "ru": "Темы: DataFrame, series, индексация, фильтрация, группировка, массивы NumPy",
+    "bn": "বিষয়: ডেটাফ্রেম, সিরিজ, ইনডেক্সিং, ফিল্টারিং, গ্রুপিং, নমপাই অ্যারে"
+  },
+  "courseplan.w5_title": {
+    "en": "Week 5-6: SQL for Data Analytics",
+    "ru": "Недели 5-6: SQL для анализа данных",
+    "bn": "৫-৬ সপ্তাহ: ডেটা অ্যানালিটিক্সের জন্য এসকিউএল"
+  },
+  "courseplan.w5_topics": {
+    "en": "Topics: Queries, joins, aggregations, subqueries, window functions",
+    "ru": "Темы: Запросы, объединения, агрегации, подзапросы, оконные функции",
+    "bn": "বিষয়: কোয়েরি, জয়েন, অ্যাগ্রিগেশন, সাবকোয়েরি, উইন্ডো ফাংশন"
+  },
+  "courseplan.w7_title": {
+    "en": "Week 7-8: Power BI & Tableau",
+    "ru": "Недели 7-8: Power BI и Tableau",
+    "bn": "৭-৮ সপ্তাহ: পাওয়ার বিআই ও ট্যাবলু"
+  },
+  "courseplan.w7_topics": {
+    "en": "Topics: Data visualization, dashboards, DAX, Power Query",
+    "ru": "Темы: Визуализация данных, дашборды, DAX, Power Query",
+    "bn": "বিষয়: ডেটা ভিজুয়ালাইজেশন, ড্যাশবোর্ড, DAX, পাওয়ার কোয়েরি"
+  },
+  "courseplan.section2_title": {
+    "en": "Month 4-6: Advanced Data Analytics & Business Intelligence",
+    "ru": "Месяцы 4-6: Продвинутый анализ данных и бизнес-аналитика",
+    "bn": "৪-৬ মাস: উন্নত ডেটা অ্যানালিটিক্স ও বিজনেস ইন্টেলিজেন্স"
+  },
+  "courseplan.section2_focus": {
+    "en": "Focus: Statistics, ETL, Business Intelligence, KPI Analysis",
+    "ru": "Фокус: Статистика, ETL, бизнес-аналитика, анализ KPI",
+    "bn": "ফোকাস: পরিসংখ্যান, ইটিএল, বিজনেস ইন্টেলিজেন্স, কেপিআই বিশ্লেষণ"
+  },
+  "courseplan.w9_title": {
+    "en": "Week 9-10: Statistics for Data Analytics",
+    "ru": "Недели 9-10: Статистика для анализа данных",
+    "bn": "৯-১০ সপ্তাহ: ডেটা অ্যানালিটিক্সের জন্য পরিসংখ্যান"
+  },
+  "courseplan.w9_topics": {
+    "en": "Topics: Descriptive statistics, probability, hypothesis testing",
+    "ru": "Темы: Описательная статистика, вероятность, проверка гипотез",
+    "bn": "বিষয়: বর্ণনামূলক পরিসংখ্যান, সম্ভাবনা, হাইপোথিসিস টেস্টিং"
+  },
+  "courseplan.w11_title": {
+    "en": "Week 11-12: ETL & Data Pipelines",
+    "ru": "Недели 11-12: ETL и конвейеры данных",
+    "bn": "১১-১২ সপ্তাহ: ইটিএল ও ডেটা পাইপলাইন"
+  },
+  "courseplan.w11_topics": {
+    "en": "Topics: Data cleaning, transformation, Apache Airflow basics",
+    "ru": "Темы: Очистка данных, трансформация, основы Apache Airflow",
+    "bn": "বিষয়: ডেটা ক্লিনিং, ট্রান্সফরমেশন, অ্যাপাচি এয়ারফ্লো বেসিক"
+  },
+  "courseplan.w13_title": {
+    "en": "Week 13-14: Business Intelligence & KPI Analysis",
+    "ru": "Недели 13-14: Бизнес-аналитика и анализ KPI",
+    "bn": "১৩-১৪ সপ্তাহ: বিজনেস ইন্টেলিজেন্স ও কেপিআই বিশ্লেষণ"
+  },
+  "courseplan.w13_topics": {
+    "en": "Topics: Business metrics, KPI tracking, data-driven decision-making",
+    "ru": "Темы: Бизнес-метрики, отслеживание KPI, принятие решений на основе данных",
+    "bn": "বিষয়: বিজনেস মেট্রিক্স, কেপিআই ট্র্যাকিং, ডেটা-চালিত সিদ্ধান্ত গ্রহণ"
+  },
+  "courseplan.w15_title": {
+    "en": "Week 15-16: Hands-on Case Studies & Real-World Projects",
+    "ru": "Недели 15-16: Практические кейсы и реальные проекты",
+    "bn": "১৫-১৬ সপ্তাহ: হ্যান্ডস-অন কেস স্টাডি ও বাস্তব প্রকল্প"
+  },
+  "courseplan.w15_topics": {
+    "en": "Tasks: Implement KPI dashboards, SQL-based reporting projects",
+    "ru": "Задачи: Реализация KPI-дашбордов, проекты отчётности на SQL",
+    "bn": "কাজ: কেপিআই ড্যাশবোর্ড বাস্তবায়ন, এসকিউএল-ভিত্তিক রিপোর্টিং প্রকল্প"
+  },
+  "courseplan.section3_title": {
+    "en": "Month 7-9: Machine Learning & Cloud Analytics",
+    "ru": "Месяцы 7-9: Машинное обучение и облачная аналитика",
+    "bn": "৭-৯ মাস: মেশিন লার্নিং ও ক্লাউড অ্যানালিটিক্স"
+  },
+  "courseplan.section3_focus": {
+    "en": "Focus: ML Basics, Big Data, Cloud Tools",
+    "ru": "Фокус: Основы ML, Big Data, облачные инструменты",
+    "bn": "ফোকাস: এমএল বেসিক, বিগ ডেটা, ক্লাউড টুলস"
+  },
+  "courseplan.w17_title": {
+    "en": "Week 17-18: Machine Learning Fundamentals",
+    "ru": "Недели 17-18: Основы машинного обучения",
+    "bn": "১৭-১৮ সপ্তাহ: মেশিন লার্নিং ফান্ডামেন্টাল"
+  },
+  "courseplan.w17_topics": {
+    "en": "Topics: Regression, classification, clustering, feature engineering",
+    "ru": "Темы: Регрессия, классификация, кластеризация, разработка признаков",
+    "bn": "বিষয়: রিগ্রেশন, ক্লাসিফিকেশন, ক্লাস্টারিং, ফিচার ইঞ্জিনিয়ারিং"
+  },
+  "courseplan.w19_title": {
+    "en": "Week 19-20: TensorFlow & PyTorch Basics",
+    "ru": "Недели 19-20: Основы TensorFlow и PyTorch",
+    "bn": "১৯-২০ সপ্তাহ: টেনসরফ্লো ও পাইটorch বেসিক"
+  },
+  "courseplan.w19_topics": {
+    "en": "Topics: Neural networks, deep learning models",
+    "ru": "Темы: Нейронные сети, модели глубокого обучения",
+    "bn": "বিষয়: নিউরাল নেটওয়ার্ক, ডিপ লার্নিং মডেল"
+  },
+  "courseplan.w21_title": {
+    "en": "Week 21-22: Big Data Tools (Hadoop, Spark)",
+    "ru": "Недели 21-22: Инструменты Big Data (Hadoop, Spark)",
+    "bn": "২১-২২ সপ্তাহ: বিগ ডেটা টুলস (হাডুপ, স্পার্ক)"
+  },
+  "courseplan.w21_topics": {
+    "en": "Topics: Distributed computing, real-time analytics",
+    "ru": "Темы: Распределённые вычисления, аналитика в реальном времени",
+    "bn": "বিষয়: ডিস্ট্রিবিউটেড কম্পিউটিং, রিয়েল-টাইম অ্যানালিটিক্স"
+  },
+  "courseplan.w23_title": {
+    "en": "Week 23-24: Cloud Analytics (AWS, Google Cloud, Azure)",
+    "ru": "Недели 23-24: Облачная аналитика (AWS, Google Cloud, Azure)",
+    "bn": "২৩-২৪ সপ্তাহ: ক্লাউড অ্যানালিটিক্স (AWS, গুগল ক্লাউড, অ্যাজুর)"
+  },
+  "courseplan.w23_topics": {
+    "en": "Topics: Cloud-based data processing, serverless analytics",
+    "ru": "Темы: Облачная обработка данных, бессерверная аналитика",
+    "bn": "বিষয়: ক্লাউড-ভিত্তিক ডেটা প্রসেসিং, সার্ভারলেস অ্যানালিটিক্স"
+  },
+  "courseplan.section4_title": {
+    "en": "Month 10-12: Specialization & Real-World Projects",
+    "ru": "Месяцы 10-12: Специализация и реальные проекты",
+    "bn": "১০-১২ মাস: বিশেষায়ন ও বাস্তব প্রকল্প"
+  },
+  "courseplan.section4_focus": {
+    "en": "Focus: Business Domain Knowledge, Consulting, Portfolio Building",
+    "ru": "Фокус: Знание бизнес-доменов, консалтинг, создание портфолио",
+    "bn": "ফোকাস: বিজনেস ডোমেন জ্ঞান, কনসাল্টিং, পোর্টফোলিও বিল্ডিং"
+  },
+  "courseplan.w25_title": {
+    "en": "Week 25-26: Financial & Risk Analytics",
+    "ru": "Недели 25-26: Финансовая аналитика и управление рисками",
+    "bn": "২৫-২৬ সপ্তাহ: ফাইন্যান্সিয়াল ও রিস্ক অ্যানালিটিক্স"
+  },
+  "courseplan.w25_topics": {
+    "en": "Topics: Forecasting, risk modeling, Monte Carlo simulations",
+    "ru": "Темы: Прогнозирование, моделирование рисков, симуляции Монте-Карло",
+    "bn": "বিষয়: পূর্বাভাস, রিস্ক মডেলিং, মন্টে কার্লো সিমুলেশন"
+  },
+  "courseplan.w27_title": {
+    "en": "Week 27-28: Marketing & Supply Chain Analytics",
+    "ru": "Недели 27-28: Маркетинговая аналитика и аналитика цепочек поставок",
+    "bn": "২৭-২৮ সপ্তাহ: মার্কেটিং ও সাপ্লাই চেইন অ্যানালিটিক্স"
+  },
+  "courseplan.w27_topics": {
+    "en": "Topics: Customer segmentation, demand forecasting",
+    "ru": "Темы: Сегментация клиентов, прогнозирование спроса",
+    "bn": "বিষয়: গ্রাহক সেগমেন্টেশন, চাহিদা পূর্বাভাস"
+  },
+  "courseplan.w29_title": {
+    "en": "Week 29-30: IT/Data Consulting & Decision-Making",
+    "ru": "Недели 29-30: IT/Data консалтинг и принятие решений",
+    "bn": "২৯-৩০ সপ্তাহ: আইটি/ডেটা কনসাল্টিং ও সিদ্ধান্ত গ্রহণ"
+  },
+  "courseplan.w29_topics": {
+    "en": "Topics: Stakeholder communication, case study analysis",
+    "ru": "Темы: Коммуникация с заинтересованными сторонами, анализ кейсов",
+    "bn": "বিষয়: স্টেকহোল্ডার কমিউনিকেশন, কেস স্টাডি বিশ্লেষণ"
+  },
+  "courseplan.w31_title": {
+    "en": "Week 31-32: Portfolio Projects & Job Readiness",
+    "ru": "Недели 31-32: Проекты для портфолио и подготовка к работе",
+    "bn": "৩১-৩২ সপ্তাহ: পোর্টফোলিও প্রকল্প ও চাকরি প্রস্তুতি"
+  },
+  "courseplan.w31_topics": {
+    "en": "Tasks: Build 3-5 projects, optimize LinkedIn & GitHub",
+    "ru": "Задачи: Создать 3-5 проектов, оптимизировать LinkedIn и GitHub",
+    "bn": "কাজ: ৩-৫টি প্রকল্প তৈরি, লিঙ্কডইন ও গিটহাব অপটিমাইজ"
+  },
+  "courseplan.final_goal": {
+    "en": "Final Goal:",
+    "ru": "Конечная цель:",
+    "bn": "চূড়ান্ত লক্ষ্য:"
+  },
+  "courseplan.goal1": {
+    "en": "Build a strong portfolio with real-world projects",
+    "ru": "Создать сильное портфолио с реальными проектами",
+    "bn": "বাস্তব প্রকল্প সহ একটি শক্তিশালী পোর্টফোলিও তৈরি করুন"
+  },
+  "courseplan.goal2": {
+    "en": "Apply for Data Analyst, Data Scientist, BI Analyst roles",
+    "ru": "Подать заявку на позиции аналитика данных, дата-сайентиста, BI-аналитика",
+    "bn": "ডেটা অ্যানালিস্ট, ডেটা সায়েন্টিস্ট, বিআই অ্যানালিস্ট পদে আবেদন করুন"
+  },
+  "courseplan.goal3": {
+    "en": "Network via LinkedIn, GitHub, Kaggle",
+    "ru": "Нетворкинг через LinkedIn, GitHub, Kaggle",
+    "bn": "লিঙ্কডইন, গিটহাব, ক্যাগলের মাধ্যমে নেটওয়ার্কিং"
+  },
+  "courseplan.cta": {
+    "en": "Would you like additional certifications or project ideas?",
+    "ru": "Хотите дополнительные сертификаты или идеи проектов?",
+    "bn": "অতিরিক্ত সার্টিফিকেশন বা প্রকল্প আইডিয়া চান?"
+  },
+  "courseplan.footer_rights": {
+    "en": "© 2023 Data Analytics Course Plan. All rights reserved.",
+    "ru": "© 2023 План курса по анализу данных. Все права защищены.",
+    "bn": "© ২০২৩ ডেটা অ্যানালিটিক্স কোর্স পরিকল্পনা। সর্বস্বত্ব সংরক্ষিত।"
+  },
+
+  "cv.title": {
+    "en": "Curriculum Vitae — Nelson Baroi",
+    "ru": "Резюме — Нельсон Барои",
+    "bn": "কারিকুলাম ভিটা — নেলসন বারোই"
+  },
+  "cv.return": {
+    "en": "Return to Home",
+    "ru": "На главную",
+    "bn": "হোমে ফিরুন"
+  }
+}
