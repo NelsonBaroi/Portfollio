@@ -1263,20 +1263,20 @@
     "ru": "Биография Нельсона Барои — от Чандрагхоны до АЭС Руппур | nbaroi.com",
     "bn": "নেলসন বারোই জীবনী — চন্দ্রঘোনা থেকে রূপপুর পারমাণবিক কেন্দ্র | nbaroi.com"
   },
-  "biography.meta_desc": {
-    "en": "Full narrative biography of Nelson Baroi — from Chandraghona in the Chittagong Hill Tracts to Director at Rooppur Nuclear Power Plant and MSc at ATU Galway, Ireland.",
-    "ru": "Полная биография Нельсона Барои — от Чандрагхоны до директора на АЭС Руппур и магистратуры в ATU Голуэй, Ирландия.",
-    "bn": "নেলসন বারোইর সম্পূর্ণ জীবনী — পার্বত্য চট্টগ্রামের চন্দ্রঘোনা থেকে রূপপুর পারমাণবিক বিদ্যুৎ কেন্দ্রের পরিচালক ও আয়ারল্যান্ডের এটিইউ গালওয়েতে এমএসসি।"
-  },
   "biography.header_title": {
     "en": "Biography",
     "ru": "Биография",
     "bn": "জীবনী"
   },
   "biography.header_subtitle": {
-    "en": "From Chandraghona to the World's 33rd Nuclear Nation",
-    "ru": "От Чандрагхоны до 33-й ядерной державы мира",
-    "bn": "চন্দ্রঘোনা থেকে বিশ্বের ৩৩তম পারমাণবিক জাতি"
+    "en": "My story, in my own words",
+    "ru": "Моя история — своими словами",
+    "bn": "আমার গল্প, আমার নিজের ভাষায়"
+  },
+  "biography.meta_desc": {
+    "en": "My story — from Chandraghona in the Chittagong Hill Tracts to Director at Rooppur Nuclear Power Plant and an MSc at ATU Galway, Ireland. Written by Nelson Baroi.",
+    "ru": "Моя история — от Чандрагхоны до директора на АЭС Руппур и магистратуры в ATU Голуэй. Написано Нельсоном Барои.",
+    "bn": "আমার গল্প — পার্বত্য চট্টগ্রামের চন্দ্রঘোনা থেকে রূপপুর পারমাণবিক বিদ্যুৎ কেন্দ্রের পরিচালক ও আয়ারল্যান্ডের এটিইউ গালওয়েতে এমএসসি। নেলসন বারোই লিখেছেন।"
   },
   "biography.toc_title": {
     "en": "Chapters",

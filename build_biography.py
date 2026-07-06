@@ -1,8 +1,21 @@
-"""Generate biography.html from Kira FULL_BIOGRAPHY.md — unique narrative only."""
+"""Generate biography.html from Kira FULL_BIOGRAPHY.md — first-person author voice."""
 import re
 from pathlib import Path
 
 import markdown
+
+from biography_voice import (
+    AUTHOR_DIGITAL,
+    AUTHOR_INTRO,
+    AUTHOR_PERSONALITY_SUMMARY,
+    AUTHOR_PREFACE,
+    AUTHOR_RELATED,
+    SECTION_TITLES,
+    fix_artifacts,
+    prepare_section,
+    strip_chapter_heading,
+    to_first_person,
+)
 
 ROOT = Path(__file__).parent
 BIO_MD = ROOT.parent / "Bot" / "Kira" / "01-biography" / "FULL_BIOGRAPHY.md"
@@ -79,6 +92,19 @@ def md_html(text: str) -> str:
     return markdown.markdown(text, extensions=["tables", "fenced_code", "nl2br", "sane_lists"])
 
 
+def author_html(md: str, roman: str | None = None) -> str:
+    if roman:
+        md = prepare_section(md, roman)
+    else:
+        from biography_voice import polish_grammar
+
+        md = strip_chapter_heading(md)
+        md = to_first_person(md)
+        md = fix_artifacts(md)
+        md = polish_grammar(md)
+    return md_html(md)
+
+
 def extract_subsection(body: str, heading: str) -> str:
     pattern = rf"## {re.escape(heading)}\s*\n(.*?)(?=\n## |\Z)"
     match = re.search(pattern, body, re.DOTALL | re.IGNORECASE)
@@ -96,69 +122,15 @@ def strip_timeline_and_roles(ch_vi: str) -> str:
     sub = extract_subsection(ch_vi, "The Cross-Cultural Leadership Challenge")
     if not sub:
         return ""
-    return f"## Cross-Cultural Leadership at Rooppur\n\n{sub}"
+    return prepare_section(f"## {SECTION_TITLES['VI']}\n\n{sub}", "VI")
 
 
 def trim_freyssinet(ch_vii: str) -> str:
-    body = re.sub(r"^# CHAPTER VII:.*?\n", "", ch_vii, flags=re.I)
+    body = strip_chapter_heading(ch_vii)
     body = re.sub(r"^## Dual Contribution\s*\n", "", body)
     parts = [p.strip() for p in body.split("\n\n") if p.strip() and not p.startswith("---")]
-    return "\n\n".join(parts[:2])
-
-
-def digital_condensed() -> str:
-    return """## Digital Presence
-
-Nelson maintains a deliberate professional brand online — not casual social media, but a structured presence built for credibility and accessibility.
-
-| Platform | Purpose |
-|----------|---------|
-| [nbaroi.com](https://nbaroi.com) | Portfolio, biography, AI twin |
-| [LinkedIn](https://linkedin.com/in/nbaroi) | Professional networking |
-| [GitHub](https://github.com/NelsonBaroi) | Code and open projects |
-
-The **AI twin** on this site is itself a brand demonstration — a self-training chatbot that speaks in Nelson's voice, answers questions 24/7, and showcases technical capability through its existence. [Try the full chat →](chat.html)"""
-
-
-def related_callout() -> str:
-    return """
-<section class="section bio-related" id="related">
-  <h2>Quick Reference on This Site</h2>
-  <p class="bio-related-intro">Career timeline, education, skills, projects, and philosophy are kept on dedicated pages to avoid repetition. Use these for the structured overview:</p>
-  <div class="bio-related-grid">
-    <a href="index.html#professional-journey" class="bio-related-card">
-      <i class="fas fa-briefcase"></i>
-      <strong>Career Timeline</strong>
-      <span>AMT Engineering &amp; Freyssinet roles</span>
-    </a>
-    <a href="index.html#education" class="bio-related-card">
-      <i class="fas fa-graduation-cap"></i>
-      <strong>Education</strong>
-      <span>HSC, BSc Russia, MSc Ireland</span>
-    </a>
-    <a href="index.html#skills" class="bio-related-card">
-      <i class="fas fa-chart-line"></i>
-      <strong>Skills</strong>
-      <span>Analytics, operations, languages</span>
-    </a>
-    <a href="projects.html" class="bio-related-card">
-      <i class="fas fa-code"></i>
-      <strong>Projects</strong>
-      <span>AI twin, portfolio builder, research</span>
-    </a>
-    <a href="philosophy.html" class="bio-related-card">
-      <i class="fas fa-lightbulb"></i>
-      <strong>Philosophy</strong>
-      <span>Eight guiding principles</span>
-    </a>
-    <a href="courseplan.html" class="bio-related-card">
-      <i class="fas fa-book"></i>
-      <strong>Learning Plan</strong>
-      <span>52-week analytics roadmap</span>
-    </a>
-  </div>
-</section>
-"""
+    raw = f"## {SECTION_TITLES['VII']}\n\n" + "\n\n".join(parts[:2])
+    return prepare_section(raw, "VII")
 
 
 def build_content(sections: dict[str, str], by_roman: dict[str, str]) -> tuple[str, str]:
@@ -171,55 +143,51 @@ def build_content(sections: dict[str, str], by_roman: dict[str, str]) -> tuple[s
 
     # Intro
     toc.append('    <li><a href="#overview">Overview</a></li>')
-    blocks.append("""
+    blocks.append(f"""
     <section class="section bio-intro" id="overview">
-      <p class="bio-lead">A narrative biography — origins, family, the Rooppur nuclear project, Ireland plans, and the road ahead. For career roles, education timeline, and skills, see the <a href="index.html">main portfolio</a>.</p>
+      {AUTHOR_INTRO}
     </section>
 """)
 
-    add_section("preface", "Preface", md_html(sections.get("PREFACE", "")))
+    add_section("preface", "My Story", md_html(AUTHOR_PREFACE))
 
     for roman, sid in [("I", "origins"), ("II", "family"), ("III", "education-foundation"), ("IV", "russia"), ("V", "rooppur")]:
         if roman in by_roman:
-            title = next(k for k in sections if chapter_roman(k) == roman)
-            add_section(sid, nav_label(title), md_html(by_roman[roman]))
+            label = SECTION_TITLES.get(roman, nav_label(next(k for k in sections if chapter_roman(k) == roman)))
+            add_section(sid, label, author_html(by_roman[roman], roman))
 
     if "VI" in by_roman:
         trimmed = strip_timeline_and_roles(by_roman["VI"])
         if trimmed:
             add_section(
                 "leadership",
-                "Cross-Cultural Leadership",
+                SECTION_TITLES["VI"],
                 md_html(trimmed)
-                + '<p class="bio-see-also">Full career timeline: <a href="index.html#professional-journey">Professional Journey</a> on the portfolio.</p>',
+                + '<p class="bio-see-also">Full career timeline is on my <a href="index.html#professional-journey">portfolio</a>.</p>',
             )
 
     if "VII" in by_roman:
-        add_section("freyssinet", "Freyssinet", md_html(trim_freyssinet(by_roman["VII"])))
+        add_section("freyssinet", SECTION_TITLES["VII"], md_html(trim_freyssinet(by_roman["VII"])))
 
     if "VIII" in by_roman:
-        title = next(k for k in sections if chapter_roman(k) == "VIII")
-        add_section("ireland", nav_label(title), md_html(by_roman["VIII"]))
+        add_section("ireland", SECTION_TITLES["VIII"], author_html(by_roman["VIII"], "VIII"))
 
-    blocks.append(related_callout())
+    blocks.append(AUTHOR_RELATED)
 
     if "XII" in by_roman:
-        title = next(k for k in sections if chapter_roman(k) == "XII")
-        add_section("personality", nav_label(title), md_html(by_roman["XII"]))
+        add_section("personality", SECTION_TITLES["XII"], author_html(by_roman["XII"], "XII"))
 
     if "XIV" in by_roman:
-        title = next(k for k in sections if chapter_roman(k) == "XIV")
-        add_section("future", nav_label(title), md_html(by_roman["XIV"]))
+        add_section("future", SECTION_TITLES["XIV"], author_html(by_roman["XIV"], "XIV"))
 
-    add_section("digital", "Digital Presence", md_html(digital_condensed()))
+    add_section("digital", "Online", md_html(AUTHOR_DIGITAL))
 
     appendices = sections.get("APPENDICES", "")
     rooppur_dates = extract_appendix(appendices, "F")
-    personality = extract_appendix(appendices, "H")
     if rooppur_dates:
-        add_section("rooppur-dates", "Rooppur Key Dates", md_html(f"## Key Dates\n\n{rooppur_dates}"))
-    if personality:
-        add_section("personality-summary", "Personality Summary", md_html(f"## Summary Card\n\n{personality}"))
+        dates_md = prepare_section(f"## Rooppur — Key Dates\n\n{rooppur_dates}")
+        add_section("rooppur-dates", "Rooppur Dates", md_html(dates_md))
+    add_section("personality-summary", "In Short", md_html(AUTHOR_PERSONALITY_SUMMARY))
 
     return "\n".join(toc), "\n\n".join(blocks)
 
@@ -237,7 +205,7 @@ def build_page() -> None:
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title data-i18n="biography.title">Nelson Baroi Biography — Chandraghona to Rooppur Nuclear Plant | nbaroi.com</title>
-  <meta name="description" content="Full narrative biography of Nelson Baroi — Christian minority from Chandraghona, Notre Dame College, Russian scholarship, Director at Rooppur Nuclear Power Plant, MSc at ATU Galway Ireland." data-i18n-meta="biography.meta_desc">
+  <meta name="description" content="My story — from Chandraghona to Rooppur Nuclear Power Plant and an MSc in Ireland. Written by Nelson Baroi." data-i18n-meta="biography.meta_desc">
   <meta name="keywords" content="Nelson Baroi biography, Rooppur Nuclear Power Plant, AMT Engineering JSC, Chandraghona, Chittagong Hill Tracts, Notre Dame College Dhaka, Kalmyk State University, ATU Galway, Business Analytics">
   <meta name="author" content="Nelson Baroi">
   <meta name="robots" content="index, follow">
@@ -245,12 +213,12 @@ def build_page() -> None:
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://nbaroi.com/biography.html">
   <meta property="og:title" content="Nelson Baroi — Comprehensive Biography">
-  <meta property="og:description" content="From Chandraghona to Bangladesh's first nuclear power plant and an MSc in Ireland — the full story of Nelson Baroi.">
+  <meta property="og:description" content="My story — from Chandraghona to Bangladesh's first nuclear power plant and an MSc in Ireland. Written by Nelson Baroi.">
   <meta property="og:image" content="https://nbaroi.com/images/profile.jpg">
   <meta property="og:site_name" content="Nelson Baroi Portfolio">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Nelson Baroi — Comprehensive Biography">
-  <meta name="twitter:description" content="From Chandraghona to Rooppur Nuclear Power Plant — Nelson Baroi's full narrative biography.">
+  <meta name="twitter:description" content="My story — from Chandraghona to Rooppur Nuclear Power Plant. In my own words.">
   <meta name="twitter:image" content="https://nbaroi.com/images/profile.jpg">
   <link rel="stylesheet" href="styles.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
@@ -332,7 +300,7 @@ def build_page() -> None:
   <header class="header">
     <div class="header-content">
       <h1 class="gradient-text" data-i18n="biography.header_title">Biography</h1>
-      <p class="header-subtitle" data-i18n="biography.header_subtitle">From Chandraghona to the World's 33rd Nuclear Nation</p>
+      <p class="header-subtitle" data-i18n="biography.header_subtitle">My story, in my own words</p>
     </div>
   </header>
 
