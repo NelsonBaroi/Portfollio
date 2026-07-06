@@ -966,9 +966,9 @@
     "bn": "ব্যক্তিগত ভান্ডার"
   },
   "personal.login_hint": {
-    "en": "Full personal archive — not indexed publicly.",
-    "ru": "Полный личный архив — не индексируется публично.",
-    "bn": "সম্পূর্ণ ব্যক্তিগত আর্কাইভ — সার্চে দেখা যাবে না।"
+    "en": "Full personal record — not indexed publicly.",
+    "ru": "Полная личная запись — не индексируется публично.",
+    "bn": "সম্পূর্ণ ব্যক্তিগত রেকর্ড — সার্চে দেখা যাবে না।"
   },
   "personal.back_home": {
     "en": "← Back to public site",
@@ -986,9 +986,9 @@
     "bn": "নেলসন্‌ বাড়ৈ"
   },
   "personal.header_subtitle": {
-    "en": "Everything not on the public pages",
-    "ru": "Всё, чего нет на публичных страницах",
-    "bn": "পাবলিক পৃষ্ঠায় যা নেই"
+    "en": "Everything not on the public pages — family, visa, finance, depth",
+    "ru": "Всё, чего нет на публичных страницах — семья, виза, финансы, детали",
+    "bn": "পাবলিক পৃষ্ঠায় যা নেই — পরিবার, ভিসা, অর্থ, গভীর তথ্য"
   },
   "personal.toc_title": {
     "en": "On this page",
