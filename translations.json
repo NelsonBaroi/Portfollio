@@ -7,17 +7,17 @@
 
   "index.title": {
     "en": "Nelson Baroi — Director of Bangladesh Branch, AMT Engineering | MSc Business Analytics",
-    "ru": "Нелсон Барой — Директор бангладешского филиала AMT Engineering | MSc Business Analytics",
+    "ru": "Нелсон Барой — Директор филиала в НРБ | MSc Business Analytics",
     "bn": "নেলসন বারোই — এএমটি ইঞ্জিনিয়ারিং বাংলাদেশ শাখার পরিচালক | এমএসসি বিজনেস অ্যানালিটিক্স"
   },
   "index.meta_desc": {
     "en": "Nelson Baroi — Director of Bangladesh Branch at AMT Engineering JSC (Rooppur Nuclear Power Plant project). MSc Business Analytics at ATU Galway, Ireland.",
-    "ru": "Нелсон Барой — директор бангладешского филиала AMT Engineering JSC (проект АЭС Руппур). Магистратура по бизнес-аналитике в ATU Голуэй, Ирландия.",
+    "ru": "Нелсон Барой — директор филиала в НРБ (AMT Engineering JSC, проект АЭС Руппур). Магистратура по бизнес-аналитике в ATU Голуэй, Ирландия.",
     "bn": "নেলসন বারোই — এএমটি ইঞ্জিনিয়ারিং জেএসসি-র বাংলাদেশ শাখার পরিচালক (রূপপুর পারমাণবিক প্রকল্প)। এটিইউ গালওয়েতে এমএসসি বিজনেস অ্যানালিটিক্স।"
   },
   "index.header_subtitle": {
     "en": "Director of Bangladesh Branch, AMT Engineering · MSc (2026)",
-    "ru": "Директор бангладешского филиала AMT Engineering · MSc (2026)",
+    "ru": "Директор филиала в НРБ · MSc (2026)",
     "bn": "এএমটি ইঞ্জিনিয়ারিং বাংলাদেশ শাখার পরিচালক · এমএসসি (২০২৬)"
   },
   "index.about_title": {
@@ -27,7 +27,7 @@
   },
   "index.about_p1": {
     "en": "I'm <strong>Director of the Bangladesh Branch</strong> at <a href='https://atom-alliance.com/en/project/constuction/npp-rooppur/' target='_blank'>AMT Engineering JSC</a> — the <a href='https://en.wikipedia.org/wiki/Rooppur_Nuclear_Power_Plant' target='_blank'>Rooppur Nuclear Power Plant</a> project. Budgets, contracts, logistics, and keeping Russian and Bangladeshi teams aligned.",
-    "ru": "Я <strong>директор бангладешского филиала</strong> <a href='https://atom-alliance.com/en/project/constuction/npp-rooppur/' target='_blank'>AMT Engineering JSC</a> на проекте <a href='https://en.wikipedia.org/wiki/Rooppur_Nuclear_Power_Plant' target='_blank'>АЭС Руппур</a> — бюджеты, контракты, логистика и согласованная работа российских и бангладешских команд.",
+    "ru": "Я <strong>директор филиала в НРБ</strong> (<a href='https://atom-alliance.com/en/project/constuction/npp-rooppur/' target='_blank'>AMT Engineering JSC</a>, <a href='https://en.wikipedia.org/wiki/Rooppur_Nuclear_Power_Plant' target='_blank'>АЭС Руппур</a>) — бюджеты, контракты, логистика и согласованная работа российских и бангладешских команд.",
     "bn": "আমি <a href='https://atom-alliance.com/en/project/constuction/npp-rooppur/' target='_blank'>এএমটি ইঞ্জিনিয়ারিং জেএসসি</a>-র <strong>বাংলাদেশ শাখার পরিচালক</strong> — <a href='https://en.wikipedia.org/wiki/Rooppur_Nuclear_Power_Plant' target='_blank'>রূপপুর পারমাণবিক বিদ্যুৎ কেন্দ্র</a> প্রকল্পে। বাজেট, চুক্তি, লজিস্টিকস এবং রাশিয়ান ও বাংলাদেশী দলগুলোর সমন্বয়।"
   },
   "index.about_p2": {
@@ -47,7 +47,7 @@
   },
   "index.journey_item1_title": {
     "en": "Director of Bangladesh Branch",
-    "ru": "Директор бангладешского филиала",
+    "ru": "Директор филиала в НРБ",
     "bn": "বাংলাদেশ শাখার পরিচালক"
   },
   "index.journey_item1_company": {
@@ -378,7 +378,7 @@
   },
   "chat.bot_greeting": {
     "en": "Hi — I'm a chatbot on Nelson's portfolio site, trained on his public CV and pages here. Ask about his work at Rooppur, his MSc plans, skills, or projects. For hiring or anything serious, email nelson6114007@gmail.com.",
-    "ru": "Привет — я чат-бот на сайте Нелсона Бароя, обученный на публичном резюме и страницах сайта. Спрашивайте о должности директора бангладешского филиала AMT Engineering, планах MSc, навыках или проектах. Для найма — nelson6114007@gmail.com.",
+    "ru": "Привет — я чат-бот на сайте Нелсона Бароя, обученный на публичном резюме и страницах сайта. Спрашивайте о работе директора филиала в НРБ, планах MSc, навыках или проектах. Для найма — nelson6114007@gmail.com.",
     "bn": "হাই — আমি নেলসনের পোর্টফোলিও সাইটের চ্যাটবট, তার প্রকাশ্য সিভি ও সাইটের পৃষ্ঠায় প্রশিক্ষিত। রূপপুরের কাজ, এমএসসি পরিকল্পনা, দক্ষতা বা প্রকল্প সম্পর্কে জিজ্ঞাসা করুন। নিয়োগ বা গুরুতর বিষয়ে — nelson6114007@gmail.com।"
   },
   "chat.suggestion_work": {
@@ -1335,7 +1335,7 @@
   },
   "biography.meta_desc": {
     "en": "Professional background: Director of Bangladesh Branch, AMT Engineering (Rooppur project). Education in Bangladesh and Russia, MSc at ATU Galway. By Nelson Baroi.",
-    "ru": "Профессиональный путь: директор бангладешского филиала AMT Engineering (АЭС Руппур), образование в Бангладеш и России, магистратура в ATU Голуэй. Нелсон Барой.",
+    "ru": "Профессиональный путь: директор филиала в НРБ (АЭС Руппур), образование в Бангладеш и России, магистратура в ATU Голуэй. Нелсон Барой.",
     "bn": "পেশাগত পটভূমি: এএমটি ইঞ্জিনিয়ারিং বাংলাদেশ শাখার পরিচালক (রূপপুর প্রকল্প), বাংলাদেশ ও রাশিয়ায় শিক্ষা, এটিইউ গালওয়েতে এমএসসি। নেলসন বারোই।"
   },
   "biography.toc_title": {
