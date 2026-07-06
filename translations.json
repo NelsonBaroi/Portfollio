@@ -961,9 +961,9 @@
     "bn": "ব্যক্তিগত আর্কাইভ — নেলসন বারোই"
   },
   "personal.badge": {
-    "en": "Private",
-    "ru": "Личное",
-    "bn": "ব্যক্তিগত"
+    "en": "Private vault",
+    "ru": "Личное хранилище",
+    "bn": "ব্যক্তিগত ভান্ডার"
   },
   "personal.login_hint": {
     "en": "Full personal archive — not indexed publicly.",
@@ -978,7 +978,12 @@
   "personal.header_title": {
     "en": "Private archive",
     "ru": "Личный архив",
-    "bn": "ব্যক্তিগত আর্কাইভ"
+    "bn": "ব্যক্তিগত ভান্ডার"
+  },
+  "personal.name_bn": {
+    "en": "নেলসন্‌ বাড়ৈ",
+    "ru": "নেলসন্‌ বাড়ৈ",
+    "bn": "নেলসন্‌ বাড়ৈ"
   },
   "personal.header_subtitle": {
     "en": "Everything not on the public pages",
@@ -991,9 +996,9 @@
     "bn": "এই পৃষ্ঠায়"
   },
   "personal.login_title": {
-    "en": "Login",
-    "ru": "Вход",
-    "bn": "লগইন"
+    "en": "Private archive",
+    "ru": "Личный архив",
+    "bn": "ব্যক্তিগত ভান্ডার"
   },
   "personal.password_placeholder": {
     "en": "Password",
@@ -1024,6 +1029,11 @@
     "en": "Chat",
     "ru": "Чат",
     "bn": "চ্যাট"
+  },
+  "personal.nav_courseplan": {
+    "en": "Study plan",
+    "ru": "План обучения",
+    "bn": "পড়াশোনার পরিকল্পনা"
   },
   "personal.nav_philosophy": {
     "en": "Philosophy",

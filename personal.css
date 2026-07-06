@@ -1,0 +1,578 @@
+/* Private archive — Nelson Baroi / নেলসন্‌ বাড়ৈ */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;600;700&family=Outfit:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --p-bg: #0c1222;
+  --p-surface: rgba(255, 255, 255, 0.04);
+  --p-card: rgba(255, 255, 255, 0.07);
+  --p-border: rgba(255, 255, 255, 0.1);
+  --p-teal: #2dd4bf;
+  --p-coral: #fb7185;
+  --p-gold: #fbbf24;
+  --p-text: #e8edf5;
+  --p-muted: #94a3b8;
+  --p-accent: linear-gradient(135deg, #2dd4bf 0%, #38bdf8 50%, #fb7185 100%);
+}
+
+body.personal-page {
+  font-family: 'Outfit', 'Segoe UI', sans-serif;
+  background: var(--p-bg);
+  background-image:
+    radial-gradient(ellipse 80% 50% at 50% -20%, rgba(45, 212, 191, 0.15), transparent),
+    radial-gradient(ellipse 60% 40% at 100% 50%, rgba(251, 113, 133, 0.08), transparent),
+    radial-gradient(ellipse 50% 30% at 0% 80%, rgba(56, 189, 248, 0.06), transparent);
+  color: var(--p-text);
+  min-height: 100vh;
+  line-height: 1.65;
+}
+
+body.personal-page a { color: var(--p-teal); }
+body.personal-page a:hover { color: var(--p-coral); }
+
+/* —— Login —— */
+.personal-login-screen {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.personal-login-card {
+  width: 100%;
+  max-width: 420px;
+  padding: 2.5rem 2rem;
+  background: var(--p-card);
+  backdrop-filter: blur(20px);
+  border: 1px solid var(--p-border);
+  border-radius: 24px;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
+.personal-login-avatar {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid transparent;
+  background: var(--p-accent) border-box;
+  -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  margin-bottom: 1rem;
+}
+
+.personal-name-bn {
+  font-family: 'Noto Sans Bengali', 'Hind Siliguri', serif;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--p-teal);
+  margin: 0.25rem 0 0.5rem;
+  letter-spacing: 0.02em;
+}
+
+.personal-login-card h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 0.35rem;
+}
+
+.personal-login-hint {
+  font-size: 0.88rem;
+  color: var(--p-muted);
+  margin-bottom: 1.5rem;
+}
+
+.personal-login-card input {
+  width: 100%;
+  padding: 14px 16px;
+  margin: 8px 0 16px;
+  background: rgba(0, 0, 0, 0.25);
+  border: 1px solid var(--p-border);
+  border-radius: 12px;
+  color: #fff;
+  font-size: 1rem;
+  box-sizing: border-box;
+  transition: border-color 0.2s;
+}
+
+.personal-login-card input:focus {
+  outline: none;
+  border-color: var(--p-teal);
+}
+
+.personal-login-card button[type="submit"] {
+  width: 100%;
+  padding: 14px;
+  background: var(--p-accent);
+  color: #0c1222;
+  font-weight: 700;
+  font-size: 1rem;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.personal-login-card button[type="submit"]:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(45, 212, 191, 0.35);
+}
+
+.personal-back-link {
+  display: inline-block;
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  color: var(--p-muted) !important;
+}
+
+.personal-back-link:hover { color: var(--p-teal) !important; }
+
+#personal-error {
+  color: var(--p-coral);
+  display: none;
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
+
+/* —— Badge —— */
+.personal-private-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--p-gold);
+  background: rgba(251, 191, 36, 0.12);
+  border: 1px solid rgba(251, 191, 36, 0.25);
+  padding: 6px 12px;
+  border-radius: 100px;
+  margin-bottom: 12px;
+}
+
+/* —— Hero —— */
+.personal-hero {
+  position: relative;
+  padding: 3rem 2rem 4rem;
+  text-align: center;
+  overflow: hidden;
+}
+
+.personal-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--p-accent);
+  opacity: 0.12;
+  clip-path: polygon(0 0, 100% 0, 100% 88%, 0 100%);
+}
+
+.personal-hero-inner {
+  position: relative;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.personal-hero-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
+  margin-bottom: 1rem;
+}
+
+.personal-hero h1 {
+  font-size: clamp(1.75rem, 4vw, 2.25rem);
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+}
+
+.personal-hero .personal-name-bn {
+  font-size: clamp(1.4rem, 3.5vw, 1.75rem);
+  margin: 0.35rem 0 0.75rem;
+}
+
+.personal-hero-sub {
+  font-size: 1rem;
+  color: var(--p-muted);
+  max-width: 520px;
+  margin: 0 auto;
+}
+
+/* —— Stat cards —— */
+.personal-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 12px;
+  max-width: 1100px;
+  margin: -2rem auto 2rem;
+  padding: 0 1.5rem;
+  position: relative;
+  z-index: 2;
+}
+
+.personal-stat {
+  background: var(--p-card);
+  border: 1px solid var(--p-border);
+  border-radius: 16px;
+  padding: 1.1rem 1rem;
+  text-align: center;
+  backdrop-filter: blur(12px);
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.personal-stat:hover {
+  border-color: rgba(45, 212, 191, 0.4);
+  transform: translateY(-2px);
+}
+
+.personal-stat i {
+  font-size: 1.25rem;
+  background: var(--p-accent);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 6px;
+}
+
+.personal-stat strong {
+  display: block;
+  font-size: 1.05rem;
+  color: #fff;
+  font-weight: 600;
+}
+
+.personal-stat span {
+  font-size: 0.75rem;
+  color: var(--p-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+/* —— Quick nav —— */
+.personal-quick-nav {
+  max-width: 1100px;
+  margin: 0 auto 2rem;
+  padding: 0 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+
+.personal-quick-nav a {
+  font-size: 0.82rem;
+  padding: 10px 16px;
+  border-radius: 100px;
+  background: var(--p-card);
+  color: var(--p-text) !important;
+  text-decoration: none;
+  border: 1px solid var(--p-border);
+  transition: all 0.2s;
+}
+
+.personal-quick-nav a:hover {
+  border-color: var(--p-teal);
+  color: var(--p-teal) !important;
+  background: rgba(45, 212, 191, 0.08);
+}
+
+.personal-quick-nav a i { margin-right: 6px; opacity: 0.8; }
+
+/* —— Layout —— */
+.personal-layout {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 1.75rem;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 1.5rem 3rem;
+  align-items: start;
+}
+
+.personal-toc {
+  position: sticky;
+  top: 1.25rem;
+  background: var(--p-card);
+  border: 1px solid var(--p-border);
+  border-radius: 18px;
+  padding: 1.25rem 1rem;
+  backdrop-filter: blur(12px);
+}
+
+.personal-toc h2 {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--p-muted);
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--p-border);
+}
+
+.personal-toc ul { list-style: none; margin: 0; padding: 0; }
+
+.personal-toc a {
+  display: block;
+  font-size: 0.82rem;
+  color: var(--p-muted) !important;
+  padding: 8px 10px;
+  border-radius: 8px;
+  border-left: 2px solid transparent;
+  transition: all 0.2s;
+  line-height: 1.35;
+}
+
+.personal-toc a:hover,
+.personal-toc a.active {
+  color: var(--p-teal) !important;
+  background: rgba(45, 212, 191, 0.08);
+  border-left-color: var(--p-teal);
+}
+
+/* —— Sections —— */
+.personal-main { min-width: 0; }
+
+.personal-section {
+  background: var(--p-card);
+  border: 1px solid var(--p-border);
+  border-radius: 20px;
+  padding: 1.75rem 2rem;
+  margin-bottom: 1.25rem;
+  backdrop-filter: blur(8px);
+  scroll-margin-top: 1.5rem;
+}
+
+.personal-section.overview {
+  border-color: rgba(45, 212, 191, 0.25);
+  background: linear-gradient(135deg, rgba(45, 212, 191, 0.08), rgba(251, 113, 133, 0.05));
+}
+
+.personal-section-head {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  margin-bottom: 1.25rem;
+}
+
+.personal-section-icon {
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  background: rgba(45, 212, 191, 0.15);
+  color: var(--p-teal);
+  border: 1px solid rgba(45, 212, 191, 0.2);
+}
+
+.personal-section h2 {
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: #fff;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.personal-section h3 {
+  font-size: 1.05rem;
+  color: var(--p-teal);
+  margin: 1.5rem 0 0.6rem;
+  font-weight: 600;
+}
+
+.personal-section h4 {
+  font-size: 0.95rem;
+  color: var(--p-coral);
+  margin: 1rem 0 0.5rem;
+}
+
+.personal-section p,
+.personal-section li {
+  color: var(--p-muted);
+  font-size: 0.95rem;
+}
+
+.personal-section p { margin-bottom: 0.85rem; }
+
+.personal-section ul,
+.personal-section ol {
+  margin: 0.5rem 0 1rem 1.25rem;
+}
+
+.personal-section li { margin-bottom: 0.35rem; }
+
+.personal-section strong { color: #fff; font-weight: 600; }
+
+.personal-section table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  font-size: 0.88rem;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--p-border);
+}
+
+.personal-section th {
+  background: rgba(45, 212, 191, 0.12);
+  color: var(--p-teal);
+  font-weight: 600;
+  text-align: left;
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--p-border);
+}
+
+.personal-section td {
+  padding: 10px 14px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  color: var(--p-muted);
+}
+
+.personal-section tr:last-child td { border-bottom: none; }
+
+.personal-section tr:nth-child(even) td {
+  background: rgba(0, 0, 0, 0.15);
+}
+
+.personal-section blockquote {
+  border-left: 3px solid var(--p-coral);
+  padding: 0.75rem 1rem;
+  margin: 1rem 0;
+  background: rgba(251, 113, 133, 0.06);
+  border-radius: 0 10px 10px 0;
+  color: var(--p-muted);
+  font-style: italic;
+}
+
+.personal-section hr {
+  border: none;
+  height: 1px;
+  background: var(--p-border);
+  margin: 1.5rem 0;
+}
+
+/* Trait grid (personality summary) */
+.personal-traits {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 10px;
+  margin-top: 1rem;
+}
+
+.personal-trait {
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid var(--p-border);
+  border-radius: 12px;
+  padding: 12px 14px;
+}
+
+.personal-trait dt {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--p-teal);
+  margin-bottom: 4px;
+}
+
+.personal-trait dd {
+  font-size: 0.88rem;
+  color: #fff;
+  margin: 0;
+  font-weight: 500;
+}
+
+/* Footer */
+.personal-footer {
+  text-align: center;
+  padding: 2rem 1.5rem 3rem;
+  border-top: 1px solid var(--p-border);
+  margin-top: 2rem;
+}
+
+.personal-footer .social-icons a {
+  color: var(--p-muted);
+  font-size: 1.25rem;
+  margin: 0 10px;
+  transition: color 0.2s;
+}
+
+.personal-footer .social-icons a:hover { color: var(--p-teal); }
+
+.personal-footer p {
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  color: var(--p-muted);
+}
+
+.personal-footer .personal-name-bn {
+  font-size: 1rem;
+  display: inline;
+}
+
+/* Lang switcher on dark page */
+body.personal-page .lang-switcher {
+  background: var(--p-card);
+  border-color: var(--p-border);
+}
+
+body.personal-page .lang-btn { color: var(--p-muted); }
+body.personal-page .lang-btn.active {
+  background: rgba(45, 212, 191, 0.25);
+  color: var(--p-teal);
+}
+
+#personal-content { display: none; }
+
+body.personal-page .preloader {
+  background: var(--p-bg);
+}
+
+body.personal-page .loader {
+  border-color: rgba(45, 212, 191, 0.3);
+  border-top-color: var(--p-teal);
+}
+
+@media (max-width: 900px) {
+  .personal-layout {
+    grid-template-columns: 1fr;
+  }
+  .personal-toc {
+    position: static;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    padding: 1rem;
+  }
+  .personal-toc h2 {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+  .personal-toc ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    width: 100%;
+  }
+  .personal-toc li { flex: 0 0 auto; }
+  .personal-toc a {
+    font-size: 0.75rem;
+    padding: 6px 10px;
+    border-left: none;
+    border: 1px solid var(--p-border);
+    border-radius: 100px;
+  }
+  .personal-section { padding: 1.35rem 1.25rem; }
+}

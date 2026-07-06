@@ -1,6 +1,8 @@
 # Private archive
 
-This page holds what I deliberately left off the public site — family context, visa paperwork, financial detail, personality notes, and planning I would not put in front of recruiters cold. The public [home page](index.html), [background](biography.html), [CV](cv.html), [projects](projects.html), and [philosophy](philosophy.html) are the professional face.
+**নেলসন্‌ বাড়ৈ** · Nelson Baroi
+
+This page holds what I deliberately left off the public site — family context, visa paperwork, financial detail, personality notes, infrastructure, and planning I would not put in front of recruiters cold. The public [home page](index.html), [background](biography.html), [CV](cv.html), [projects](projects.html), and [philosophy](philosophy.html) are the professional face.
 
 **Password required.** Do not share this URL or password.
 
@@ -10,11 +12,13 @@ Chandraghona sits on the Karnaphuli River in Rangamati, about 50 km from Chittag
 
 The Chittagong Hill Tracts are hilly, forested, and politically complex: indigenous communities, ethnic minorities, beauty and marginality together. I am from the **Christian minority** in Bangladesh — roughly 0.4% of the country. Christian, Hill Tracts, small town: three layers of "not the default" before I ever left home.
 
+Growing up there instilled **integrity, hard work, and empathy**. Tight-knit community plus limited resources taught me to extract maximum value from what I had — still how I operate.
+
 That background gave me quiet resilience, belief that education and merit open doors, and comfort being the different one — whether in a Russian lecture hall or on a nuclear construction site.
 
 ## Family
 
-We're a modest, upwardly mobile Baroi family in Bangladesh's Christian minority community.
+We're a modest, upwardly mobile **বাড়ৈ** family in Bangladesh's Christian minority community.
 
 ### Mother — Suporna Baroi
 
@@ -26,13 +30,13 @@ She is my primary sponsor for the Ireland MSc. That is not just money — it is 
 
 I am **married**. My wife stays in Bangladesh during my studies in Ireland — common for South Asian postgraduates abroad: short separation, long-term family payoff. Studying abroad while married is not easy in our context; we chose it because the upside is worth it.
 
-### The name Baroi
+### The name Baroi / বাড়ৈ
 
-"Baroi" (sometimes "Barai") appears among Bengali Christian communities with ties to Holy Cross missions in Chittagong. Notre Dame College — Holy Cross — fits that thread.
+"Baroi" (sometimes "Barai", Bengali **বাড়ৈ**) appears among Bengali Christian communities with ties to Holy Cross missions in Chittagong. Notre Dame College — Holy Cross — fits that thread.
 
 ### Social names
 
-On Facebook I am [noel.baroi](https://www.facebook.com/noel.baroi); on Instagram [@noel0007000](https://www.instagram.com/noel0007000). **Noel** is the name I use socially — baptismal or family nickname, common in our community alongside the legal name.
+On Facebook I am [noel.baroi](https://www.facebook.com/noel.baroi); on Instagram [@noel0007000](https://www.instagram.com/noel0007000). **Noel** is the name I use socially — baptismal or family nickname, common in our community alongside the legal name Nelson (**নেলসন্‌**).
 
 ## Education — extended record
 
@@ -46,7 +50,7 @@ First major public exam in Bangladesh, usually age 15–16. Finishing SSC in the
 
 I left home at sixteen for **Notre Dame College, Dhaka** — widely regarded as the country's top intermediate college.
 
-Notre Dame was founded in **1949** by the **Congregation of Holy Cross**. Competitive admissions, strong board results, Motijheel campus in Dhaka's commercial heart. Holy Cross ethos — service, integrity, formation — matched what my family taught me.
+Notre Dame was founded in **1949** by the **Congregation of Holy Cross**. Competitive admissions, strong board results, Motijheel campus in Dhaka's commercial heart. Holy Cross ethos — service, integrity, formation — matched what my family taught me. Two years in Dhaka at sixteen: urban, competitive, diverse, rigorous.
 
 ### Russia (2014–2018) — Kalmyk State University
 
@@ -58,7 +62,7 @@ I was **the only foreign student in my class**. Four years in Russian as the lan
 
 | Language | Level | Notes |
 |----------|-------|-------|
-| Bengali | Native | Home |
+| Bengali | Native | Home — **নেলসন্‌ বাড়ৈ** |
 | English | IELTS 6.5 | L:7.0, R:6.5, S:6.5, W:6.0 |
 | Russian | Professional working | 5+ years in Russia, daily use at Rooppur |
 
@@ -118,6 +122,8 @@ Public [background](biography.html) states the why. Here is the how and the numb
 
 Director role now needs formal analytics, not just reading reports. ATU Galway MSc is applied, not purely theoretical — build models, stress-test assumptions. Employer knows I am going; position remains open on return. Not a pivot — sharpening.
 
+**Atlantic Technological University** formed 2022 (GMIT + Sligo + Letterkenny merger). Galway campus — west coast, applied programme for professionals who need tools not theory alone.
+
 ### Visa journey (Type D, long-stay)
 
 | Item | Detail |
@@ -171,7 +177,7 @@ Visa application states intent to return; employer letter confirms open role. Wh
 
 ### Code & analysis
 
-Python (pandas, NumPy, matplotlib); HTML/CSS/JS (this site, chatbot); PHP basic; Flask; Git/GitHub; Vercel deploy.
+Python (pandas, NumPy, matplotlib); HTML/CSS/JS (this site, chatbot); PHP basic; Flask; Git/GitHub; Vercel deploy; library management DB project from scratch.
 
 ### BI & target professional stack
 
@@ -183,18 +189,20 @@ Adobe Photoshop; Microsoft Office advanced; Excel/Sheets advanced; PythonAnywher
 
 ### 52-week self-study plan
 
-~1 hr/day, 5 days/week — see [course plan](courseplan.html). Months 1–3: Python, SQL, Excel, BI tools. 4–6: stats, ETL, KPIs. 7–9: ML intro, cloud. 10–12: specialisation and portfolio projects. Coursera certs on [courses](courses.html) (Stanford, JHU, IBM, Google, Michigan tracks).
+~1 hr/day, 5 days/week — see [course plan](courseplan.html). Months 1–3: Python, SQL, Excel, BI tools. 4–6: stats, ETL, KPIs. 7–9: ML intro, cloud (AWS/GCP/Azure). 10–12: specialisation and portfolio projects. Coursera certs on [courses](courses.html) (Stanford, JHU, IBM, Google, Michigan tracks). Six+ certificates in repo.
 
 ## Projects — notes not on the public showcase
 
-[Projects page](projects.html) has the demos. Private notes:
+[Projects page](projects.html) has the demos. Private architecture notes:
 
-- **Portfolio builder** — drag-and-drop on GitHub Pages
+- **nbaroi.com** — GitHub Pages + Vercel serverless APIs, GSAP animations, EN/RU/BN i18n, Schema.org SEO
+- **Portfolio builder** — drag-and-drop on GitHub Pages (`nelsonbaroi.github.io/Drag-and-Drop-Portfolio-Builder/`)
 - **OTAF research** — Zenodo [10.5281/zenodo.17451832](https://doi.org/10.5281/zenodo.17451832)
-- **Site chatbot** — Vercel serverless, multi-provider fallback, conversation learning, daily scrape/retrain cron
-- **File system** — Flask on [nbaroi.pythonanywhere.com](https://nbaroi.pythonanywhere.com/)
-- **GPT4Free chatbot** — earlier Flask experiment
-- **Irish visa document portal** — 23-document organiser for my own application
+- **Site chatbot** — Vercel serverless; OpenAI → Groq → OpenRouter → keyword fallback; conversation learning; daily scrape/retrain cron
+- **File system** — Flask on [nbaroi.pythonanywhere.com](https://nbaroi.pythonanywhere.com/) — upload, list, download, delete
+- **GPT4Free chatbot** — earlier Flask experiment with gpt4free
+- **Irish visa document portal** — 23-document organiser for my own Type D application
+- **Visa queue analytics** — Python scripts, weekly CSV datasets, statistical charts (13 charts)
 
 Architecture choices were pragmatic: always-on Q&A from public content, graceful fallback when APIs fail, demonstrate skills by shipping.
 
@@ -229,11 +237,26 @@ Not on [philosophy](philosophy.html) — that page is values. This is behaviour.
 | Tech | Pragmatic |
 | Weak spot | Over-prepare |
 
+## Digital presence — private notes
+
+| Platform | Handle | Notes |
+|----------|--------|-------|
+| Website | [nbaroi.com](https://nbaroi.com) | Portfolio, background, chat, this vault |
+| LinkedIn | [linkedin.com/in/nbaroi](https://linkedin.com/in/nbaroi) | Professional |
+| GitHub | [github.com/NelsonBaroi](https://github.com/NelsonBaroi) | Portfollio, chatbot, projects |
+| Facebook | [noel.baroi](https://www.facebook.com/noel.baroi) | Personal — Noel |
+| Instagram | [@noel0007000](https://www.instagram.com/noel0007000) | Personal |
+| PythonAnywhere | [nbaroi.pythonanywhere.com](https://nbaroi.pythonanywhere.com/) | Private file system |
+
+Brand built deliberately: custom domain, structured data for search, chatbot for 24/7 Q&A from public material, password vault for everything else.
+
 ## Contact & financial reference
 
 | Field | Detail |
 |-------|--------|
-| Name | Nelson Baroi |
+| Legal name | Nelson Baroi |
+| Bengali name | **নেলসন্‌ বাড়ৈ** |
+| Social name | Noel |
 | Email | nelson6114007@gmail.com |
 | Phone | +8801786068822 |
 | Site | [nbaroi.com](https://nbaroi.com) |
@@ -256,6 +279,8 @@ Not on [philosophy](philosophy.html) — that page is values. This is behaviour.
 
 Combine **operational leadership** (nuclear-scale projects), **analytics** (post-MSc), and **cross-cultural fluency** (three languages, three continents of experience). Senior analytics or operations role in a multinational that values data, complexity, and bridges — whether from Bangladesh, Ireland, or elsewhere.
 
+Target combination long term: operational complexity + quantitative rigour + cross-cultural leadership. Data Analyst → BI → Operations Analytics path in Ireland is one branch; Director role with MSc-enhanced analytics in Bangladesh is another.
+
 ---
 
-*Compiled from portfolio repo, project files, and personal records. Last updated July 2026.*
+*নেলসন্‌ বাড়ৈ · Compiled from portfolio repo, project files, visa records, and personal notes. Last updated July 2026.*
