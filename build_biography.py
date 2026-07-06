@@ -70,7 +70,7 @@ def build_page() -> None:
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title data-i18n="biography.title">Background — Nelson Baroi</title>
-  <meta name="description" content="Background on Nelson Baroi — Chandraghona to Rooppur Nuclear operations and MSc at ATU Galway. Professional context for recruiters and universities." data-i18n-meta="biography.meta_desc">
+  <meta name="description" content="Background on Nelson Baroi — Director of Bangladesh Branch, AMT Engineering (Rooppur project). MSc at ATU Galway. Professional context for recruiters." data-i18n-meta="biography.meta_desc">
   <meta name="author" content="Nelson Baroi">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://nbaroi.com/biography.html">

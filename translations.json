@@ -6,19 +6,19 @@
   },
 
   "index.title": {
-    "en": "Nelson Baroi — Business Analytics Professional | Director of Operations",
-    "ru": "Нельсон Барои — Специалист по бизнес-аналитике | Директор филиала",
-    "bn": "নেলসন বারোই — বিজনেস অ্যানালিটিক্স পেশাদার | অপারেশনস ডিরেক্টর"
+    "en": "Nelson Baroi — Director of Bangladesh Branch, AMT Engineering | MSc Business Analytics",
+    "ru": "Нелсон Барой — Директор бангладешского филиала AMT Engineering | MSc Business Analytics",
+    "bn": "নেলসন বারোই — এএমটি ইঞ্জিনিয়ারিং বাংলাদেশ শাখার পরিচালক | এমএসসি বিজনেস অ্যানালিটিক্স"
   },
   "index.meta_desc": {
-    "en": "Nelson Baroi - Director of Branch Operations at AMT Engineering JSC, Rooppur Nuclear Power Plant. MSc Business Analytics student at ATU Galway, Ireland.",
-    "ru": "Нельсон Барои — Директор филиала AMT Engineering JSC на АЭС Руппур. Студент магистратуры по бизнес-аналитике в ATU Голуэй, Ирландия.",
-    "bn": "নেলসন বারোই — এএমটি ইঞ্জিনিয়ারিং জেএসসি-রূপপুর পারমাণবিক বিদ্যুৎ কেন্দ্রের শাখা পরিচালক। আয়ারল্যান্ডের এটিইউ গালওয়েতে এমএসসি বিজনেস অ্যানালিটিক্সের শিক্ষার্থী।"
+    "en": "Nelson Baroi — Director of Bangladesh Branch at AMT Engineering JSC (Rooppur Nuclear Power Plant project). MSc Business Analytics at ATU Galway, Ireland.",
+    "ru": "Нелсон Барой — директор бангладешского филиала AMT Engineering JSC (проект АЭС Руппур). Магистратура по бизнес-аналитике в ATU Голуэй, Ирландия.",
+    "bn": "নেলসন বারোই — এএমটি ইঞ্জিনিয়ারিং জেএসসি-র বাংলাদেশ শাখার পরিচালক (রূপপুর পারমাণবিক প্রকল্প)। এটিইউ গালওয়েতে এমএসসি বিজনেস অ্যানালিটিক্স।"
   },
   "index.header_subtitle": {
-    "en": "Operations at Rooppur · MSc Business Analytics (2026)",
-    "ru": "Операции на Руппур · MSc Business Analytics (2026)",
-    "bn": "রূপপুরে অপারেশনস · এমএসসি বিজনেস অ্যানালিটিক্স (২০২৬)"
+    "en": "Director of Bangladesh Branch, AMT Engineering · MSc (2026)",
+    "ru": "Директор бангладешского филиала AMT Engineering · MSc (2026)",
+    "bn": "এএমটি ইঞ্জিনিয়ারিং বাংলাদেশ শাখার পরিচালক · এমএসসি (২০২৬)"
   },
   "index.about_title": {
     "en": "About Me",
@@ -26,9 +26,9 @@
     "bn": "আমার সম্পর্কে"
   },
   "index.about_p1": {
-    "en": "I run the Bangladesh branch of <a href='https://atom-alliance.com/en/project/constuction/npp-rooppur/' target='_blank'>AMT Engineering JSC</a> on the <a href='https://en.wikipedia.org/wiki/Rooppur_Nuclear_Power_Plant' target='_blank'>Rooppur Nuclear Power Plant</a> project — budgets, contracts, logistics, and keeping Russian and Bangladeshi teams aligned.",
-    "ru": "Я руковожу бангладешским филиалом <a href='https://atom-alliance.com/en/project/constuction/npp-rooppur/' target='_blank'>AMT Engineering JSC</a> на проекте <a href='https://en.wikipedia.org/wiki/Rooppur_Nuclear_Power_Plant' target='_blank'>АЭС Руппур</a> — бюджеты, контракты, логистика и согласованная работа российских и бангладешских команд.",
-    "bn": "আমি <a href='https://en.wikipedia.org/wiki/Rooppur_Nuclear_Power_Plant' target='_blank'>রূপপুর পারমাণবিক বিদ্যুৎ কেন্দ্র</a> প্রকল্পে <a href='https://atom-alliance.com/en/project/constuction/npp-rooppur/' target='_blank'>এএমটি ইঞ্জিনিয়ারিং জেএসসি</a>-র বাংলাদেশ শাখা চালাই — বাজেট, চুক্তি, লজিস্টিকস এবং রাশিয়ান ও বাংলাদেশী দলগুলোর সমন্বয়।"
+    "en": "I'm <strong>Director of the Bangladesh Branch</strong> at <a href='https://atom-alliance.com/en/project/constuction/npp-rooppur/' target='_blank'>AMT Engineering JSC</a> — the <a href='https://en.wikipedia.org/wiki/Rooppur_Nuclear_Power_Plant' target='_blank'>Rooppur Nuclear Power Plant</a> project. Budgets, contracts, logistics, and keeping Russian and Bangladeshi teams aligned.",
+    "ru": "Я <strong>директор бангладешского филиала</strong> <a href='https://atom-alliance.com/en/project/constuction/npp-rooppur/' target='_blank'>AMT Engineering JSC</a> на проекте <a href='https://en.wikipedia.org/wiki/Rooppur_Nuclear_Power_Plant' target='_blank'>АЭС Руппур</a> — бюджеты, контракты, логистика и согласованная работа российских и бангладешских команд.",
+    "bn": "আমি <a href='https://atom-alliance.com/en/project/constuction/npp-rooppur/' target='_blank'>এএমটি ইঞ্জিনিয়ারিং জেএসসি</a>-র <strong>বাংলাদেশ শাখার পরিচালক</strong> — <a href='https://en.wikipedia.org/wiki/Rooppur_Nuclear_Power_Plant' target='_blank'>রূপপুর পারমাণবিক বিদ্যুৎ কেন্দ্র</a> প্রকল্পে। বাজেট, চুক্তি, লজিস্টিকস এবং রাশিয়ান ও বাংলাদেশী দলগুলোর সমন্বয়।"
   },
   "index.about_p2": {
     "en": "In September 2026 I'm starting an <strong>MSc in Business Analytics</strong> at <a href='https://www.atu.ie' target='_blank'>ATU Galway</a>. I can read a report and act on it; I want to learn how to build and test the model behind the report.",
@@ -46,9 +46,9 @@
     "bn": "ফেব্রুয়ারি ২০২৪ — বর্তমান"
   },
   "index.journey_item1_title": {
-    "en": "Director of Branch Operations",
-    "ru": "Директор филиала",
-    "bn": "শাখা পরিচালক (অপারেশনস)"
+    "en": "Director of Bangladesh Branch",
+    "ru": "Директор бангладешского филиала",
+    "bn": "বাংলাদেশ শাখার পরিচালক"
   },
   "index.journey_item1_company": {
     "en": "AMT Engineering JSC — Rooppur Nuclear Power Plant Project",
@@ -327,12 +327,12 @@
   },
   "index.footer_rights": {
     "en": "© 2026 Nelson Baroi. All rights reserved.",
-    "ru": "© 2026 Нельсон Барои. Все права защищены.",
+    "ru": "© 2026 Нелсон Барой. Все права защищены.",
     "bn": "© ২০২৬ নেলসন বারোই। সর্বস্বত্ব সংরক্ষিত।"
   },
   "index.chat_widget_title": {
     "en": "Nelson Baroi",
-    "ru": "Нельсон Барои",
+    "ru": "Нелсон Барой",
     "bn": "নেলসন বারোই"
   },
   "index.chat_widget_subtitle": {
@@ -347,7 +347,7 @@
   },
   "index.chat_widget_placeholder": {
     "en": "Ask Nelson...",
-    "ru": "Спросить Нельсона...",
+    "ru": "Спросить Нелсона...",
     "bn": "নেলসনকে জিজ্ঞাসা করুন..."
   },
   "index.chat_widget_open": {
@@ -358,7 +358,7 @@
 
   "chat.title": {
     "en": "Ask Nelson — Site Chat",
-    "ru": "Спросить Нельсона — чат сайта",
+    "ru": "Спросить Нелсона — чат сайта",
     "bn": "নেলসনকে জিজ্ঞাসা করুন — সাইট চ্যাট"
   },
   "chat.header_subtitle": {
@@ -378,7 +378,7 @@
   },
   "chat.bot_greeting": {
     "en": "Hi — I'm a chatbot on Nelson's portfolio site, trained on his public CV and pages here. Ask about his work at Rooppur, his MSc plans, skills, or projects. For hiring or anything serious, email nelson6114007@gmail.com.",
-    "ru": "Привет — я чат-бот на сайте Нельсона, обученный на публичном резюме и страницах сайта. Спрашивайте о работе на Руппур, планах MSc, навыках или проектах. Для найма или серьёзных вопросов — nelson6114007@gmail.com.",
+    "ru": "Привет — я чат-бот на сайте Нелсона Бароя, обученный на публичном резюме и страницах сайта. Спрашивайте о должности директора бангладешского филиала AMT Engineering, планах MSc, навыках или проектах. Для найма — nelson6114007@gmail.com.",
     "bn": "হাই — আমি নেলসনের পোর্টফোলিও সাইটের চ্যাটবট, তার প্রকাশ্য সিভি ও সাইটের পৃষ্ঠায় প্রশিক্ষিত। রূপপুরের কাজ, এমএসসি পরিকল্পনা, দক্ষতা বা প্রকল্প সম্পর্কে জিজ্ঞাসা করুন। নিয়োগ বা গুরুতর বিষয়ে — nelson6114007@gmail.com।"
   },
   "chat.suggestion_work": {
@@ -413,7 +413,7 @@
   },
   "chat.input_placeholder": {
     "en": "Ask Nelson anything...",
-    "ru": "Спросить Нельсона о чём угодно...",
+    "ru": "Спросить Нелсона о чём угодно...",
     "bn": "নেলসনকে যেকোনো কিছু জিজ্ঞাসা করুন..."
   },
   "chat.status_bar": {
@@ -449,12 +449,12 @@
 
   "projects.title": {
     "en": "Projects — Nelson Baroi",
-    "ru": "Проекты — Нельсон Барои",
+    "ru": "Проекты — Нелсон Барой",
     "bn": "প্রকল্প — নেলসন বারোই"
   },
   "projects.meta_desc": {
     "en": "Nelson Baroi — software projects in voice synthesis, visual AI, statistical simulation, and local tooling.",
-    "ru": "Нельсон Барои — программные проекты в области синтеза речи, визуального ИИ, статистического моделирования и локальных инструментов.",
+    "ru": "Нелсон Барой — программные проекты в области синтеза речи, визуального ИИ, статистического моделирования и локальных инструментов.",
     "bn": "নেলসন বারোই — ভয়েস সিন্থেসিস, ভিজুয়াল এআই, স্ট্যাটিস্টিক্যাল সিমুলেশন এবং লোকাল টুলিংয়ের সফটওয়্যার প্রকল্প।"
   },
   "projects.header": {
@@ -809,23 +809,23 @@
   },
   "projects.footer_rights": {
     "en": "© 2026 Nelson Baroi. All rights reserved.",
-    "ru": "© 2026 Нельсон Барои. Все права защищены.",
+    "ru": "© 2026 Нелсон Барой. Все права защищены.",
     "bn": "© ২০২৬ নেলসন বারোই। সর্বস্বত্ব সংরক্ষিত।"
   },
   "projects.widget_greeting": {
     "en": "Hi — chatbot trained on Nelson's CV and site. Ask about projects, work, or studies. Email nelson6114007@gmail.com for anything serious.",
-    "ru": "Привет — чат-бот, обученный на резюме и сайте Нельсона. Спрашивайте о проектах, работе или учёбе. Для серьёзных вопросов — nelson6114007@gmail.com.",
+    "ru": "Привет — чат-бот, обученный на резюме и сайте Нелсона. Спрашивайте о проектах, работе или учёбе. Для серьёзных вопросов — nelson6114007@gmail.com.",
     "bn": "হাই — নেলসনের সিভি ও সাইটে প্রশিক্ষিত চ্যাটবট। প্রকল্প, কাজ বা পড়াশোনা সম্পর্কে জিজ্ঞাসা করুন। গুরুতর বিষয়ে — nelson6114007@gmail.com।"
   },
   "projects.widget_placeholder": {
     "en": "Ask Nelson...",
-    "ru": "Спросить Нельсона...",
+    "ru": "Спросить Нелсона...",
     "bn": "নেলসনকে জিজ্ঞাসা করুন..."
   },
 
   "courses.title": {
     "en": "Professional Courses — Nelson Baroi",
-    "ru": "Профессиональные курсы — Нельсон Барои",
+    "ru": "Профессиональные курсы — Нелсон Барой",
     "bn": "পেশাগত কোর্স — নেলসন বারোই"
   },
   "courses.nav_back": {
@@ -845,13 +845,13 @@
   },
   "courses.footer_rights": {
     "en": "© 2025 Nelson Baroi. All rights reserved.",
-    "ru": "© 2025 Нельсон Барои. Все права защищены.",
+    "ru": "© 2025 Нелсон Барой. Все права защищены.",
     "bn": "© ২০২৫ নেলসন বারোই। সর্বস্বত্ব সংরক্ষিত।"
   },
 
   "philosophy.title": {
     "en": "Nelson Baroi - Philosophy",
-    "ru": "Нельсон Барои — Философия",
+    "ru": "Нелсон Барой — Философия",
     "bn": "নেলসন বারোই — দর্শন"
   },
   "philosophy.header": {
@@ -951,13 +951,13 @@
   },
   "philosophy.footer_rights": {
     "en": "© 2025 Nelson Baroi. All rights reserved.",
-    "ru": "© 2025 Нельсон Барои. Все права защищены.",
+    "ru": "© 2025 Нелсон Барой. Все права защищены.",
     "bn": "© ২০২৫ নেলসন বারোই। সর্বস্বত্ব সংরক্ষিত।"
   },
 
   "personal.title": {
     "en": "Private Archive — Nelson Baroi",
-    "ru": "Личный архив — Нельсон Барои",
+    "ru": "Личный архив — Нелсон Барой",
     "bn": "ব্যক্তিগত আর্কাইভ — নেলসন বারোই"
   },
   "personal.badge": {
@@ -1057,7 +1057,7 @@
   },
   "personal.footer_rights": {
     "en": "© 2026 Nelson Baroi — private section",
-    "ru": "© 2026 Нельсон Барои — личный раздел",
+    "ru": "© 2026 Нелсон Барой — личный раздел",
     "bn": "© ২০২৬ নেলসন বারোই — ব্যক্তিগত অংশ"
   },
 
@@ -1309,7 +1309,7 @@
 
   "cv.title": {
     "en": "Curriculum Vitae — Nelson Baroi",
-    "ru": "Резюме — Нельсон Барои",
+    "ru": "Резюме — Нелсон Барой",
     "bn": "কারিকুলাম ভিটা — নেলসন বারোই"
   },
   "cv.return": {
@@ -1320,7 +1320,7 @@
 
   "biography.title": {
     "en": "Background — Nelson Baroi | nbaroi.com",
-    "ru": "Путь — Нельсон Барои | nbaroi.com",
+    "ru": "Путь — Нелсон Барой | nbaroi.com",
     "bn": "পটভূমি — নেলসন বারোই | nbaroi.com"
   },
   "biography.header_title": {
@@ -1334,9 +1334,9 @@
     "bn": "নিয়োগকারী ও বিশ্ববিদ্যালয়ের জন্য প্রসঙ্গ"
   },
   "biography.meta_desc": {
-    "en": "Professional background: operations at Rooppur Nuclear Power Plant, education in Bangladesh and Russia, MSc at ATU Galway. By Nelson Baroi.",
-    "ru": "Профессиональный путь: операции на АЭС Руппур, образование в Бангладеш и России, магистратура в ATU Голуэй. Нельсон Барои.",
-    "bn": "পেশাগত পটভূমি: রূপপুর পারমাণবিক বিদ্যুৎ কেন্দ্রে অপারেশনস, বাংলাদেশ ও রাশিয়ায় শিক্ষা, এটিইউ গালওয়েতে এমএসসি। নেলসন বারোই।"
+    "en": "Professional background: Director of Bangladesh Branch, AMT Engineering (Rooppur project). Education in Bangladesh and Russia, MSc at ATU Galway. By Nelson Baroi.",
+    "ru": "Профессиональный путь: директор бангладешского филиала AMT Engineering (АЭС Руппур), образование в Бангладеш и России, магистратура в ATU Голуэй. Нелсон Барой.",
+    "bn": "পেশাগত পটভূমি: এএমটি ইঞ্জিনিয়ারিং বাংলাদেশ শাখার পরিচালক (রূপপুর প্রকল্প), বাংলাদেশ ও রাশিয়ায় শিক্ষা, এটিইউ গালওয়েতে এমএসসি। নেলসন বারোই।"
   },
   "biography.toc_title": {
     "en": "On this page",
@@ -1365,7 +1365,7 @@
   },
   "biography.footer_rights": {
     "en": "© 2026 Nelson Baroi. All rights reserved.",
-    "ru": "© 2026 Нельсон Барои. Все права защищены.",
+    "ru": "© 2026 Нелсон Барой. Все права защищены.",
     "bn": "© ২০২৬ নেলসন বারোই। সর্বস্বত্ব সংরক্ষিত।"
   },
   "biography.nav_email": {

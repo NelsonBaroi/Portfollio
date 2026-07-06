@@ -134,9 +134,9 @@ def build_page() -> None:
 
     <div class="personal-stats" aria-label="Key facts">
       <div class="personal-stat">
-        <i class="fas fa-atom"></i>
-        <strong>Director</strong>
-        <span>Rooppur NPP</span>
+        <i class="fas fa-building"></i>
+        <strong>Bangladesh Branch</strong>
+        <span>AMT Engineering</span>
       </div>
       <div class="personal-stat">
         <i class="fas fa-language"></i>

@@ -1,6 +1,6 @@
 # Background
 
-I'm Nelson Baroi. I grew up in Chandraghona in the Chittagong Hill Tracts, studied in Dhaka and Russia, and for several years I've helped run the Bangladesh side of work at the Rooppur Nuclear Power Plant. In September 2026 I start an **MSc in Business Analytics** at [ATU Galway](https://www.atu.ie).
+I'm Nelson Baroi. I grew up in Chandraghona in the Chittagong Hill Tracts, studied in Dhaka and Russia, and I'm **Director of the Bangladesh Branch** at [AMT Engineering JSC](https://atom-alliance.com/en/project/constuction/npp-rooppur/) on the [Rooppur Nuclear Power Plant](https://en.wikipedia.org/wiki/Rooppur_Nuclear_Power_Plant) project. In September 2026 I start an **MSc in Business Analytics** at [ATU Galway](https://www.atu.ie).
 
 This page is context — who I am and how I got here. Roles, dates, and skills are on the [home page](index.html). A printable summary is on my [CV](cv.html).
 

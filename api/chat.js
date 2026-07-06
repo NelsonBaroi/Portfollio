@@ -50,8 +50,8 @@ export default async function handler(req, res) {
 - Currently Bangladesh → moving to Galway, Ireland September 2026
 
 ## CAREER
-- **Director of Branch Operations** — AMT Engineering JSC (Feb 2024–present)
-- **Project:** Rooppur Nuclear Power Plant — Bangladesh's first nuclear power plant
+- **Director of Bangladesh Branch** — AMT Engineering JSC (Feb 2024–present)
+- **Project context:** Rooppur Nuclear Power Plant — Bangladesh's first nuclear power plant (not "operations at Rooppur" — I direct the Bangladesh branch of AMT Engineering)
 - Started as Senior Administrator (Jan 2019), promoted to Director
 - Also: Procurement Manager at FREYSSINET (same project)
 - Skills: strategic planning, resource allocation, budget oversight, cross-cultural leadership (Russian-Bangladeshi teams)
@@ -261,12 +261,12 @@ function getSmartFallback(message) {
 
   // Greeting
   if (msg.match(/^(hi|hello|hey|good morning|good evening|howdy|yo|sup)/)) {
-    return "Hey! I'm Nelson. Director of Operations at AMT Engineering, working on Bangladesh's first nuclear power plant. Heading to Ireland soon for an MSc in Business Analytics. What would you like to know?";
+    return "Hey! I'm Nelson. Director of the Bangladesh Branch at AMT Engineering JSC — Rooppur Nuclear Power Plant project. Heading to Ireland soon for an MSc in Business Analytics. What would you like to know?";
   }
 
   // Identity
   if (msg.includes('who are you') || msg.includes('about you') || msg.includes('introduce') || msg.includes('tell me about')) {
-    return "I'm Nelson Baroi — Director of Branch Operations at AMT Engineering JSC. We're building the Rooppur Nuclear Power Plant, Bangladesh's first. Been there since 2019, promoted to Director in 2024. I manage strategic planning, budgets, resource allocation across Russian-Bangladeshi teams.\n\nIn September 2026, I'm moving to Galway, Ireland for an MSc in Business Analytics at ATU. The goal: close the gap between my operational intuition and proper data-driven analytical frameworks. I can read any report — now I want to build the models behind them.";
+    return "I'm Nelson Baroi — Director of the Bangladesh Branch at AMT Engineering JSC. The branch serves the Rooppur Nuclear Power Plant project, Bangladesh's first. Been there since 2019, promoted to Director in 2024. I manage strategic planning, budgets, resource allocation across Russian-Bangladeshi teams.\n\nIn September 2026, I'm moving to Galway, Ireland for an MSc in Business Analytics at ATU. The goal: close the gap between my operational intuition and proper data-driven analytical frameworks. I can read any report — now I want to build the models behind them.";
   }
 
   // Career/Work
@@ -320,7 +320,7 @@ function getSmartFallback(message) {
   }
 
   // Default catch-all
-  return "I'm a chatbot on Nelson Baroi's portfolio site. I can answer questions about his work at Rooppur, his education, analytics skills he's building, Ireland MSc plans, or what's on nbaroi.com.\n\nFor hiring or detailed questions, email nelson6114007@gmail.com — that's Nelson directly.";
+  return "I'm a chatbot on Nelson Baroi's portfolio site. I can answer questions about his role as Director of Bangladesh Branch at AMT Engineering, his education, analytics skills, Ireland MSc plans, or what's on nbaroi.com.\n\nFor hiring or detailed questions, email nelson6114007@gmail.com — that's Nelson directly.";
 }
 
 // ============================================
