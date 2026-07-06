@@ -635,6 +635,16 @@ a:hover {
    BIOGRAPHY PAGE
    ============================================ */
 
+.bio-layout-simple {
+  max-width: 920px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bio-layout-simple .bio-toc {
+  position: static;
+}
+
 .bio-layout {
   display: grid;
   grid-template-columns: 220px 1fr;

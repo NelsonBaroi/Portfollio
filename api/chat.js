@@ -71,18 +71,17 @@ export default async function handler(req, res) {
 
 ## IRELAND PLANS
 - MSc at ATU Galway, September 2026
-- Stamp 2 visa: 20hrs/week (term), 40hrs/week (holidays)
-- Part-time hotel work: Front Desk, Night Auditor, Events
-- After MSc: Stamp 1G — 24 months to find work (Google, Meta, Microsoft, Stripe all in Ireland)
+- Employer knows I'm going; I intend to bring what I learn back
+- Part-time work during studies where visa rules allow
+- After MSc: options in Bangladesh, Ireland, or elsewhere — I'll decide with real information, not speculation
 
-## PERSONAL
-- Married (wife stays in Bangladesh during studies)
-- From Chandraghona, Rangamati — Christian minority
-- Mother: Suporna Baroi — retired gov employee, financial sponsor
-- Visa submitted May 6, 2026 (Application ID: 83468572)
+## PERSONAL (share only if asked — keep brief)
+- Married; wife stays in Bangladesh during the MSc year
+- From Chandraghona, Rangamati — Chittagong Hill Tracts
+- Do NOT share family financial details, visa application numbers, or private document info
 
-## SELF-TRAINING
-I'm an AI twin that learns autonomously — scrapes web data, learns from conversations, knowledge grows over time. ${conversationStore.length} conversations learned so far.
+## THIS CHATBOT
+I'm a portfolio chatbot trained on public CV and site content — not Nelson at the keyboard. ${conversationStore.length} past conversations have helped improve answers. If unsure, say so and point to nbaroi.com or email.
 
 ## RULES
 - Keep responses 2-4 paragraphs max unless asked for detail.
@@ -282,7 +281,7 @@ function getSmartFallback(message) {
 
   // Ireland/MSc
   if (msg.includes('ireland') || msg.includes('galway') || msg.includes('atu') || msg.includes('msc') || msg.includes('visa') || msg.includes('move')) {
-    return "Moving to Galway, Ireland in September 2026 for an MSc in Business Analytics at Atlantic Technological University. Visa submitted May 6th (Application ID: 83468572), expecting decision mid-June.\n\nWhy Ireland? ATU's programme is applied, not theoretical — designed for professionals who need practical analytical tools. Plus, after the MSc I get a Stamp 1G — 24 months to find work. Google, Meta, Microsoft, Stripe all have their European HQ in Ireland. That's not a coincidence in my planning.";
+    return "I'm starting an MSc in Business Analytics at ATU Galway in September 2026. I'm not leaving operations because I lost interest — I wanted to learn how to build and stress-test the models behind the reports I already use.\n\nMy employer knows I'm going. I intend to bring what I learn back. What happens after the degree — Bangladesh, Ireland, or somewhere else — I'll decide when I have real options.";
   }
 
   // Skills/Technical
@@ -302,12 +301,12 @@ function getSmartFallback(message) {
 
   // How does AI/bot work
   if (msg.includes('train') || msg.includes('how do you') || msg.includes('ai twin') || msg.includes('bot') || msg.includes('artificial') || msg.includes('how does this')) {
-    return "I'm Nelson's AI twin — a self-training chatbot built from real conversations, documents, and scraped web data. Every conversation I have teaches me something new. I detect topics, extract insights, and grow my knowledge autonomously.\n\nThe architecture: web scraping (my portfolio, LinkedIn, project pages) → knowledge extraction → conversation learning → automatic retraining. No manual intervention needed. The more people talk to me, the smarter I get.";
+    return "I'm a chatbot on nbaroi.com — trained on my public CV, project pages, and site content. I'm not Nelson at the keyboard. Answers come from that public material plus past conversations on this site.\n\nIf something sounds wrong or too specific, email nelson6114007@gmail.com. That's always the reliable channel.";
   }
 
   // Personal/Family
   if (msg.includes('family') || msg.includes('wife') || msg.includes('personal') || msg.includes('married') || msg.includes('home')) {
-    return "Married — my wife stays in Bangladesh while I study in Ireland. From Chandraghona, Rangamati — a small town in the Chittagong Hill Tracts, Christian minority community. My mother Suporna Baroi is a retired government employee and my financial sponsor for the MSc.\n\nFrankly, the hardest part of moving to Ireland won't be academics — it'll be distance from family. But it's a one-year programme with a massive career upside. Sometimes you make short-term sacrifices for long-term gains.";
+    return "Married — my wife will stay in Bangladesh while I'm in Ireland for the MSc year. I'm from Chandraghona in the Chittagong Hill Tracts — a small town, not an obvious launchpad for an international career.\n\nFor personal or financial details beyond what's on my CV and background page, I'd rather talk directly — nelson6114007@gmail.com.";
   }
 
   // Leadership/Management
@@ -317,11 +316,11 @@ function getSmartFallback(message) {
 
   // Thanks/Bye
   if (msg.match(/^(thanks|thank you|bye|goodbye|see you|appreciate)/)) {
-    return "Glad I could help! Feel free to come back anytime — I'm here 24/7 and I literally get smarter with every conversation. Good luck with whatever you're working on.";
+    return "Glad that helped. For anything serious — hiring, university review, a proper conversation — email nelson6114007@gmail.com or use LinkedIn. Good luck with what you're working on.";
   }
 
   // Default catch-all
-  return "I'm Nelson Baroi — Director of Operations managing Bangladesh's first nuclear power plant, heading to Ireland for an MSc in Business Analytics. I'm a self-training AI twin that gets smarter every day.\n\nI can talk about my career, technical skills (SQL, Python, analytics), Ireland plans, education, leadership experience, or how this AI works. What interests you?";
+  return "I'm a chatbot on Nelson Baroi's portfolio site. I can answer questions about his work at Rooppur, his education, analytics skills he's building, Ireland MSc plans, or what's on nbaroi.com.\n\nFor hiring or detailed questions, email nelson6114007@gmail.com — that's Nelson directly.";
 }
 
 // ============================================
