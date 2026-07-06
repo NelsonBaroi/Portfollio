@@ -630,3 +630,221 @@ a:hover {
 
 .file-icon { font-size: 32px; margin-bottom: 8px; }
 .file-name { font-size: 13px; font-weight: 600; color: #333; }
+
+/* ============================================
+   BIOGRAPHY PAGE
+   ============================================ */
+
+.bio-layout {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 1.5rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem 2rem;
+  align-items: start;
+}
+
+.bio-toc {
+  position: sticky;
+  top: 1rem;
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 16px;
+  border: 1px solid rgba(0, 190, 190, 0.12);
+  box-shadow: 8px 8px 24px rgba(0, 0, 0, 0.05);
+  padding: 1rem;
+  max-height: calc(100vh - 2rem);
+  overflow-y: auto;
+}
+
+.bio-toc h2 {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #00898a;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #eee;
+}
+
+.bio-toc ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.bio-toc a {
+  display: block;
+  font-size: 0.78rem;
+  color: #555;
+  padding: 0.35rem 0.5rem;
+  border-radius: 6px;
+  border-left: 2px solid transparent;
+  transition: all 0.2s;
+  line-height: 1.35;
+}
+
+.bio-toc a:hover {
+  color: #00898a;
+  background: rgba(0, 190, 190, 0.06);
+  border-left-color: #00bebe;
+}
+
+.bio-main {
+  min-width: 0;
+}
+
+.bio-main .section {
+  max-width: none;
+  margin: 1.25rem 0;
+}
+
+.bio-intro .bio-lead {
+  font-size: 1.05rem;
+  color: #4a4a5a;
+  margin: 0;
+}
+
+.bio-chapter h1 {
+  font-size: 1.45rem;
+  color: #1a1a2e;
+  margin-bottom: 1rem;
+}
+
+.bio-chapter h2 {
+  font-size: 1.15rem;
+  margin-top: 1.5rem;
+}
+
+.bio-chapter h3 {
+  font-size: 1rem;
+  color: #00898a;
+  margin-top: 1.25rem;
+}
+
+.bio-chapter table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  font-size: 0.88rem;
+}
+
+.bio-chapter th,
+.bio-chapter td {
+  padding: 0.55rem 0.75rem;
+  border: 1px solid #e8e8ec;
+  text-align: left;
+}
+
+.bio-chapter th {
+  background: linear-gradient(135deg, #00bebe, #2e5a6e);
+  color: #fff;
+}
+
+.bio-chapter tr:nth-child(even) td {
+  background: #f8f9fc;
+}
+
+.bio-chapter blockquote {
+  border-left: 4px solid #FF7F50;
+  padding: 0.75rem 1rem;
+  margin: 1rem 0;
+  background: #fff8f5;
+  border-radius: 0 8px 8px 0;
+  font-style: italic;
+  color: #555;
+}
+
+.bio-chapter pre {
+  background: #1a1a2e;
+  color: #e8e8ec;
+  padding: 1rem;
+  border-radius: 10px;
+  overflow-x: auto;
+  font-size: 0.78rem;
+  line-height: 1.45;
+}
+
+.bio-see-also {
+  margin-top: 1rem;
+  padding: 0.75rem 1rem;
+  background: #f0faf9;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  border: 1px solid rgba(0, 190, 190, 0.15);
+}
+
+.bio-related-intro {
+  margin-bottom: 1.25rem;
+}
+
+.bio-related-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 0.75rem;
+}
+
+.bio-related-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 1rem;
+  background: #f8f9fc;
+  border-radius: 12px;
+  border: 1px solid #eee;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.25s;
+}
+
+.bio-related-card:hover {
+  transform: translateY(-2px);
+  border-color: #00bebe;
+  box-shadow: 0 4px 16px rgba(0, 190, 190, 0.15);
+  color: inherit;
+}
+
+.bio-related-card i {
+  color: #FF7F50;
+  font-size: 1.1rem;
+}
+
+.bio-related-card strong {
+  font-size: 0.88rem;
+  color: #1a1a2e;
+}
+
+.bio-related-card span {
+  font-size: 0.75rem;
+  color: #777;
+}
+
+@media (max-width: 860px) {
+  .bio-layout {
+    grid-template-columns: 1fr;
+    padding: 0.5rem 1rem 2rem;
+  }
+
+  .bio-toc {
+    position: relative;
+    top: 0;
+    max-height: none;
+  }
+
+  .bio-toc ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+  }
+
+  .bio-toc li {
+    flex: 0 0 auto;
+  }
+
+  .bio-toc a {
+    font-size: 0.72rem;
+    background: #f8f9fc;
+    border: 1px solid #eee;
+    border-left: 1px solid #eee;
+  }
+}

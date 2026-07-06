@@ -275,6 +275,16 @@
     "ru": "MongoDB (изучаю)",
     "bn": "মঙ্গোডিবি (শিখছি)"
   },
+  "index.about_biography_link": {
+    "en": "Read the full narrative biography →",
+    "ru": "Читать полную биографию →",
+    "bn": "সম্পূর্ণ জীবনী পড়ুন →"
+  },
+  "index.nav_biography": {
+    "en": "Biography",
+    "ru": "Биография",
+    "bn": "জীবনী"
+  },
   "index.nav_projects": {
     "en": "Projects",
     "ru": "Проекты",
@@ -1246,5 +1256,81 @@
     "en": "Return to Home",
     "ru": "На главную",
     "bn": "হোমে ফিরুন"
+  },
+
+  "biography.title": {
+    "en": "Nelson Baroi Biography — Chandraghona to Rooppur Nuclear Plant | nbaroi.com",
+    "ru": "Биография Нельсона Барои — от Чандрагхоны до АЭС Руппур | nbaroi.com",
+    "bn": "নেলসন বারোই জীবনী — চন্দ্রঘোনা থেকে রূপপুর পারমাণবিক কেন্দ্র | nbaroi.com"
+  },
+  "biography.meta_desc": {
+    "en": "Full narrative biography of Nelson Baroi — from Chandraghona in the Chittagong Hill Tracts to Director at Rooppur Nuclear Power Plant and MSc at ATU Galway, Ireland.",
+    "ru": "Полная биография Нельсона Барои — от Чандрагхоны до директора на АЭС Руппур и магистратуры в ATU Голуэй, Ирландия.",
+    "bn": "নেলসন বারোইর সম্পূর্ণ জীবনী — পার্বত্য চট্টগ্রামের চন্দ্রঘোনা থেকে রূপপুর পারমাণবিক বিদ্যুৎ কেন্দ্রের পরিচালক ও আয়ারল্যান্ডের এটিইউ গালওয়েতে এমএসসি।"
+  },
+  "biography.header_title": {
+    "en": "Biography",
+    "ru": "Биография",
+    "bn": "জীবনী"
+  },
+  "biography.header_subtitle": {
+    "en": "From Chandraghona to the World's 33rd Nuclear Nation",
+    "ru": "От Чандрагхоны до 33-й ядерной державы мира",
+    "bn": "চন্দ্রঘোনা থেকে বিশ্বের ৩৩তম পারমাণবিক জাতি"
+  },
+  "biography.toc_title": {
+    "en": "Chapters",
+    "ru": "Главы",
+    "bn": "অধ্যায়"
+  },
+  "biography.nav_home": {
+    "en": "Portfolio",
+    "ru": "Портфолио",
+    "bn": "পোর্টফোলিও"
+  },
+  "biography.nav_cv": {
+    "en": "CV",
+    "ru": "Резюме",
+    "bn": "সিভি"
+  },
+  "biography.nav_projects": {
+    "en": "Projects",
+    "ru": "Проекты",
+    "bn": "প্রকল্প"
+  },
+  "biography.nav_chat": {
+    "en": "Chat",
+    "ru": "Чат",
+    "bn": "চ্যাট"
+  },
+  "biography.footer_rights": {
+    "en": "© 2026 Nelson Baroi. All rights reserved.",
+    "ru": "© 2026 Нельсон Барои. Все права защищены.",
+    "bn": "© ২০২৬ নেলসন বারোই। সর্বস্বত্ব সংরক্ষিত।"
+  },
+  "projects.nav_biography": {
+    "en": "Biography",
+    "ru": "Биография",
+    "bn": "জীবনী"
+  },
+  "philosophy.nav_biography": {
+    "en": "Biography",
+    "ru": "Биография",
+    "bn": "জীবনী"
+  },
+  "courses.nav_biography": {
+    "en": "Biography",
+    "ru": "Биография",
+    "bn": "জীবনী"
+  },
+  "personal.nav_biography": {
+    "en": "Biography",
+    "ru": "Биография",
+    "bn": "জীবনী"
+  },
+  "chat.nav_biography": {
+    "en": "Biography",
+    "ru": "Биография",
+    "bn": "জীবনী"
   }
 }
