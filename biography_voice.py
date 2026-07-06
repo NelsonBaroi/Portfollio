@@ -338,6 +338,9 @@ def polish_grammar(md: str) -> str:
         (r"and possessed a level of cross-cultural competence", "and picked up cross-cultural competence"),
         (r"This is a remarkable detail\. For four years I:", "For four years I:"),
         (r"## How I Communicate", "### How I talk"),
+        (r"I question received wisdom and expects\b", "I question received wisdom and expect"),
+        (r"I don't just react to circumstances but systematically processes\b", "I don't just react — I process"),
+        (r"this suggests a level of personal discipline", "that's the discipline"),
     ]
     for pattern, repl in fixes:
         md = re.sub(pattern, repl, md)
