@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /personal.html
 
 Sitemap: https://nbaroi.com/sitemap.xml

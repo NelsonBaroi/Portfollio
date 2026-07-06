@@ -956,9 +956,39 @@
   },
 
   "personal.title": {
-    "en": "Protected Page - Nelson Baroi",
-    "ru": "Защищённая страница — Нельсон Барои",
-    "bn": "সুরক্ষিত পৃষ্ঠা — নেলসন বারোই"
+    "en": "Private Archive — Nelson Baroi",
+    "ru": "Личный архив — Нельсон Барои",
+    "bn": "ব্যক্তিগত আর্কাইভ — নেলসন বারোই"
+  },
+  "personal.badge": {
+    "en": "Private",
+    "ru": "Личное",
+    "bn": "ব্যক্তিগত"
+  },
+  "personal.login_hint": {
+    "en": "Full personal archive — not indexed publicly.",
+    "ru": "Полный личный архив — не индексируется публично.",
+    "bn": "সম্পূর্ণ ব্যক্তিগত আর্কাইভ — সার্চে দেখা যাবে না।"
+  },
+  "personal.back_home": {
+    "en": "← Back to public site",
+    "ru": "← На публичный сайт",
+    "bn": "← পাবলিক সাইটে ফিরুন"
+  },
+  "personal.header_title": {
+    "en": "Private archive",
+    "ru": "Личный архив",
+    "bn": "ব্যক্তিগত আর্কাইভ"
+  },
+  "personal.header_subtitle": {
+    "en": "Everything not on the public pages",
+    "ru": "Всё, чего нет на публичных страницах",
+    "bn": "পাবলিক পৃষ্ঠায় যা নেই"
+  },
+  "personal.toc_title": {
+    "en": "On this page",
+    "ru": "На этой странице",
+    "bn": "এই পৃষ্ঠায়"
   },
   "personal.login_title": {
     "en": "Login",
@@ -981,9 +1011,19 @@
     "bn": "ভুল পাসওয়ার্ড"
   },
   "personal.nav_about": {
-    "en": "About Me",
-    "ru": "Обо мне",
-    "bn": "আমার সম্পর্কে"
+    "en": "Home",
+    "ru": "Главная",
+    "bn": "হোম"
+  },
+  "personal.nav_projects": {
+    "en": "Projects",
+    "ru": "Проекты",
+    "bn": "প্রকল্প"
+  },
+  "personal.nav_chat": {
+    "en": "Chat",
+    "ru": "Чат",
+    "bn": "চ্যাট"
   },
   "personal.nav_philosophy": {
     "en": "Philosophy",
@@ -1006,9 +1046,9 @@
     "bn": "আমার ফাইল সিস্টেম"
   },
   "personal.footer_rights": {
-    "en": "© 2025 Nelson Baroi. All rights reserved.",
-    "ru": "© 2025 Нельсон Барои. Все права защищены.",
-    "bn": "© ২০২৫ নেলসন বারোই। সর্বস্বত্ব সংরক্ষিত।"
+    "en": "© 2026 Nelson Baroi — private section",
+    "ru": "© 2026 Нельсон Барои — личный раздел",
+    "bn": "© ২০২৬ নেলসন বারোই — ব্যক্তিগত অংশ"
   },
 
   "courseplan.title": {

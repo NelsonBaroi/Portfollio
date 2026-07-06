@@ -1,101 +1,593 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title data-i18n="personal.title">Protected Page - Nelson Baroi</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <script src="i18n.js" defer></script>
-    <script src="script.js" defer></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <style>
-      .lang-switcher {
-        position: fixed; top: 16px; right: 16px; z-index: 10001;
-        display: flex; gap: 4px;
-        background: rgba(255,255,255,0.2); backdrop-filter: blur(8px);
-        padding: 4px; border-radius: 8px;
-        border: 1px solid rgba(255,255,255,0.2);
-      }
-      .lang-btn {
-        background: transparent; border: none; color: rgba(255,255,255,0.6);
-        padding: 4px 10px; border-radius: 6px; cursor: pointer;
-        font-size: 0.78rem; font-weight: 600; font-family: 'Segoe UI', sans-serif;
-        transition: all 0.2s;
-      }
-      .lang-btn:hover { color: #fff; background: rgba(255,255,255,0.15); }
-      .lang-btn.active { color: #fff; background: rgba(255,127,80,0.7); }
-      body { font-family: Arial, sans-serif; max-width: 600px; margin: 50px auto; text-align: center; }
-      #content { display: none; }
-      #error { color: red; display: none; }
-      input { width: 100%; padding: 8px; margin: 10px 0; }
-      button { background: #4CAF50; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer; }
-      .cta-button { display: inline-block; padding: 10px 20px; margin: 10px; background: #007BFF; color: white; text-decoration: none; border-radius: 4px; }
-    </style>
-  </head>
-  <body>
-    <!-- Language Switcher -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="personal.title">Private Archive — Nelson Baroi</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    .lang-switcher {
+      position: fixed; top: 16px; right: 16px; z-index: 10001;
+      display: flex; gap: 4px;
+      background: rgba(255,255,255,0.15); backdrop-filter: blur(8px);
+      padding: 4px; border-radius: 8px;
+      border: 1px solid rgba(255,255,255,0.2);
+    }
+    .lang-btn {
+      background: transparent; border: none; color: rgba(255,255,255,0.6);
+      padding: 4px 10px; border-radius: 6px; cursor: pointer;
+      font-size: 0.78rem; font-weight: 600; font-family: 'Segoe UI', sans-serif;
+      transition: all 0.2s;
+    }
+    .lang-btn:hover { color: #fff; background: rgba(255,255,255,0.15); }
+    .lang-btn.active { color: #fff; background: rgba(255,127,80,0.7); }
+    #login-wrap {
+      max-width: 400px; margin: 12vh auto; padding: 2rem;
+      background: rgba(255,255,255,0.92); border-radius: 16px;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.12); text-align: center;
+    }
+    #login-wrap input {
+      width: 100%; padding: 12px; margin: 12px 0; border: 1px solid #ddd;
+      border-radius: 8px; font-size: 1rem; box-sizing: border-box;
+    }
+    #login-wrap button {
+      width: 100%; padding: 12px; background: linear-gradient(135deg, #20b2aa, #ff7f50);
+      color: #fff; border: none; border-radius: 8px; font-weight: 600; cursor: pointer;
+    }
+    #error { color: #c0392b; display: none; margin-top: 8px; }
+    #content { display: none; }
+    .personal-quick-nav {
+      max-width: 1100px; margin: 0 auto 1rem; padding: 0 1.5rem;
+      display: flex; flex-wrap: wrap; gap: 8px; justify-content: center;
+    }
+    .personal-quick-nav a {
+      font-size: 0.85rem; padding: 8px 14px; border-radius: 8px;
+      background: rgba(255,255,255,0.9); color: #333; text-decoration: none;
+      border: 1px solid rgba(0,0,0,0.08);
+    }
+    .personal-quick-nav a:hover { border-color: #ff7f50; color: #ff7f50; }
+    .personal-private-badge {
+      display: inline-block; font-size: 0.75rem; font-weight: 600;
+      letter-spacing: 0.05em; text-transform: uppercase;
+      background: rgba(255,127,80,0.15); color: #c45a2a;
+      padding: 4px 10px; border-radius: 6px; margin-bottom: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="preloader"><div class="loader"></div></div>
+
+  <div id="login-wrap">
+    <p class="personal-private-badge" data-i18n="personal.badge">Private</p>
+    <h2 data-i18n="personal.login_title">Login</h2>
+    <p style="font-size:0.9rem;color:#666;margin-bottom:1rem" data-i18n="personal.login_hint">Full personal archive — not indexed publicly.</p>
+    <form id="passwordForm">
+      <input type="password" id="password" data-i18n="personal.password_placeholder" placeholder="Password" required autocomplete="current-password">
+      <button type="submit"><span data-i18n="personal.enter">Enter</span></button>
+      <p id="error" data-i18n="personal.error">Incorrect password</p>
+    </form>
+    <p style="margin-top:1.5rem"><a href="index.html" data-i18n="personal.back_home">← Back to public site</a></p>
+  </div>
+
+  <div id="content">
     <div class="lang-switcher">
       <button class="lang-btn active" data-lang="en" onclick="switchLanguage('en')">EN</button>
       <button class="lang-btn" data-lang="ru" onclick="switchLanguage('ru')">RU</button>
       <button class="lang-btn" data-lang="bn" onclick="switchLanguage('bn')">BN</button>
     </div>
 
-    <div id="login">
-      <h2 data-i18n="personal.login_title">Login</h2>
-      <form id="passwordForm">
-        <input type="password" id="password" data-i18n="personal.password_placeholder" placeholder="Password" required>
-        <button type="submit"><span data-i18n="personal.enter">Enter</span></button>
-        <p id="error" data-i18n="personal.error">Incorrect password</p>
-      </form>
-    </div>
-
-    <div id="content">
-      <header class="header">
-        <h1 class="gradient-text">Nelson Baroi</h1>
-      </header>
-
-      <div class="hero-content">
-        <div class="button-container">
-          <a href="index.html" target="_blank" class="cta-button"><span data-i18n="personal.nav_about">About Me</span></a>
-          <a href="biography.html" target="_blank" class="cta-button"><span data-i18n="personal.nav_biography">Biography</span></a>
-          <a href="philosophy.html" target="_blank" class="cta-button"><span data-i18n="personal.nav_philosophy">Philosophy</span></a>
-          <a href="courses.html" target="_blank" class="cta-button"><span data-i18n="personal.nav_courses">Courses</span></a>
-          <a href="cv.html" target="_blank" class="cta-button"><span data-i18n="personal.nav_cv">My CV</span></a>
-        </div>
-        
-        <div class="button-container">
-          <a href="philosophy.html" target="_blank" class="cta-button"><span data-i18n="personal.nav_philosophy">Philosophy</span></a>
-          <a href="courses.html" target="_blank" class="cta-button"><span data-i18n="personal.nav_courses">Courses</span></a>
-          <a href="cv.html" target="_blank" class="cta-button"><span data-i18n="personal.nav_cv">My CV</span></a>
-          <a href="https://nbaroi.pythonanywhere.com/" target="_blank" class="cta-button"><span data-i18n="personal.nav_files">My file system</span></a>
-        </div>
-
-        <div></div> <div></div> <div></div> <div></div> <div></div> <div></div> <div></div> <div></div>
-<footer class="footer">
-<div class="social-icons">
-        <a href="https://www.linkedin.com/in/nbaroi" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="https://www.facebook.com/noel.baroi" target="_blank"><i class="fab fa-facebook"></i></a>
-        <a href="https://www.instagram.com/noel0007000" target="_blank"><i class="fab fa-instagram"></i></a>
+    <header class="header">
+      <div class="header-content">
+        <p class="personal-private-badge" data-i18n="personal.badge">Private</p>
+        <h1 class="gradient-text" data-i18n="personal.header_title">Private archive</h1>
+        <p class="header-subtitle" data-i18n="personal.header_subtitle">Everything not on the public pages</p>
       </div>
-      <p data-i18n="personal.footer_rights">&copy; 2025 Nelson Baroi. All rights reserved.</p>
-    </div>
-</footer> 
-      </div>
+    </header>
+
+    <nav class="personal-quick-nav" aria-label="Public site links">
+      <a href="index.html"><i class="fas fa-home"></i> <span data-i18n="personal.nav_about">Home</span></a>
+      <a href="cv.html"><i class="fas fa-file-alt"></i> <span data-i18n="personal.nav_cv">CV</span></a>
+      <a href="biography.html"><i class="fas fa-book-open"></i> <span data-i18n="personal.nav_biography">Background</span></a>
+      <a href="projects.html"><i class="fas fa-code"></i> <span data-i18n="personal.nav_projects">Projects</span></a>
+      <a href="philosophy.html"><i class="fas fa-lightbulb"></i> <span data-i18n="personal.nav_philosophy">Philosophy</span></a>
+      <a href="courses.html"><i class="fas fa-graduation-cap"></i> <span data-i18n="personal.nav_courses">Courses</span></a>
+      <a href="https://nbaroi.pythonanywhere.com/" target="_blank" rel="noopener"><i class="fas fa-folder"></i> <span data-i18n="personal.nav_files">File system</span></a>
+      <a href="chat.html"><i class="fas fa-comment-dots"></i> <span data-i18n="personal.nav_chat">Chat</span></a>
+    </nav>
+
+    <div class="bio-layout bio-layout-simple">
+      <nav class="bio-toc" aria-label="Sections">
+        <h2 data-i18n="personal.toc_title">On this page</h2>
+        <ul>
+        <li><a href="#origins-the-detail">Origins — the detail</a></li>
+        <li><a href="#family">Family</a></li>
+        <li><a href="#education-extended-record">Education — extended record</a></li>
+        <li><a href="#rooppur-project-depth">Rooppur — project depth</a></li>
+        <li><a href="#career-behind-the-titles">Career — behind the titles</a></li>
+        <li><a href="#ireland-visa-money-and-plans">Ireland — visa, money, and plans</a></li>
+        <li><a href="#technical-learning-full-picture">Technical learning — full picture</a></li>
+        <li><a href="#projects-notes-not-on-the-public-showcase">Projects — notes not on the public showcase</a></li>
+        <li><a href="#how-i-work">How I work</a></li>
+        <li><a href="#contact-financial-reference">Contact & financial reference</a></li>
+        <li><a href="#long-term-direction">Long-term direction</a></li>
+        </ul>
+      </nav>
+      <main class="bio-main">
+      <section class="section bio-chapter bio-overview" id="overview">
+        <h2>Private archive</h2>
+<p>This page holds what I deliberately left off the public site — family context, visa paperwork, financial detail, personality notes, and planning I would not put in front of recruiters cold. The public <a href="index.html">home page</a>, <a href="biography.html">background</a>, <a href="cv.html">CV</a>, <a href="projects.html">projects</a>, and <a href="philosophy.html">philosophy</a> are the professional face.</p>
+<p><strong>Password required.</strong> Do not share this URL or password.</p>
+      </section>
+
+      <section class="section bio-chapter" id="origins-the-detail">
+        <h2>Origins — the detail</h2>
+<p>Chandraghona sits on the Karnaphuli River in Rangamati, about 50 km from Chittagong city. The town is tied to the Karnaphuli Paper Mills — once the largest paper mill in South Asia — which shaped how the community saw itself.</p>
+<p>The Chittagong Hill Tracts are hilly, forested, and politically complex: indigenous communities, ethnic minorities, beauty and marginality together. I am from the <strong>Christian minority</strong> in Bangladesh — roughly 0.4% of the country. Christian, Hill Tracts, small town: three layers of "not the default" before I ever left home.</p>
+<p>That background gave me quiet resilience, belief that education and merit open doors, and comfort being the different one — whether in a Russian lecture hall or on a nuclear construction site.</p>
+      </section>
+
+      <section class="section bio-chapter" id="family">
+        <h2>Family</h2>
+<p>We're a modest, upwardly mobile Baroi family in Bangladesh's Christian minority community.</p>
+<h3>Mother — Suporna Baroi</h3>
+<p>My mother <strong>Suporna Baroi</strong> is a retired government employee. She has had the biggest role in my life and career. Post-retirement she receives a monthly pension of approximately <strong>BDT 45,368</strong> and has net savings of approximately <strong>BDT 39,00,000</strong> (roughly USD 35,000), across accounts at National Bank Ltd and Premier Bank Ltd.</p>
+<p>She is my primary sponsor for the Ireland MSc. That is not just money — it is my mother betting her savings on the next generation. She saves through <strong>Shonchoypatra</strong> and similar instruments government families trust. My father held the same habits. We plan long term in my house.</p>
+<h3>Marriage</h3>
+<p>I am <strong>married</strong>. My wife stays in Bangladesh during my studies in Ireland — common for South Asian postgraduates abroad: short separation, long-term family payoff. Studying abroad while married is not easy in our context; we chose it because the upside is worth it.</p>
+<h3>The name Baroi</h3>
+<p>"Baroi" (sometimes "Barai") appears among Bengali Christian communities with ties to Holy Cross missions in Chittagong. Notre Dame College — Holy Cross — fits that thread.</p>
+<h3>Social names</h3>
+<p>On Facebook I am <a href="https://www.facebook.com/noel.baroi">noel.baroi</a>; on Instagram <a href="https://www.instagram.com/noel0007000">@noel0007000</a>. <strong>Noel</strong> is the name I use socially — baptismal or family nickname, common in our community alongside the legal name.</p>
+      </section>
+
+      <section class="section bio-chapter" id="education-extended-record">
+        <h2>Education — extended record</h2>
+<p>Public site has dates. Here is the longer version.</p>
+<h3>SSC (2009) — Chandraghona, Rangamati</h3>
+<p>First major public exam in Bangladesh, usually age 15–16. Finishing SSC in the Hill Tracts and still getting into Notre Dame told me early that merit could open doors.</p>
+<h3>HSC (2011) — Notre Dame College, Dhaka</h3>
+<p>I left home at sixteen for <strong>Notre Dame College, Dhaka</strong> — widely regarded as the country's top intermediate college.</p>
+<p>Notre Dame was founded in <strong>1949</strong> by the <strong>Congregation of Holy Cross</strong>. Competitive admissions, strong board results, Motijheel campus in Dhaka's commercial heart. Holy Cross ethos — service, integrity, formation — matched what my family taught me.</p>
+<h3>Russia (2014–2018) — Kalmyk State University</h3>
+<p><strong>Russian Government Scholarship</strong> after HSC. University in <strong>Elista</strong>, capital of <strong>Kalmykia</strong> — Buddhist-majority republic in southern Russia, only such region in Europe. Scholarships assign you where the federation places you; I landed in a culturally unique place.</p>
+<p><strong>BSc Business Informatics</strong> — management, information systems, economics, systems analysis. Thesis: <em>The Use of Computer Technology for Intensification of Business Processes in the Field of Forecasting</em>. That thesis first showed me data as strategic instrument, not just record — still the thread behind the MSc.</p>
+<p>I was <strong>the only foreign student in my class</strong>. Four years in Russian as the language of instruction, no compatriot buffer. Russian became professional necessity, not a hobby.</p>
+<table>
+<thead>
+<tr>
+<th>Language</th>
+<th>Level</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bengali</td>
+<td>Native</td>
+<td>Home</td>
+</tr>
+<tr>
+<td>English</td>
+<td>IELTS 6.5</td>
+<td>L:7.0, R:6.5, S:6.5, W:6.0</td>
+</tr>
+<tr>
+<td>Russian</td>
+<td>Professional working</td>
+<td>5+ years in Russia, daily use at Rooppur</td>
+</tr>
+</tbody>
+</table>
+      </section>
+
+      <section class="section bio-chapter" id="rooppur-project-depth">
+        <h2>Rooppur — project depth</h2>
+<p><a href="https://en.wikipedia.org/wiki/Rooppur_Nuclear_Power_Plant">Rooppur Nuclear Power Plant</a> — Ishwardi, Pabna, on the Padma — Bangladesh's first nuclear plant.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Detail</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Capacity</td>
+<td>2,400 MW (2 × 1,200 MW)</td>
+</tr>
+<tr>
+<td>Reactor</td>
+<td>VVER-1200 (Generation III+)</td>
+</tr>
+<tr>
+<td>Builder</td>
+<td>Rosatom</td>
+</tr>
+<tr>
+<td>Project value</td>
+<td>~USD 12.65 billion</td>
+</tr>
+<tr>
+<td>Construction</td>
+<td>From 2017; Unit 1 concrete 2018</td>
+</tr>
+<tr>
+<td>Operational</td>
+<td>Unit 1 fuel loading began May 2026</td>
+</tr>
+<tr>
+<td>Significance</td>
+<td>Bangladesh as world's 33rd nuclear power nation</td>
+</tr>
+</tbody>
+</table>
+<p>At peak, <strong>20,000+</strong> people worked the site. <strong>4,500+ Russians</strong> live in a purpose-built zone locals call <strong>"Little Russia"</strong> — Russian signage, restaurants, clinics; Bengali vendors negotiating in Russian. The quiet Padma village became an international township. That is the daily context.</p>
+<p><strong>VVER-1200</strong> — Gen III+ PWR, post-Fukushima safety standards, Rosatom's export flagship (also El Dabaa, Egypt, where Atom Tech Alliance works).</p>
+<p><strong>AMT Engineering JSC</strong> is in <strong>Atom Tech Alliance</strong> — Russian engineering group supplying auxiliary equipment and services for nuclear plants worldwide.</p>
+<h3>Rooppur timeline (personal markers)</h3>
+<table>
+<thead>
+<tr>
+<th>Date</th>
+<th>Event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1961</td>
+<td>Project first conceived</td>
+</tr>
+<tr>
+<td>2011</td>
+<td>Bangladesh–Russia agreement</td>
+</tr>
+<tr>
+<td>2017</td>
+<td>Construction begins</td>
+</tr>
+<tr>
+<td>2018</td>
+<td>Unit 1 first concrete</td>
+</tr>
+<tr>
+<td>Jan 2019</td>
+<td>I joined AMT</td>
+</tr>
+<tr>
+<td>Feb 2024</td>
+<td>Promoted to Director</td>
+</tr>
+<tr>
+<td>May 2026</td>
+<td>Unit 1 fuel loading</td>
+</tr>
+</tbody>
+</table>
+      </section>
+
+      <section class="section bio-chapter" id="career-behind-the-titles">
+        <h2>Career — behind the titles</h2>
+<p>Public <a href="index.html#professional-journey">timeline</a> has titles and dates. This is what they mean in practice.</p>
+<h3>Senior Administrator (Jan 2019 – Feb 2024)</h3>
+<p>I returned from Russia into early Rooppur construction. I built foundational systems the branch still runs on — procurement, logistics, financial reporting, payroll, safety compliance, Russian–Bangladeshi coordination. In a greenfield branch on a mega-project, the first administrator often writes the operational DNA.</p>
+<h3>Director, Bangladesh branch (Feb 2024 – present)</h3>
+<p>Promotion after five years. Scope: strategic planning, budgets, contracts, HR and welfare, nuclear-grade safety compliance, cross-department decisions. The hard part is culture — Russian engineering precision vs Bangladeshi operations. My Russian is not a CV line; it is how meetings get done.</p>
+<h3>Freyssinet (concurrent)</h3>
+<p><strong>FREYSSINET</strong> (Soletanche Freyssinet / VINCI) — post-tensioning, cable-stay, ground engineering. I served as <strong>Procurement Manager</strong> and <strong>Administrative Staff</strong> on the same Rooppur project: specialised materials, logistics, coordination. Two organisations, one site — complexity management.</p>
+      </section>
+
+      <section class="section bio-chapter" id="ireland-visa-money-and-plans">
+        <h2>Ireland — visa, money, and plans</h2>
+<p>Public <a href="biography.html">background</a> states the why. Here is the how and the numbers.</p>
+<h3>Decision (logic)</h3>
+<p>Director role now needs formal analytics, not just reading reports. ATU Galway MSc is applied, not purely theoretical — build models, stress-test assumptions. Employer knows I am going; position remains open on return. Not a pivot — sharpening.</p>
+<h3>Visa journey (Type D, long-stay)</h3>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Detail</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tuition paid</td>
+<td>€11,000 via Flywire, 12 Jan 2026</td>
+</tr>
+<tr>
+<td>IELTS</td>
+<td>6.5 overall (L:7.0, R:6.5, S:6.5, W:6.0)</td>
+</tr>
+<tr>
+<td>Documents</td>
+<td>23 files in 5 sections</td>
+</tr>
+<tr>
+<td>Submitted</td>
+<td>6 May 2026</td>
+</tr>
+<tr>
+<td>Application ID</td>
+<td><strong>83468572</strong></td>
+</tr>
+<tr>
+<td>Financial trail</td>
+<td>FDRs → encashment → tuition payment documented</td>
+</tr>
+</tbody>
+</table>
+<p>I built a <strong>custom web portal</strong> to organise and present visa documents (Irish green/gold UI, section-based). That is how I handle hard admin — build a system, then work it.</p>
+<h3>Stamp 2 work (during study)</h3>
+<ul>
+<li>20 hrs/week in term; 40 hrs/week in holidays (Jun–Aug, Christmas)</li>
+<li>Target: Night Auditor, Front Desk, Events Coordinator — Galway hotels</li>
+<li>Researched top 10 hotels: pay bands, application angles, personalised approach</li>
+</ul>
+<h3>After MSc — Stamp 1G (24 months)</h3>
+<p>Target employers with European HQ in Ireland: <strong>Google, Meta, Microsoft, Stripe</strong>, also <strong>Accenture, Deloitte</strong>. Trajectory I am considering: Data Analyst → BI Analyst → Operations Analytics.</p>
+<h3>Return question</h3>
+<p>Visa application states intent to return; employer letter confirms open role. Whether I return or Irish options pull harder — I will decide with real offers, not now. Both paths can work.</p>
+<h3>Immediate timeline</h3>
+<table>
+<thead>
+<tr>
+<th>When</th>
+<th>Milestone</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>May 2026</td>
+<td>Visa submitted (83468572)</td>
+</tr>
+<tr>
+<td>Jun 2026</td>
+<td>Expected decision</td>
+</tr>
+<tr>
+<td>Jul–Aug 2026</td>
+<td>Pre-departure, hotel applications</td>
+</tr>
+<tr>
+<td>Sep 2026</td>
+<td>Galway arrival, MSc starts</td>
+</tr>
+<tr>
+<td>Sep 2026–May 2027</td>
+<td>Academic year + part-time work</td>
+</tr>
+<tr>
+<td>Jun–Aug 2027</td>
+<td>Full-time holiday work</td>
+</tr>
+<tr>
+<td>Sep 2027</td>
+<td>MSc completion target</td>
+</tr>
+</tbody>
+</table>
+      </section>
+
+      <section class="section bio-chapter" id="technical-learning-full-picture">
+        <h2>Technical learning — full picture</h2>
+<p><a href="index.html#skills">Home skills</a> are the summary. This is the honest stack.</p>
+<h3>Databases</h3>
+<table>
+<thead>
+<tr>
+<th>Tech</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PostgreSQL</td>
+<td>Done — JOINs, GROUP BY, CTEs, indexes, DB design</td>
+</tr>
+<tr>
+<td>SQL general</td>
+<td>Strong — subqueries, windows, aggregation</td>
+</tr>
+<tr>
+<td>MongoDB</td>
+<td>Next</td>
+</tr>
+</tbody>
+</table>
+<h3>Code &amp; analysis</h3>
+<p>Python (pandas, NumPy, matplotlib); HTML/CSS/JS (this site, chatbot); PHP basic; Flask; Git/GitHub; Vercel deploy.</p>
+<h3>BI &amp; target professional stack</h3>
+<p>Power BI and Tableau — <strong>building</strong>, not claiming mastery. Target combo: <strong>SQL + Power BI/Tableau + Python + Snowflake/BigQuery + dbt</strong>.</p>
+<h3>Other</h3>
+<p>Adobe Photoshop; Microsoft Office advanced; Excel/Sheets advanced; PythonAnywhere hosting.</p>
+<h3>52-week self-study plan</h3>
+<p>~1 hr/day, 5 days/week — see <a href="courseplan.html">course plan</a>. Months 1–3: Python, SQL, Excel, BI tools. 4–6: stats, ETL, KPIs. 7–9: ML intro, cloud. 10–12: specialisation and portfolio projects. Coursera certs on <a href="courses.html">courses</a> (Stanford, JHU, IBM, Google, Michigan tracks).</p>
+      </section>
+
+      <section class="section bio-chapter" id="projects-notes-not-on-the-public-showcase">
+        <h2>Projects — notes not on the public showcase</h2>
+<p><a href="projects.html">Projects page</a> has the demos. Private notes:</p>
+<ul>
+<li><strong>Portfolio builder</strong> — drag-and-drop on GitHub Pages</li>
+<li><strong>OTAF research</strong> — Zenodo <a href="https://doi.org/10.5281/zenodo.17451832">10.5281/zenodo.17451832</a></li>
+<li><strong>Site chatbot</strong> — Vercel serverless, multi-provider fallback, conversation learning, daily scrape/retrain cron</li>
+<li><strong>File system</strong> — Flask on <a href="https://nbaroi.pythonanywhere.com/">nbaroi.pythonanywhere.com</a></li>
+<li><strong>GPT4Free chatbot</strong> — earlier Flask experiment</li>
+<li><strong>Irish visa document portal</strong> — 23-document organiser for my own application</li>
+</ul>
+<p>Architecture choices were pragmatic: always-on Q&amp;A from public content, graceful fallback when APIs fail, demonstrate skills by shipping.</p>
+      </section>
+
+      <section class="section bio-chapter" id="how-i-work">
+        <h2>How I work</h2>
+<p>Not on <a href="philosophy.html">philosophy</a> — that page is values. This is behaviour.</p>
+<p><strong>Communication:</strong> Direct. Short sentences for points, longer for explanation. "Look," "Here's the thing," "Frankly" when it matters. Warm but I will not pad bad news.</p>
+<p><strong>Decisions:</strong> I use the <strong>OODA loop</strong> (Observe–Orient–Decide–Act) — Boyd's framework — on serious choices, including visa document strategy.</p>
+<p><strong>Planning:</strong> Visa portal, 52-week study plan, hotel research with pay rates, application templates months early, this chatbot. Not anxiety — preparation compounds.</p>
+<p><strong>Technology:</strong> Tool, not identity. Python because analytics jobs demand it; chatbot because it extends reach.</p>
+<p><strong>Work rhythm:</strong> Early mornings show up in my logs (3–5 AM work blocks). Director job plus self-study — discipline bordering on compulsive.</p>
+<p><strong>Risk:</strong> Calculated, not gambler — Russia at 19 (scholarship), MSc at peak career (employer backup), hotel work despite director CV (short humility, long gain).</p>
+<p><strong>Identity layers:</strong> Bangladeshi, Christian minority, Hill Tracts, Russian-educated, nuclear industry, soon Irish academic — I bridge more than I broadcast.</p>
+<h3>Summary card</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Talk</td>
+<td>Direct, warm, no-nonsense</td>
+</tr>
+<tr>
+<td>Plan</td>
+<td>Thorough — sometimes too thorough</td>
+</tr>
+<tr>
+<td>Decide</td>
+<td>OODA, data first, calculated risk</td>
+</tr>
+<tr>
+<td>Work</td>
+<td>Early, long days</td>
+</tr>
+<tr>
+<td>Lead</td>
+<td>Collaborative, results matter</td>
+</tr>
+<tr>
+<td>Learn</td>
+<td>Continuous, structured</td>
+</tr>
+<tr>
+<td>Tech</td>
+<td>Pragmatic</td>
+</tr>
+<tr>
+<td>Weak spot</td>
+<td>Over-prepare</td>
+</tr>
+</tbody>
+</table>
+      </section>
+
+      <section class="section bio-chapter" id="contact-financial-reference">
+        <h2>Contact & financial reference</h2>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Detail</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Name</td>
+<td>Nelson Baroi</td>
+</tr>
+<tr>
+<td>Email</td>
+<td>nelson6114007@gmail.com</td>
+</tr>
+<tr>
+<td>Phone</td>
+<td>+8801786068822</td>
+</tr>
+<tr>
+<td>Site</td>
+<td><a href="https://nbaroi.com">nbaroi.com</a></td>
+</tr>
+<tr>
+<td>LinkedIn</td>
+<td><a href="https://linkedin.com/in/nbaroi">linkedin.com/in/nbaroi</a></td>
+</tr>
+<tr>
+<td>GitHub</td>
+<td><a href="https://github.com/NelsonBaroi">github.com/NelsonBaroi</a></td>
+</tr>
+<tr>
+<td>Location</td>
+<td>Bangladesh → Galway Sep 2026</td>
+</tr>
+</tbody>
+</table>
+<h3>Financial data (visa file)</h3>
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Amount</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>MSc tuition (ATU)</td>
+<td>€11,000</td>
+</tr>
+<tr>
+<td>Paid</td>
+<td>Flywire, 12 Jan 2026</td>
+</tr>
+<tr>
+<td>Sponsor monthly income</td>
+<td>BDT 45,368</td>
+</tr>
+<tr>
+<td>Sponsor net savings</td>
+<td>~BDT 39,00,000 (~USD 35k)</td>
+</tr>
+<tr>
+<td>My FDRs encashed</td>
+<td>BDT 1,200,000 + BDT 100,000</td>
+</tr>
+<tr>
+<td>Banks</td>
+<td>National Bank Ltd, Premier Bank Ltd</td>
+</tr>
+</tbody>
+</table>
+      </section>
+
+      <section class="section bio-chapter" id="long-term-direction">
+        <h2>Long-term direction</h2>
+<p>Combine <strong>operational leadership</strong> (nuclear-scale projects), <strong>analytics</strong> (post-MSc), and <strong>cross-cultural fluency</strong> (three languages, three continents of experience). Senior analytics or operations role in a multinational that values data, complexity, and bridges — whether from Bangladesh, Ireland, or elsewhere.</p>
+<hr />
+<p><em>Compiled from portfolio repo, project files, and personal records. Last updated July 2026.</em></p>
+      </section>
+      </main>
     </div>
 
-    <script>
-      document.getElementById("passwordForm").addEventListener("submit", function(event) {
-        event.preventDefault();
-        var password = document.getElementById("password").value;
-        if (password === "nbaroi") { 
-          document.getElementById("login").style.display = "none";
-          document.getElementById("content").style.display = "block";
-        } else {
-          document.getElementById("error").style.display = "block";
-        }
-      });
-    </script>
-  </body>
+    <footer class="footer">
+      <div class="container">
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/nbaroi" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
+          <a href="mailto:nelson6114007@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
+        <p data-i18n="personal.footer_rights">&copy; 2026 Nelson Baroi — private section</p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="i18n.js" defer></script>
+  <script src="script.js" defer></script>
+  <script>
+    document.getElementById("passwordForm").addEventListener("submit", function(event) {
+      event.preventDefault();
+      var password = document.getElementById("password").value;
+      if (password === "nbaroi") {
+        document.getElementById("login-wrap").style.display = "none";
+        document.getElementById("content").style.display = "block";
+        document.querySelector(".preloader")?.remove();
+      } else {
+        document.getElementById("error").style.display = "block";
+      }
+    });
+  </script>
+</body>
 </html>
