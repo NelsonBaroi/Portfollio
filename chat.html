@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title data-i18n="chat.title">Ask Nelson — Site Chat</title>
-    <link rel="icon" href="images/nb-logo-silver.png" type="image/png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -27,20 +26,12 @@
             gap: 16px;
         }
 
-        .chat-header-photo {
+        .chat-header img {
             width: 50px;
             height: 50px;
-            border-radius: 14px;
-            border: 2px solid rgba(45, 212, 191, 0.5);
+            border-radius: 50%;
+            border: 2px solid #e94560;
             object-fit: cover;
-        }
-
-        .chat-header-logo {
-            width: 28px;
-            height: 28px;
-            object-fit: contain;
-            opacity: 0.85;
-            margin-left: -8px;
         }
 
         .header-info h1 {
@@ -257,8 +248,7 @@
     </div>
 
     <div class="chat-header">
-        <img src="images/profile-nelson.jpg" alt="Nelson Baroi" class="chat-header-photo">
-        <img src="images/nb-logo-silver.png" alt="" class="chat-header-logo" width="28" height="28">
+        <img src="images/profile.jpg" alt="Nelson Baroi">
         <div class="header-info">
             <h1>Nelson Baroi</h1>
             <p data-i18n="chat.header_subtitle">Portfolio chatbot — trained on public CV and site content</p>
