@@ -92,6 +92,7 @@ def build_page() -> None:
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title data-i18n="personal.title">Private Archive — {BENGALI_NAME}</title>
   <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" href="images/nb-logo-silver.png" type="image/png">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="personal.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -101,7 +102,8 @@ def build_page() -> None:
 
   <div id="personal-login" class="personal-login-screen">
     <div class="personal-login-card">
-      <img src="images/profile.jpg" alt="{BENGALI_NAME}" class="personal-login-avatar" width="88" height="88">
+      <img src="images/profile-nelson.jpg" alt="{BENGALI_NAME}" class="personal-login-avatar" width="88" height="88">
+      <img src="images/nb-logo-silver.png" alt="NB" class="personal-login-logo" width="40" height="40">
       <p class="personal-private-badge"><i class="fas fa-lock"></i> <span data-i18n="personal.badge">Private</span></p>
       <h2 data-i18n="personal.login_title">Private archive</h2>
       <p class="personal-name-bn">{BENGALI_NAME}</p>
@@ -125,7 +127,7 @@ def build_page() -> None:
     <header class="personal-hero">
       <div class="personal-hero-inner">
         <p class="personal-private-badge"><i class="fas fa-shield-halved"></i> <span data-i18n="personal.badge">Private vault</span></p>
-        <img src="images/profile.jpg" alt="{BENGALI_NAME}" class="personal-hero-photo" width="120" height="120">
+        <img src="images/profile-nelson.jpg" alt="{BENGALI_NAME}" class="personal-hero-photo" width="120" height="120">
         <h1 data-i18n="personal.header_title">Private archive</h1>
         <p class="personal-name-bn">{BENGALI_NAME}</p>
         <p class="personal-hero-sub" data-i18n="personal.header_subtitle">Everything not on the public pages — family, visa, finance, depth</p>

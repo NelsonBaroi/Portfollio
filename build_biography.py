@@ -78,7 +78,8 @@ def build_page() -> None:
   <meta property="og:url" content="https://nbaroi.com/biography.html">
   <meta property="og:title" content="Background — Nelson Baroi">
   <meta property="og:description" content="Professional background: operations at Rooppur Nuclear Power Plant, education in Bangladesh and Russia, MSc at ATU Galway.">
-  <meta property="og:image" content="https://nbaroi.com/images/profile.jpg">
+  <meta property="og:image" content="https://nbaroi.com/images/profile-nelson.jpg">
+  <link rel="icon" href="images/nb-logo-silver.png" type="image/png">
   <link rel="stylesheet" href="styles.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
@@ -127,7 +128,7 @@ def build_page() -> None:
   </script>
 </head>
 <body>
-  <div class="preloader"><div class="loader"></div></div>
+  <div class="preloader"><img src="images/nb-logo-silver.png" alt="" class="preloader-logo" width="56" height="56"><div class="loader"></div></div>
 
   <div class="lang-switcher">
     <button class="lang-btn active" data-lang="en" onclick="switchLanguage('en')">EN</button>
@@ -135,12 +136,9 @@ def build_page() -> None:
     <button class="lang-btn" data-lang="bn" onclick="switchLanguage('bn')">BN</button>
   </div>
 
-  <div class="profile-container">
-    <a href="index.html" title="Home"><img src="images/profile.jpg" alt="Nelson Baroi" class="profile-image" id="profile-image"></a>
-  </div>
-
-  <header class="header">
-    <div class="header-content">
+  <header class="page-header">
+    <a href="index.html" class="page-header-logo" title="Home"><img src="images/nb-logo-silver.png" alt="NB"></a>
+    <div class="page-header-inner">
       <h1 class="gradient-text" data-i18n="biography.header_title">Background</h1>
       <p class="header-subtitle" data-i18n="biography.header_subtitle">Context for recruiters and universities</p>
     </div>

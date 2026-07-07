@@ -6,7 +6,10 @@
     <title data-i18n="index.title">Nelson Baroi — Director of Bangladesh Branch, AMT Engineering | MSc Business Analytics</title>
     <meta name="description" content="Nelson Baroi — Director of Bangladesh Branch at AMT Engineering JSC (Rooppur Nuclear Power Plant project). MSc Business Analytics at ATU Galway, Ireland." data-i18n-meta="index.meta_desc">
     <link rel="canonical" href="https://nbaroi.com/">
+    <link rel="icon" href="images/nb-logo-silver.png" type="image/png">
+    <link rel="apple-touch-icon" href="images/nb-logo-silver.png">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@500;600&display=swap">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -52,6 +55,7 @@
 <body>
   <!-- Preloader -->
   <div class="preloader">
+    <img src="images/nb-logo-silver.png" alt="" class="preloader-logo" width="56" height="56">
     <div class="loader"></div>
   </div>
 
@@ -62,19 +66,34 @@
     <button class="lang-btn" data-lang="bn" onclick="switchLanguage('bn')">BN</button>
   </div>
 
-  <!-- Header Section -->
-  <div class="profile-container">
-    <img src="images/profile.jpg" alt="Nelson Baroi" class="profile-image" id="profile-image">
-  </div>
-  <header class="header">
-    <div class="header-content">
-      <h1 class="gradient-text">Nelson Baroi</h1>
-      <p class="header-subtitle" data-i18n="index.header_subtitle">Director of Bangladesh Branch, AMT Engineering · MSc (2026)</p>
+  <!-- Hero -->
+  <header class="site-hero" id="home-hero">
+    <div class="site-hero-inner">
+      <div class="site-hero-media">
+        <div class="site-hero-photo-wrap">
+          <img src="images/profile-nelson.jpg" alt="Nelson Baroi" class="site-hero-photo" id="profile-image" width="118" height="118">
+        </div>
+        <div class="site-hero-logo-badge" title="NB">
+          <video class="site-hero-logo-video" autoplay muted loop playsinline poster="images/nb-logo-silver.png" aria-hidden="true">
+            <source src="images/nb-logo-animated.mp4" type="video/mp4">
+          </video>
+          <img src="images/nb-logo-silver.png" alt="" class="site-hero-logo-static" width="44" height="44">
+        </div>
+      </div>
+      <div class="site-hero-copy">
+        <div class="site-hero-brand-row">
+          <img src="images/nb-logo-silver.png" alt="NB" class="site-hero-brand-img" width="32" height="32">
+        </div>
+        <h1 class="site-hero-name">Nelson Baroi</h1>
+        <p class="site-hero-name-bn">নেলসন্‌ বাড়ৈ</p>
+        <p class="site-hero-role" data-i18n="index.header_subtitle">Director of Bangladesh Branch, AMT Engineering · MSc (2026)</p>
+      </div>
     </div>
   </header>
 
   <!-- About Me Section -->
-  <section id="about-me" class="section">
+  <section id="about-me" class="section section-with-brand">
+    <img src="images/nb-logo-wood.jpeg" alt="" class="section-brand-watermark" width="72" height="72" aria-hidden="true">
     <h2 data-i18n="index.about_title">About Me</h2>
     <p data-i18n="index.about_p1" data-i18n-html="1">
       I'm <strong>Director of the Bangladesh Branch</strong> at <a href="https://atom-alliance.com/en/project/constuction/npp-rooppur/" target="_blank">AMT Engineering JSC</a> — the <a href="https://en.wikipedia.org/wiki/Rooppur_Nuclear_Power_Plant" target="_blank">Rooppur Nuclear Power Plant</a> project. Budgets, contracts, logistics, and keeping Russian and Bangladeshi teams aligned.
@@ -197,6 +216,10 @@
   <!-- Footer -->
   <footer class="footer">
     <div class="container">
+      <div class="footer-brand">
+        <img src="images/nb-logo-silver.png" alt="NB" class="footer-brand-silver" width="36" height="36">
+        <img src="images/nb-logo-wood.jpeg" alt="NB wood mark" class="footer-brand-wood" width="44" height="44">
+      </div>
       <div class="social-icons">
         <a href="https://www.linkedin.com/in/nbaroi" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
         <a href="https://www.facebook.com/noel.baroi" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
@@ -214,7 +237,7 @@
     </button>
     <div id="chat-popup" class="chat-popup" style="display:none;">
       <div class="chat-popup-header">
-        <img src="images/profile.jpg" alt="Nelson">
+        <img src="images/profile-nelson.jpg" alt="Nelson">
         <div>
           <strong data-i18n="index.chat_widget_title">Nelson Baroi</strong>
           <span data-i18n="index.chat_widget_subtitle">Site chat — public profile info</span>

@@ -41,20 +41,29 @@ if (typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined') {
   });
 }
 
-// Profile Image Interaction
+// Animated NB logo — screen blend hides dark video background
 document.addEventListener('DOMContentLoaded', () => {
-  const profileImage = document.getElementById('profile-image');
-  if (profileImage) {
-    profileImage.addEventListener('mouseenter', () => {
-      profileImage.style.transition = 'transform 0.3s ease, box-shadow 0.3s ease';
-      profileImage.style.boxShadow = '0px 8px 30px rgba(233, 69, 96, 0.5)';
+  const logoVideo = document.querySelector('.site-hero-logo-video');
+  if (logoVideo) {
+    const showVideo = () => logoVideo.classList.add('is-playing');
+    logoVideo.addEventListener('playing', showVideo);
+    logoVideo.addEventListener('canplay', () => {
+      logoVideo.play().catch(() => {});
     });
+    if (logoVideo.readyState >= 2) showVideo();
+  }
 
-    profileImage.addEventListener('mouseleave', () => {
-      profileImage.style.transition = 'transform 0.5s ease, box-shadow 0.5s ease';
-      profileImage.style.transform = 'translate(0, 0)';
-      profileImage.style.boxShadow = '0px 4px 20px rgba(233, 69, 96, 0.3)';
-    });
+  const profileImage = document.getElementById('profile-image');
+  if (profileImage && profileImage.classList.contains('site-hero-photo')) {
+    const wrap = profileImage.closest('.site-hero-photo-wrap');
+    if (wrap) {
+      profileImage.addEventListener('mouseenter', () => {
+        wrap.style.boxShadow = '0 14px 36px rgba(255, 127, 80, 0.35)';
+      });
+      profileImage.addEventListener('mouseleave', () => {
+        wrap.style.boxShadow = '';
+      });
+    }
   }
 
   // Password protection (for personal.html)
