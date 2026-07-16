@@ -6,19 +6,204 @@
   },
 
   "index.title": {
-    "en": "Nelson Baroi — Director of Bangladesh Branch, AMT Engineering | MSc Business Analytics",
-    "ru": "Нелсон Барой — Директор филиала в НРБ | MSc Business Analytics",
-    "bn": "নেলসন বারোই — এএমটি ইঞ্জিনিয়ারিং বাংলাদেশ শাখার পরিচালক | এমএসসি বিজনেস অ্যানালিটিক্স"
+    "en": "Nelson Baroi — Operations Leadership & Business Analytics",
+    "ru": "Нелсон Барой — операционное управление и бизнес-аналитика",
+    "bn": "নেলসন বারোই — অপারেশন নেতৃত্ব ও বিজনেস অ্যানালিটিক্স"
   },
   "index.meta_desc": {
-    "en": "Nelson Baroi — Director of Bangladesh Branch at AMT Engineering JSC (Rooppur Nuclear Power Plant project). MSc Business Analytics at ATU Galway, Ireland.",
+    "en": "Nelson Baroi — Director of the Bangladesh Branch at AMT Engineering JSC, working on the Rooppur Nuclear Power Plant project and preparing for an MSc in Business Analytics at ATU Galway.",
     "ru": "Нелсон Барой — директор филиала в НРБ (AMT Engineering JSC, проект АЭС Руппур). Магистратура по бизнес-аналитике в ATU Голуэй, Ирландия.",
     "bn": "নেলসন বারোই — এএমটি ইঞ্জিনিয়ারিং জেএসসি-র বাংলাদেশ শাখার পরিচালক (রূপপুর পারমাণবিক প্রকল্প)। এটিইউ গালওয়েতে এমএসসি বিজনেস অ্যানালিটিক্স।"
   },
   "index.header_subtitle": {
-    "en": "Director of Bangladesh Branch, AMT Engineering · MSc (2026)",
-    "ru": "Директор филиала в НРБ · MSc (2026)",
-    "bn": "এএমটি ইঞ্জিনিয়ারিং বাংলাদেশ শাখার পরিচালক · এমএসসি (২০২৬)"
+    "en": "Director of Bangladesh Branch · AMT Engineering",
+    "ru": "Директор филиала в НРБ · AMT Engineering",
+    "bn": "বাংলাদেশ শাখার পরিচালক · এএমটি ইঞ্জিনিয়ারিং"
+  },
+  "index.brand_descriptor": {
+    "en": "Operations · Analytics",
+    "ru": "Операции · Аналитика",
+    "bn": "অপারেশন · অ্যানালিটিক্স"
+  },
+  "index.nav_about": {
+    "en": "About",
+    "ru": "Обо мне",
+    "bn": "পরিচয়"
+  },
+  "index.nav_experience": {
+    "en": "Experience",
+    "ru": "Опыт",
+    "bn": "অভিজ্ঞতা"
+  },
+  "index.nav_capabilities": {
+    "en": "Capabilities",
+    "ru": "Компетенции",
+    "bn": "দক্ষতা"
+  },
+  "index.nav_contact": {
+    "en": "Let’s talk",
+    "ru": "Связаться",
+    "bn": "কথা বলি"
+  },
+  "index.hero_eyebrow": {
+    "en": "<span></span> Dhaka · Rooppur · Galway",
+    "ru": "<span></span> Дакка · Руппур · Голуэй",
+    "bn": "<span></span> ঢাকা · রূপপুর · গালওয়ে"
+  },
+  "index.hero_headline": {
+    "en": "I connect <em>operations, people</em> and data.",
+    "ru": "Я соединяю <em>операции, людей</em> и данные.",
+    "bn": "আমি <em>অপারেশন, মানুষ</em> ও ডেটাকে একসূত্রে আনি।"
+  },
+  "index.hero_intro": {
+    "en": "I lead AMT Engineering’s Bangladesh branch on the Rooppur Nuclear Power Plant project—turning complex, cross-border work into clear decisions and dependable delivery.",
+    "ru": "Я руковожу бангладешским филиалом AMT Engineering на проекте АЭС Руппур, превращая сложную международную работу в ясные решения и надёжное исполнение.",
+    "bn": "আমি রূপপুর পারমাণবিক বিদ্যুৎ কেন্দ্র প্রকল্পে এএমটি ইঞ্জিনিয়ারিংয়ের বাংলাদেশ শাখার নেতৃত্ব দিই—জটিল আন্তর্জাতিক কাজকে স্পষ্ট সিদ্ধান্ত ও নির্ভরযোগ্য বাস্তবায়নে রূপ দিই।"
+  },
+  "index.hero_primary": {
+    "en": "Explore my work",
+    "ru": "Посмотреть мои проекты",
+    "bn": "আমার কাজ দেখুন"
+  },
+  "index.hero_secondary": {
+    "en": "View my CV",
+    "ru": "Посмотреть резюме",
+    "bn": "আমার সিভি দেখুন"
+  },
+  "index.stat_experience": {
+    "en": "Years in international operations",
+    "ru": "Лет в международных операциях",
+    "bn": "আন্তর্জাতিক অপারেশনে বছর"
+  },
+  "index.stat_languages": {
+    "en": "Working languages",
+    "ru": "Рабочих языка",
+    "bn": "কর্মক্ষেত্রের ভাষা"
+  },
+  "index.stat_focus": {
+    "en": "MSc Business Analytics",
+    "ru": "MSc по бизнес-аналитике",
+    "bn": "এমএসসি বিজনেস অ্যানালিটিক্স"
+  },
+  "index.current_role_label": {
+    "en": "Current role",
+    "ru": "Текущая должность",
+    "bn": "বর্তমান পদ"
+  },
+  "index.scroll_cue": {
+    "en": "Scroll to discover",
+    "ru": "Смотреть дальше",
+    "bn": "আরও দেখুন"
+  },
+  "index.current_badge": {
+    "en": "Current",
+    "ru": "Сейчас",
+    "bn": "বর্তমান"
+  },
+  "index.about_kicker": {
+    "en": "Profile",
+    "ru": "Профиль",
+    "bn": "পরিচয়"
+  },
+  "index.about_lead": {
+    "en": "A practical operator with an international perspective—and a growing analytical toolkit.",
+    "ru": "Практик с международным взглядом и развивающимся набором аналитических инструментов.",
+    "bn": "আন্তর্জাতিক দৃষ্টিভঙ্গি ও ক্রমবর্ধমান বিশ্লেষণী দক্ষতাসম্পন্ন একজন বাস্তবমুখী অপারেটর।"
+  },
+  "index.journey_kicker": {
+    "en": "Experience",
+    "ru": "Опыт",
+    "bn": "অভিজ্ঞতা"
+  },
+  "index.education_kicker": {
+    "en": "Education",
+    "ru": "Образование",
+    "bn": "শিক্ষা"
+  },
+  "index.skills_kicker": {
+    "en": "Capabilities",
+    "ru": "Компетенции",
+    "bn": "দক্ষতা"
+  },
+  "index.explore_kicker": {
+    "en": "Explore",
+    "ru": "Подробнее",
+    "bn": "আরও জানুন"
+  },
+  "index.explore_title": {
+    "en": "Go beyond the résumé.",
+    "ru": "Больше, чем резюме.",
+    "bn": "সিভির বাইরের গল্প।"
+  },
+  "index.explore_projects_kicker": {
+    "en": "Selected work",
+    "ru": "Избранные работы",
+    "bn": "নির্বাচিত কাজ"
+  },
+  "index.explore_projects_text": {
+    "en": "Practical experiments across software, analytics, and operations.",
+    "ru": "Практические проекты в разработке, аналитике и операционном управлении.",
+    "bn": "সফটওয়্যার, অ্যানালিটিক্স ও অপারেশন জুড়ে বাস্তবমুখী প্রকল্প।"
+  },
+  "index.explore_background_kicker": {
+    "en": "The longer story",
+    "ru": "Подробная история",
+    "bn": "বিস্তারিত গল্প"
+  },
+  "index.explore_background_text": {
+    "en": "Bangladesh, Russia, Rooppur, and the road to Galway.",
+    "ru": "Бангладеш, Россия, Руппур и путь в Голуэй.",
+    "bn": "বাংলাদেশ, রাশিয়া, রূপপুর এবং গালওয়ের পথে যাত্রা।"
+  },
+  "index.explore_philosophy_kicker": {
+    "en": "How I work",
+    "ru": "Как я работаю",
+    "bn": "আমি যেভাবে কাজ করি"
+  },
+  "index.explore_philosophy_text": {
+    "en": "The principles behind my decisions and leadership.",
+    "ru": "Принципы, на которых основаны мои решения и стиль руководства.",
+    "bn": "আমার সিদ্ধান্ত ও নেতৃত্বের পেছনের নীতিগুলো।"
+  },
+  "index.explore_courses_kicker": {
+    "en": "Continuous learning",
+    "ru": "Непрерывное обучение",
+    "bn": "নিরবচ্ছিন্ন শেখা"
+  },
+  "index.explore_courses_text": {
+    "en": "Credentials and coursework supporting the next chapter.",
+    "ru": "Сертификаты и курсы для следующего этапа профессионального пути.",
+    "bn": "পরবর্তী অধ্যায়ের প্রস্তুতিতে সনদ ও পাঠ্যক্রম।"
+  },
+  "index.contact_kicker": {
+    "en": "Contact",
+    "ru": "Контакты",
+    "bn": "যোগাযোগ"
+  },
+  "index.contact_title": {
+    "en": "Let’s turn complexity into a clear next step.",
+    "ru": "Давайте превратим сложность в понятный следующий шаг.",
+    "bn": "চলুন জটিলতাকে একটি স্পষ্ট পরবর্তী পদক্ষেপে রূপ দিই।"
+  },
+  "index.contact_button": {
+    "en": "Start a conversation",
+    "ru": "Начать разговор",
+    "bn": "আলোচনা শুরু করুন"
+  },
+  "index.footer_tagline": {
+    "en": "Operations leadership with an analytical edge.",
+    "ru": "Операционное лидерство с аналитическим подходом.",
+    "bn": "বিশ্লেষণী দৃষ্টিভঙ্গিসম্পন্ন অপারেশন নেতৃত্ব।"
+  },
+  "index.footer_chat": {
+    "en": "Chat",
+    "ru": "Чат",
+    "bn": "চ্যাট"
+  },
+  "index.back_to_top": {
+    "en": "Back to top",
+    "ru": "Наверх",
+    "bn": "উপরে ফিরুন"
   },
   "index.about_title": {
     "en": "About Me",
@@ -26,12 +211,12 @@
     "bn": "আমার সম্পর্কে"
   },
   "index.about_p1": {
-    "en": "I'm <strong>Director of the Bangladesh Branch</strong> at <a href='https://atom-alliance.com/en/project/constuction/npp-rooppur/' target='_blank'>AMT Engineering JSC</a> — the <a href='https://en.wikipedia.org/wiki/Rooppur_Nuclear_Power_Plant' target='_blank'>Rooppur Nuclear Power Plant</a> project. Budgets, contracts, logistics, and keeping Russian and Bangladeshi teams aligned.",
+    "en": "I lead the <strong>Bangladesh Branch</strong> of <a href='https://atom-alliance.com/en/project/constuction/npp-rooppur/' target='_blank' rel='noopener'>AMT Engineering JSC</a> on the <a href='https://en.wikipedia.org/wiki/Rooppur_Nuclear_Power_Plant' target='_blank' rel='noopener'>Rooppur Nuclear Power Plant</a> project, overseeing budgets, contracts, logistics, and alignment between Russian and Bangladeshi teams.",
     "ru": "Я <strong>директор филиала в НРБ</strong> (<a href='https://atom-alliance.com/en/project/constuction/npp-rooppur/' target='_blank'>AMT Engineering JSC</a>, <a href='https://en.wikipedia.org/wiki/Rooppur_Nuclear_Power_Plant' target='_blank'>АЭС Руппур</a>) — бюджеты, контракты, логистика и согласованная работа российских и бангладешских команд.",
     "bn": "আমি <a href='https://atom-alliance.com/en/project/constuction/npp-rooppur/' target='_blank'>এএমটি ইঞ্জিনিয়ারিং জেএসসি</a>-র <strong>বাংলাদেশ শাখার পরিচালক</strong> — <a href='https://en.wikipedia.org/wiki/Rooppur_Nuclear_Power_Plant' target='_blank'>রূপপুর পারমাণবিক বিদ্যুৎ কেন্দ্র</a> প্রকল্পে। বাজেট, চুক্তি, লজিস্টিকস এবং রাশিয়ান ও বাংলাদেশী দলগুলোর সমন্বয়।"
   },
   "index.about_p2": {
-    "en": "In September 2026 I'm starting an <strong>MSc in Business Analytics</strong> at <a href='https://www.atu.ie' target='_blank'>ATU Galway</a>. I can read a report and act on it; I want to learn how to build and test the model behind the report.",
+    "en": "In September 2026, I begin an <strong>MSc in Business Analytics</strong> at <a href='https://www.atu.ie' target='_blank' rel='noopener'>ATU Galway</a>. My goal is to move beyond acting on reports—to build and test the models that make them useful.",
     "ru": "В сентябре 2026 года я начинаю <strong>магистратуру по бизнес-аналитике</strong> в <a href='https://www.atu.ie' target='_blank'>ATU Голуэй</a>. Я умею читать отчёт и действовать — хочу научиться строить и проверять модель за этим отчётом.",
     "bn": "২০২৬ সালের সেপ্টেম্বরে আমি <a href='https://www.atu.ie' target='_blank'>এটিইউ গালওয়ে</a>-তে <strong>এমএসসি ইন বিজনেস অ্যানালিটিক্স</strong> শুরু করছি। আমি রিপোর্ট পড়ে সিদ্ধান্ত নিতে পারি; রিপোর্টের পিছনের মডেল তৈরি ও পরীক্ষা করতে শিখতে চাই।"
   },
@@ -276,7 +461,7 @@
     "bn": "মঙ্গোডিবি (শিখছি)"
   },
   "index.about_biography_link": {
-    "en": "More background →",
+    "en": "Read my background →",
     "ru": "Подробнее о пути →",
     "bn": "আরও পটভূমি →"
   },
@@ -286,7 +471,7 @@
     "bn": "সিভি"
   },
   "index.about_email_link": {
-    "en": "Email",
+    "en": "Email me →",
     "ru": "Email",
     "bn": "ইমেইল"
   },
@@ -336,12 +521,12 @@
     "bn": "নেলসন বারোই"
   },
   "index.chat_widget_subtitle": {
-    "en": "Site chat — public profile info",
+    "en": "Portfolio chat · public profile information",
     "ru": "Чат сайта — публичная информация",
     "bn": "সাইট চ্যাট — প্রকাশ্য প্রোফাইল তথ্য"
   },
   "index.chat_widget_greeting": {
-    "en": "Hi — I'm a chatbot trained on my CV and this site. Ask about my work, studies, or projects. If something's off, email me.",
+    "en": "Hi—I'm a chatbot trained on Nelson's CV and public portfolio. Ask about his work, studies, or projects.",
     "ru": "Привет — я чат-бот, обученный на моём резюме и этом сайте. Спрашивайте о работе, учёбе или проектах. Если что-то неточно — напишите на email.",
     "bn": "হাই — আমি আমার সিভি ও এই সাইটে প্রশিক্ষিত একটি চ্যাটবট। কাজ, পড়াশোনা বা প্রকল্প সম্পর্কে জিজ্ঞাসা করুন। কিছু ভুল হলে ইমেইল করুন।"
   },
