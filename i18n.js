@@ -5,7 +5,7 @@
 
   async function loadTranslations() {
     try {
-      const res = await fetch('translations.json');
+      const res = await fetch('translations.json', { cache: 'no-store' });
       translations = await res.json();
       applyLanguage(currentLang);
     } catch (e) {
