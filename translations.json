@@ -5,6 +5,66 @@
     "bn": "বাংলা"
   },
 
+  "index.recognition_kicker": {
+    "en": "Recognition",
+    "ru": "Признание",
+    "bn": "স্বীকৃতি"
+  },
+  "index.recognition_title": {
+    "en": "A partnership appreciated.",
+    "ru": "Благодарность за партнёрство.",
+    "bn": "অংশীদারত্বের স্বীকৃতি।"
+  },
+  "index.recognition_label": {
+    "en": "Cooperation · Dedication · Partnership",
+    "ru": "Сотрудничество · Преданность делу · Партнёрство",
+    "bn": "সহযোগিতা · নিষ্ঠা · অংশীদারত্ব"
+  },
+  "index.recognition_award": {
+    "en": "Appreciation from AMT Engineering JSC",
+    "ru": "Благодарность от АО «АМТ Инжиниринг»",
+    "bn": "এএমটি ইঞ্জিনিয়ারিং জেএসসি থেকে সম্মাননা"
+  },
+  "index.recognition_context": {
+    "en": "Presented to Nelson Baroi in his role as Director of the Branch in the People’s Republic of Bangladesh.",
+    "ru": "Вручена Нелсону Барою как директору филиала в Народной Республике Бангладеш.",
+    "bn": "গণপ্রজাতন্ত্রী বাংলাদেশে শাখার পরিচালক হিসেবে নেলসন বারোইকে প্রদান করা হয়েছে।"
+  },
+  "index.recognition_quote": {
+    "en": "“In appreciation of your outstanding cooperation, dedication, and valuable contribution to our successful partnership.”",
+    "ru": "«В знак признательности за ваше выдающееся сотрудничество, преданность делу и ценный вклад в наше успешное партнёрство».",
+    "bn": "“আমাদের সফল অংশীদারত্বে আপনার অসাধারণ সহযোগিতা, নিষ্ঠা এবং মূল্যবান অবদানের স্বীকৃতিস্বরূপ।”"
+  },
+  "index.recognition_signatory": {
+    "en": "Nikolay A. Kapustkin",
+    "ru": "Николай А. Капусткин",
+    "bn": "নিকোলাই এ. কাপুস্তকিন"
+  },
+  "index.recognition_role": {
+    "en": "General Director · AMT Engineering JSC",
+    "ru": "Генеральный директор · АО «АМТ Инжиниринг»",
+    "bn": "মহাপরিচালক · এএমটি ইঞ্জিনিয়ারিং জেএসসি"
+  },
+  "index.recognition_caption": {
+    "en": "Appreciation plaque · AMT Engineering JSC",
+    "ru": "Благодарственная плакетка · АО «АМТ Инжиниринг»",
+    "bn": "সম্মাননা স্মারক · এএমটি ইঞ্জিনিয়ারিং জেএসসি"
+  },
+  "index.recognition_alt": {
+    "en": "Appreciation plaque presented to Nelson Baroi by AMT Engineering JSC for cooperation, dedication, and contribution to a successful partnership.",
+    "ru": "Благодарственная плакетка Нелсону Барою от АО «АМТ Инжиниринг» за сотрудничество, преданность делу и вклад в успешное партнёрство.",
+    "bn": "সহযোগিতা, নিষ্ঠা এবং সফল অংশীদারত্বে অবদানের জন্য এএমটি ইঞ্জিনিয়ারিং জেএসসি কর্তৃক নেলসন বারোইকে প্রদত্ত সম্মাননা স্মারক।"
+  },
+  "index.recognition_view": {
+    "en": "View full-size plaque",
+    "ru": "Открыть в полном размере",
+    "bn": "পূর্ণ আকারে স্মারকটি দেখুন"
+  },
+  "index.recognition_new_tab": {
+    "en": "(opens in a new tab)",
+    "ru": "(откроется в новой вкладке)",
+    "bn": "(নতুন ট্যাবে খুলবে)"
+  },
   "index.title": {
     "en": "Nelson Baroi — Operations Leadership & Business Analytics",
     "ru": "Нелсон Барой — операционное управление и бизнес-аналитика",

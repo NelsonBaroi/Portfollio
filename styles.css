@@ -877,6 +877,51 @@ h3 {
   font-style: normal;
 }
 
+/* Professional recognition */
+.recognition-section {
+  background: linear-gradient(135deg, var(--white), #fffaf3);
+}
+
+.recognition-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+  align-items: center;
+  gap: clamp(28px, 5vw, 64px);
+}
+
+.recognition-figure { margin: 0; min-width: 0; }
+
+.recognition-image-link {
+  display: block;
+  padding: 12px;
+  border: 1px solid #e6d9c5;
+  border-radius: 16px;
+  background: #f2e9db;
+  box-shadow: 0 18px 40px rgba(44, 31, 19, 0.12);
+}
+
+.recognition-image-link:hover { border-color: var(--teal-dark); }
+.recognition-image-link img { width: 100%; height: auto; border-radius: 5px; }
+.recognition-figure figcaption { margin-top: 16px; color: var(--muted); font-size: 0.75rem; text-align: center; }
+.recognition-copy { min-width: 0; }
+.recognition-copy > p { color: var(--muted); font-size: 0.9rem; }
+.recognition-copy .recognition-label { color: var(--teal-dark); font-size: 0.7rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; }
+.recognition-copy h3 { color: var(--navy); font-family: var(--serif); font-size: clamp(1.65rem, 2.5vw, 2.3rem); line-height: 1.25; }
+.recognition-copy blockquote { margin: 26px 0; padding: 4px 0 4px 22px; border-left: 3px solid #b29154; }
+.recognition-copy blockquote p { margin: 0; color: var(--navy); font-size: clamp(1.05rem, 1.6vw, 1.25rem); line-height: 1.7; }
+.recognition-attribution { display: grid; gap: 2px; margin-bottom: 28px; }
+.recognition-attribution strong { color: var(--navy); }
+.recognition-attribution span { font-size: 0.78rem; }
+.recognition-button { padding: 12px 20px; background: var(--navy); color: var(--white); }
+.recognition-button:hover { background: var(--slate); color: var(--white); }
+.recognition-image-link:focus-visible,
+.recognition-button:focus-visible { outline: 3px solid var(--teal-dark); outline-offset: 5px; }
+
+@media (max-width: 820px) {
+  .recognition-grid { grid-template-columns: 1fr; }
+  .recognition-figure { width: min(100%, 400px); justify-self: center; }
+}
+
 /* Education */
 .education-grid {
   display: grid;
