@@ -12,5 +12,7 @@
       ]
     }
   ],
-  "buildCommand": null
+  "buildCommand": "",
+  "installCommand": "",
+  "outputDirectory": "."
 }
