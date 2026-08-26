@@ -25,6 +25,11 @@
     "ru": "Благодарность от АО «АМТ Инжиниринг»",
     "bn": "এএমটি ইঞ্জিনিয়ারিং জেএসসি থেকে সম্মাননা"
   },
+  "index.recognition_received": {
+    "en": "Received 17 August 2026",
+    "ru": "Получено 17 августа 2026 года",
+    "bn": "প্রাপ্তির তারিখ: ১৭ আগস্ট ২০২৬"
+  },
   "index.recognition_context": {
     "en": "Presented to Nelson Baroi in his role as Director of the Branch in the People’s Republic of Bangladesh.",
     "ru": "Вручена Нелсону Барою как директору филиала в Народной Республике Бангладеш.",
