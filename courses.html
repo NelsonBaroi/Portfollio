@@ -1,254 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PDF Slideshow</title>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-  <style>
-    .lang-switcher {
-      position: fixed; top: 16px; right: 16px; z-index: 10001;
-      display: flex; gap: 4px;
-      background: rgba(0,0,0,0.4); backdrop-filter: blur(8px);
-      padding: 4px; border-radius: 8px;
-      border: 1px solid rgba(255,255,255,0.2);
-    }
-    .lang-btn {
-      background: transparent; border: none; color: rgba(255,255,255,0.6);
-      padding: 4px 10px; border-radius: 6px; cursor: pointer;
-      font-size: 0.78rem; font-weight: 600; font-family: 'Segoe UI', sans-serif;
-      transition: all 0.2s;
-    }
-    .lang-btn:hover { color: #fff; background: rgba(255,255,255,0.15); }
-    .lang-btn.active { color: #fff; background: rgba(255,127,80,0.7); }
-  </style>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #222;
-      color: white;
-      text-align: center;
-    }
-
-    /* Hero Section */
-    .hero {
-      background: linear-gradient(to right, #31313152, #aeb1b361);
-      padding: 20px;
-    }
-
-    .button-container {
-      display: flex;
-      justify-content: center;
-      gap: 15px;
-    }
-
-    .cta-button {
-      background: white;
-      color: #1453a1;
-      text-decoration: none;
-      padding: 10px 20px;
-      border-radius: 5px;
-      font-size: 16px;
-      font-weight: bold;
-      transition: 0.3s;
-    }
-
-    .cta-button:hover {
-      background: #1453a1;
-      color: white;
-    }
-
-    /* PDF Slideshow */
-    #pdfContainer {
-      width: 80%;
-      height: 100vh;
-      margin: 20px auto;
-      position: relative;
-      overflow: hidden;
-      background: white;
-      border-radius: 10px;
-    }
-
-    #pdfPages {
-      display: flex;
-      transition: transform 0.5s ease-in-out;
-    }
-
-    .pdfPage {
-      flex: 0 0 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    /* Navigation Buttons */
-    .nav-button {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      background-color: rgba(0, 0, 0, 0.5);
-      color: white;
-      border: none;
-      padding: 10px 15px;
-      cursor: pointer;
-      font-size: 20px;
-      z-index: 100;
-    }
-
-    #prev { left: 10px; }
-    #next { right: 10px; }
-
-    /* Footer */
-    .footer {
-      background: #333;
-      padding: 20px;
-      margin-top: 20px;
-    }
-
-    .social-icons {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      margin-bottom: 10px;
-    }
-
-    .social-icons a {
-      color: white;
-      font-size: 24px;
-      transition: 0.3s;
-    }
-
-    .social-icons a:hover {
-      color: #4a90e2;
-    }
-  </style>
-</head>
-<body>
-
-  <!-- Language Switcher -->
-  <div class="lang-switcher">
-    <button class="lang-btn active" data-lang="en" onclick="switchLanguage('en')">EN</button>
-    <button class="lang-btn" data-lang="ru" onclick="switchLanguage('ru')">RU</button>
-    <button class="lang-btn" data-lang="bn" onclick="switchLanguage('bn')">BN</button>
-  </div>
-
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-content">
-      <div class="button-container">
-        <a href="index.html" class="cta-button"><span data-i18n="courses.nav_back">Back to Portfolio</span></a>
-        <a href="biography.html" class="cta-button"><span data-i18n="courses.nav_biography">Biography</span></a>
-        <a href="cv.html" class="cta-button"><span data-i18n="courses.nav_cv">View Full CV</span></a>
-
-        <a href="courses.html" class="cta-button"><span data-i18n="courses.nav_courses">Professional Courses</span></a>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Professional Courses &amp; Certificates — Nelson Baroi</title><meta name="description" content="Six completed Google and IBM courses on Coursera, with completion dates, original certificates and verification links."><link rel="stylesheet" href="/styles.css?v=20260826-audit"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Noto+Sans+Bengali:wght@400;500;600;700&amp;family=Noto+Serif+Bengali:wght@600;700&amp;family=Playfair+Display:ital,wght@0,600;0,700;1,600&amp;display=swap"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"><link rel="stylesheet" href="/accessibility.css?v=20260826-audit"><meta property="og:type" content="website"><meta property="og:url" content="https://nbaroi.com/courses.html"><meta property="og:title" content="Professional Courses &amp; Certificates — Nelson Baroi"><meta property="og:description" content="Six completed Google and IBM courses on Coursera, with completion dates, original certificates and verification links."><meta property="og:image" content="https://nbaroi.com/images/Me.jpg"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Professional Courses &amp; Certificates — Nelson Baroi"><meta name="twitter:description" content="Six completed Google and IBM courses on Coursera, with completion dates, original certificates and verification links."><meta name="twitter:image" content="https://nbaroi.com/images/Me.jpg"><noscript id="navigation-fallback"><style>@media(max-width:1180px){.site-header{position:static}.site-header .primary-navigation{display:flex;position:static;flex-basis:100%;max-height:none}.site-nav-shell{flex-wrap:wrap}.site-header .menu-toggle{display:none}.portfolio-hero{padding-top:40px}.inner-page{padding-top:0}}</style></noscript><link rel="canonical" href="https://nbaroi.com/courses.html"><link rel="alternate" hreflang="en" href="https://nbaroi.com/courses.html"><link rel="alternate" hreflang="ru" href="https://nbaroi.com/ru/courses.html"><link rel="alternate" hreflang="bn" href="https://nbaroi.com/bn/courses.html"><link rel="alternate" hreflang="x-default" href="https://nbaroi.com/courses.html"><script id="site-messages" type="application/json">{"shared.recognition": "Recognition", "shared.skip": "Skip to content", "shared.language": "Language", "shared.open_menu": "Open navigation", "shared.close_menu": "Close navigation", "shared.email": "Email Nelson", "shared.copy": "Copy email address", "shared.copied": "Email address copied.", "shared.copy_failed": "Select and copy the email address above.", "shared.guide": "Portfolio guide", "shared.english": "The following material is available in English.", "shared.document_english": "Original document in English", "shared.contact_note": "For professional enquiries, contact me directly.", "shared.updated": "Updated 26 August 2026", "shared.learning": "Planned learning, not completed qualifications.", "shared.view_experience": "View professional experience", "shared.view_projects": "See project evidence"}</script></head><body class="inner-page"><a class="skip-link" href="#main-content" data-i18n="shared.skip">Skip to content</a><header class="site-header" id="top">
+      <div class="site-nav-shell">
+        <a class="brand" href="/index.html#top" aria-label="Nelson Baroi — home">
+          <span class="brand-mark"><img src="/images/logo-128.webp" alt="Nelson Baroi monogram" width="128" height="128" decoding="async"></span>
+          <span class="brand-copy"><strong>Nelson Baroi</strong><small data-i18n="index.brand_descriptor">Operations · Analytics</small></span>
+        </a>
+        <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Open navigation">
+          <span></span><span></span>
+        </button>
+        <nav class="primary-navigation" id="primary-navigation" aria-label="Primary navigation">
+          <a href="/index.html#about-me" data-i18n="index.nav_about">About</a>
+          <a href="/index.html#professional-journey" data-i18n="index.nav_experience">Experience</a>
+          <a href="/index.html#recognition" data-i18n="shared.recognition">Recognition</a><a href="/index.html#skills" data-i18n="index.nav_capabilities">Capabilities</a>
+          <a href="/projects.html" data-i18n="index.nav_projects">Projects</a>
+          <a href="/cv.html" data-i18n="index.nav_cv">CV</a>
+          <a class="nav-contact" href="mailto:nelson6114007@gmail.com"><span data-i18n="index.nav_contact">Let’s talk</span> <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+        </nav>
+        <div class="lang-switcher" aria-label="Language"><a class="lang-btn active" data-lang="en" href="/courses.html" lang="en" hreflang="en" aria-label="English" aria-current="page">EN</a><a class="lang-btn" data-lang="ru" href="/ru/courses.html" lang="ru" hreflang="ru" aria-label="Русский">RU</a><a class="lang-btn" data-lang="bn" href="/bn/courses.html" lang="bn" hreflang="bn" aria-label="বাংলা">BN</a></div></div>
+    </header>
+    <main id="main-content" class="document-page"><header class="page-heading"><p class="section-kicker">Nelson Baroi</p><h1>Professional Courses &amp; Certificates</h1></header><p class="document-note"><span data-i18n="courses.summary">Six completed, non-credit courses from Google and IBM, offered through Coursera. Certificates are in English.</span></p><div class="certificate-grid"><article class="section certificate-card"><p class="section-kicker">Google · Coursera</p><h2 lang="en">Foundations of Project Management</h2><p><time datetime="2024-03-31">31 March 2024</time></p><div class="text-links"><a href="/coursera/1.pdf" download><span data-i18n="courses.download">Download certificate — PDF</span></a><a href="https://coursera.org/verify/LGXWLTA3TFGU"><span data-i18n="courses.verify">Verify on Coursera</span></a></div></article><article class="section certificate-card"><p class="section-kicker">IBM · Coursera</p><h2 lang="en">Introduction to Artificial Intelligence (AI)</h2><p><time datetime="2023-07-28">28 July 2023</time></p><div class="text-links"><a href="/coursera/3.pdf" download><span data-i18n="courses.download">Download certificate — PDF</span></a><a href="https://coursera.org/verify/MD7UBUPMHMFY"><span data-i18n="courses.verify">Verify on Coursera</span></a></div></article><article class="section certificate-card"><p class="section-kicker">IBM · Coursera</p><h2 lang="en">Introduction to Cloud Computing</h2><p><time datetime="2023-08-01">1 August 2023</time></p><div class="text-links"><a href="/coursera/4.pdf" download><span data-i18n="courses.download">Download certificate — PDF</span></a><a href="https://coursera.org/verify/NZHZ8XKUQ73P"><span data-i18n="courses.verify">Verify on Coursera</span></a></div></article><article class="section certificate-card"><p class="section-kicker">IBM · Coursera</p><h2 lang="en">Introduction to Web Development with HTML, CSS, JavaScript</h2><p><time datetime="2023-08-12">12 August 2023</time></p><div class="text-links"><a href="/coursera/5.pdf" download><span data-i18n="courses.download">Download certificate — PDF</span></a><a href="https://coursera.org/verify/5KJYUN37Y7S5"><span data-i18n="courses.verify">Verify on Coursera</span></a></div></article><article class="section certificate-card"><p class="section-kicker">IBM · Coursera</p><h2 lang="en">Getting Started with Git and GitHub</h2><p><time datetime="2023-08-15">15 August 2023</time></p><div class="text-links"><a href="/coursera/2.pdf" download><span data-i18n="courses.download">Download certificate — PDF</span></a><a href="https://coursera.org/verify/XWBAB654SXNR"><span data-i18n="courses.verify">Verify on Coursera</span></a></div></article><article class="section certificate-card"><p class="section-kicker">IBM · Coursera</p><h2 lang="en">Developing Front-End Apps with React</h2><p><time datetime="2023-08-30">30 August 2023</time></p><div class="text-links"><a href="/coursera/6.pdf" download><span data-i18n="courses.download">Download certificate — PDF</span></a><a href="https://coursera.org/verify/7HXET9G52JEP"><span data-i18n="courses.verify">Verify on Coursera</span></a></div></article></div><section class="section"><h2><span data-i18n="courses.next">Ongoing learning</span></h2><p data-i18n="shared.learning">Planned learning, not completed qualifications.</p><a href="/courseplan.html"><span data-i18n="courses.plan">View my learning plan</span></a></section></main><footer class="footer premium-footer">
+      <div class="footer-inner">
+        <div class="footer-lead">
+          <div class="footer-brand"><span class="brand-mark"><img src="/images/logo-128.webp" alt="" width="128" height="128" decoding="async"></span><div><strong>Nelson Baroi</strong><p data-i18n="index.footer_tagline">Operations leadership with an analytical edge.</p></div></div>
+          <nav class="footer-socials" aria-label="Social links">
+            <a href="https://www.linkedin.com/in/nbaroi" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+            <a href="https://www.facebook.com/noel.baroi" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/noel0007000" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+            <a href="mailto:nelson6114007@gmail.com" aria-label="Email"><i class="fas fa-envelope" aria-hidden="true"></i></a>
+          </nav>
+        </div>
+        <div class="footer-links"><a href="/cv.html" data-i18n="index.nav_cv">CV</a><a href="/projects.html" data-i18n="index.nav_projects">Projects</a><a href="/biography.html" data-i18n="index.nav_biography">Background</a><a href="/philosophy.html" data-i18n="index.nav_philosophy">Philosophy</a><a href="/courses.html" data-i18n="index.nav_courses">Courses</a><a href="/chat.html" data-i18n="index.footer_chat">Portfolio guide</a></div>
+        <div class="footer-bottom"><p data-i18n="index.footer_rights">© 2026 Nelson Baroi. All rights reserved.</p><a href="/index.html#top"><span data-i18n="index.back_to_top">Back to top</span> <i class="fas fa-arrow-up" aria-hidden="true"></i></a></div>
       </div>
-    </div>
-  </section>
-
-  <!-- PDF Slideshow -->
-  <button id="prev" class="nav-button">&#9664;</button>
-  <div id="pdfContainer">
-    <div id="pdfPages"></div>
-  </div>
-  <button id="next" class="nav-button">&#9654;</button>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="social-icons">
-        <a href="https://www.linkedin.com/in/nbaroi" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="https://www.facebook.com/noel.baroi" target="_blank"><i class="fab fa-facebook"></i></a>
-        <a href="https://www.instagram.com/noel0007000" target="_blank"><i class="fab fa-instagram"></i></a>
-      </div>
-      <p data-i18n="courses.footer_rights">&copy; 2025 Nelson Baroi. All rights reserved.</p>
-    </div>
-  </footer>
-
-  <script src="i18n.js"></script>
-  <script>
-    const pdfFiles = ['coursera/1.pdf', 'coursera/2.pdf', 'coursera/3.pdf','coursera/4.pdf','coursera/5.pdf','coursera/6.pdf'];//
-    let currentPage = 0;
-    let totalPages = 0;
-    const pagePromises = [];
-
-    async function loadPDFs() {
-      for (const file of pdfFiles) {
-        try {
-          const pdf = await pdfjsLib.getDocument(file).promise;
-          for (let i = 1; i <= pdf.numPages; i++) {
-            pagePromises.push(pdf.getPage(i));
-          }
-        } catch (error) {
-          console.error(`Error loading ${file}:`, error);
-        }
-      }
-
-      totalPages = pagePromises.length;
-      processPages();
-    }
-
-    async function processPages() {
-      const container = document.getElementById('pdfPages');
-      
-      for (const pagePromise of pagePromises) {
-        const page = await pagePromise;
-        const viewport = page.getViewport({ scale: 1.5 });
-        const canvas = document.createElement('canvas');
-        const context = canvas.getContext('2d');
-
-        canvas.width = viewport.width;
-        canvas.height = viewport.height;
-
-        await page.render({ canvasContext: context, viewport }).promise;
-
-        const pageDiv = document.createElement('div');
-        pageDiv.className = 'pdfPage';
-        pageDiv.appendChild(canvas);
-        container.appendChild(pageDiv);
-      }
-
-      showPage(0);
-    }
-
-    function showPage(index) {
-      if (index >= 0 && index < totalPages) {
-        currentPage = index;
-        document.getElementById('pdfPages').style.transform = 
-          `translateX(-${index * 100}%)`;
-      }
-    }
-
-    function nextSlide() {
-      if (currentPage < totalPages - 1) {
-        showPage(currentPage + 1);
-      } else {
-        showPage(0); // Loop back to first slide
-      }
-    }
-
-    function prevSlide() {
-      if (currentPage > 0) {
-        showPage(currentPage - 1);
-      } else {
-        showPage(totalPages - 1); // Loop to last slide
-      }
-    }
-
-    document.getElementById('next').addEventListener('click', nextSlide);
-    document.getElementById('prev').addEventListener('click', prevSlide);
-
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'ArrowRight') nextSlide();
-      if (e.key === 'ArrowLeft') prevSlide();
-    });
-
-    // Auto-slide every 5 seconds
-    setInterval(nextSlide, 5000);
-
-    loadPDFs();
-  </script>
-
-</body>
-</html>
+    </footer>
+    <script src="/script.js?v=20260826-audit" defer></script><script src="/i18n.js?v=20260826-audit" defer></script></body></html>

@@ -4,133 +4,101 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title data-i18n="philosophy.title">Nelson Baroi - Philosophy</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-    <script src="i18n.js" defer></script>
-    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="/styles.css?v=20260826-audit">
+    <script src="/i18n.js?v=20260826-audit" defer></script>
+    <script src="/script.js?v=20260826-audit" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <style>
-      .lang-switcher {
-        position: fixed; top: 16px; right: 16px; z-index: 10001;
-        display: flex; gap: 4px;
-        background: rgba(255,255,255,0.15); backdrop-filter: blur(8px);
-        padding: 4px; border-radius: 8px;
-        border: 1px solid rgba(255,255,255,0.2);
-      }
-      .lang-btn {
-        background: transparent; border: none; color: rgba(255,255,255,0.6);
-        padding: 4px 10px; border-radius: 6px; cursor: pointer;
-        font-size: 0.78rem; font-weight: 600; font-family: 'Segoe UI', sans-serif;
-        transition: all 0.2s;
-      }
-      .lang-btn:hover { color: #fff; background: rgba(255,255,255,0.15); }
-      .lang-btn.active { color: #fff; background: rgba(255,127,80,0.7); }
-    </style>
-</head>
-<body>
-    <!-- Preloader -->
-    <div class="preloader">
-        <div class="loader"></div>
-    </div>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Noto+Sans+Bengali:wght@400;500;600;700&amp;family=Noto+Serif+Bengali:wght@600;700&amp;family=Playfair+Display:ital,wght@0,600;0,700;1,600&amp;display=swap"><link rel="stylesheet" href="/accessibility.css?v=20260826-audit"><meta name="description" content="How Nelson Baroi approaches communication, evidence, learning and operations, with examples from his work and projects."><meta property="og:type" content="website"><meta property="og:url" content="https://nbaroi.com/philosophy.html"><meta property="og:title" content="Nelson Baroi - Philosophy"><meta property="og:description" content="How Nelson Baroi approaches communication, evidence, learning and operations, with examples from his work and projects."><meta property="og:image" content="https://nbaroi.com/images/Me.jpg"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Nelson Baroi - Philosophy"><meta name="twitter:description" content="How Nelson Baroi approaches communication, evidence, learning and operations, with examples from his work and projects."><meta name="twitter:image" content="https://nbaroi.com/images/Me.jpg"><noscript id="navigation-fallback"><style>@media(max-width:1180px){.site-header{position:static}.site-header .primary-navigation{display:flex;position:static;flex-basis:100%;max-height:none}.site-nav-shell{flex-wrap:wrap}.site-header .menu-toggle{display:none}.portfolio-hero{padding-top:40px}.inner-page{padding-top:0}}</style></noscript><link rel="canonical" href="https://nbaroi.com/philosophy.html"><link rel="alternate" hreflang="en" href="https://nbaroi.com/philosophy.html"><link rel="alternate" hreflang="ru" href="https://nbaroi.com/ru/philosophy.html"><link rel="alternate" hreflang="bn" href="https://nbaroi.com/bn/philosophy.html"><link rel="alternate" hreflang="x-default" href="https://nbaroi.com/philosophy.html"><script id="site-messages" type="application/json">{"shared.recognition": "Recognition", "shared.skip": "Skip to content", "shared.language": "Language", "shared.open_menu": "Open navigation", "shared.close_menu": "Close navigation", "shared.email": "Email Nelson", "shared.copy": "Copy email address", "shared.copied": "Email address copied.", "shared.copy_failed": "Select and copy the email address above.", "shared.guide": "Portfolio guide", "shared.english": "The following material is available in English.", "shared.document_english": "Original document in English", "shared.contact_note": "For professional enquiries, contact me directly.", "shared.updated": "Updated 26 August 2026", "shared.learning": "Planned learning, not completed qualifications.", "shared.view_experience": "View professional experience", "shared.view_projects": "See project evidence"}</script></head>
+<body class="inner-page">
+    <a class="skip-link" href="#main-content" data-i18n="shared.skip">Skip to content</a><header class="site-header" id="top">
+      <div class="site-nav-shell">
+        <a class="brand" href="/index.html#top" aria-label="Nelson Baroi — home">
+          <span class="brand-mark"><img src="/images/logo-128.webp" alt="Nelson Baroi monogram" width="128" height="128" decoding="async"></span>
+          <span class="brand-copy"><strong>Nelson Baroi</strong><small data-i18n="index.brand_descriptor">Operations · Analytics</small></span>
+        </a>
+        <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Open navigation">
+          <span></span><span></span>
+        </button>
+        <nav class="primary-navigation" id="primary-navigation" aria-label="Primary navigation">
+          <a href="/index.html#about-me" data-i18n="index.nav_about">About</a>
+          <a href="/index.html#professional-journey" data-i18n="index.nav_experience">Experience</a>
+          <a href="/index.html#recognition" data-i18n="shared.recognition">Recognition</a><a href="/index.html#skills" data-i18n="index.nav_capabilities">Capabilities</a>
+          <a href="/projects.html" data-i18n="index.nav_projects">Projects</a>
+          <a href="/cv.html" data-i18n="index.nav_cv">CV</a>
+          <a class="nav-contact" href="mailto:nelson6114007@gmail.com"><span data-i18n="index.nav_contact">Let’s talk</span> <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+        </nav>
+        <div class="lang-switcher" aria-label="Language"><a class="lang-btn active" data-lang="en" href="/philosophy.html" lang="en" hreflang="en" aria-label="English" aria-current="page">EN</a><a class="lang-btn" data-lang="ru" href="/ru/philosophy.html" lang="ru" hreflang="ru" aria-label="Русский">RU</a><a class="lang-btn" data-lang="bn" href="/bn/philosophy.html" lang="bn" hreflang="bn" aria-label="বাংলা">BN</a></div></div>
+    </header>
+    <main id="main-content"><!-- Preloader -->
     <!-- Language Switcher -->
-    <div class="lang-switcher">
-        <button class="lang-btn active" data-lang="en" onclick="switchLanguage('en')">EN</button>
-        <button class="lang-btn" data-lang="ru" onclick="switchLanguage('ru')">RU</button>
-        <button class="lang-btn" data-lang="bn" onclick="switchLanguage('bn')">BN</button>
-    </div>
-
     <!-- Header Section -->
     <header class="header">
         <h1 class="gradient-text" data-i18n="philosophy.header">Philosophy</h1>
     </header>
-
     <!-- Philosophy Section -->
     <section id="philosophy" class="section">
         <h2 data-i18n="philosophy.section1_title">Empowering Innovation Through Collaboration</h2>
-        <p data-i18n="philosophy.section1_text">
-            At the heart of everything I do lies a deep belief in the power of collaboration. I firmly believe that innovation thrives when diverse minds come together to share ideas, challenge assumptions, and solve problems collectively. Whether it's leading a team, contributing to a project, or engaging with my community, I strive to foster an environment where everyone feels valued, heard, and empowered to contribute their best.
-        </p>
-    </section>
-
+        <p data-i18n="philosophy.section1_text">I value clear communication across cultures. At Rooppur, my role includes coordinating Russian engineering teams and Bangladeshi operations.</p>
+    <a href="/index.html#professional-journey" data-i18n="shared.view_experience">View professional experience</a></section>
     <!-- Commitment to Lifelong Learning -->
     <section id="lifelong-learning" class="section">
         <h2 data-i18n="philosophy.section2_title">Commitment to Lifelong Learning</h2>
-        <p data-i18n="philosophy.section2_text">
-            I view life as a continuous journey of growth and discovery. Every experience—whether it's overcoming challenges, learning from mentors, or adapting to new environments—has shaped me into who I am today. I embrace curiosity and remain open to exploring new technologies, methodologies, and perspectives. This commitment to lifelong learning not only fuels my personal development but also enables me to drive meaningful change in my professional endeavors.
-        </p>
+        <p data-i18n="philosophy.section2_text">I learn by building and testing. My personal projects explore retrieval, simulation and signal processing; my planned MSc in Business Analytics is the next step.</p>
     </section>
-
     <!-- Integrity and Accountability -->
     <section id="integrity-accountability" class="section">
         <h2 data-i18n="philosophy.section3_title">Integrity and Accountability</h2>
-        <p data-i18n="philosophy.section3_text">
-            Integrity is the cornerstone of my philosophy. I believe that trust is earned through consistent actions, transparency, and accountability. In every role I undertake, I prioritize ethical decision-making and ensure that my actions align with my values. By maintaining integrity, I aim to inspire those around me to uphold the same standards of excellence and honesty.
-        </p>
-    </section>
-
+        <p data-i18n="philosophy.section3_text">I want evidence to be distinguishable from interpretation. In Parallel Universe Me, the simulation produces the numbers and the language model explains them.</p>
+    <a href="/projects.html#parallel-universe-me" data-i18n="shared.view_projects">See project evidence</a></section>
     <!-- Driving Positive Societal Impact -->
     <section id="societal-impact" class="section">
         <h2 data-i18n="philosophy.section4_title">Driving Positive Societal Impact</h2>
-        <p data-i18n="philosophy.section4_text">
-            Beyond personal and professional success, I am driven by a desire to make a lasting impact on society. I believe that true fulfillment comes from using one's skills and resources to uplift others and contribute to the greater good. Whether it's mentoring young professionals, supporting community initiatives, or advocating for workplace safety, I am committed to creating opportunities that empower individuals and communities to thrive.
-        </p>
+        <p data-i18n="philosophy.section4_text">My work includes employee support and occupational safety. I treat those responsibilities as part of dependable operations.</p>
     </section>
-
     <!-- Resilience and Adaptability -->
     <section id="resilience-adaptability" class="section">
         <h2 data-i18n="philosophy.section5_title">Resilience and Adaptability</h2>
-        <p data-i18n="philosophy.section5_text">
-            Life is unpredictable, and challenges are inevitable. However, I see challenges as opportunities for growth and transformation. My experiences studying abroad, navigating unfamiliar environments, and leading complex projects have taught me resilience and adaptability. These qualities enable me to remain steadfast in the face of adversity and find innovative solutions to even the most daunting problems.
-        </p>
+        <p data-i18n="philosophy.section5_text">Studying in Russia and working across cultures taught me to adapt. In software, I apply the same habit by planning for failures and testing alternatives.</p>
     </section>
-
     <!-- The Power of Communication -->
     <section id="communication" class="section">
         <h2 data-i18n="philosophy.section6_title">The Power of Communication</h2>
-        <p data-i18n="philosophy.section6_text">
-            Effective communication is essential for building strong relationships and fostering collaboration. Fluent in Bengali, English, and Russian, I leverage my multilingual abilities to connect with people from diverse backgrounds and bridge cultural gaps. By listening actively, expressing ideas clearly, and encouraging open dialogue, I create spaces where mutual understanding and teamwork flourish.
-        </p>
+        <p data-i18n="philosophy.section6_text">Bengali is my native language. I use English and Russian for professional communication, including coordination on the Rooppur project.</p>
     </section>
-
     <!-- A Focus on Operational Excellence -->
     <section id="operational-excellence" class="section">
         <h2 data-i18n="philosophy.section7_title">A Focus on Operational Excellence</h2>
-        <p data-i18n="philosophy.section7_text">
-            In all my roles, I emphasize operational excellence—ensuring that processes are efficient, resources are optimized, and goals are achieved with precision. From managing procurement and logistics to overseeing budgets and compliance, I approach every task with dedication and attention to detail. This focus on excellence ensures that I deliver value not only to my organization but also to the broader community.
-        </p>
+        <p data-i18n="philosophy.section7_text">Budgets, contracts, procurement and logistics are connected. My role is to keep those responsibilities coordinated and decisions clear.</p>
     </section>
-
     <!-- Gratitude and Humility -->
     <section id="gratitude-humility" class="section">
         <h2 data-i18n="philosophy.section8_title">Gratitude and Humility</h2>
-        <p data-i18n="philosophy.section8_text">
-            Finally, I approach life with gratitude and humility. I recognize that my achievements would not have been possible without the support of my family, mentors, colleagues, and friends. Their encouragement has been a constant source of inspiration, and I am deeply grateful for their belief in me. In turn, I am committed to paying it forward by mentoring others and creating opportunities for growth.
-        </p>
-    </section>
-
+        <p data-i18n="philosophy.section8_text">The appreciation from AMT Engineering and the ASE / Rosatom letter are part of my professional story. The original documents are available in the recognition section.</p>
+    <a href="/index.html#recognition" data-i18n="shared.recognition">Recognition</a></section>
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
             <div class="button-container">
-                <a href="index.html" class="cta-button"><span data-i18n="philosophy.nav_back">Back to Portfolio</span></a>
-                <a href="biography.html" class="cta-button"><span data-i18n="philosophy.nav_biography">Biography</span></a>
-                <a href="personal.html" class="cta-button"><span data-i18n="philosophy.nav_personal">Personal</span></a>
-            </div>
+                <a href="/index.html" class="cta-button"><span data-i18n="philosophy.nav_back">Back to Portfolio</span></a>
+                <a href="/biography.html" class="cta-button"><span data-i18n="philosophy.nav_biography">Background</span></a>
+                </div>
         </div>
     </section>
-
      <!-- Contact Information -->
-  <footer class="footer">
-    <div class="container">
-      <div class="social-icons">
-        <a href="https://www.linkedin.com/in/nbaroi" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="https://www.facebook.com/noel.baroi" target="_blank"><i class="fab fa-facebook"></i></a>
-        <a href="https://www.instagram.com/noel0007000" target="_blank"><i class="fab fa-instagram"></i></a>
+  </main><footer class="footer premium-footer">
+      <div class="footer-inner">
+        <div class="footer-lead">
+          <div class="footer-brand"><span class="brand-mark"><img src="/images/logo-128.webp" alt="" width="128" height="128" decoding="async"></span><div><strong>Nelson Baroi</strong><p data-i18n="index.footer_tagline">Operations leadership with an analytical edge.</p></div></div>
+          <nav class="footer-socials" aria-label="Social links">
+            <a href="https://www.linkedin.com/in/nbaroi" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+            <a href="https://www.facebook.com/noel.baroi" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/noel0007000" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+            <a href="mailto:nelson6114007@gmail.com" aria-label="Email"><i class="fas fa-envelope" aria-hidden="true"></i></a>
+          </nav>
+        </div>
+        <div class="footer-links"><a href="/cv.html" data-i18n="index.nav_cv">CV</a><a href="/projects.html" data-i18n="index.nav_projects">Projects</a><a href="/biography.html" data-i18n="index.nav_biography">Background</a><a href="/philosophy.html" data-i18n="index.nav_philosophy">Philosophy</a><a href="/courses.html" data-i18n="index.nav_courses">Courses</a><a href="/chat.html" data-i18n="index.footer_chat">Portfolio guide</a></div>
+        <div class="footer-bottom"><p data-i18n="index.footer_rights">© 2026 Nelson Baroi. All rights reserved.</p><a href="/index.html#top"><span data-i18n="index.back_to_top">Back to top</span> <i class="fas fa-arrow-up" aria-hidden="true"></i></a></div>
       </div>
-      <p data-i18n="philosophy.footer_rights">&copy; 2025 Nelson Baroi. All rights reserved.</p>
-    </div>
-  </footer>
-</body>
+    </footer>
+    <a class="guide-launcher" href="/chat.html"><i class="fas fa-comment-dots" aria-hidden="true"></i> <span data-i18n="shared.guide">Portfolio guide</span></a></body>
 </html>

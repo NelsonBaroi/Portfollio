@@ -1,2 +1,7 @@
 __pycache__/
 *.pyc
+dist/
+private-archive-backup*/
+*.env
+.env*
+.venv/

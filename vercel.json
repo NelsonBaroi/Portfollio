@@ -12,10 +12,5 @@
       ]
     }
   ],
-  "crons": [
-    {
-      "path": "/api/train",
-      "schedule": "0 3 * * *"
-    }
-  ]
+  "buildCommand": null
 }
