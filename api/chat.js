@@ -46,14 +46,14 @@ export default async function handler(req, res) {
 
 ## WHO YOU ARE
 - **Nelson Baroi** | nelson6114007@gmail.com | nbaroi.com
-- Bangladeshi | Bengali (native), English (IELTS 6.5), Russian (conversational)
+- Bangladeshi | Bengali (native), English (professional), Russian (conversational)
 - Currently Bangladesh → moving to Galway, Ireland September 2026
 
 ## CAREER
 - **Director of Bangladesh Branch** — AMT Engineering JSC (Feb 2024–present)
 - **Project context:** Rooppur Nuclear Power Plant — Bangladesh's first nuclear power plant (not "operations at Rooppur" — I direct the Bangladesh branch of AMT Engineering)
 - Started as Senior Administrator (Jan 2019), promoted to Director
-- Also: Procurement Manager at FREYSSINET (same project)
+- Part-time support to FREYSSINET on the same project, undertaken as part of responsibilities at AMT Engineering JSC: procurement from January 2019 to January 2022, administrative support from January 2022. Describe this as work through AMT Engineering, not separate full-time employment.
 - Skills: strategic planning, resource allocation, budget oversight, cross-cultural leadership (Russian-Bangladeshi teams)
 
 ## EDUCATION
@@ -84,6 +84,7 @@ export default async function handler(req, res) {
 I'm a portfolio chatbot trained on public CV and site content — not Nelson at the keyboard. ${conversationStore.length} past conversations have helped improve answers. If unsure, say so and point to nbaroi.com or email.
 
 ## RULES
+- Describe spoken languages only; do not mention language-test names, scores, identifiers or documents.
 - Keep responses 2-4 paragraphs max unless asked for detail.
 - Sound like a real person texting, not a corporate document.
 - Never say "As an AI language model" — you ARE Nelson.
@@ -264,6 +265,11 @@ function getSmartFallback(message) {
     return "Hey! I'm Nelson. Director of the Bangladesh Branch at AMT Engineering JSC — Rooppur Nuclear Power Plant project. Heading to Ireland soon for an MSc in Business Analytics. What would you like to know?";
   }
 
+  // Freyssinet responsibilities were part-time work through AMT Engineering.
+  if (msg.includes('freyssinet')) {
+    return "I provided part-time support to Freyssinet on the Rooppur Nuclear Power Plant project as part of my responsibilities at AMT Engineering JSC. Procurement work ran from January 2019 to January 2022, followed by administrative support from January 2022. This work was undertaken through AMT Engineering.";
+  }
+
   // Identity
   if (msg.includes('who are you') || msg.includes('about you') || msg.includes('introduce') || msg.includes('tell me about')) {
     return "I'm Nelson Baroi — Director of the Bangladesh Branch at AMT Engineering JSC. The branch serves the Rooppur Nuclear Power Plant project, Bangladesh's first. Been there since 2019, promoted to Director in 2024. I manage strategic planning, budgets, resource allocation across Russian-Bangladeshi teams.\n\nIn September 2026, I'm moving to Galway, Ireland for an MSc in Business Analytics at ATU. The goal: close the gap between my operational intuition and proper data-driven analytical frameworks. I can read any report — now I want to build the models behind them.";
@@ -271,7 +277,7 @@ function getSmartFallback(message) {
 
   // Career/Work
   if (msg.includes('work') || msg.includes('job') || msg.includes('career') || msg.includes('amt') || msg.includes('director') || msg.includes('rooppur') || msg.includes('nuclear')) {
-    return "Director of the Bangladesh Branch at AMT Engineering JSC — we're building Rooppur Nuclear Power Plant, Bangladesh's first nuclear plant. Started as Senior Administrator in January 2019, promoted to Director in February 2024.\n\nDay-to-day: strategic planning, resource allocation, performance evaluation, budget oversight, coordinating between Russian and Bangladeshi teams. Also contributed to FREYSSINET on the same project as Procurement Manager. It's high-stakes work — one wrong resource allocation call costs real money.";
+    return "Director of the Bangladesh Branch at AMT Engineering JSC — we're building Rooppur Nuclear Power Plant, Bangladesh's first nuclear plant. Started as Senior Administrator in January 2019, promoted to Director in February 2024.\n\nDay-to-day: strategic planning, resource allocation, performance evaluation, budget oversight, coordinating between Russian and Bangladeshi teams. As part of my AMT Engineering responsibilities, I also provided part-time procurement and administrative support to Freyssinet on the same project.";
   }
 
   // Education
@@ -291,7 +297,7 @@ function getSmartFallback(message) {
 
   // Languages
   if (msg.includes('language') || msg.includes('speak') || msg.includes('bengali') || msg.includes('russian')) {
-    return "Bengali (native), English (professional — IELTS 6.5, listening 7.0), and Russian (conversational — lived there for 5+ years on a government scholarship). The Russian is surprisingly useful when you're managing a Russian engineering company's Bangladesh branch. Language has always been a bridge for me — connecting people across cultures.";
+    return "Bengali (native), English (professional), and Russian (conversational — lived there for 5+ years on a government scholarship). The Russian is surprisingly useful when you're managing a Russian engineering company's Bangladesh branch. Language has always been a bridge for me — connecting people across cultures.";
   }
 
   // Contact

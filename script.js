@@ -197,7 +197,7 @@ function initialiseChatWidget() {
       const response = await fetch('https://api.nbaroi.com/api/chat', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ model: 'nelson-bot', messages: widgetHistory.slice(-8), stream: false })
+        body: JSON.stringify({ model: 'nelson-bot', messages: [{ role: 'system', content: 'Use this approved public profile clarification: Nelson provided part-time procurement support to Freyssinet from January 2019 to January 2022, followed by administrative support from January 2022, as part of his responsibilities at AMT Engineering JSC. This was work through AMT Engineering, not separate full-time employment. Describe spoken languages only; do not mention language-test names, scores, identifiers or documents.' }, ...widgetHistory.slice(-8)], stream: false })
       });
 
       typing.remove();

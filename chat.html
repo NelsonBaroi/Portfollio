@@ -361,7 +361,7 @@
             userInput.value = '';
 
             try {
-                const messages = [];
+                const messages = [{ role: 'system', content: 'Use this approved public profile clarification: Nelson provided part-time procurement support to Freyssinet from January 2019 to January 2022, followed by administrative support from January 2022, as part of his responsibilities at AMT Engineering JSC. This was work through AMT Engineering, not separate full-time employment. Describe spoken languages only; do not mention language-test names, scores, identifiers or documents.' }];
 
                 for (const h of conversationHistory.slice(-10)) {
                     messages.push({ role: h.role, content: h.content });
