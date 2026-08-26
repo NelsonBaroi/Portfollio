@@ -24,7 +24,7 @@ My thesis was on using technology to improve business forecasting. That's still 
 
 I'm **Director of the Bangladesh branch** at [AMT Engineering JSC](https://atom-alliance.com/en/project/constuction/npp-rooppur/). Day to day: budgets, contracts, logistics, and keeping Russian and Bangladeshi teams working from the same page. I use Russian in meetings — it isn't a line on a CV, it's part of the job.
 
-I also support [Freyssinet](https://www.freyssinet.com/) on procurement when the project needs it. Dates and titles are on my [career timeline](index.html#professional-journey).
+As part of my responsibilities at AMT Engineering JSC, I provided part-time support to [Freyssinet](https://www.freyssinet.com/) on the same project: procurement from January 2019 to January 2022, followed by administrative support from January 2022. This work was undertaken through AMT Engineering. Dates and roles are on my [career timeline](index.html#professional-journey).
 
 ## Why Ireland
 
@@ -32,11 +32,11 @@ I'm not stepping away from operations because I lost interest. I could read a re
 
 My employer knows I'm going. I intend to bring what I learn back. What happens after the degree — Bangladesh, Ireland, or somewhere else — I'll decide when I have real options, not now.
 
-**English:** IELTS 6.5 · **Languages:** Bengali (native), English, Russian (professional working level)
+**Languages:** Bengali (native), English, Russian (professional working level)
 
 ## If you're reviewing my profile
 
-- **[CV](cv.html)** — one-page summary
+- **[CV](cv.html)** — professional summary
 - **[Projects](projects.html)** — things I've built (analytics, tools, experiments)
 - **[Courses](courses.html)** — certificates and ongoing study
 - **Email:** [nelson6114007@gmail.com](mailto:nelson6114007@gmail.com)

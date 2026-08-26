@@ -386,14 +386,14 @@
     "bn": "অপারেশন ব্যবস্থাপনা, সংগ্রহ, লজিস্টিকস, আর্থিক প্রতিবেদন, বেতন, নিরাপত্তা সম্মতি।"
   },
   "index.journey_item3_date": {
-    "en": "Concurrent",
-    "ru": "Параллельно",
-    "bn": "সমান্তরালভাবে"
+    "en": "From Jan 2019 · Part-time",
+    "ru": "С января 2019 · Частичная занятость",
+    "bn": "জানুয়ারি ২০১৯ থেকে · খণ্ডকালীন"
   },
   "index.journey_item3_title": {
-    "en": "Procurement Manager & Administrative Staff",
-    "ru": "Менеджер по закупкам и административный персонал",
-    "bn": "প্রকিউরমেন্ট ম্যানেজার ও প্রশাসনিক কর্মী"
+    "en": "Part-time support through AMT Engineering",
+    "ru": "Частичная занятость в рамках работы в АМТ Инжиниринг",
+    "bn": "এএমটি ইঞ্জিনিয়ারিংয়ের মাধ্যমে খণ্ডকালীন সহায়তা"
   },
   "index.journey_item3_company": {
     "en": "FREYSSINET — Rooppur Nuclear Power Plant",
@@ -401,9 +401,19 @@
     "bn": "ফ্রেসিনে — রূপপুর পারমাণবিক বিদ্যুৎ কেন্দ্র"
   },
   "index.journey_item3_detail": {
-    "en": "Sourcing materials, managing administrative tasks, fostering collaboration among international teams.",
-    "ru": "Поиск материалов, выполнение административных задач, содействие сотрудничеству международных команд.",
-    "bn": "উপকরণ সংগ্রহ, প্রশাসনিক কাজ পরিচালনা, আন্তর্জাতিক দলগুলোর মধ্যে সহযোগিতা বৃদ্ধি।"
+    "en": "Provided procurement and administrative support to Freyssinet as part of my responsibilities at AMT Engineering JSC.",
+    "ru": "Оказывал Freyssinet поддержку в закупках и административных вопросах в рамках своих обязанностей в АО «АМТ Инжиниринг».",
+    "bn": "এএমটি ইঞ্জিনিয়ারিং জেএসসিতে আমার দায়িত্বের অংশ হিসেবে ফ্রেসিনেকে ক্রয় ও প্রশাসনিক সহায়তা প্রদান করেছি।"
+  },
+  "index.journey_item3_procurement": {
+    "en": "Procurement: January 2019 – January 2022.",
+    "ru": "Закупки: январь 2019 — январь 2022.",
+    "bn": "ক্রয় কার্যক্রম: জানুয়ারি ২০১৯ – জানুয়ারি ২০২২।"
+  },
+  "index.journey_item3_administration": {
+    "en": "Administrative support: from January 2022.",
+    "ru": "Административная поддержка: с января 2022.",
+    "bn": "প্রশাসনিক সহায়তা: জানুয়ারি ২০২২ থেকে।"
   },
   "index.education_title": {
     "en": "Education",
