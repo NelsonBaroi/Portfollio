@@ -11,9 +11,9 @@
     "bn": "স্বীকৃতি"
   },
   "index.recognition_title": {
-    "en": "A partnership appreciated.",
-    "ru": "Благодарность за партнёрство.",
-    "bn": "অংশীদারত্বের স্বীকৃতি।"
+    "en": "Recognition & appreciation.",
+    "ru": "Признание и благодарность.",
+    "bn": "স্বীকৃতি ও সম্মাননা।"
   },
   "index.recognition_label": {
     "en": "Cooperation · Dedication · Partnership",
@@ -64,6 +64,61 @@
     "en": "(opens in a new tab)",
     "ru": "(откроется в новой вкладке)",
     "bn": "(নতুন ট্যাবে খুলবে)"
+  },
+  "index.gratitude_title": {
+    "en": "Letter of Gratitude",
+    "ru": "Благодарственное письмо",
+    "bn": "কৃতজ্ঞতাপত্র"
+  },
+  "index.gratitude_date": {
+    "en": "10 August 2025",
+    "ru": "10 августа 2025 года",
+    "bn": "১০ আগস্ট ২০২৫"
+  },
+  "index.gratitude_context": {
+    "en": "Presented to Nelson Baroi, Director of AMT Engineering’s Bangladesh branch, for his work on the Rooppur Nuclear Power Plant project.",
+    "ru": "Вручено Нелсону Барою, директору филиала АО «АМТ Инжиниринг» в Бангладеш, за работу над проектом АЭС «Руппур».",
+    "bn": "রূপপুর পারমাণবিক বিদ্যুৎকেন্দ্র প্রকল্পে কাজের স্বীকৃতিস্বরূপ এএমটি ইঞ্জিনিয়ারিংয়ের বাংলাদেশ শাখার পরিচালক নেলসন বারোইকে প্রদান করা হয়েছে।"
+  },
+  "index.gratitude_quote": {
+    "en": "“For diligent work, outstanding professional achievements, and significant personal contribution to the development of the Rooppur Nuclear Power Plant project, and in connection with Engineers and Construction Professionals Day.”",
+    "ru": "«За добросовестный труд, высокие профессиональные достижения, большой личный вклад в развитие проекта сооружения АЭС «Руппур» и в связи с Днем строителя».",
+    "bn": "“নিষ্ঠাপূর্ণ কাজ, অসাধারণ পেশাগত অর্জন এবং রূপপুর পারমাণবিক বিদ্যুৎকেন্দ্র প্রকল্পের উন্নয়নে উল্লেখযোগ্য ব্যক্তিগত অবদানের জন্য, এবং প্রকৌশলী ও নির্মাণ পেশাজীবী দিবস উপলক্ষে।”"
+  },
+  "index.gratitude_source": {
+    "en": "From the supplied English translation.",
+    "ru": "Текст оригинального благодарственного письма.",
+    "bn": "প্রদত্ত ইংরেজি অনুবাদ থেকে বাংলায় অনূদিত।"
+  },
+  "index.gratitude_signatory": {
+    "en": "A.V. Deriy",
+    "ru": "А.В. Дерий",
+    "bn": "এ.ভি. দেরি"
+  },
+  "index.gratitude_role": {
+    "en": "Vice President for Projects in Bangladesh",
+    "ru": "Вице-президент по проектам в Бангладеш",
+    "bn": "বাংলাদেশের প্রকল্পসমূহের ভাইস প্রেসিডেন্ট"
+  },
+  "index.gratitude_caption": {
+    "en": "Original letter in Russian · ASE / Rosatom",
+    "ru": "Оригинал письма на русском языке · АСЭ / Росатом",
+    "bn": "রুশ ভাষায় মূল চিঠি · এএসই / রোসাটম"
+  },
+  "index.gratitude_alt": {
+    "en": "Russian letter of gratitude from ASE / Rosatom, presented to Nelson Baroi on 10 August 2025 for his contribution to the Rooppur Nuclear Power Plant project.",
+    "ru": "Благодарственное письмо АСЭ / Росатома Нелсону Барою от 10 августа 2025 года за вклад в проект АЭС «Руппур».",
+    "bn": "রূপপুর পারমাণবিক বিদ্যুৎকেন্দ্র প্রকল্পে অবদানের জন্য ১০ আগস্ট ২০২৫ তারিখে এএসই / রোসাটম থেকে নেলসন বারোইকে প্রদত্ত রুশ ভাষার কৃতজ্ঞতাপত্র।"
+  },
+  "index.gratitude_pdf": {
+    "en": "View original letter (PDF)",
+    "ru": "Открыть оригинал (PDF)",
+    "bn": "মূল চিঠি দেখুন (PDF)"
+  },
+  "index.gratitude_translation": {
+    "en": "English translation (DOCX)",
+    "ru": "Английский перевод (DOCX)",
+    "bn": "ইংরেজি অনুবাদ (DOCX)"
   },
   "index.title": {
     "en": "Nelson Baroi — Operations Leadership & Business Analytics",

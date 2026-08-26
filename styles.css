@@ -914,7 +914,14 @@ h3 {
 .recognition-attribution span { font-size: 0.78rem; }
 .recognition-button { padding: 12px 20px; background: var(--navy); color: var(--white); }
 .recognition-button:hover { background: var(--slate); color: var(--white); }
+.recognition-letter { margin-top: clamp(36px, 5vw, 64px); padding-top: clamp(36px, 5vw, 64px); border-top: 1px solid var(--line); scroll-margin-top: 24px; }
+.recognition-letter .recognition-image-link { border-color: #cbdfe4; background: #edf5f7; }
+.recognition-copy .recognition-source { margin-top: -12px; font-size: 0.75rem; }
+.recognition-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+.recognition-download { padding: 12px 20px; border-color: #b4c6cc; background: var(--white); color: var(--navy); }
+.recognition-download:hover { border-color: var(--teal-dark); background: var(--aqua-mist); color: var(--navy); }
 .recognition-image-link:focus-visible,
+.recognition-download:focus-visible,
 .recognition-button:focus-visible { outline: 3px solid var(--teal-dark); outline-offset: 5px; }
 
 @media (max-width: 820px) {
