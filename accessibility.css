@@ -1,0 +1,89 @@
+/* Refinements use the existing palette and typography. */
+.preloader { display: none; }
+.js .reveal, .js .reveal.is-visible { opacity: 1; transform: none; }
+.button-primary, .button-primary:hover, .lang-btn.active, .lang-btn.active:hover,
+.site-header .lang-btn:hover, .guide-launcher { color: var(--navy); }
+.button-primary:hover { background: var(--coral); }
+.lang-btn { min-height: 36px; min-width: 36px; display: inline-flex; align-items: center; justify-content: center; text-decoration: none; }
+.lang-btn:focus-visible { outline-color: var(--white); outline-offset: 2px; }
+.lang-btn.active { background: var(--coral); }
+.inner-page .site-header { background: var(--navy-deep); padding-bottom: 12px; }
+.inner-page { padding-top: 108px; }
+.inner-page .header { min-height: 180px; padding: 46px 24px; }
+.inner-page .header h1 { overflow-wrap: anywhere; }
+.inner-page .hero { padding: 24px 0; }
+.inner-page .button-container { flex-wrap: wrap; }
+.inner-page .section { color: var(--ink); }
+.inner-page main a:not(.button):not(.cta-button), .portfolio-home .about-copy a,
+.evidence-link { color: var(--slate); text-decoration: underline; text-underline-offset: 3px; }
+.inner-page main a:not(.button):not(.cta-button):hover, .portfolio-home .about-copy a:hover { color: var(--navy); }
+.project-link { opacity: 1; display: inline-block; padding: 8px 4px; font-weight: 600; }
+.project-link:hover { opacity: 1; }
+.project-body h3 { font: 700 0.85rem/1.5 var(--sans); text-transform: uppercase; letter-spacing: .05em; color: var(--muted); margin-bottom: 8px; }
+.project-tagline, .project-body ul li, .project-learned, .project-learned strong, .stack-tag { opacity: 1; }
+.project-tagline, .project-learned strong { color: var(--muted); }
+.project-index { display: flex; flex-wrap: wrap; gap: 8px 24px; margin: 24px 0; }
+.project-index a { padding: 8px 0; }
+.project { scroll-margin-top: 130px; }
+.footer-bottom p, .footer-bottom a { color: var(--sky); }
+.document-page .section-kicker, .portfolio-home .section .section-kicker,
+.portfolio-home .contact-strip .section-kicker, .timeline-date { color: var(--slate); }
+.education-featured .timeline-date { color: var(--sky); }
+.current-pill { color: var(--navy); }
+.section-number, .skill-index { color: var(--muted); }
+.light-heading .section-number { color: var(--sky); }
+:focus-visible { outline-color: var(--slate); }
+.site-header :focus-visible, .portfolio-hero :focus-visible { outline-color: var(--white); }
+.footer :focus-visible { outline-color: var(--sky); }
+.document-page { width: var(--page); margin: 0 auto; padding: 36px 0 64px; }
+.page-heading { padding: 18px 0 32px; }
+.page-heading h1 { font: 600 clamp(2.2rem,5vw,4rem)/1.12 var(--serif); color: var(--navy); letter-spacing: -.035em; }
+.document-page .section { width: 100%; margin: 0 0 24px; }
+.document-page article + article { margin-top: 32px; }
+.document-page h2 { font-family: var(--serif); color: var(--navy); font-size: clamp(1.7rem,3vw,2.3rem); }
+.document-page h3 { margin-top: 24px; color: var(--navy); }
+.document-note, .content-note { color: var(--muted); max-width: 70ch; }
+.document-note { margin-top: 14px; }
+.content-note { margin: 24px auto; padding: 0 24px; }
+.certificate-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 24px; }
+.certificate-grid .certificate-card { margin: 0; }
+.certificate-card h2 { font-size: 1.5rem; line-height: 1.3; }
+.certificate-card .text-links { flex-direction: column; align-items: flex-start; gap: 12px; }
+.certificate-grid + .section { margin-top: 24px; }
+.email-tools { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; min-width: 0; }
+.email-tools > a { overflow-wrap: anywhere; }
+.copy-email { background: var(--white); color: var(--navy); border: 1px solid var(--slate); border-radius: 10px; padding: 10px 14px; min-height: 44px; }
+.copy-status { flex-basis: 100%; font-size: .85rem; }
+.contact-strip { flex-wrap: wrap; }
+.contact-strip > .email-tools { flex-basis: 100%; }
+.guide-launcher { position: fixed; right: 20px; bottom: 20px; z-index: 500; display: flex; gap: 10px; align-items: center; padding: 12px 18px; border-radius: 16px; background: var(--coral); font-weight: 700; box-shadow: var(--shadow); font-size: .85rem; }
+.guide-launcher:hover { color: var(--navy); text-decoration: underline; }
+.service-notice { border-left: 4px solid var(--teal-dark); padding-left: 16px; color: var(--navy); }
+.guide-topic { border-top: 1px solid var(--line); padding: 18px 0; }
+.guide-topic summary { cursor: pointer; font-weight: 700; color: var(--navy); min-height: 44px; padding: 10px 0; }
+.guide-topic p { max-width: 75ch; }
+.language-notice { background: var(--aqua-mist); border-radius: 10px; padding: 14px 20px; color: var(--navy); }
+html[lang="en"] .language-notice { display: none; }
+.site-header .brand { min-width: 0; }
+.site-header .primary-navigation { gap: 16px; }
+.site-header .primary-navigation a { white-space: nowrap; }
+.primary-navigation a[aria-current="page"] { color: var(--white); text-decoration: underline; text-underline-offset: 5px; }
+.footer-links a { min-height: 32px; display: inline-flex; align-items: center; }
+.inner-page footer { margin-top: 32px; }
+@media (max-width: 1180px) {
+  .site-header .menu-toggle { display: block; }
+  .site-nav-shell { position: relative; }
+  .site-header .primary-navigation { display: none; position: absolute; top: calc(100% + 10px); left: 0; right: 0; padding: 12px; flex-direction: column; align-items: stretch; gap: 3px; border: 1px solid rgba(255,255,255,.15); border-radius: 15px; background: var(--navy-mid); box-shadow: var(--shadow); max-height: calc(100dvh - 120px); overflow-y: auto; }
+  .site-header .primary-navigation.is-open { display: flex; }
+  .site-header .primary-navigation a, .site-header .primary-navigation a:not(.nav-contact) { display: block; padding: 10px 12px; }
+  .site-header .lang-switcher { margin-left: auto; }
+}
+@media (max-width: 700px) {
+  .certificate-grid { grid-template-columns: 1fr; }
+  .document-page { padding-top: 16px; }
+  .inner-page .section { padding: 28px 22px; }
+  .inner-page .header { min-height: 140px; padding: 30px 20px; }
+  .guide-launcher { right: 12px; bottom: 12px; padding: 10px 14px; }
+  .footer { padding-bottom: 88px; }
+}
+@media (prefers-reduced-motion: reduce) { .guide-launcher, .button { transition: none; } }

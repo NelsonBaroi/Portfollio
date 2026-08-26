@@ -4,7 +4,6 @@
     "ru": "Русский",
     "bn": "বাংলা"
   },
-
   "index.recognition_kicker": {
     "en": "Recognition",
     "ru": "Признание",
@@ -166,9 +165,9 @@
     "bn": "কথা বলি"
   },
   "index.hero_eyebrow": {
-    "en": "<span></span> Dhaka · Rooppur · Galway",
-    "ru": "<span></span> Дакка · Руппур · Голуэй",
-    "bn": "<span></span> ঢাকা · রূপপুর · গালওয়ে"
+    "en": "Dhaka · Rooppur | Galway: study starts September 2026",
+    "ru": "Дакка · Руппур | Голуэй: начало учёбы в сентябре 2026",
+    "bn": "ঢাকা · রূপপুর | গলওয়ে: পড়াশোনা শুরু সেপ্টেম্বর ২০২৬"
   },
   "index.hero_headline": {
     "en": "I connect <em>operations, people</em> and data.",
@@ -201,9 +200,9 @@
     "bn": "কর্মক্ষেত্রের ভাষা"
   },
   "index.stat_focus": {
-    "en": "MSc Business Analytics",
-    "ru": "MSc по бизнес-аналитике",
-    "bn": "এমএসসি বিজনেস অ্যানালিটিক্স"
+    "en": "MSc starts in September",
+    "ru": "Начало магистратуры в сентябре",
+    "bn": "সেপ্টেম্বরে স্নাতকোত্তর শুরু"
   },
   "index.current_role_label": {
     "en": "Current role",
@@ -316,9 +315,9 @@
     "bn": "বিশ্লেষণী দৃষ্টিভঙ্গিসম্পন্ন অপারেশন নেতৃত্ব।"
   },
   "index.footer_chat": {
-    "en": "Chat",
-    "ru": "Чат",
-    "bn": "চ্যাট"
+    "en": "Portfolio guide",
+    "ru": "Гид по портфолио",
+    "bn": "পোর্টফোলিও গাইড"
   },
   "index.back_to_top": {
     "en": "Back to top",
@@ -421,9 +420,9 @@
     "bn": "শিক্ষা"
   },
   "index.education_item1_date": {
-    "en": "Sept 2026",
-    "ru": "Сентябрь 2026",
-    "bn": "সেপ্টেম্বর ২০২৬"
+    "en": "Starts September 2026",
+    "ru": "Начало: сентябрь 2026",
+    "bn": "শুরু: সেপ্টেম্বর ২০২৬"
   },
   "index.education_item1_title": {
     "en": "MSc Business Analytics",
@@ -481,9 +480,9 @@
     "bn": "দক্ষতা ও যোগ্যতা"
   },
   "index.skills_cat1_title": {
-    "en": "Analytics & Data",
-    "ru": "Аналитика и данные",
-    "bn": "অ্যানালিটিক্স ও ডেটা"
+    "en": "Analytics · developing skills",
+    "ru": "Аналитика · развитие навыков",
+    "bn": "অ্যানালিটিক্স · দক্ষতা উন্নয়ন"
   },
   "index.skills_cat1_item1": {
     "en": "SQL (PostgreSQL)",
@@ -551,14 +550,14 @@
     "bn": "বাংলা (মাতৃভাষা)"
   },
   "index.skills_cat3_item2": {
-    "en": "English (Professional)",
-    "ru": "Английский (профессиональный)",
-    "bn": "ইংরেজি (পেশাগত)"
+    "en": "English · Professional communication",
+    "ru": "Английский · Профессиональное общение",
+    "bn": "ইংরেজি · পেশাগত যোগাযোগ"
   },
   "index.skills_cat3_item3": {
-    "en": "Russian (professional working level)",
-    "ru": "Русский (рабочий уровень)",
-    "bn": "রুশ (পেশাগত কাজের স্তর)"
+    "en": "Russian · Professional communication",
+    "ru": "Русский · Профессиональное общение",
+    "bn": "রুশ · পেশাগত যোগাযোগ"
   },
   "index.skills_cat4_title": {
     "en": "Technical",
@@ -635,11 +634,6 @@
     "ru": "Задать вопрос",
     "bn": "প্রশ্ন করুন"
   },
-  "index.nav_personal": {
-    "en": "Personal",
-    "ru": "Личное",
-    "bn": "ব্যক্তিগত"
-  },
   "index.footer_rights": {
     "en": "© 2026 Nelson Baroi. All rights reserved.",
     "ru": "© 2026 Нелсон Барой. Все права защищены.",
@@ -670,7 +664,6 @@
     "ru": "Открыть полный чат",
     "bn": "সম্পূর্ণ চ্যাট খুলুন"
   },
-
   "chat.title": {
     "en": "Ask Nelson — Site Chat",
     "ru": "Спросить Нелсона — чат сайта",
@@ -761,7 +754,6 @@
     "ru": "думаю...",
     "bn": "চিন্তা করছি..."
   },
-
   "projects.title": {
     "en": "Projects — Nelson Baroi",
     "ru": "Проекты — Нелсон Барой",
@@ -798,9 +790,9 @@
     "bn": "কোর্স"
   },
   "projects.nav_chat": {
-    "en": "Chat",
-    "ru": "Чат",
-    "bn": "চ্যাট"
+    "en": "Portfolio guide",
+    "ru": "Гид по портфолио",
+    "bn": "পোর্টফোলিও গাইড"
   },
   "projects.intro": {
     "en": "A selection of tools I've built while exploring AI, audio, and simulation. Each one started with a specific question — not a technology to showcase. The approaches vary, but the goal was always the same: understand how something actually works by building it.",
@@ -1137,7 +1129,6 @@
     "ru": "Спросить Нелсона...",
     "bn": "নেলসনকে জিজ্ঞাসা করুন..."
   },
-
   "courses.title": {
     "en": "Professional Courses — Nelson Baroi",
     "ru": "Профессиональные курсы — Нелсон Барой",
@@ -1163,7 +1154,6 @@
     "ru": "© 2025 Нелсон Барой. Все права защищены.",
     "bn": "© ২০২৫ নেলসন বারোই। সর্বস্বত্ব সংরক্ষিত।"
   },
-
   "philosophy.title": {
     "en": "Nelson Baroi - Philosophy",
     "ru": "Нелсон Барой — Философия",
@@ -1180,9 +1170,9 @@
     "bn": "সহযোগিতার মাধ্যমে উদ্ভাবনের ক্ষমতায়ন"
   },
   "philosophy.section1_text": {
-    "en": "At the heart of everything I do lies a deep belief in the power of collaboration. I firmly believe that innovation thrives when diverse minds come together to share ideas, challenge assumptions, and solve problems collectively. Whether it's leading a team, contributing to a project, or engaging with my community, I strive to foster an environment where everyone feels valued, heard, and empowered to contribute their best.",
-    "ru": "В основе всего, что я делаю, лежит глубокая вера в силу сотрудничества. Я твердо убежден, что инновации процветают, когда разные умы собираются вместе, чтобы делиться идеями, оспаривать предположения и коллективно решать проблемы. Будь то руководство командой, участие в проекте или взаимодействие с сообществом, я стремлюсь создать среду, где каждый чувствует себя ценным, услышанным и способным внести свой лучший вклад.",
-    "bn": "আমি যা কিছু করি তার কেন্দ্রে রয়েছে সহযোগিতার শক্তিতে গভীর বিশ্বাস। আমি দৃঢ়ভাবে বিশ্বাস করি যে উদ্ভাবন তখনই বিকশিত হয় যখন ভিন্ন ভিন্ন মন একত্রিত হয়ে ধারণা ভাগ করে নেয়, অনুমানকে চ্যালেঞ্জ করে এবং যৌথভাবে সমস্যা সমাধান করে। একটি দলকে নেতৃত্ব দেওয়া, একটি প্রকল্পে অবদান রাখা বা আমার সম্প্রদায়ের সাথে যুক্ত হওয়া — আমি এমন একটি পরিবেশ গড়ে তোলার চেষ্টা করি যেখানে প্রত্যেকে মূল্যবান, শোনা এবং তাদের সেরাটি দেওয়ার ক্ষমতাপ্রাপ্ত বোধ করে।"
+    "en": "I value clear communication across cultures. At Rooppur, my role includes coordinating Russian engineering teams and Bangladeshi operations.",
+    "ru": "Я ценю ясное межкультурное общение. На проекте «Руппур» я координирую российские инженерные команды и бангладешские операционные подразделения.",
+    "bn": "আমি বিভিন্ন সংস্কৃতির মানুষের মধ্যে স্পষ্ট যোগাযোগকে গুরুত্ব দিই। রূপপুরে আমার দায়িত্বের অংশ রুশ প্রকৌশলী ও বাংলাদেশি দলের সমন্বয়।"
   },
   "philosophy.section2_title": {
     "en": "Commitment to Lifelong Learning",
@@ -1190,9 +1180,9 @@
     "bn": "আজীবন শেখার প্রতিশ্রুতি"
   },
   "philosophy.section2_text": {
-    "en": "I view life as a continuous journey of growth and discovery. Every experience — whether it's overcoming challenges, learning from mentors, or adapting to new environments — has shaped me into who I am today. I embrace curiosity and remain open to exploring new technologies, methodologies, and perspectives. This commitment to lifelong learning not only fuels my personal development but also enables me to drive meaningful change in my professional endeavors.",
-    "ru": "Я рассматриваю жизнь как непрерывный путь роста и открытий. Каждый опыт — будь то преодоление трудностей, обучение у наставников или адаптация к новым условиям — сформировал меня таким, какой я есть сегодня. Я принимаю любопытство и остаюсь открытым к изучению новых технологий, методологий и перспектив. Эта приверженность непрерывному обучению не только питает мое личное развитие, но и позволяет мне осуществлять значимые изменения в профессиональной деятельности.",
-    "bn": "আমি জীবনকে বৃদ্ধি এবং আবিষ্কারের একটি অবিচ্ছিন্ন যাত্রা হিসেবে দেখি। প্রতিটি অভিজ্ঞতা — চ্যালেঞ্জ অতিক্রম করা, mentorsদের কাছ থেকে শেখা বা নতুন পরিবেশে খাপ খাওয়ানো — আমাকে আজকে আমি যেমন হতে পেরেছি তা গঠন করেছে। আমি কৌতূহলকে আলিঙ্গন করি এবং নতুন প্রযুক্তি, পদ্ধতি এবং দৃষ্টিভঙ্গি অন্বেষণ করতে উন্মুক্ত থাকি। আজীবন শেখার এই প্রতিশ্রুতি শুধু আমার ব্যক্তিগত বিকাশকে জ্বালানি দেয় না, বরং আমাকে আমার পেশাগত প্রচেষ্টায় অর্থপূর্ণ পরিবর্তন আনতে সক্ষম করে।"
+    "en": "I learn by building and testing. My personal projects explore retrieval, simulation and signal processing; my planned MSc in Business Analytics is the next step.",
+    "ru": "Я учусь, создавая и проверяя решения. Мои личные проекты посвящены поиску информации, моделированию и обработке сигналов; следующий шаг — магистратура по бизнес-аналитике.",
+    "bn": "তৈরি ও পরীক্ষা করার মাধ্যমে আমি শিখি। আমার ব্যক্তিগত প্রকল্পে তথ্য অনুসন্ধান, সিমুলেশন ও সিগন্যাল প্রসেসিং রয়েছে; পরবর্তী ধাপ Business Analytics-এ স্নাতকোত্তর।"
   },
   "philosophy.section3_title": {
     "en": "Integrity and Accountability",
@@ -1200,9 +1190,9 @@
     "bn": "সততা এবং জবাবদিহিতা"
   },
   "philosophy.section3_text": {
-    "en": "Integrity is the cornerstone of my philosophy. I believe that trust is earned through consistent actions, transparency, and accountability. In every role I undertake, I prioritize ethical decision-making and ensure that my actions align with my values. By maintaining integrity, I aim to inspire those around me to uphold the same standards of excellence and honesty.",
-    "ru": "Честность — краеугольный камень моей философии. Я верю, что доверие заслуживается последовательными действиями, прозрачностью и ответственностью. В каждой выполняемой мной роли я ставлю во главу угла этическое принятие решений и слежу за тем, чтобы мои действия соответствовали моим ценностям. Сохраняя честность, я стремлюсь вдохновлять окружающих придерживаться тех же стандартов совершенства и честности.",
-    "bn": "সততা আমার দর্শনের ভিত্তি। আমি বিশ্বাস করি যে ধারাবাহিক কর্ম, স্বচ্ছতা এবং জবাবদিহিতার মাধ্যমে আস্থা অর্জিত হয়। আমি যে কোনো ভূমিকায় কাজ করি না কেন, আমি নৈতিক সিদ্ধান্ত গ্রহণকে অগ্রাধিকার দিই এবং নিশ্চিত করি যে আমার কাজ আমার মূল্যবোধের সাথে সামঞ্জস্যপূর্ণ। সততা বজায় রেখে, আমি আমার আশেপাশের মানুষকে উৎকর্ষ এবং সততার একই মান বজায় রাখতে অনুপ্রাণিত করতে চাই।"
+    "en": "I want evidence to be distinguishable from interpretation. In Parallel Universe Me, the simulation produces the numbers and the language model explains them.",
+    "ru": "Для меня важно отделять факты от интерпретации. В Parallel Universe Me числа рассчитывает симуляция, а языковая модель объясняет их.",
+    "bn": "আমি তথ্য ও ব্যাখ্যার পার্থক্য স্পষ্ট রাখতে চাই। Parallel Universe Me-তে সিমুলেশন সংখ্যা তৈরি করে, ভাষা মডেল সেগুলো ব্যাখ্যা করে।"
   },
   "philosophy.section4_title": {
     "en": "Driving Positive Societal Impact",
@@ -1210,9 +1200,9 @@
     "bn": "ইতিবাচক সামাজিক প্রভাব সৃষ্টি"
   },
   "philosophy.section4_text": {
-    "en": "Beyond personal and professional success, I am driven by a desire to make a lasting impact on society. I believe that true fulfillment comes from using one's skills and resources to uplift others and contribute to the greater good. Whether it's mentoring young professionals, supporting community initiatives, or advocating for workplace safety, I am committed to creating opportunities that empower individuals and communities to thrive.",
-    "ru": "Помимо личного и профессионального успеха, мной движет желание оказать долгосрочное влияние на общество. Я верю, что истинное удовлетворение приходит от использования своих навыков и ресурсов для поддержки других и вклада в общее благо. Будь то наставничество молодых специалистов, поддержка общественных инициатив или пропаганда безопасности на рабочем месте, я стремлюсь создавать возможности, которые позволяют отдельным людям и сообществам процветать.",
-    "bn": "ব্যক্তিগত এবং পেশাগত সাফল্যের বাইরেও, আমি সমাজে স্থায়ী প্রভাব ফেলার ইচ্ছা দ্বারা চালিত। আমি বিশ্বাস করি যে প্রকৃত তৃপ্তি আসে নিজের দক্ষতা এবং সম্পদ ব্যবহার করে অন্যদের উন্নীত করা এবং বৃহত্তর কল্যাণে অবদান রাখার মাধ্যমে। তরুণ পেশাদারদের মেন্টরিং, কমিউনিটি উদ্যোগকে সমর্থন করা বা কর্মক্ষেত্রের নিরাপত্তার পক্ষে কথা বলা — আমি এমন সুযোগ তৈরি করতে প্রতিশ্রুতিবদ্ধ যা ব্যক্তি এবং সম্প্রদায়কে সমৃদ্ধ হওয়ার ক্ষমতা দেয়।"
+    "en": "My work includes employee support and occupational safety. I treat those responsibilities as part of dependable operations.",
+    "ru": "Моя работа включает поддержку сотрудников и охрану труда. Для меня это часть надёжной операционной деятельности.",
+    "bn": "আমার কাজে কর্মীদের সহায়তা ও পেশাগত নিরাপত্তা অন্তর্ভুক্ত। নির্ভরযোগ্য পরিচালনার অংশ হিসেবে আমি এসব দায়িত্ব পালন করি।"
   },
   "philosophy.section5_title": {
     "en": "Resilience and Adaptability",
@@ -1220,9 +1210,9 @@
     "bn": "স্থিতিস্থাপকতা এবং অভিযোজনক্ষমতা"
   },
   "philosophy.section5_text": {
-    "en": "Life is unpredictable, and challenges are inevitable. However, I see challenges as opportunities for growth and transformation. My experiences studying abroad, navigating unfamiliar environments, and leading complex projects have taught me resilience and adaptability. These qualities enable me to remain steadfast in the face of adversity and find innovative solutions to even the most daunting problems.",
-    "ru": "Жизнь непредсказуема, и проблемы неизбежны. Однако я рассматриваю трудности как возможности для роста и трансформации. Мой опыт учёбы за границей, адаптации в незнакомой среде и руководства сложными проектами научил меня устойчивости и адаптивности. Эти качества позволяют мне оставаться стойким перед лицом невзгод и находить инновационные решения даже самых сложных проблем.",
-    "bn": "জীবন অপ্রত্যাশিত, এবং চ্যালেঞ্জ অনিবার্য। তবে, আমি চ্যালেঞ্জকে বৃদ্ধি এবং রূপান্তরের সুযোগ হিসেবে দেখি। বিদেশে পড়াশোনা, অপরিচিত পরিবেশে নেভিগেট করা এবং জটিল প্রকল্প নেতৃত্ব দেওয়ার আমার অভিজ্ঞতা আমাকে স্থিতিস্থাপকতা এবং অভিযোজনক্ষমতা শিখিয়েছে। এই গুণগুলি আমাকে প্রতিকূলতার মুখে অটল থাকতে এবং সবচেয়ে ভয়ঙ্কর সমস্যারও উদ্ভাবনী সমাধান খুঁজে পেতে সক্ষম করে।"
+    "en": "Studying in Russia and working across cultures taught me to adapt. In software, I apply the same habit by planning for failures and testing alternatives.",
+    "ru": "Учёба в России и межкультурная работа научили меня адаптироваться. В программировании я применяю тот же подход: учитываю сбои и проверяю альтернативы.",
+    "bn": "রাশিয়ায় পড়াশোনা ও বিভিন্ন সংস্কৃতিতে কাজ আমাকে মানিয়ে নিতে শিখিয়েছে। সফটওয়্যারেও ত্রুটির প্রস্তুতি ও বিকল্প পরীক্ষা করার একই অভ্যাস কাজে লাগাই।"
   },
   "philosophy.section6_title": {
     "en": "The Power of Communication",
@@ -1230,9 +1220,9 @@
     "bn": "যোগাযোগের শক্তি"
   },
   "philosophy.section6_text": {
-    "en": "Effective communication is essential for building strong relationships and fostering collaboration. Fluent in Bengali, English, and Russian, I leverage my multilingual abilities to connect with people from diverse backgrounds and bridge cultural gaps. By listening actively, expressing ideas clearly, and encouraging open dialogue, I create spaces where mutual understanding and teamwork flourish.",
-    "ru": "Эффективное общение необходимо для построения крепких отношений и развития сотрудничества. Свободно владея бенгальским, английским и русским языками, я использую свои многоязычные способности для общения с людьми из разных культур и преодоления культурных барьеров. Активно слушая, чётко выражая идеи и поощряя открытый диалог, я создаю пространство, где процветают взаимопонимание и командная работа.",
-    "bn": "শক্তিশালী সম্পর্ক গঠন এবং সহযোগিতা বৃদ্ধির জন্য কার্যকর যোগাযোগ অপরিহার্য। বাংলা, ইংরেজি এবং রুশ ভাষায় সাবলীল, আমি আমার বহুভাষিক দক্ষতা ব্যবহার করে বিভিন্ন পটভূমির মানুষের সাথে সংযোগ স্থাপন করি এবং সাংস্কৃতিক ব্যবধান দূর করি। সক্রিয়ভাবে শুনে, স্পষ্টভাবে ধারণা প্রকাশ করে এবং উন্মুক্ত সংলাপকে উৎসাহিত করে, আমি এমন স্থান তৈরি করি যেখানে পারস্পরিক বোঝাপড়া এবং দলগত কাজ বিকশিত হয়।"
+    "en": "Bengali is my native language. I use English and Russian for professional communication, including coordination on the Rooppur project.",
+    "ru": "Бенгальский — мой родной язык. Английским и русским я пользуюсь в профессиональном общении, в том числе на проекте «Руппур».",
+    "bn": "বাংলা আমার মাতৃভাষা। রূপপুর প্রকল্পে সমন্বয়সহ পেশাগত যোগাযোগে ইংরেজি ও রুশ ব্যবহার করি।"
   },
   "philosophy.section7_title": {
     "en": "A Focus on Operational Excellence",
@@ -1240,9 +1230,9 @@
     "bn": "অপারেশনাল উৎকর্ষের উপর ফোকাস"
   },
   "philosophy.section7_text": {
-    "en": "In all my roles, I emphasize operational excellence — ensuring that processes are efficient, resources are optimized, and goals are achieved with precision. From managing procurement and logistics to overseeing budgets and compliance, I approach every task with dedication and attention to detail. This focus on excellence ensures that I deliver value not only to my organization but also to the broader community.",
-    "ru": "Во всех своих ролях я делаю упор на операционное совершенство — обеспечивая эффективность процессов, оптимизацию ресурсов и точное достижение целей. От управления закупками и логистикой до контроля бюджетов и соблюдения требований — я подхожу к каждой задаче с самоотдачей и вниманием к деталям. Этот фокус на совершенстве гарантирует, что я приношу пользу не только своей организации, но и обществу в целом.",
-    "bn": "আমার সব ভূমিকায়, আমি অপারেশনাল উৎকর্ষের উপর জোর দিই — নিশ্চিত করি যে প্রক্রিয়াগুলি দক্ষ, সম্পদ অপটিমাইজড এবং লক্ষ্যগুলি নির্ভুলভাবে অর্জিত হয়। সংগ্রহ এবং লজিস্টিকস ব্যবস্থাপনা থেকে বাজেট এবং সম্মতি তত্ত্বাবধান পর্যন্ত, আমি প্রতিটি কাজে নিষ্ঠা এবং বিস্তারিত মনোযোগ নিয়ে এগিয়ে যাই। উৎকর্ষের এই ফোকাস নিশ্চিত করে যে আমি শুধু আমার প্রতিষ্ঠানের জন্যই নয়, বরং বৃহত্তর সম্প্রদায়ের জন্যও মূল্য প্রদান করি।"
+    "en": "Budgets, contracts, procurement and logistics are connected. My role is to keep those responsibilities coordinated and decisions clear.",
+    "ru": "Бюджеты, договоры, закупки и логистика взаимосвязаны. Моя задача — согласовывать эту работу и обеспечивать ясность решений.",
+    "bn": "বাজেট, চুক্তি, ক্রয় ও লজিস্টিকস পরস্পর যুক্ত। এসব কাজের সমন্বয় ও সিদ্ধান্তের স্পষ্টতা নিশ্চিত করা আমার দায়িত্ব।"
   },
   "philosophy.section8_title": {
     "en": "Gratitude and Humility",
@@ -1250,9 +1240,9 @@
     "bn": "কৃতজ্ঞতা এবং নম্রতা"
   },
   "philosophy.section8_text": {
-    "en": "Finally, I approach life with gratitude and humility. I recognize that my achievements would not have been possible without the support of my family, mentors, colleagues, and friends. Their encouragement has been a constant source of inspiration, and I am deeply grateful for their belief in me. In turn, I am committed to paying it forward by mentoring others and creating opportunities for growth.",
-    "ru": "Наконец, я подхожу к жизни с благодарностью и скромностью. Я признаю, что мои достижения были бы невозможны без поддержки моей семьи, наставников, коллег и друзей. Их поддержка была постоянным источником вдохновения, и я глубоко благодарен за их веру в меня. В свою очередь, я стремлюсь передавать это дальше, наставляя других и создавая возможности для роста.",
-    "bn": "পরিশেষে, আমি কৃতজ্ঞতা এবং নম্রতার সাথে জীবনকে দেখি। আমি স্বীকার করি যে আমার সাফল্য আমার পরিবার, mentors, সহকর্মী এবং বন্ধুদের সমর্থন ছাড়া সম্ভব হতো না। তাদের উৎসাহ ছিল অনুপ্রেরণার একটি ধ্রুবক উৎস, এবং আমার প্রতি তাদের বিশ্বাসের জন্য আমি গভীরভাবে কৃতজ্ঞ। পাল্টা, আমি অন্যদের মেন্টরিং এবং বৃদ্ধির সুযোগ তৈরি করে এই ঋণ শোধ করতে প্রতিশ্রুতিবদ্ধ।"
+    "en": "The appreciation from AMT Engineering and the ASE / Rosatom letter are part of my professional story. The original documents are available in the recognition section.",
+    "ru": "Благодарность AMT Engineering и письмо АСЭ / Росатома — часть моей профессиональной истории. Оригиналы доступны в разделе признания.",
+    "bn": "AMT Engineering-এর প্রশংসা ও ASE / Rosatom-এর কৃতজ্ঞতাপত্র আমার পেশাগত জীবনের অংশ। স্বীকৃতি বিভাগে মূল নথি পাওয়া যায়।"
   },
   "philosophy.nav_back": {
     "en": "Back to Portfolio",
@@ -1269,122 +1259,15 @@
     "ru": "© 2025 Нелсон Барой. Все права защищены.",
     "bn": "© ২০২৫ নেলসন বারোই। সর্বস্বত্ব সংরক্ষিত।"
   },
-
-  "personal.title": {
-    "en": "Private Archive — Nelson Baroi",
-    "ru": "Личный архив — Нелсон Барой",
-    "bn": "ব্যক্তিগত আর্কাইভ — নেলসন বারোই"
-  },
-  "personal.badge": {
-    "en": "Private vault",
-    "ru": "Личное хранилище",
-    "bn": "ব্যক্তিগত ভান্ডার"
-  },
-  "personal.login_hint": {
-    "en": "Full personal record — not indexed publicly.",
-    "ru": "Полная личная запись — не индексируется публично.",
-    "bn": "সম্পূর্ণ ব্যক্তিগত রেকর্ড — সার্চে দেখা যাবে না।"
-  },
-  "personal.back_home": {
-    "en": "← Back to public site",
-    "ru": "← На публичный сайт",
-    "bn": "← পাবলিক সাইটে ফিরুন"
-  },
-  "personal.header_title": {
-    "en": "Private archive",
-    "ru": "Личный архив",
-    "bn": "ব্যক্তিগত ভান্ডার"
-  },
-  "personal.name_bn": {
-    "en": "নেলসন্‌ বাড়ৈ",
-    "ru": "নেলসন্‌ বাড়ৈ",
-    "bn": "নেলসন্‌ বাড়ৈ"
-  },
-  "personal.header_subtitle": {
-    "en": "Everything not on the public pages — family, visa, finance, depth",
-    "ru": "Всё, чего нет на публичных страницах — семья, виза, финансы, детали",
-    "bn": "পাবলিক পৃষ্ঠায় যা নেই — পরিবার, ভিসা, অর্থ, গভীর তথ্য"
-  },
-  "personal.toc_title": {
-    "en": "On this page",
-    "ru": "На этой странице",
-    "bn": "এই পৃষ্ঠায়"
-  },
-  "personal.login_title": {
-    "en": "Private archive",
-    "ru": "Личный архив",
-    "bn": "ব্যক্তিগত ভান্ডার"
-  },
-  "personal.password_placeholder": {
-    "en": "Password",
-    "ru": "Пароль",
-    "bn": "পাসওয়ার্ড"
-  },
-  "personal.enter": {
-    "en": "Enter",
-    "ru": "Войти",
-    "bn": "প্রবেশ করুন"
-  },
-  "personal.error": {
-    "en": "Incorrect password",
-    "ru": "Неверный пароль",
-    "bn": "ভুল পাসওয়ার্ড"
-  },
-  "personal.nav_about": {
-    "en": "Home",
-    "ru": "Главная",
-    "bn": "হোম"
-  },
-  "personal.nav_projects": {
-    "en": "Projects",
-    "ru": "Проекты",
-    "bn": "প্রকল্প"
-  },
-  "personal.nav_chat": {
-    "en": "Chat",
-    "ru": "Чат",
-    "bn": "চ্যাট"
-  },
-  "personal.nav_courseplan": {
-    "en": "Study plan",
-    "ru": "План обучения",
-    "bn": "পড়াশোনার পরিকল্পনা"
-  },
-  "personal.nav_philosophy": {
-    "en": "Philosophy",
-    "ru": "Философия",
-    "bn": "দর্শন"
-  },
-  "personal.nav_courses": {
-    "en": "Courses",
-    "ru": "Курсы",
-    "bn": "কোর্স"
-  },
-  "personal.nav_cv": {
-    "en": "My CV",
-    "ru": "Моё резюме",
-    "bn": "আমার সিভি"
-  },
-  "personal.nav_files": {
-    "en": "My file system",
-    "ru": "Моя файловая система",
-    "bn": "আমার ফাইল সিস্টেম"
-  },
-  "personal.footer_rights": {
-    "en": "© 2026 Nelson Baroi — private section",
-    "ru": "© 2026 Нелсон Барой — личный раздел",
-    "bn": "© ২০২৬ নেলসন বারোই — ব্যক্তিগত অংশ"
-  },
-
   "courseplan.title": {
-    "en": "1-Year Data Analytics Course Plan",
-    "ru": "Годовой план курса по анализу данных",
-    "bn": "১ বছরের ডেটা অ্যানালিটিক্স কোর্স পরিকল্পনা"
+    "en": "Data Analytics Learning Plan — Nelson Baroi",
+    "ru": "План изучения аналитики данных — Nelson Baroi",
+    "bn": "ডেটা অ্যানালিটিক্স শেখার পরিকল্পনা — Nelson Baroi"
   },
   "courseplan.header": {
-    "en": "1-Year Data Analytics Course Plan",
-    "ru": "Годовой план курса по анализу данных",
-    "bn": "১ বছরের ডেটা অ্যানালিটিক্স কোর্স পরিকল্পনা"
+    "en": "Data Analytics Learning Plan",
+    "ru": "План изучения аналитики данных",
+    "bn": "ডেটা অ্যানালিটিক্স শেখার পরিকল্পনা"
   },
   "courseplan.header_sub": {
     "en": "(1 Hour/Day, 5 Days/Week)",
@@ -1621,7 +1504,6 @@
     "ru": "© 2023 План курса по анализу данных. Все права защищены.",
     "bn": "© ২০২৩ ডেটা অ্যানালিটিক্স কোর্স পরিকল্পনা। সর্বস্বত্ব সংরক্ষিত।"
   },
-
   "cv.title": {
     "en": "Curriculum Vitae — Nelson Baroi",
     "ru": "Резюме — Нелсон Барой",
@@ -1632,7 +1514,6 @@
     "ru": "На главную",
     "bn": "হোমে ফিরুন"
   },
-
   "biography.title": {
     "en": "Background — Nelson Baroi | nbaroi.com",
     "ru": "Путь — Нелсон Барой | nbaroi.com",
@@ -1674,9 +1555,9 @@
     "bn": "প্রকল্প"
   },
   "biography.nav_chat": {
-    "en": "Chat",
-    "ru": "Чат",
-    "bn": "চ্যাট"
+    "en": "Portfolio guide",
+    "ru": "Гид по портфолио",
+    "bn": "পোর্টফোলিও গাইড"
   },
   "biography.footer_rights": {
     "en": "© 2026 Nelson Baroi. All rights reserved.",
@@ -1703,14 +1584,194 @@
     "ru": "Путь",
     "bn": "পটভূমি"
   },
-  "personal.nav_biography": {
-    "en": "Background",
-    "ru": "Путь",
-    "bn": "পটভূমি"
-  },
   "chat.nav_biography": {
     "en": "Background",
     "ru": "Путь",
     "bn": "পটভূমি"
+  },
+  "shared.recognition": {
+    "en": "Recognition",
+    "ru": "Признание",
+    "bn": "স্বীকৃতি"
+  },
+  "shared.skip": {
+    "en": "Skip to content",
+    "ru": "Перейти к содержимому",
+    "bn": "মূল বিষয়বস্তুতে যান"
+  },
+  "shared.language": {
+    "en": "Language",
+    "ru": "Язык",
+    "bn": "ভাষা"
+  },
+  "shared.open_menu": {
+    "en": "Open navigation",
+    "ru": "Открыть меню",
+    "bn": "মেনু খুলুন"
+  },
+  "shared.close_menu": {
+    "en": "Close navigation",
+    "ru": "Закрыть меню",
+    "bn": "মেনু বন্ধ করুন"
+  },
+  "shared.email": {
+    "en": "Email Nelson",
+    "ru": "Написать Нельсону",
+    "bn": "নেলসনকে ইমেইল করুন"
+  },
+  "shared.copy": {
+    "en": "Copy email address",
+    "ru": "Скопировать email",
+    "bn": "ইমেইল ঠিকানা কপি করুন"
+  },
+  "shared.copied": {
+    "en": "Email address copied.",
+    "ru": "Адрес скопирован.",
+    "bn": "ইমেইল ঠিকানা কপি হয়েছে।"
+  },
+  "shared.copy_failed": {
+    "en": "Select and copy the email address above.",
+    "ru": "Выделите и скопируйте адрес выше.",
+    "bn": "উপরের ইমেইল ঠিকানা নির্বাচন করে কপি করুন।"
+  },
+  "shared.guide": {
+    "en": "Portfolio guide",
+    "ru": "Гид по портфолио",
+    "bn": "পোর্টফোলিও গাইড"
+  },
+  "shared.english": {
+    "en": "The following material is available in English.",
+    "ru": "Следующий материал доступен на английском языке.",
+    "bn": "নিচের বিষয়বস্তু ইংরেজিতে পাওয়া যাচ্ছে।"
+  },
+  "shared.document_english": {
+    "en": "Original document in English",
+    "ru": "Оригинал документа на английском",
+    "bn": "মূল নথি ইংরেজিতে"
+  },
+  "shared.contact_note": {
+    "en": "For professional enquiries, contact me directly.",
+    "ru": "По профессиональным вопросам свяжитесь со мной напрямую.",
+    "bn": "পেশাগত বিষয়ে সরাসরি আমার সঙ্গে যোগাযোগ করুন।"
+  },
+  "shared.updated": {
+    "en": "Updated 26 August 2026",
+    "ru": "Обновлено 26 августа 2026",
+    "bn": "হালনাগাদ: ২৬ আগস্ট ২০২৬"
+  },
+  "shared.learning": {
+    "en": "Planned learning, not completed qualifications.",
+    "ru": "План обучения, а не полученные квалификации.",
+    "bn": "এটি শেখার পরিকল্পনা, সম্পন্ন যোগ্যতার তালিকা নয়।"
+  },
+  "shared.view_experience": {
+    "en": "View professional experience",
+    "ru": "Профессиональный опыт",
+    "bn": "পেশাগত অভিজ্ঞতা দেখুন"
+  },
+  "shared.view_projects": {
+    "en": "See project evidence",
+    "ru": "Примеры проектов",
+    "bn": "প্রকল্পের কাজ দেখুন"
+  },
+  "courses.summary": {
+    "en": "Six completed, non-credit courses from Google and IBM, offered through Coursera. Certificates are in English.",
+    "ru": "Шесть завершённых курсов Google и IBM на Coursera, без академических кредитов. Сертификаты на английском.",
+    "bn": "Coursera-তে Google ও IBM-এর ছয়টি সম্পন্ন নন-ক্রেডিট কোর্স। সনদগুলো ইংরেজিতে।"
+  },
+  "courses.download": {
+    "en": "Download certificate — PDF",
+    "ru": "Скачать сертификат — PDF",
+    "bn": "সনদ ডাউনলোড — PDF"
+  },
+  "courses.verify": {
+    "en": "Verify on Coursera",
+    "ru": "Проверить на Coursera",
+    "bn": "Coursera-তে যাচাই করুন"
+  },
+  "courses.next": {
+    "en": "Ongoing learning",
+    "ru": "Дальнейшее обучение",
+    "bn": "চলমান শিক্ষা"
+  },
+  "courses.plan": {
+    "en": "View my learning plan",
+    "ru": "План обучения",
+    "bn": "শেখার পরিকল্পনা দেখুন"
+  },
+  "guide.notice": {
+    "en": "AI chat is temporarily unavailable. This guide provides answers from published profile information; it is not a live conversation with Nelson.",
+    "ru": "ИИ-чат временно недоступен. Здесь собраны ответы из опубликованного профиля; это не личная переписка с Нельсоном.",
+    "bn": "এআই চ্যাট সাময়িকভাবে বন্ধ। এই গাইডে প্রকাশিত প্রোফাইলের তথ্য রয়েছে; এটি নেলসনের সঙ্গে সরাসরি কথোপকথন নয়।"
+  },
+  "guide.privacy": {
+    "en": "No questions or conversations are sent to an AI service or saved by this guide. For anything not covered here, email Nelson directly.",
+    "ru": "Этот гид не отправляет вопросы сервису ИИ и не сохраняет переписку. По другим вопросам напишите Нельсону напрямую.",
+    "bn": "এই গাইড কোনো প্রশ্ন বা কথোপকথন এআই সেবায় পাঠায় না বা সংরক্ষণ করে না। অন্য বিষয়ে নেলসনকে সরাসরি ইমেইল করুন।"
+  },
+  "guide.topics": {
+    "en": "Explore the public profile",
+    "ru": "Открытый профиль",
+    "bn": "প্রকাশিত প্রোফাইল দেখুন"
+  },
+  "guide.work.q": {
+    "en": "What is Nelson’s current role?",
+    "ru": "Какую должность занимает Нельсон?",
+    "bn": "নেলসনের বর্তমান পদ কী?"
+  },
+  "guide.work.a": {
+    "en": "Nelson leads AMT Engineering JSC’s Bangladesh branch on the Rooppur Nuclear Power Plant project. His responsibilities include budgets, contracts, logistics and coordination between Russian and Bangladeshi teams.",
+    "ru": "Нельсон руководит бангладешским филиалом AMT Engineering JSC на проекте АЭС «Руппур»: бюджеты, договоры, логистика и координация российских и бангладешских команд.",
+    "bn": "নেলসন রূপপুর পারমাণবিক বিদ্যুৎকেন্দ্র প্রকল্পে AMT Engineering JSC-এর বাংলাদেশ শাখার পরিচালক। তাঁর দায়িত্বে বাজেট, চুক্তি, লজিস্টিকস এবং রুশ ও বাংলাদেশি দলের সমন্বয় রয়েছে."
+  },
+  "guide.source": {
+    "en": "Read the source page",
+    "ru": "Открыть страницу-источник",
+    "bn": "মূল পাতাটি পড়ুন"
+  },
+  "guide.freyssinet.q": {
+    "en": "How does Freyssinet fit into his experience?",
+    "ru": "Как работа с Freyssinet связана с его опытом?",
+    "bn": "Freyssinet-এর কাজ তাঁর অভিজ্ঞতার অংশ কীভাবে?"
+  },
+  "guide.freyssinet.a": {
+    "en": "His support to Freyssinet was part-time through AMT Engineering: procurement from January 2019 to January 2022, followed by administrative support from January 2022. It was not separate full-time employment.",
+    "ru": "Нельсон оказывал Freyssinet поддержку по совместительству в рамках обязанностей в AMT Engineering: закупки с января 2019 по январь 2022, затем административная поддержка с января 2022. Это не отдельная работа на полную ставку.",
+    "bn": "AMT Engineering-এর দায়িত্বের অংশ হিসেবে তিনি Freyssinet-কে খণ্ডকালীন সহায়তা দিয়েছেন: জানুয়ারি ২০১৯–জানুয়ারি ২০২২ ক্রয়সংক্রান্ত কাজ, এরপর জানুয়ারি ২০২২ থেকে প্রশাসনিক সহায়তা। এটি আলাদা পূর্ণকালীন চাকরি ছিল না।"
+  },
+  "guide.study.q": {
+    "en": "What are his study plans?",
+    "ru": "Каковы планы на учёбу?",
+    "bn": "তাঁর পড়াশোনার পরিকল্পনা কী?"
+  },
+  "guide.study.a": {
+    "en": "The planned start of his MSc in Business Analytics at ATU Galway is September 2026. His bachelor’s degree in Business Informatics is from Kalmyk State University, Russia (2014–2018).",
+    "ru": "Начало магистратуры Business Analytics в ATU Galway запланировано на сентябрь 2026 года. Бакалавриат по бизнес-информатике — Калмыцкий государственный университет, Россия (2014–2018).",
+    "bn": "ATU Galway-তে Business Analytics বিষয়ে স্নাতকোত্তর শুরু করার পরিকল্পনা সেপ্টেম্বর ২০২৬-এ। তিনি রাশিয়ার Kalmyk State University-তে Business Informatics-এ স্নাতক করেছেন (২০১৪–২০১৮)।"
+  },
+  "guide.projects.q": {
+    "en": "Where can I see his work?",
+    "ru": "Где посмотреть его проекты?",
+    "bn": "তাঁর কাজ কোথায় দেখা যাবে?"
+  },
+  "guide.projects.a": {
+    "en": "The projects page describes personal software experiments in knowledge retrieval, voice tools, simulation and signal processing, with links to repositories and available demos.",
+    "ru": "На странице проектов описаны личные программные эксперименты: поиск знаний, голосовые инструменты, моделирование и обработка сигналов, со ссылками на репозитории и доступные демо.",
+    "bn": "প্রকল্পের পাতায় তথ্য অনুসন্ধান, ভয়েস টুল, সিমুলেশন ও সিগন্যাল প্রসেসিং নিয়ে ব্যক্তিগত সফটওয়্যার পরীক্ষার বিবরণ এবং রিপোজিটরি ও উপলভ্য ডেমোর লিংক রয়েছে।"
+  },
+  "guide.languages.q": {
+    "en": "Which languages does he use?",
+    "ru": "Какими языками он пользуется?",
+    "bn": "তিনি কোন ভাষায় কাজ করেন?"
+  },
+  "guide.languages.a": {
+    "en": "Bengali is his native language. He uses English and Russian for professional communication.",
+    "ru": "Бенгальский — родной язык. Английский и русский используются в профессиональном общении.",
+    "bn": "বাংলা তাঁর মাতৃভাষা। পেশাগত যোগাযোগে তিনি ইংরেজি ও রুশ ভাষা ব্যবহার করেন।"
+  },
+  "projects.context": {
+    "en": "These are personal software projects and experiments. For my professional operations work, see the career timeline.",
+    "ru": "Это личные программные проекты и эксперименты. Профессиональный опыт в операционной деятельности представлен в карьерной хронологии.",
+    "bn": "এগুলো ব্যক্তিগত সফটওয়্যার প্রকল্প ও পরীক্ষা। পেশাগত পরিচালনাসংক্রান্ত অভিজ্ঞতার জন্য কর্মজীবনের বিবরণ দেখুন।"
   }
 }

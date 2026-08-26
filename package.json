@@ -4,6 +4,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vercel dev"
+    "dev": "vercel dev",
+    "build": "python scripts/build_site.py",
+    "test": "python scripts/test_site.py && node --test tests/site.test.mjs"
   }
 }

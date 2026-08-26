@@ -1,0 +1,14 @@
+# Defense in depth for the former legacy Pages build; production uses dist/.
+exclude:
+  - api
+  - scripts
+  - tests
+  - dist
+  - docs
+  - requirements-build.txt
+  - package.json
+  - README.md
+  - biography_public.md
+  - build_biography.py
+  - translations.json
+  - vercel.json

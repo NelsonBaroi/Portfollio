@@ -5,48 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Nelson Baroi — software projects in voice synthesis, visual AI, statistical simulation, and local tooling." data-i18n-meta="projects.meta_desc">
     <title data-i18n="projects.title">Projects — Nelson Baroi</title>
-  <link rel="stylesheet" href="styles.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <link rel="stylesheet" href="/styles.css?v=20260826-audit">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <style>
-    .lang-switcher {
-      position: fixed; top: 16px; right: 16px; z-index: 10001;
-      display: flex; gap: 4px;
-      background: rgba(255,255,255,0.15); backdrop-filter: blur(8px);
-      padding: 4px; border-radius: 8px;
-      border: 1px solid rgba(255,255,255,0.2);
-    }
-    .lang-btn {
-      background: transparent; border: none; color: rgba(255,255,255,0.6);
-      padding: 4px 10px; border-radius: 6px; cursor: pointer;
-      font-size: 0.78rem; font-weight: 600; font-family: 'Segoe UI', sans-serif;
-      transition: all 0.2s;
-    }
-    .lang-btn:hover { color: #fff; background: rgba(255,255,255,0.15); }
-    .lang-btn.active { color: #fff; background: rgba(255,127,80,0.7); }
-    .lang-btn.active:hover { background: rgba(255,127,80,0.9); }
-  </style>
   <style>
     .projects-intro {
       margin-bottom: 2.5rem;
       max-width: 680px;
     }
-
     .project {
       border-top: 1px solid rgba(0,0,0,0.08);
       padding: 2.5rem 0 1.5rem;
     }
-
     .project:first-of-type {
       border-top: none;
       padding-top: 0;
     }
-
     .project h2 {
       margin-bottom: 0.25rem;
     }
-
     .project-tagline {
       opacity: 0.6;
       font-size: 0.95rem;
@@ -54,21 +30,18 @@
       margin-bottom: 1.25rem;
       font-style: italic;
     }
-
     .project-body {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 1.5rem 3rem;
       margin-bottom: 1.25rem;
     }
-
     @media (max-width: 640px) {
       .project-body {
         grid-template-columns: 1fr;
         gap: 1rem;
       }
     }
-
     .project-body h4 {
       font-size: 0.8rem;
       text-transform: uppercase;
@@ -76,18 +49,15 @@
       opacity: 0.5;
       margin: 0 0 0.5rem;
     }
-
     .project-body ul {
       margin: 0;
       padding-left: 1.1rem;
     }
-
     .project-body ul li {
       font-size: 0.92rem;
       margin-bottom: 0.25rem;
       opacity: 0.85;
     }
-
     .project-learned {
       font-size: 0.93rem;
       line-height: 1.65;
@@ -95,7 +65,6 @@
       max-width: 660px;
       margin-bottom: 1rem;
     }
-
     .project-learned strong {
       display: block;
       font-size: 0.8rem;
@@ -104,14 +73,12 @@
       opacity: 0.5;
       margin-bottom: 0.4rem;
     }
-
     .stack-tags {
       display: flex;
       flex-wrap: wrap;
       gap: 0.4rem;
       margin-top: 0.75rem;
     }
-
     .stack-tag {
       font-size: 0.78rem;
       padding: 0.2rem 0.6rem;
@@ -120,116 +87,106 @@
       opacity: 0.7;
       font-family: monospace;
     }
-
     .project-link {
       font-size: 0.82rem;
       opacity: 0.45;
       text-decoration: none;
       border-bottom: 1px solid currentColor;
     }
-
     .project-link:hover {
       opacity: 0.75;
     }
   </style>
-</head>
-<body>
-
-  <!-- Preloader -->
-  <div class="preloader">
-    <div class="loader"></div>
-  </div>
-
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Noto+Sans+Bengali:wght@400;500;600;700&amp;family=Noto+Serif+Bengali:wght@600;700&amp;family=Playfair+Display:ital,wght@0,600;0,700;1,600&amp;display=swap"><link rel="stylesheet" href="/accessibility.css?v=20260826-audit"><meta property="og:type" content="website"><meta property="og:url" content="https://nbaroi.com/projects.html"><meta property="og:title" content="Projects — Nelson Baroi"><meta property="og:description" content="Nelson Baroi — software projects in voice synthesis, visual AI, statistical simulation, and local tooling."><meta property="og:image" content="https://nbaroi.com/images/Me.jpg"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Projects — Nelson Baroi"><meta name="twitter:description" content="Nelson Baroi — software projects in voice synthesis, visual AI, statistical simulation, and local tooling."><meta name="twitter:image" content="https://nbaroi.com/images/Me.jpg"><noscript id="navigation-fallback"><style>@media(max-width:1180px){.site-header{position:static}.site-header .primary-navigation{display:flex;position:static;flex-basis:100%;max-height:none}.site-nav-shell{flex-wrap:wrap}.site-header .menu-toggle{display:none}.portfolio-hero{padding-top:40px}.inner-page{padding-top:0}}</style></noscript><link rel="canonical" href="https://nbaroi.com/projects.html"><link rel="alternate" hreflang="en" href="https://nbaroi.com/projects.html"><link rel="alternate" hreflang="ru" href="https://nbaroi.com/ru/projects.html"><link rel="alternate" hreflang="bn" href="https://nbaroi.com/bn/projects.html"><link rel="alternate" hreflang="x-default" href="https://nbaroi.com/projects.html"><script id="site-messages" type="application/json">{"shared.recognition": "Recognition", "shared.skip": "Skip to content", "shared.language": "Language", "shared.open_menu": "Open navigation", "shared.close_menu": "Close navigation", "shared.email": "Email Nelson", "shared.copy": "Copy email address", "shared.copied": "Email address copied.", "shared.copy_failed": "Select and copy the email address above.", "shared.guide": "Portfolio guide", "shared.english": "The following material is available in English.", "shared.document_english": "Original document in English", "shared.contact_note": "For professional enquiries, contact me directly.", "shared.updated": "Updated 26 August 2026", "shared.learning": "Planned learning, not completed qualifications.", "shared.view_experience": "View professional experience", "shared.view_projects": "See project evidence"}</script></head>
+<body class="inner-page">
+  <a class="skip-link" href="#main-content" data-i18n="shared.skip">Skip to content</a><header class="site-header" id="top">
+      <div class="site-nav-shell">
+        <a class="brand" href="/index.html#top" aria-label="Nelson Baroi — home">
+          <span class="brand-mark"><img src="/images/logo-128.webp" alt="Nelson Baroi monogram" width="128" height="128" decoding="async"></span>
+          <span class="brand-copy"><strong>Nelson Baroi</strong><small data-i18n="index.brand_descriptor">Operations · Analytics</small></span>
+        </a>
+        <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Open navigation">
+          <span></span><span></span>
+        </button>
+        <nav class="primary-navigation" id="primary-navigation" aria-label="Primary navigation">
+          <a href="/index.html#about-me" data-i18n="index.nav_about">About</a>
+          <a href="/index.html#professional-journey" data-i18n="index.nav_experience">Experience</a>
+          <a href="/index.html#recognition" data-i18n="shared.recognition">Recognition</a><a href="/index.html#skills" data-i18n="index.nav_capabilities">Capabilities</a>
+          <a href="/projects.html" data-i18n="index.nav_projects" aria-current="page">Projects</a>
+          <a href="/cv.html" data-i18n="index.nav_cv">CV</a>
+          <a class="nav-contact" href="mailto:nelson6114007@gmail.com"><span data-i18n="index.nav_contact">Let’s talk</span> <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+        </nav>
+        <div class="lang-switcher" aria-label="Language"><a class="lang-btn active" data-lang="en" href="/projects.html" lang="en" hreflang="en" aria-label="English" aria-current="page">EN</a><a class="lang-btn" data-lang="ru" href="/ru/projects.html" lang="ru" hreflang="ru" aria-label="Русский">RU</a><a class="lang-btn" data-lang="bn" href="/bn/projects.html" lang="bn" hreflang="bn" aria-label="বাংলা">BN</a></div></div>
+    </header>
+    <main id="main-content"><!-- Preloader -->
   <!-- Language Switcher -->
-  <div class="lang-switcher">
-    <button class="lang-btn active" data-lang="en" onclick="switchLanguage('en')">EN</button>
-    <button class="lang-btn" data-lang="ru" onclick="switchLanguage('ru')">RU</button>
-    <button class="lang-btn" data-lang="bn" onclick="switchLanguage('bn')">BN</button>
-  </div>
-
   <!-- Header -->
   <header class="header">
     <h1 class="gradient-text" data-i18n="projects.header">Projects</h1>
   </header>
-
   <!-- Navigation -->
   <section class="hero">
     <div class="hero-content">
       <div class="button-container">
-        <a href="index.html" class="cta-button"><i class="fas fa-home"></i> <span data-i18n="projects.nav_home">Home</span></a>
-        <a href="biography.html" class="cta-button"><i class="fas fa-book-open"></i> <span data-i18n="projects.nav_biography">Biography</span></a>
-        <a href="philosophy.html" class="cta-button"><i class="fas fa-lightbulb"></i> <span data-i18n="projects.nav_philosophy">Philosophy</span></a>
-        <a href="cv.html" class="cta-button"><i class="fas fa-file-alt"></i> <span data-i18n="projects.nav_cv">CV</span></a>
-        <a href="courses.html" class="cta-button"><i class="fas fa-graduation-cap"></i> <span data-i18n="projects.nav_courses">Courses</span></a>
-        <a href="chat.html" class="cta-button cta-chat"><i class="fas fa-comment-dots"></i> <span data-i18n="projects.nav_chat">Chat</span></a>
+        <a href="/index.html" class="cta-button"><i class="fas fa-home" aria-hidden="true"></i> <span data-i18n="projects.nav_home">Home</span></a>
+        <a href="/biography.html" class="cta-button"><i class="fas fa-book-open" aria-hidden="true"></i> <span data-i18n="projects.nav_biography">Background</span></a>
+        <a href="/philosophy.html" class="cta-button"><i class="fas fa-lightbulb" aria-hidden="true"></i> <span data-i18n="projects.nav_philosophy">Philosophy</span></a>
+        <a href="/cv.html" class="cta-button"><i class="fas fa-file-alt" aria-hidden="true"></i> <span data-i18n="projects.nav_cv">CV</span></a>
+        <a href="/courses.html" class="cta-button"><i class="fas fa-graduation-cap" aria-hidden="true"></i> <span data-i18n="projects.nav_courses">Courses</span></a>
+        <a href="/chat.html" class="cta-button cta-chat"><i class="fas fa-comment-dots" aria-hidden="true"></i> <span data-i18n="projects.nav_chat">Portfolio guide</span></a>
       </div>
     </div>
   </section>
-
   <!-- Projects Content -->
   <section class="section">
-    <p class="projects-intro" data-i18n="projects.intro">
-      A selection of tools I've built while exploring AI, audio, and simulation.
-      Each one started with a specific question — not a technology to showcase.
-      The approaches vary, but the goal was always the same: understand how something
-      actually works by building it.
-    </p>
-
-    <!-- 1. AI Memory -->
-    <div class="project">
+    <p class="projects-intro" data-i18n="projects.intro">A selection of tools I've built while exploring AI, audio, and simulation. Each one started with a specific question — not a technology to showcase. The approaches vary, but the goal was always the same: understand how something actually works by building it.</p>
+    <nav class="project-index" aria-label="Project index"><a href="#ai-memory" data-i18n="projects.p1_title">AI Memory</a><a href="#qwen-voice-cloner" data-i18n="projects.p2_title">Qwen Voice Cloner</a><a href="#hairstyle-try-on" data-i18n="projects.p3_title">Hairstyle Try-On</a><a href="#parallel-universe-me" data-i18n="projects.p4_title">Parallel Universe Me</a><a href="#sfx-generator" data-i18n="projects.p5_title">SFX Generator</a><a href="#kira" data-i18n="projects.p6_title">Kira</a><a href="#web-apps" data-i18n="projects.p7_title">Web Apps Collection</a></nav><p class="content-note"><span data-i18n="projects.context">These are personal software projects and experiments. For my professional operations work, see the career timeline.</span> <a href="/index.html#professional-journey" data-i18n="shared.view_experience">View professional experience</a></p><!-- 1. AI Memory -->
+    <div class="project" id="ai-memory">
       <h2 data-i18n="projects.p1_title">AI Memory</h2>
-      <p class="project-tagline" data-i18n="projects.p1_tagline">Local knowledge base with file indexing and interactive Q&A</p>
-
+      <p class="project-tagline" data-i18n="projects.p1_tagline">Local knowledge base with file indexing and interactive Q&amp;A</p>
       <div class="project-body">
         <div>
-          <h4 data-i18n="projects.p1_section1_title">What I worked on</h4>
+          <h3 data-i18n="projects.p1_section1_title">What I worked on</h3>
           <ul>
             <li data-i18n="projects.p1_section1_item1">Real-time file watcher that indexes new and modified files automatically</li>
             <li data-i18n="projects.p1_section1_item2">Embedding-based semantic search across the indexed knowledge base</li>
-            <li data-i18n="projects.p1_section1_item3">LLM-powered Q&A that answers questions from retrieved context</li>
+            <li data-i18n="projects.p1_section1_item3">LLM-powered Q&amp;A that answers questions from retrieved context</li>
             <li data-i18n="projects.p1_section1_item4">Threshold tuning for when retrieval should trigger vs. general knowledge</li>
           </ul>
         </div>
         <div>
-          <h4>Stack</h4>
+          <h3>Stack</h3>
           <div class="stack-tags">
             <span class="stack-tag">Python</span>
             <span class="stack-tag">Embeddings</span>
             <span class="stack-tag">Watchdog</span>
-            <span class="stack-tag">LLM Q&A</span>
+            <span class="stack-tag">LLM Q&amp;A</span>
           </div>
         </div>
       </div>
-
       <div class="project-learned">
         <strong data-i18n="projects.p1_section2_title">What I learned</strong>
-        <span data-i18n="projects.p1_section2_text">The more interesting problem wasn't indexing — it was deciding when a search result
-        is relevant enough to use. Retrieval-augmented generation is only as good as the
-        relevance filter in front of it; without that, the model confidently answers from
-        the wrong document.</span>
+        <span data-i18n="projects.p1_section2_text">The more interesting problem wasn't indexing — it was deciding when a search result is relevant enough to use. Retrieval-augmented generation is only as good as the relevance filter in front of it; without that, the model confidently answers from the wrong document.</span>
       </div>
-
-      <a class="project-link" href="https://github.com/NelsonBaroi/AI-Memory" target="_blank" rel="noopener">github.com/NelsonBaroi/AI-Memory</a>
+      <a class="project-link" href="https://github.com/NelsonBaroi/AI-Memory" target="_blank" rel="noopener noreferrer" aria-label="github.com/NelsonBaroi/AI-Memory — AI Memory">github.com/NelsonBaroi/AI-Memory</a>
     </div>
-
     <!-- 2. Qwen Voice Cloner -->
-    <div class="project">
+    <div class="project" id="qwen-voice-cloner">
       <h2 data-i18n="projects.p2_title">Qwen Voice Cloner</h2>
       <p class="project-tagline" data-i18n="projects.p2_tagline">Multi-language voice cloning using Qwen3-TTS</p>
-
       <div class="project-body">
         <div>
-          <h4 data-i18n="projects.p1_section1_title">What I worked on</h4>
+          <h3 data-i18n="projects.p1_section1_title">What I worked on</h3>
           <ul>
             <li data-i18n="projects.p2_item1">Voice cloning pipeline: upload a reference sample, generate matching speech</li>
-            <li data-i18n="projects.p2_item2">Voice design from text descriptions ("warm, calm, slightly accented")</li>
+            <li data-i18n="projects.p2_item2">Voice design from text descriptions ('warm, calm, slightly accented')</li>
             <li data-i18n="projects.p2_item3">Built-in speaker library and voice sample management</li>
             <li data-i18n="projects.p2_item4">CUDA / bfloat16 optimization for GPU inference; CPU fallback</li>
             <li data-i18n="projects.p2_item5">10-language support: English, Russian, Chinese, Japanese, Korean, and more</li>
           </ul>
         </div>
         <div>
-          <h4>Stack</h4>
+          <h3>Stack</h3>
           <div class="stack-tags">
             <span class="stack-tag">Python</span>
             <span class="stack-tag">PyTorch</span>
@@ -240,26 +197,19 @@
           </div>
         </div>
       </div>
-
       <div class="project-learned">
         <strong data-i18n="projects.p1_section2_title">What I learned</strong>
-        <span data-i18n="projects.p2_learned">Small errors in transcript alignment — a word cut off, a pause misread — compound
-        into noticeable artifacts in the output. The preprocessing pipeline matters as much
-        as the model. I also found that voice design from text descriptions is harder to
-        control than cloning from a real sample; the model's interpretation of "warm" varies.</span>
+        <span data-i18n="projects.p2_learned">Small errors in transcript alignment — a word cut off, a pause misread — compound into noticeable artifacts in the output. The preprocessing pipeline matters as much as the model. I also found that voice design from text descriptions is harder to control than cloning from a real sample; the model's interpretation of 'warm' varies.</span>
       </div>
-
-<a class="project-link" href="https://huggingface.co/spaces/creativestudio1122/qwen-voice-cloner" target="_blank" rel="noopener">Live Demo</a> · <a class="project-link" href="https://github.com/NelsonBaroi/Qwen-Voice-Cloner" target="_blank" rel="noopener">GitHub</a>
+<a class="project-link" href="https://huggingface.co/spaces/creativestudio1122/qwen-voice-cloner" target="_blank" rel="noopener noreferrer" aria-label="Live Demo — Qwen Voice Cloner">Live Demo</a> · <a class="project-link" href="https://github.com/NelsonBaroi/Qwen-Voice-Cloner" target="_blank" rel="noopener noreferrer" aria-label="GitHub — Qwen Voice Cloner">GitHub</a>
     </div>
-
     <!-- 3. Hairstyle Try-On -->
-    <div class="project">
+    <div class="project" id="hairstyle-try-on">
       <h2 data-i18n="projects.p3_title">Hairstyle Try-On</h2>
       <p class="project-tagline" data-i18n="projects.p3_tagline">AI-powered hairstyle editing with FLUX and Qwen cloud models</p>
-
       <div class="project-body">
         <div>
-          <h4 data-i18n="projects.p1_section1_title">What I worked on</h4>
+          <h3 data-i18n="projects.p1_section1_title">What I worked on</h3>
           <ul>
             <li data-i18n="projects.p3_item1">Image intake, face detection, and preprocessing pipeline</li>
             <li data-i18n="projects.p3_item2">Dual-engine architecture: FLUX as primary, Qwen as automatic fallback</li>
@@ -269,7 +219,7 @@
           </ul>
         </div>
         <div>
-          <h4>Stack</h4>
+          <h3>Stack</h3>
           <div class="stack-tags">
             <span class="stack-tag">Python</span>
             <span class="stack-tag">Streamlit</span>
@@ -280,27 +230,19 @@
           </div>
         </div>
       </div>
-
       <div class="project-learned">
         <strong data-i18n="projects.p1_section2_title">What I learned</strong>
-        <span data-i18n="projects.p3_learned">Designing for model unreliability was the main engineering challenge. Cloud APIs
-        fail intermittently, and if the app doesn't handle that gracefully, the user sees
-        an error rather than a result. Building the fallback path at the UI layer — so
-        the switch from FLUX to Qwen is invisible — made the experience feel stable
-        even when individual calls weren't.</span>
+        <span data-i18n="projects.p3_learned">Designing for model unreliability was the main engineering challenge. Cloud APIs fail intermittently, and if the app doesn't handle that gracefully, the user sees an error rather than a result. Building the fallback path at the UI layer — so the switch from FLUX to Qwen is invisible — made the experience feel stable even when individual calls weren't.</span>
       </div>
-
-<a class="project-link" href="https://huggingface.co/spaces/creativestudio1122/hairstyle-try-on" target="_blank" rel="noopener">Live Demo</a> · <a class="project-link" href="https://github.com/NelsonBaroi/Hairstyle-Try-On" target="_blank" rel="noopener">GitHub</a>
+<a class="project-link" href="https://huggingface.co/spaces/creativestudio1122/hairstyle-try-on" target="_blank" rel="noopener noreferrer" aria-label="Live Demo — Hairstyle Try-On">Live Demo</a> · <a class="project-link" href="https://github.com/NelsonBaroi/Hairstyle-Try-On" target="_blank" rel="noopener noreferrer" aria-label="GitHub — Hairstyle Try-On">GitHub</a>
     </div>
-
     <!-- 4. Parallel Universe Me -->
-    <div class="project">
+    <div class="project" id="parallel-universe-me">
       <h2 data-i18n="projects.p4_title">Parallel Universe Me</h2>
       <p class="project-tagline" data-i18n="projects.p4_tagline">Life simulation using Monte Carlo methods and real statistical datasets</p>
-
       <div class="project-body">
         <div>
-          <h4 data-i18n="projects.p1_section1_title">What I worked on</h4>
+          <h3 data-i18n="projects.p1_section1_title">What I worked on</h3>
           <ul>
             <li data-i18n="projects.p4_item1">Monte Carlo simulation engine for probabilistic life-path modeling</li>
             <li data-i18n="projects.p4_item2">Causal DAGs mapping decision trees with statistical outcome weights</li>
@@ -310,7 +252,7 @@
           </ul>
         </div>
         <div>
-          <h4>Stack</h4>
+          <h3>Stack</h3>
           <div class="stack-tags">
             <span class="stack-tag">Python</span>
             <span class="stack-tag">Gradio</span>
@@ -321,27 +263,19 @@
           </div>
         </div>
       </div>
-
       <div class="project-learned">
         <strong data-i18n="projects.p1_section2_title">What I learned</strong>
-        <span data-i18n="projects.p4_learned">Keeping the LLM out of the data generation was a deliberate constraint — and the
-        right one. Once a model starts producing statistics, users can't distinguish them
-        from real ones, which undermines the whole point. The LLM's role here is narrative:
-        it explains what the Monte Carlo output means. The numbers come from real datasets.
-        That separation is harder to maintain architecturally than it sounds.</span>
+        <span data-i18n="projects.p4_learned">Keeping the LLM out of the data generation was a deliberate constraint — and the right one. Once a model starts producing statistics, users can't distinguish them from real ones, which undermines the whole point. The LLM's role here is narrative: it explains what the Monte Carlo output means. The numbers come from real datasets. That separation is harder to maintain architecturally than it sounds.</span>
       </div>
-
-<a class="project-link" href="https://parallel-universe-me.vercel.app/" target="_blank" rel="noopener">Live Demo</a> · <a class="project-link" href="https://github.com/NelsonBaroi/parallel-universe-me" target="_blank" rel="noopener">GitHub</a>
+<a class="project-link" href="https://parallel-universe-me.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Live Demo — Parallel Universe Me">Live Demo</a> · <a class="project-link" href="https://github.com/NelsonBaroi/parallel-universe-me" target="_blank" rel="noopener noreferrer" aria-label="GitHub — Parallel Universe Me">GitHub</a>
     </div>
-
     <!-- 5. SFX Generator -->
-    <div class="project">
+    <div class="project" id="sfx-generator">
       <h2 data-i18n="projects.p5_title">SFX Generator</h2>
       <p class="project-tagline" data-i18n="projects.p5_tagline">Procedural sound effects from signal processing — no samples required</p>
-
       <div class="project-body">
         <div>
-          <h4 data-i18n="projects.p1_section1_title">What I worked on</h4>
+          <h3 data-i18n="projects.p1_section1_title">What I worked on</h3>
           <ul>
             <li data-i18n="projects.p5_item1">18+ SFX types: impacts, sweeps, drones, glitches, ambient textures, alarms</li>
             <li data-i18n="projects.p5_item2">Butterworth filters, amplitude envelopes, LFO modulation from scratch</li>
@@ -351,7 +285,7 @@
           </ul>
         </div>
         <div>
-          <h4>Stack</h4>
+          <h3>Stack</h3>
           <div class="stack-tags">
             <span class="stack-tag">Python</span>
             <span class="stack-tag">NumPy</span>
@@ -361,28 +295,19 @@
           </div>
         </div>
       </div>
-
       <div class="project-learned">
         <strong data-i18n="projects.p1_section2_title">What I learned</strong>
-        <span data-i18n="projects.p5_learned">This project uses no AI models — everything is signal processing. That turned out
-        to be a useful exercise: designing sounds from frequency curves and filter shapes
-        requires understanding what you actually want the audio to do, rather than
-        describing it in natural language and hoping a model interprets it correctly.
-        Procedural generation gives you complete control, at the cost of needing to know
-        what you're controlling.</span>
+        <span data-i18n="projects.p5_learned">This project uses no AI models — everything is signal processing. That turned out to be a useful exercise: designing sounds from frequency curves and filter shapes requires understanding what you actually want the audio to do, rather than describing it in natural language and hoping a model interprets it correctly. Procedural generation gives you complete control, at the cost of needing to know what you're controlling.</span>
       </div>
-
-      <a class="project-link" href="https://github.com/NelsonBaroi/SFX-Generator" target="_blank" rel="noopener">github.com/NelsonBaroi/SFX-Generator</a>
+      <a class="project-link" href="https://github.com/NelsonBaroi/SFX-Generator" target="_blank" rel="noopener noreferrer" aria-label="github.com/NelsonBaroi/SFX-Generator — SFX Generator">github.com/NelsonBaroi/SFX-Generator</a>
     </div>
-
     <!-- 6. Kira -->
-    <div class="project">
+    <div class="project" id="kira">
       <h2 data-i18n="projects.p6_title">Kira</h2>
       <p class="project-tagline" data-i18n="projects.p6_tagline">Structured personal knowledge base designed for LLM context injection</p>
-
       <div class="project-body">
         <div>
-          <h4 data-i18n="projects.p1_section1_title">What I worked on</h4>
+          <h3 data-i18n="projects.p1_section1_title">What I worked on</h3>
           <ul>
             <li data-i18n="projects.p6_item1">Organized 19-chapter biography, career materials, and relocation planning</li>
             <li data-i18n="projects.p6_item2">Visa queue analytics: Python scripts, weekly CSV datasets, 13 statistical charts</li>
@@ -392,7 +317,7 @@
           </ul>
         </div>
         <div>
-          <h4>Stack</h4>
+          <h3>Stack</h3>
           <div class="stack-tags">
             <span class="stack-tag">Python</span>
             <span class="stack-tag">Markdown</span>
@@ -401,43 +326,34 @@
           </div>
         </div>
       </div>
-
       <div class="project-learned">
         <strong data-i18n="projects.p1_section2_title">What I learned</strong>
-        <span data-i18n="projects.p6_learned">A knowledge base is only useful if you can retrieve the right piece at the right
-        time. The manifest.json — a structured index of every file with metadata — was
-        the detail that made everything else work. Without it, the repository is just
-        a folder of documents. With it, any tool can navigate the contents without
-        reading everything. The real challenge was deciding what belongs in a knowledge
-        base versus what belongs in a conversation.</span>
+        <span data-i18n="projects.p6_learned">A knowledge base is only useful if you can retrieve the right piece at the right time. The manifest.json — a structured index of every file with metadata — was the detail that made everything else work. Without it, the repository is just a folder of documents. With it, any tool can navigate the contents without reading everything. The real challenge was deciding what belongs in a knowledge base versus what belongs in a conversation.</span>
       </div>
-
-      <a class="project-link" href="https://github.com/NelsonBaroi/Kira" target="_blank" rel="noopener">github.com/NelsonBaroi/Kira</a>
+      <a class="project-link" href="https://github.com/NelsonBaroi/Kira" target="_blank" rel="noopener noreferrer" aria-label="github.com/NelsonBaroi/Kira — Kira">github.com/NelsonBaroi/Kira</a>
     </div>
-
     <!-- 7. Web Apps Collection monorepo note -->
-    <div class="project">
+    <div class="project" id="web-apps">
       <h2 data-i18n="projects.p7_title">Web Apps Collection</h2>
       <p class="project-tagline" data-i18n="projects.p7_tagline">Monorepo of 12 projects: polling apps, chatbots, portfolio builder, OCR pipeline, AI renamer, and more</p>
-
       <div class="project-body">
         <div>
-          <h4 data-i18n="projects.p7_section1_title">Included projects</h4>
+          <h3 data-i18n="projects.p7_section1_title">Included projects</h3>
           <ul>
-            <li data-i18n="projects.p7_item1"><strong>simplechat</strong> — AI intent-based chatbot (Flask)</li>
-            <li data-i18n="projects.p7_item2"><strong>Drag-and-Drop-Portfolio-Builder</strong> — visual portfolio creator</li>
-            <li data-i18n="projects.p7_item3"><strong>ai-assistant-portfolio</strong> — FastAPI + React AI assistant</li>
-            <li data-i18n="projects.p7_item4"><strong>polling-app</strong> & <strong>polling-app-enhanced</strong> — full-stack polling with Docker</li>
-            <li data-i18n="projects.p7_item5"><strong>Register</strong> — OCR expense extraction pipeline</li>
-            <li data-i18n="projects.p7_item6"><strong>AI-Renamer</strong> — Gemini-powered file renamer</li>
-            <li data-i18n="projects.p7_item7"><strong>chatbot</strong> — portfolio Q&amp;A from public site content</li>
-            <li data-i18n="projects.p7_item8"><strong>nextjs-ai-chatbot</strong> — Vercel AI SDK chatbot</li>
-            <li data-i18n="projects.p7_item9"><strong>Correspondence</strong> — document management</li>
-            <li data-i18n="projects.p7_item10"><strong>github-final-project</strong> — micro-finance startup</li>
+            <li data-i18n="projects.p7_item1">simplechat — AI intent-based chatbot (Flask)</li>
+            <li data-i18n="projects.p7_item2">Drag-and-Drop-Portfolio-Builder — visual portfolio creator</li>
+            <li data-i18n="projects.p7_item3">ai-assistant-portfolio — FastAPI + React AI assistant</li>
+            <li data-i18n="projects.p7_item4">polling-app &amp; polling-app-enhanced — full-stack polling with Docker</li>
+            <li data-i18n="projects.p7_item5">Register — OCR expense extraction pipeline</li>
+            <li data-i18n="projects.p7_item6">AI-Renamer — Gemini-powered file renamer</li>
+            <li data-i18n="projects.p7_item7">chatbot — portfolio Q&amp;A from public site content</li>
+            <li data-i18n="projects.p7_item8">nextjs-ai-chatbot — Vercel AI SDK chatbot</li>
+            <li data-i18n="projects.p7_item9">Correspondence — document management</li>
+            <li data-i18n="projects.p7_item10">github-final-project — micro-finance startup</li>
           </ul>
         </div>
         <div>
-          <h4>Stack</h4>
+          <h3>Stack</h3>
           <div class="stack-tags">
             <span class="stack-tag">Python</span>
             <span class="stack-tag">Flask</span>
@@ -451,60 +367,31 @@
           </div>
         </div>
       </div>
-
       <div class="project-learned">
         <strong data-i18n="projects.p1_section2_title">What I learned</strong>
-        <span data-i18n="projects.p7_learned">Consolidating 12 separate repositories into one monorepo taught me that consistent
-        tooling across projects matters more than any individual feature. Standardizing
-        .gitignore patterns, README conventions, and dependency management across Python
-        and JavaScript projects requires a lightweight structure that doesn't get in the
-        way of each project's autonomy.</span>
+        <span data-i18n="projects.p7_learned">Consolidating 12 separate repositories into one monorepo taught me that consistent tooling across projects matters more than any individual feature. Standardizing .gitignore patterns, README conventions, and dependency management across Python and JavaScript projects requires a lightweight structure that doesn't get in the way of each project's autonomy.</span>
       </div>
-
-      <a class="project-link" href="https://github.com/NelsonBaroi/web-apps-collection" target="_blank" rel="noopener">github.com/NelsonBaroi/web-apps-collection</a>
+      <a class="project-link" href="https://github.com/NelsonBaroi/web-apps-collection" target="_blank" rel="noopener noreferrer" aria-label="github.com/NelsonBaroi/web-apps-collection — Web Apps Collection">github.com/NelsonBaroi/web-apps-collection</a>
     </div>
-
   </section>
-
   <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="social-icons">
-        <a href="https://www.linkedin.com/in/nbaroi" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-        <a href="https://www.facebook.com/noel.baroi" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
-        <a href="https://www.instagram.com/noel0007000" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
-        <a href="mailto:nelson6114007@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
-      </div>
-      <p data-i18n="projects.footer_rights">&copy; 2026 Nelson Baroi. All rights reserved.</p>
-    </div>
-  </footer>
-
   <!-- Chatbot Widget (floating) -->
-  <div id="chat-widget" class="chat-widget">
-    <button id="chat-toggle" class="chat-toggle" title="Ask a question">
-      <i class="fas fa-comment-dots"></i>
-    </button>
-    <div id="chat-popup" class="chat-popup" style="display:none;">
-      <div class="chat-popup-header">
-        <img src="images/profile.jpg" alt="Nelson">
-        <div>
-          <strong data-i18n="index.chat_widget_title">Nelson Baroi</strong>
-          <span data-i18n="index.chat_widget_subtitle">Site chat — public profile info</span>
+  </main><script src="/i18n.js?v=20260826-audit" defer></script>
+  <script src="/script.js?v=20260826-audit" defer></script>
+<footer class="footer premium-footer">
+      <div class="footer-inner">
+        <div class="footer-lead">
+          <div class="footer-brand"><span class="brand-mark"><img src="/images/logo-128.webp" alt="" width="128" height="128" decoding="async"></span><div><strong>Nelson Baroi</strong><p data-i18n="index.footer_tagline">Operations leadership with an analytical edge.</p></div></div>
+          <nav class="footer-socials" aria-label="Social links">
+            <a href="https://www.linkedin.com/in/nbaroi" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+            <a href="https://www.facebook.com/noel.baroi" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/noel0007000" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+            <a href="mailto:nelson6114007@gmail.com" aria-label="Email"><i class="fas fa-envelope" aria-hidden="true"></i></a>
+          </nav>
         </div>
-        <button id="chat-close" class="chat-close"><i class="fas fa-times"></i></button>
+        <div class="footer-links"><a href="/cv.html" data-i18n="index.nav_cv">CV</a><a href="/projects.html" data-i18n="index.nav_projects">Projects</a><a href="/biography.html" data-i18n="index.nav_biography">Background</a><a href="/philosophy.html" data-i18n="index.nav_philosophy">Philosophy</a><a href="/courses.html" data-i18n="index.nav_courses">Courses</a><a href="/chat.html" data-i18n="index.footer_chat">Portfolio guide</a></div>
+        <div class="footer-bottom"><p data-i18n="index.footer_rights">© 2026 Nelson Baroi. All rights reserved.</p><a href="/index.html#top"><span data-i18n="index.back_to_top">Back to top</span> <i class="fas fa-arrow-up" aria-hidden="true"></i></a></div>
       </div>
-      <div class="chat-popup-messages" id="widget-messages">
-        <div class="widget-msg bot" data-i18n="projects.widget_greeting">Hi — chatbot trained on Nelson's CV and site. Ask about projects, work, or studies. Email nelson6114007@gmail.com for anything serious.</div>
-      </div>
-      <div class="chat-popup-input">
-        <input type="text" id="widget-input" data-i18n="projects.widget_placeholder" placeholder="Ask Nelson..." autocomplete="off">
-        <button id="widget-send"><i class="fas fa-paper-plane"></i></button>
-      </div>
-      <a href="chat.html" class="chat-fullscreen-link" data-i18n="index.chat_widget_open">Open full chat <i class="fas fa-expand"></i></a>
-    </div>
-  </div>
-
-  <script src="i18n.js" defer></script>
-  <script src="script.js" defer></script>
-</body>
+    </footer>
+    <a class="guide-launcher" href="/chat.html"><i class="fas fa-comment-dots" aria-hidden="true"></i> <span data-i18n="shared.guide">Portfolio guide</span></a></body>
 </html>

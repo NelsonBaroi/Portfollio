@@ -1,0 +1,13 @@
+.git
+.github
+dist
+scripts
+tests
+docs
+*_private.*
+personal/
+*.py
+*.md
+requirements-build.txt
+translations.json
+_config.yml

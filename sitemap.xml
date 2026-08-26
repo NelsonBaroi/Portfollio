@@ -1,43 +1,63 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://nbaroi.com/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://nbaroi.com/biography.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <loc>https://nbaroi.com/ru/</loc>
+  </url>
+  <url>
+    <loc>https://nbaroi.com/bn/</loc>
   </url>
   <url>
     <loc>https://nbaroi.com/projects.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://nbaroi.com/philosophy.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.7</priority>
+    <loc>https://nbaroi.com/ru/projects.html</loc>
+  </url>
+  <url>
+    <loc>https://nbaroi.com/bn/projects.html</loc>
+  </url>
+  <url>
+    <loc>https://nbaroi.com/biography.html</loc>
   </url>
   <url>
     <loc>https://nbaroi.com/cv.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://nbaroi.com/courses.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://nbaroi.com/ru/courses.html</loc>
+  </url>
+  <url>
+    <loc>https://nbaroi.com/bn/courses.html</loc>
+  </url>
+  <url>
+    <loc>https://nbaroi.com/philosophy.html</loc>
+  </url>
+  <url>
+    <loc>https://nbaroi.com/ru/philosophy.html</loc>
+  </url>
+  <url>
+    <loc>https://nbaroi.com/bn/philosophy.html</loc>
   </url>
   <url>
     <loc>https://nbaroi.com/courseplan.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://nbaroi.com/ru/courseplan.html</loc>
+  </url>
+  <url>
+    <loc>https://nbaroi.com/bn/courseplan.html</loc>
   </url>
   <url>
     <loc>https://nbaroi.com/chat.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://nbaroi.com/ru/chat.html</loc>
+  </url>
+  <url>
+    <loc>https://nbaroi.com/bn/chat.html</loc>
   </url>
 </urlset>

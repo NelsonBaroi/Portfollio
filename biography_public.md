@@ -12,7 +12,7 @@ Chandraghona is a small town in Rangamati, along the Karnaphuli River. The Hill 
 
 - **SSC (2009)** — Chandraghona, Rangamati
 - **HSC (2011)** — Notre Dame College, Dhaka
-- **BSc Business Informatics (2014–2018)** — Kalmyk State University, Russia (government scholarship)
+- **Bachelor’s in Business Informatics (2014–2018)** — Kalmyk State University, Russia (government scholarship)
 
 Leaving home for Notre Dame at sixteen was hard. Russia was harder — Russian-language classes, and I was the only foreign student in mine. I learned to adapt before I learned to manage.
 
