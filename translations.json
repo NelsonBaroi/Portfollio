@@ -1773,5 +1773,20 @@
     "en": "These are personal software projects and experiments. For my professional operations work, see the career timeline.",
     "ru": "Это личные программные проекты и эксперименты. Профессиональный опыт в операционной деятельности представлен в карьерной хронологии.",
     "bn": "এগুলো ব্যক্তিগত সফটওয়্যার প্রকল্প ও পরীক্ষা। পেশাগত পরিচালনাসংক্রান্ত অভিজ্ঞতার জন্য কর্মজীবনের বিবরণ দেখুন।"
+  },
+  "index.recognition_archive_title": {
+    "en": "Explore the complete recognition archive.",
+    "ru": "Откройте полный архив достижений.",
+    "bn": "সম্পূর্ণ স্বীকৃতি সংগ্রহ দেখুন।"
+  },
+  "index.recognition_archive_text": {
+    "en": "Browse 21 documented highlights by year or category, with original records and separate English translations.",
+    "ru": "Просмотрите 21 подтверждённое достижение по годам или категориям, с оригиналами документов и отдельными переводами на английский.",
+    "bn": "বছর বা বিভাগ অনুযায়ী ২১টি নথিভুক্ত অর্জন দেখুন—মূল নথি ও আলাদা ইংরেজি অনুবাদসহ।"
+  },
+  "index.recognition_archive_button": {
+    "en": "View all recognition",
+    "ru": "Смотреть все достижения",
+    "bn": "সব স্বীকৃতি দেখুন"
   }
 }

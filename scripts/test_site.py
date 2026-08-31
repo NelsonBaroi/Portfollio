@@ -5,7 +5,7 @@ from lxml import html, etree
 import unittest, json, re, hashlib
 
 ROOT=Path(__file__).resolve().parents[1]
-PAGES=['index.html','projects.html','biography.html','cv.html','courses.html','philosophy.html','courseplan.html','chat.html']
+PAGES=['index.html','recognition.html','projects.html','biography.html','cv.html','courses.html','philosophy.html','courseplan.html','chat.html']
 class SiteTests(unittest.TestCase):
     def test_public_pages_and_links(self):
         for lang in ['en','ru','bn']:
@@ -55,16 +55,30 @@ class SiteTests(unittest.TestCase):
         self.assertIn('part-time support through AMT Engineering',cv.getroot().text_content())
         self.assertNotIn('BSc',cv.getroot().text_content())
         self.assertNotIn('bi.jpg',(ROOT/'cv.html').read_text(encoding='utf-8'))
+    def test_recognition_archive(self):
+        page=html.parse(str(ROOT/'recognition.html'))
+        cards=page.xpath('//article[contains(@class,"recognition-card") and @data-category]')
+        self.assertEqual(len(cards),21)
+        expected={'professional':5,'safety':1,'academic':4,'leadership':7,'forums':4}
+        actual={key:len(page.xpath(f'//article[@data-category="{key}"]')) for key in expected}
+        self.assertEqual(actual,expected)
+        self.assertEqual(len(page.xpath('//section[contains(@class,"recognition-year") and @data-year]')),8)
+        originals=set(page.xpath('//a[contains(@href,"-original.pdf")]/@href'))
+        translations=set(page.xpath('//a[contains(@href,"-english.pdf")]/@href'))
+        self.assertEqual(len(originals),19)
+        self.assertEqual(len(translations),17)
+        self.assertNotIn('IELTS',(ROOT/'recognition.html').read_text(encoding='utf-8'))
+        self.assertTrue((ROOT/'recognition.js').is_file())
     def test_seo_language_alternates(self):
         sitemap=etree.parse(str(ROOT/'sitemap.xml'))
-        urls=sitemap.xpath('//*[local-name()="loc"]/text()'); self.assertEqual(len(urls),20)
+        urls=sitemap.xpath('//*[local-name()="loc"]/text()'); self.assertEqual(len(urls),21)
         for lang in ['en','ru','bn']:
             for page in PAGES:
                 doc=html.parse(str(ROOT/page if lang=='en' else ROOT/lang/page))
-                if page in ['biography.html','cv.html'] and lang!='en':
+                if page in ['biography.html','cv.html','recognition.html'] and lang!='en':
                     self.assertIn('noindex',doc.xpath('//meta[@name="robots"]/@content')[0])
                     self.assertTrue(doc.xpath('//*[@lang="en"]'))
-                elif page not in ['biography.html','cv.html']:
+                elif page not in ['biography.html','cv.html','recognition.html']:
                     self.assertEqual(set(doc.xpath('//link[@rel="alternate"]/@hreflang')),{'en','ru','bn','x-default'})
                 for schema in doc.xpath('//script[@type="application/ld+json"]/text()'): json.loads(schema)
     def test_optimized_assets_and_fallback(self):

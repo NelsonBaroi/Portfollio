@@ -5,15 +5,17 @@ from urllib.parse import urlsplit
 import json, shutil, re
 
 ROOT=Path(__file__).resolve().parents[1]
-PAGES=['index.html','projects.html','biography.html','cv.html','courses.html','philosophy.html','courseplan.html','chat.html']
+PAGES=['index.html','recognition.html','projects.html','biography.html','cv.html','courses.html','philosophy.html','courseplan.html','chat.html']
 LANGS=['en','ru','bn']
-PARTIAL={'cv.html','biography.html'}
+PARTIAL={'cv.html','biography.html','recognition.html'}
 T=json.loads((ROOT/'translations.json').read_text(encoding='utf-8'))
 TITLES={
+'recognition.html':['Recognition & Activities — Nelson Baroi','Признание и деятельность — Nelson Baroi','স্বীকৃতি ও কার্যক্রম — Nelson Baroi'],
 'cv.html':['Curriculum Vitae — Nelson Baroi','Резюме — Nelson Baroi','জীবনবৃত্তান্ত — Nelson Baroi'],
 'courses.html':['Professional Courses & Certificates — Nelson Baroi','Курсы и сертификаты — Nelson Baroi','পেশাগত কোর্স ও সনদ — Nelson Baroi'],
 'chat.html':['Portfolio Guide — Nelson Baroi','Гид по портфолио — Nelson Baroi','পোর্টফোলিও গাইড — Nelson Baroi']}
 DESCS={
+'recognition.html':['A chronological and category-based archive of Nelson Baroi’s professional recognition, leadership, academic achievements, safety training, forums and community service.','Архив профессионального признания, лидерства, академических достижений, обучения безопасности, форумов и общественной деятельности Нельсона Барои.','নেলসন বাড়ৈর পেশাগত স্বীকৃতি, নেতৃত্ব, শিক্ষাগত অর্জন, নিরাপত্তা প্রশিক্ষণ, ফোরাম ও সমাজসেবার সময়ক্রমিক ও বিভাগভিত্তিক সংগ্রহ।'],
 'cv.html':['Nelson Baroi’s professional experience, education, capabilities and recognition. Read the public CV online or download the two-page PDF.','Профессиональный опыт, образование и достижения Нельсона Барои. Резюме на английском доступно онлайн и в PDF.','নেলসন বাড়ৈর পেশাগত অভিজ্ঞতা, শিক্ষা ও স্বীকৃতি। ইংরেজি জীবনবৃত্তান্ত পড়ুন বা PDF ডাউনলোড করুন।'],
 'courses.html':['Six completed Google and IBM courses on Coursera, with completion dates, original certificates and verification links.','Шесть завершённых курсов Google и IBM на Coursera: даты, оригиналы сертификатов и ссылки для проверки.','Coursera-তে Google ও IBM-এর ছয়টি সম্পন্ন কোর্স, তারিখ, মূল সনদ ও যাচাইয়ের লিংক।'],
 'chat.html':['Answers from Nelson Baroi’s published profile, with source links and direct contact options.','Ответы из опубликованного профиля Нельсона Барои, ссылки на источники и прямые контакты.','নেলসন বাড়ৈর প্রকাশিত প্রোফাইলের তথ্য, মূল পাতার লিংক ও সরাসরি যোগাযোগ।'],
@@ -51,7 +53,7 @@ def render(page,lang):
         key=el.get('data-i18n-meta'); el.set('content',T[key].get(lang) or T[key]['en'])
     if page in TITLES:
         title=TITLES[page][LANGS.index(lang)]; head.find('title').text=title
-        doc.xpath('//h1')[0].text=title.split(' — ')[0]
+        if page!='recognition.html': doc.xpath('//h1')[0].text=title.split(' — ')[0]
     if page in DESCS: meta(head,'name','description',DESCS[page][LANGS.index(lang)])
     title=head.find('title').text_content()
     description=head.xpath('./meta[@name="description"]')[0].get('content')
@@ -114,7 +116,7 @@ for page in PAGES:
 (ROOT/'sitemap.xml').write_bytes(etree.tostring(sitemap,xml_declaration=True,encoding='UTF-8',pretty_print=True))
 
 dist=ROOT/'dist'; dist.mkdir(exist_ok=True)
-allowed=PAGES+['personal.html','404.html','styles.css','accessibility.css','script.js','i18n.js','robots.txt','sitemap.xml','cv.pdf','CNAME']
+allowed=PAGES+['personal.html','404.html','styles.css','accessibility.css','script.js','recognition.js','i18n.js','robots.txt','sitemap.xml','cv.pdf','CNAME']
 allowed += [str(p.relative_to(ROOT)).replace('\\','/') for folder in ['ru','bn','images','coursera','documents'] for p in (ROOT/folder).rglob('*') if p.is_file() and p.suffix.lower() in ['.html','.jpg','.jpeg','.png','.gif','.webp','.pdf','.docx']]
 for p in dist.rglob('*'):
     if p.is_file() and str(p.relative_to(dist)).replace('\\','/') not in allowed: p.unlink()
