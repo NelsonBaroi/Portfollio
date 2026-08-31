@@ -63,6 +63,8 @@ class SiteTests(unittest.TestCase):
         actual={key:len(page.xpath(f'//article[@data-category="{key}"]')) for key in expected}
         self.assertEqual(actual,expected)
         self.assertEqual(len(page.xpath('//section[contains(@class,"recognition-year") and @data-year]')),8)
+        self.assertEqual(len(page.xpath('//div[contains(@class,"recognition-expertise")]')),21)
+        self.assertEqual(len(page.xpath('//div[contains(@class,"recognition-expertise")]/ul/li')),63)
         originals=set(page.xpath('//a[contains(@href,"-original.pdf")]/@href'))
         translations=set(page.xpath('//a[contains(@href,"-english.pdf")]/@href'))
         self.assertEqual(len(originals),19)
